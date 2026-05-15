@@ -8,15 +8,16 @@
         :root {
             --pizarra-oscuro: #2F3E46;
             --teal-electrico: #38B2AC;
-            --fondo-suave: #F7FAFC;
+            --fondo-suave: #FFF5F7; /* Un tono rosado pastel muy sutil y tierno para el fondo */
             --blanco: #FFFFFF;
-            --error: #E53E3E;
-            --exito: #38A169;
+            --error: #FC8181; /* Rojo más suave y amigable */
+            --exito: #48BB78;
+            --rosa-fuerte: #D53F8C;
         }
 
         * {
             box-sizing: border-box;
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-family: 'Segoe UI', Quicksand, Roboto, Helvetica, Arial, sans-serif;
         }
 
         body {
@@ -28,29 +29,51 @@
             flex-direction: column;
             align-items: center;
             min-height: 100vh;
+            background-image: radial-gradient(circle at 10% 20%, rgba(213, 63, 140, 0.05) 0%, transparent 20%),
+                              radial-gradient(circle at 90% 80%, rgba(56, 178, 172, 0.08) 0%, transparent 20%);
+        }
+
+        /* --- ANIMACIONES --- */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-8px); }
+            100% { transform: translateY(0px); }
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes pop {
+            0% { transform: scale(0.9); opacity: 0; }
+            50% { transform: scale(1.05); opacity: 1; }
+            100% { transform: scale(1); opacity: 1; }
         }
 
         .container {
             background-color: var(--blanco);
-            border-radius: 20px;
-            box-shadow: 0 10px 25px rgba(47, 62, 70, 0.1);
-            padding: 30px;
+            border-radius: 30px; /* Bordes mucho más redondeados y tiernos */
+            box-shadow: 0 15px 35px rgba(47, 62, 70, 0.08);
+            padding: 40px 30px;
             width: 100%;
             max-width: 500px;
             text-align: center;
             position: relative;
             overflow: hidden;
+            border: 2px solid rgba(56, 178, 172, 0.1);
         }
 
         h1 {
             color: var(--teal-electrico);
             font-size: 1.8rem;
             margin-bottom: 10px;
+            animation: float 4s ease-in-out infinite; /* El título flota suavemente */
         }
 
         p.subtitle {
             font-size: 1.1rem;
-            color: var(--pizarra-oscuro);
+            color: #718096;
             margin-bottom: 30px;
             font-style: italic;
         }
@@ -59,38 +82,41 @@
             background-color: var(--teal-electrico);
             color: var(--blanco);
             border: none;
-            border-radius: 12px;
-            padding: 15px 20px;
+            border-radius: 25px; /* Botones estilo píldora */
+            padding: 16px 20px;
             font-size: 1.1rem;
             font-weight: bold;
             cursor: pointer;
             width: 100%;
             margin-bottom: 15px;
-            transition: transform 0.2s, box-shadow 0.2s;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            box-shadow: 0 4px 10px rgba(56, 178, 172, 0.3);
         }
 
         .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(56, 178, 172, 0.4);
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 8px 20px rgba(56, 178, 172, 0.4);
         }
 
         .btn:active {
-            transform: translateY(0);
+            transform: translateY(0) scale(0.98);
         }
 
         .hidden {
-            display: none;
+            display: none !important;
         }
 
         .question-container {
             text-align: left;
+            animation: slideIn 0.4s ease-out; /* Animación al entrar la pregunta */
         }
 
         .question-text {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             font-weight: 600;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             line-height: 1.4;
+            color: var(--pizarra-oscuro);
         }
 
         .options-container {
@@ -100,15 +126,22 @@
         }
 
         .option-btn {
-            background-color: var(--fondo-suave);
+            background-color: #F7FAFC;
             border: 2px solid #E2E8F0;
-            border-radius: 10px;
-            padding: 15px;
-            font-size: 1rem;
+            border-radius: 20px;
+            padding: 16px;
+            font-size: 1.05rem;
             color: var(--pizarra-oscuro);
             cursor: pointer;
             text-align: left;
-            transition: all 0.2s;
+            transition: all 0.2s ease;
+            line-height: 1.4;
+        }
+
+        .option-btn:hover:not(:disabled) {
+            border-color: #A0AEC0;
+            background-color: #EDF2F7;
+            transform: translateX(5px); /* Pequeño empuje al pasar el mouse */
         }
 
         .option-btn.selected {
@@ -118,23 +151,25 @@
 
         .option-btn.correct {
             border-color: var(--exito);
-            background-color: rgba(56, 161, 105, 0.1);
-            color: var(--exito);
+            background-color: rgba(72, 187, 120, 0.15);
+            color: #276749;
             font-weight: bold;
+            box-shadow: 0 0 15px rgba(72, 187, 120, 0.2);
         }
 
         .option-btn.incorrect {
             border-color: var(--error);
-            background-color: rgba(229, 62, 62, 0.1);
-            color: var(--error);
+            background-color: rgba(252, 129, 129, 0.15);
+            color: #9B2C2C;
+            opacity: 0.8;
         }
 
         .progress-bar {
             width: 100%;
-            height: 8px;
-            background-color: #E2E8F0;
-            border-radius: 4px;
-            margin-bottom: 20px;
+            height: 10px;
+            background-color: #EDF2F7;
+            border-radius: 5px;
+            margin-bottom: 25px;
             overflow: hidden;
         }
 
@@ -142,15 +177,21 @@
             height: 100%;
             background-color: var(--teal-electrico);
             width: 0%;
-            transition: width 0.3s ease;
+            transition: width 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+            border-radius: 5px;
         }
 
         .love-message {
             margin-top: 25px;
-            font-size: 1rem;
-            color: #D53F8C;
+            font-size: 1.1rem;
+            color: var(--rosa-fuerte);
             font-weight: bold;
-            min-height: 24px;
+            min-height: 28px;
+            opacity: 0;
+        }
+
+        .love-message.show {
+            animation: pop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
         }
 
         .controls {
@@ -161,8 +202,14 @@
 
         #next-btn {
             width: auto;
-            padding: 12px 25px;
+            padding: 12px 30px;
             margin-bottom: 0;
+            background-color: var(--rosa-fuerte); /* Botón de siguiente en rosa tierno */
+            box-shadow: 0 4px 10px rgba(213, 63, 140, 0.3);
+        }
+
+        #next-btn:hover {
+            box-shadow: 0 8px 20px rgba(213, 63, 140, 0.4);
         }
 
         .results {
@@ -170,169 +217,225 @@
         }
 
         .score-circle {
-            width: 150px;
-            height: 150px;
+            width: 160px;
+            height: 160px;
             border-radius: 50%;
-            border: 8px solid var(--teal-electrico);
+            border: 10px solid var(--teal-electrico);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 2.5rem;
+            font-size: 3rem;
             font-weight: bold;
             color: var(--pizarra-oscuro);
             margin: 0 auto 20px auto;
+            animation: pop 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            background-color: var(--fondo-suave);
         }
-
     </style>
 </head>
 <body>
 
 <div class="container" id="home-screen">
-    <h1>¡Hola Mi Princesa Perfecta de Mi Vida Entera Mi Niña Maravillosa! ❤️</h1>
-    <p class="subtitle">Sé que te irá increíble hoy. Confío plenamente en ti y en todo lo que has estudiado. ¡Un pasito más cerca de volar juntos!</p>
-    <p>Elige cómo quieres repasar:</p>
-    <button class="btn" onclick="startQuiz(20)">Hacer 20 preguntas al azar</button>
-    <button class="btn" onclick="startQuiz(40)">Hacer 40 preguntas al azar</button>
-    <button class="btn" onclick="startQuiz(80)">Hacer 80 preguntas al azar</button>
+    <h1>¡Hola Mi Princesa Perfecta! 💖✈️</h1>
+    <p class="subtitle">Sé que te irá increíble con esta materia. Confío plenamente en ti y en todo lo que has estudiado. ¡A volar alto Mi Niña Maravillosa!</p>
+    <p style="font-weight: 500; margin-bottom: 20px;">Elige tu misión de hoy:</p>
+    <button class="btn" onclick="startQuiz(20)">Hacer 20 preguntas (Repaso Rápido)</button>
+    <button class="btn" onclick="startQuiz(40)">Hacer 40 preguntas (Simulador)</button>
+    <button class="btn" onclick="startQuiz(100)">Hacer 100 preguntas (Desafío Total)</button>
 </div>
 
 <div class="container hidden" id="quiz-screen">
     <div class="progress-bar">
         <div class="progress-fill" id="progress"></div>
     </div>
-    <div class="question-container">
-        <span id="question-counter" style="font-size: 0.9rem; color: #718096; margin-bottom: 10px; display: block;"></span>
+    <div class="question-container" id="q-container">
+        <span id="question-counter" style="font-size: 0.95rem; color: #A0AEC0; margin-bottom: 15px; display: block; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;"></span>
         <div class="question-text" id="question-text"></div>
         <div class="options-container" id="options"></div>
     </div>
     <div class="love-message" id="love-message"></div>
     <div class="controls hidden" id="controls">
-        <button class="btn" id="next-btn" onclick="nextQuestion()">Siguiente ✈️</button>
+        <button class="btn" id="next-btn" onclick="nextQuestion()">Siguiente ✨</button>
     </div>
 </div>
 
 <div class="container hidden" id="result-screen">
-    <h1>¡Examen Terminado!</h1>
+    <h1>¡Misión Cumplida! !Eres la mejor! 🎉</h1>
     <div class="score-circle" id="score-display">100%</div>
-    <h2 id="result-title" style="color: var(--teal-electrico);"></h2>
-    <p id="result-message" style="font-size: 1.1rem; line-height: 1.5;"></p>
-    <button class="btn" style="margin-top: 20px;" onclick="location.reload()">Volver a repasar</button>
+    <h2 id="result-title" style="color: var(--teal-electrico); margin-bottom: 10px;"></h2>
+    <p id="result-message" style="font-size: 1.1rem; line-height: 1.6; color: #4A5568;"></p>
+    <button class="btn" style="margin-top: 30px;" onclick="location.reload()">Volver a repasar ☁️</button>
 </div>
 
 <script>
     const loveMessages = [
-        "¡Qué inteligente eres Mi Amorcito!",
-        "¡Esa es mi futura TCP!",
-        "Sigue así, lo estás haciendo excelente.",
-        "Respira profundo, tú te sabes esto de memoria.",
-        "Confío en ti Mi Bebé!",
-        "Eres brillante Prometida Mía.",
-        "No hay examen que te detenga Mi Amor!",
-        "Estoy muy orgulloso de ti, enserio Mi Amor"
+        "¡Qué inteligente eres Mi Amorcito! 💕",
+        "¡Esa es mi futura TCP! ✈️",
+        "¡Sigue así, lo estás haciendo excelente! ✨",
+        "Respira profundo, tú te sabes esto de memoria ☁️",
+        "¡Confío en ti Mi Bebé! 💖",
+        "¡Eres brillante Prometida Mía! 🌟",
+        "¡No hay examen que te detenga Mi Amor! 💪",
+        "Estoy muy orgulloso de ti, enserio Mi Amor 🥰"
     ];
 
-    const questionBank = [
-        // PRIMEROS AUXILIOS 2
-        { q: "¿Cómo identifica un tripulante una herida punzante a simple vista?", options: ["Presenta bordes limpios y sangrado abundante.", "Se genera por fricción y tiene poco sangrado superficial.", "Tiene un orificio de entrada pequeño, puede ser profunda y el sangrado externo puede ser escaso.", "Presenta desgarro de tejidos y exposición de hueso."], answer: 2 },
-        { q: "Ante un pasajero con una quemadura significativa a bordo, ¿qué factores determinan principalmente su gravedad?", options: ["El color de la ropa del pasajero y la altitud de la cabina.", "La extensión, la profundidad (grado) y la zona del cuerpo afectada (ej. vías aéreas).", "Exclusivamente si hay dolor intenso o no.", "El tiempo que falta para aterrizar."], answer: 1 },
-        { q: "¿Cuál es el procedimiento inmediato frente a una obstrucción TOTAL de la vía aérea en un adulto consciente?", options: ["Ofrecer agua inmediatamente.", "Dar 5 golpes en la espalda seguidos de RCP.", "Animarlo a toser fuertemente.", "Aplicar la maniobra de Heimlich (compresiones abdominales) hasta que expulse el objeto o pierda el conocimiento."], answer: 3 },
-        { q: "¿Cuáles son las características de las compresiones torácicas efectivas en la RCP de un adulto?", options: ["Profundidad de 5 a 6 cm, permitir expansión completa del tórax y un ritmo de 100-120 por minuto.", "Profundidad de 2 cm y ritmo de 80 por minuto.", "Profundidad máxima, sin importar el ritmo, apoyando todo el peso sin soltar.", "Masaje suave para no fracturar costillas, ritmo de 60 por minuto."], answer: 0 },
-        { q: "Ante un paro cardiorrespiratorio en vuelo, ¿cuál debe ser la PRIMERA acción de la tripulación?", options: ["Buscar el botiquín de primeros auxilios.", "Evaluar la seguridad, comprobar consciencia, pedir ayuda y que traigan el DEA de inmediato.", "Avisar al capitán antes de tocar al pasajero.", "Dar 2 ventilaciones boca a boca."], answer: 1 },
-        { q: "¿Por qué un resfriado aumenta el riesgo de sufrir barosinusitis o barodontalgia durante el vuelo?", options: ["Porque el virus se expande con la baja presión.", "Porque la mucosidad bloquea los conductos (como la trompa de Eustaquio o los senos paranasales), impidiendo ecualizar los gases atrapados al cambiar la presión.", "Porque el frío de la cabina empeora la fiebre.", "Porque los oídos producen más cera en la altura."], answer: 1 },
-        { q: "¿Cuál es el manejo adecuado de una fractura cerrada a bordo por parte de la tripulación?", options: ["Intentar alinear el hueso inmediatamente para calmar el dolor.", "Aplicar calor directo y dar analgésicos.", "Inmovilizar la extremidad en la posición en la que se encontró, aplicar frío local si es posible y mantener en reposo.", "Hacer caminar al pasajero para mantener la circulación."], answer: 2 },
-        { q: "Mientras llega el DEA a la escena de un paro cardiorrespiratorio, la tripulación debe:", options: ["Esperar sin hacer nada para no alterar el ritmo cardíaco.", "Buscar a un médico a bordo y esperar sus instrucciones.", "Iniciar y mantener compresiones torácicas continuas a un ritmo de 100-120 por minuto.", "Tomar la presión arterial del pasajero."], answer: 2 },
-        { q: "El manejo correcto de una herida sangrante en vuelo incluye:", options: ["Lavar con alcohol, dejar al aire libre y aplicar torniquete.", "Aplicar presión directa con apósitos limpios, si se empapan colocar más encima (no retirar los primeros) y elevar la extremidad.", "Retirar los coágulos formados y aplicar ungüento.", "Soplar la herida para secarla rápidamente."], answer: 1 },
-        { q: "En el contexto de RCP a bordo, ¿en qué situación puede justificarse priorizar o aplicar el boca a boca (ventilaciones)?", options: ["Siempre que sea un adulto por problemas cardíacos.", "Cuando se cuenta con equipo de protección de barrera (mascarilla) y se está capacitado, o en casos de asfixia/ahogamiento y niños.", "Nunca debe hacerse bajo ninguna circunstancia.", "Solo si el pasajero es un familiar del tripulante."], answer: 1 },
-        { q: "¿Por qué los tripulantes NO deben recomendar ni administrar medicamentos de uso personal a los pasajeros?", options: ["Porque los medicamentos en vuelo pierden su efecto.", "Porque es ilegal y existe el riesgo de provocar reacciones alérgicas severas, interacciones o empeorar un cuadro clínico no diagnosticado.", "Porque se agotarían los suministros de la aerolínea.", "Solo porque lo prohíbe el manual de la aeronave, sin razón médica."], answer: 1 },
-        { q: "Ante una hemorragia abundante, ¿por qué NO se deben retirar los apósitos empapados en sangre?", options: ["Porque ensucia la cabina.", "Porque aumenta el dolor del pasajero al tirar de la piel.", "Porque destruiría el coágulo que se está formando para detener el sangrado, reactivando la hemorragia.", "Porque el material de los apósitos es tóxico si se remueve."], answer: 2 },
-        { q: "¿Cómo se diferencian las compresiones de RCP en un lactante (menor de 1 año) respecto a un adulto?", options: ["Se usa una sola mano y se comprime 5 cm.", "Se usan 2 dedos (índice y medio) en el centro del pecho, comprimiendo aproximadamente 4 cm (1/3 del tórax).", "Se comprime el abdomen en lugar del tórax.", "No se hacen compresiones, solo ventilaciones."], answer: 1 },
-        { q: "Durante una RCP a bordo, ¿cada cuánto tiempo se debe reevaluar al pasajero y/o alternar al compresor?", options: ["Cada 5 minutos.", "Cada 2 minutos (o 5 ciclos de 30:2), para evitar la fatiga del reanimador y asegurar compresiones de alta calidad.", "Cada vez que el pasajero cambie de color.", "No se debe reevaluar hasta que llegue el avión al suelo."], answer: 1 },
-        { q: "Ante una descompresión explosiva, ¿cuál es la reacción INMEDIATA y prioritaria de la tripulación?", options: ["Asegurar su propia mascarilla de oxígeno inmediatamente antes de ayudar a los pasajeros (considerando el Tiempo Útil de Conciencia - TUC).", "Correr por el pasillo entregando mascarillas a los niños.", "Avisar al capitán por el interfono.", "Sentarse en el suelo y taparse los oídos."], answer: 0 },
-        { q: "En la troposfera (donde ocurren la mayoría de los vuelos), ¿cómo se comporta la temperatura y la presión a medida que se asciende?", options: ["Ambas aumentan gradualmente.", "La temperatura se mantiene constante y la presión baja.", "Ambas disminuyen gradualmente con la altitud.", "La temperatura aumenta pero la presión disminuye."], answer: 2 },
-        { q: "¿Por qué el nitrógeno juega un rol clave en las enfermedades por descompresión?", options: ["Porque se vuelve tóxico y ataca los pulmones.", "Porque ante una caída brusca de presión, el nitrógeno disuelto en los tejidos forma burbujas que pueden bloquear vasos sanguíneos o causar dolor articular.", "Porque reemplaza al oxígeno en la sangre.", "Porque hace que el pasajero se hiperventile de inmediato."], answer: 1 },
-        { q: "Una descompresión explosiva se caracteriza por:", options: ["Durar más de 10 segundos, sin ruidos fuertes.", "Durar menos de 1 segundo, generando un ruido sordo, niebla en cabina, caída de temperatura y succión de objetos.", "Ser indetectable hasta que caen las mascarillas.", "Aumentar la temperatura de la cabina y generar olor a quemado."], answer: 1 },
-        { q: "¿Cuál es la relación fisiológica entre altura y presión atmosférica en vuelo?", options: ["A mayor altitud, menor presión atmosférica, lo que reduce la presión parcial de oxígeno y dificulta su absorción en los pulmones (causando hipoxia).", "A mayor altitud, mayor presión, lo que aplasta los pulmones.", "La altitud no afecta al cuerpo gracias a los motores del avión.", "A mayor altitud, menor gravedad, lo que afecta el corazón."], answer: 0 },
-        { q: "¿Por qué la posición de seguridad (brace position) varía en mujeres embarazadas?", options: ["Para que estén más cómodas y puedan ver las salidas de emergencia.", "Porque deben estirar las piernas para no generar coágulos.", "Para evitar la compresión directa del abdomen; se les instruye colocar el cinturón por debajo del vientre y apoyar la cabeza sobre brazos cruzados sin presionar la panza.", "No varía, es exactamente igual para todos los pasajeros."], answer: 2 },
+      const questionBank = [
+    // MODELO SHELL Y CONCEPTOS BÁSICOS
+    { q: "¿Cuál es el objetivo principal del Crew Resource Management (CRM)?", options: ["Automatizar las funciones de la aeronave.", "Optimizar las defensas del sistema aeronáutico contra el error humano mediante el uso de todos los recursos.", "Aumentar la rentabilidad de las aerolíneas.", "Sustituir el entrenamiento técnico de las tripulaciones."], answer: 1 },
+    { q: "En el modelo SHELL, ¿qué representa el componente 'Software' (S)?", options: ["Las computadoras de vuelo del avión.", "El clima y la altitud.", "Las reglas, procedimientos, manuales, normativas y listas de chequeo.", "Las relaciones interpersonales de la tripulación."], answer: 2 },
+    { q: "¿Qué elemento del modelo SHELL ocupa el centro del sistema?", options: ["El Hardware (H), porque el avión es lo más importante.", "El Liveware (L), es decir, el factor humano.", "El Environment (E), ya que el clima condiciona el vuelo.", "El Software (S), por las regulaciones internacionales."], answer: 1 },
+    { q: "La interfaz Liveware - Hardware (L-H) del modelo SHELL se refiere a:", options: ["La relación entre el tripulante y los procedimientos.", "La interacción del ser humano con el diseño de los asientos, cinturones, pantallas y controles del avión.", "El trabajo en equipo entre TCP y pilotos.", "La adaptación del cuerpo humano a los cambios de presión (Environment)."], answer: 1 },
+    { q: "¿Qué interfaz del modelo SHELL es la encargada de analizar el Trabajo en Equipo, el Liderazgo y la Comunicación?", options: ["Liveware - Environment (L-E).", "Liveware - Software (L-S).", "Liveware - Liveware (L-L).", "Liveware - Hardware (L-H)."], answer: 2 },
+    { q: "En el contexto del CRM, las 'Habilidades No Técnicas' (Non-Technical Skills) son:", options: ["Conocer la aerodinámica del avión.", "Saber operar los extintores y toboganes.", "Habilidades cognitivas e interpersonales como la toma de decisiones, la comunicación asertiva y el liderazgo.", "El conocimiento de idiomas extranjeros exclusivamente."], answer: 2 },
+    { q: "¿Qué accidente histórico es considerado el principal catalizador para la creación de los programas CRM en la aviación?", options: ["El accidente de Air Florida en 1982.", "La colisión de dos Boeing 747 en el aeropuerto de Tenerife en 1977.", "El acuatizaje en el río Hudson en 2009.", "El accidente de United Airlines en Portland en 1978."], answer: 1 },
 
-        // PRIMEROS AUXILIOS 1
-        { q: "¿Cómo se identifica a simple vista una herida abrasiva (raspadura)?", options: ["Es un corte profundo con bordes rectos.", "Hay pérdida de las capas superficiales de la piel por fricción, con sangrado en 'puntillado'.", "Es un orificio profundo causado por un clavo.", "Expone el hueso y los músculos internos."], answer: 1 },
-        { q: "¿Cuál es el manejo correcto frente a una convulsión en pleno vuelo?", options: ["Sujetar fuertemente las extremidades del pasajero para que no se golpee y meterle un lápiz en la boca.", "Dejarlo en su asiento sin tocarlo hasta que despierte.", "Despejar el área de objetos peligrosos, proteger su cabeza con almohadas/mantas, no inmovilizar a la fuerza y no introducir nada en la boca.", "Darle a beber agua con azúcar mientras convulsiona."], answer: 2 },
-        { q: "¿Qué es el shock y cuáles son sus signos característicos?", options: ["Un ataque de pánico; los signos son gritos y llanto incontrolable.", "Falta de oxigenación a los tejidos; signos incluyen piel pálida, fría y sudorosa, pulso rápido y débil, respiración superficial y alteración mental.", "Un golpe eléctrico; signos de quemaduras en las manos.", "Una reacción alérgica leve; picazón y enrojecimiento."], answer: 1 },
-        { q: "¿Cómo se debe manejar un episodio consciente de hipoglicemia (baja de azúcar) a bordo?", options: ["Administrar insulina del botiquín médico de inmediato.", "Darle bebidas con alcohol para subir la presión.", "Administrar carbohidratos de absorción rápida (jugo dulce, bebida azucarada, sobres de azúcar) y evaluar recuperación.", "Acostar al pasajero y esperar a que pase sin darle nada."], answer: 2 },
-        { q: "La hipoxia en aviación se define como:", options: ["Exceso de oxígeno en la sangre por hiperventilación.", "La deficiencia en el suministro de oxígeno a los tejidos del cuerpo, siendo crítica porque altera el juicio y lleva a la pérdida de conciencia.", "La pérdida de presión en los oídos al descender.", "El mareo causado por turbulencias severas."], answer: 1 },
-        { q: "¿Por qué un pasajero fumador tiene MAYOR riesgo de sufrir hipoxia hipémica?", options: ["Porque el humo daña sus pulmones impidiendo que se expandan.", "Porque el monóxido de carbono del tabaco se une a la hemoglobina más fuerte que el oxígeno, reduciendo la capacidad de transporte de O2 en la sangre.", "Porque fuma a escondidas en el baño.", "Porque el tabaco destruye los glóbulos rojos al instante."], answer: 1 },
-        { q: "La secuencia correcta de RCP en un adulto según normas internacionales (AHA) es:", options: ["C-A-B (Compresiones, Vía Aérea, Buena Respiración) - 30 compresiones por 2 ventilaciones.", "A-B-C (Vía Aérea, Buena Respiración, Compresiones) - 15 compresiones por 2 ventilaciones.", "B-C-A (Buena Respiración, Compresiones, Vía Aérea) - Solo ventilaciones.", "C-B-A - 5 compresiones por 1 ventilación."], answer: 0 },
-        { q: "¿Qué son las sibilancias y cómo se manejan si un pasajero las presenta?", options: ["Son manchas en la piel; se aplica crema con corticoides.", "Son sonidos agudos (silbidos) al respirar, comunes en crisis de asma; se debe calmar al pasajero, sentarlo erguido y ayudarlo a usar su inhalador si lo tiene.", "Son ronquidos profundos; se debe despertar al pasajero.", "Son latidos cardíacos irregulares; requiere DEA de inmediato."], answer: 1 },
-        { q: "El manejo correcto de un esguince de tobillo a bordo implica la nemotecnia RICE, que significa:", options: ["Reposo, Inmovilización, Compresión local y Elevación (aplicar frío para reducir la inflamación y dolor).", "Respiración, Inhalación, Calor y Elevación.", "Revisión, Inyección, Caminata y Ejercicio.", "Retirar zapatos, Intentar enderezar, Calentar y Esperar."], answer: 0 },
-        { q: "¿Quién está legalmente autorizado para certificar el fallecimiento de un pasajero a bordo?", options: ["El Capitán de la aeronave.", "El Jefe de Cabina (Sobrecargo).", "Cualquier Tripulante de Cabina tras 30 minutos de RCP.", "Únicamente un Médico (ya sea pasajero a bordo o el servicio médico en tierra a la llegada)."], answer: 3 },
-        { q: "Durante un parto a bordo, ¿qué señales indican que la pasajera se encuentra en periodo expulsivo?", options: ["Solo tiene contracciones suaves cada 20 minutos.", "Rotura de fuente (bolsa de agua) reciente sin dolor.", "Contracciones muy frecuentes y fuertes, necesidad incontrolable de pujar y abombamiento/coronación (se ve la cabeza del bebé).", "La madre se queda dormida profundamente."], answer: 2 },
-        { q: "Inmediatamente después de ocurrir una quemadura, ¿qué factor es crucial evaluar?", options: ["Si el pasajero ha comido recientemente.", "Si la quemadura involucra la cara, el cuello o las vías respiratorias (por riesgo inminente de asfixia por inflamación).", "Si la piel se puso roja o morada.", "Cuánto costaba la ropa que se arruinó."], answer: 1 },
-        { q: "Si un pasajero cae INCONSCIENTE durante la maniobra de Heimlich, la tripulación debe:", options: ["Continuar con las compresiones abdominales en el suelo.", "Dejarlo solo y buscar ayuda.", "Acomodarlo con cuidado en el suelo, activar emergencias e INICIAR RCP (comenzando por compresiones torácicas).", "Hacer respiración boca a boca inmediatamente sin compresiones."], answer: 2 },
-        { q: "Antes de administrar una descarga con el DEA, la medida de SEGURIDAD vital que debe cumplir la tripulación es:", options: ["Asegurarse de que el pasajero esté bien abrigado.", "Asegurarse de que nadie (ni la tripulación ni otros pasajeros) esté tocando al paciente, gritando '¡Todos fuera!'.", "Apagar los motores del avión.", "Sujetar fuertemente las manos del pasajero para que no salte."], answer: 1 },
-        { q: "Para reconocer un posible Accidente Cerebrovascular (ACV) a bordo, se utiliza la escala FAST. ¿Qué significa?", options: ["Face (Cara asimétrica), Arms (Brazos con debilidad), Speech (Habla arrastrada o incomprensible), Time (Tiempo de actuar rápido).", "Fiebre, Asfixia, Sudoración, Temblor.", "Frecuencia, Altitud, Sensibilidad, Temperatura.", "First Aid, Safety, Turbulence."], answer: 0 },
-        { q: "¿Qué son los disbarismos?", options: ["Miedo irracional a volar en aviones cerrados.", "Problemas gastrointestinales por comida de avión.", "Alteraciones fisiológicas producidas por los cambios de presión barométrica (ej. dolor de oídos, gases expandidos, dolores articulares).", "Pérdida de la visión temporal por la altitud."], answer: 2 },
-        { q: "¿Por qué una descompresión lenta es muy peligrosa y puede pasar desapercibida?", options: ["Porque el oxígeno no se escapa, solo cambia la temperatura.", "Porque no hay ruido fuerte, niebla ni señales visuales evidentes, y la hipoxia se instaura gradualmente, alterando el juicio del pasajero/tripulante antes de que se den cuenta.", "Porque solo afecta a los motores del avión.", "Porque el sistema de oxígeno bloquea las máscaras para que no caigan."], answer: 1 },
-        { q: "¿Por qué la Enfermedad por Descompresión Tipo II es más grave que la Tipo I?", options: ["Porque la Tipo I solo da comezón, mientras que la Tipo II genera burbujas de nitrógeno que afectan el Sistema Nervioso Central, sistema respiratorio o cardiovascular, poniendo en riesgo la vida.", "Porque la Tipo II solo afecta la piel.", "Porque la Tipo II dura más días pero duele menos.", "Porque la Tipo II es contagiosa."], answer: 0 },
-        { q: "Ante un pasajero con hiperventilación (respiración rápida y superficial por ansiedad), el tripulante debe:", options: ["Darle oxígeno de flujo alto inmediatamente.", "Gritarle para que reaccione y se asuste.", "Transmitirle calma, hablarle con voz pausada, guiar su respiración pidiéndole que imite su ritmo respiratorio (ej. inspirar en 3, espirar en 3).", "Administrarle RCP de inmediato."], answer: 2 },
-        { q: "¿Por qué un pasajero que ha buceado con tanque (scuba diving) debe esperar (generalmente 24h) antes de volar?", options: ["Porque sus oídos quedan con mucha agua y la presión los puede reventar.", "Porque sus tejidos están saturados de nitrógeno bajo presión; al volar (menor presión), el nitrógeno formaría burbujas rápidamente causando una grave enfermedad por descompresión.", "Porque el equipo de buceo es pesado y afecta el balance del avión.", "Porque el cansancio del buceo causa hipoglicemia en la altura."], answer: 1 },
-                // FISIOLOGÍA DEL VUELO
-        { q: "¿En qué capa de la atmósfera se desarrollan casi todos los fenómenos meteorológicos y ocurre la mayor parte de los vuelos comerciales?", options: ["Estratosfera.", "Troposfera.", "Mesosfera.", "Termosfera."], answer: 1 },
-        { q: "¿Cuál es la composición aproximada del aire en la atmósfera terrestre?", options: ["50% Oxígeno, 50% Nitrógeno.", "78% Oxígeno, 21% Nitrógeno, 1% Otros gases.", "78% Nitrógeno, 21% Oxígeno, 1% Otros gases.", "90% Nitrógeno, 10% Oxígeno."], answer: 2 },
-        { q: "La Ley de Boyle establece que, a temperatura constante, el volumen de un gas es inversamente proporcional a la presión. En vuelo, esto explica por qué:", options: ["Los gases atrapados en el cuerpo se expanden al ascender (menor presión).", "El oxígeno se disuelve mejor en la sangre a mayor altura.", "El nitrógeno forma burbujas al descender.", "El frío extremo de la altitud contrae los pulmones."], answer: 0 },
-        { q: "¿Qué es el Tiempo Útil de Conciencia (TUC)?", options: ["El tiempo máximo que puede volar un TCP sin descansar.", "El tiempo disponible desde que se interrumpe el suministro de oxígeno hasta que la persona pierde la capacidad de tomar decisiones lógicas o actuar.", "El tiempo que tarda el avión en descender tras una emergencia.", "El tiempo que dura una botella de oxígeno médico a bordo."], answer: 1 },
-        { q: "Si un avión sufre una descompresión a 35.000 pies de altitud, el Tiempo Útil de Conciencia (TUC) de la tripulación sin oxígeno sería aproximadamente de:", options: ["10 a 15 minutos.", "3 a 5 minutos.", "30 a 60 segundos.", "Más de 1 hora."], answer: 2 },
-        { q: "¿Qué síntoma es característico de una Barotitis Media durante el descenso del avión?", options: ["Dolor intenso en los senos paranasales.", "Dolor punzante en el oído debido a la contracción de gases, pudiendo llegar a la rotura del tímpano si no se ecualiza.", "Sangrado nasal abundante e incontrolable.", "Dolor agudo en piezas dentales con caries crónicas."], answer: 1 },
-        { q: "¿Por qué se prohíbe volar inmediatamente después de realizar buceo autónomo (Scuba Diving)?", options: ["Para evitar una severa Enfermedad por Descompresión, ya que los tejidos están saturados de nitrógeno a alta presión.", "Porque el agua salada daña el sistema de presurización.", "Porque los oídos quedan con mucha cera temporalmente.", "Para evitar la fatiga extrema por el peso del equipo."], answer: 0 },
+    // TEORÍA DEL ERROR Y JAMES REASON (QUESO SUIZO)
+    { q: "Según la teoría de James Reason, ¿qué son los 'Fallos Activos'?", options: ["Errores de diseño de las aeronaves.", "Decisiones gerenciales de la aerolínea que afectan a largo plazo.", "Errores o infracciones cometidos por el personal de primera línea (pilotos, TCP, mecánicos) que tienen un impacto inmediato.", "Las fallas en los motores del avión."], answer: 2 },
+    { q: "¿Cuál de las siguientes opciones describe una 'Condición Latente' según el modelo del Queso Suizo?", options: ["Un piloto ignorando una alarma.", "Un TCP que olvida armar un tobogán.", "Deficiencias en la cultura organizacional, falta de entrenamiento adecuado o procedimientos confusos que permanecen ocultos.", "Una turbulencia severa inesperada."], answer: 2 },
+    { q: "La diferencia fundamental entre un 'Error' y una 'Infracción' es que:", options: ["El error siempre causa accidentes, la infracción no.", "El error es un fallo cognitivo no intencional, mientras que la infracción es un desvío consciente y deliberado de las reglas.", "Las infracciones solo son cometidas por los pasajeros.", "No hay diferencia, ambos términos son sinónimos en aviación."], answer: 1 },
+    { q: "Según el estudio de Factores Humanos, el error humano es:", options: ["Totalmente evitable si la persona presta 100% de atención.", "Una señal de incompetencia profesional.", "Inevitable y omnipresente; todas las personas, independientemente de su experiencia, cometen errores.", "Un acto intencional de sabotaje."], answer: 2 },
+    { q: "El modelo del Queso Suizo de James Reason ilustra que los accidentes ocurren cuando:", options: ["El clima es excepcionalmente malo.", "Un solo tripulante comete un error fatal.", "Las 'rebanadas' (defensas del sistema) tienen fallos (agujeros) y estos se alinean en un momento específico, permitiendo que la trayectoria del accidente se complete.", "Los sistemas informáticos del avión se reinician solos."], answer: 2 },
+    
+    // CONCIENCIA SITUACIONAL Y TOMA DE DECISIONES
+    { q: "¿Cómo se define la Conciencia Situacional en el entorno aeronáutico?", options: ["Conocer los nombres de toda la tripulación.", "La capacidad de percibir el entorno, comprender su significado y proyectar su estado futuro a corto plazo.", "Saber exactamente la ruta de vuelo en el mapa.", "La habilidad de leer los manuales sin cometer errores ortográficos."], answer: 1 },
+    { q: "¿Cuál es el Nivel 1 de la Conciencia Situacional?", options: ["Percepción de los elementos en el entorno (ver, oír, notar datos relevantes).", "Comprensión del significado de la información.", "Proyección del estado futuro.", "Toma de decisiones final."], answer: 0 },
+    { q: "Un TCP huele humo en la cabina pero asume que es la comida del horno sin investigar. ¿En qué nivel de la conciencia situacional falló?", options: ["Nivel 1 (Percepción).", "Nivel 2 (Comprensión), porque percibió el estímulo pero interpretó incorrectamente su gravedad o significado.", "Nivel 3 (Proyección).", "No hubo pérdida de conciencia situacional."], answer: 1 },
+    { q: "¿Qué efecto tienen las distracciones continuas o la carga de trabajo excesiva sobre la Conciencia Situacional?", options: ["Ayudan a mantener la mente activa y alerta.", "Reducen la atención disponible, provocando 'visión de túnel' y la pérdida del panorama general (pérdida de la conciencia situacional).", "Mejoran el trabajo en equipo.", "No tienen ningún efecto si el TCP tiene mucha experiencia."], answer: 1 },
+    { q: "En el proceso analítico de la Toma de Decisiones a bordo, ¿cuál es SIEMPRE el criterio de mayor prioridad?", options: ["La comodidad de los pasajeros VIP.", "La puntualidad del itinerario del vuelo.", "La seguridad operacional (Safety) de la aeronave, los pasajeros y la tripulación.", "El ahorro de combustible y costos operativos."], answer: 2 },
+    { q: "¿Qué es el sesgo de confirmación (confirmation bias) durante la toma de decisiones?", options: ["Confirmar siempre las instrucciones con el Capitán.", "La tendencia a buscar, interpretar o recordar información de una manera que confirme nuestras propias creencias o hipótesis preexistentes, ignorando datos que las contradigan.", "Hacer un briefing antes del vuelo.", "La revisión cruzada de puertas (cross-check)."], answer: 1 },
+
+    // COMUNICACIÓN ASERTIVA Y EFECTIVA
+    { q: "¿Cuándo se considera que un proceso de comunicación ha sido verdaderamente 'efectivo'?", options: ["Cuando el emisor habla en un tono de voz fuerte.", "Cuando se utiliza lenguaje técnico aeronáutico complejo.", "Cuando el mensaje es recibido, comprendido e interpretado por el receptor con el mismo significado que el emisor pretendía darle.", "Cuando el mensaje se entrega por escrito y firmado."], answer: 2 },
+    { q: "En el trabajo de tripulación de cabina, ¿qué significa actuar con 'Asertividad'?", options: ["Imponer siempre la propia opinión y órdenes sobre los demás compañeros.", "Guardar silencio ante una duda de seguridad para no causar conflictos con el Capitán.", "Expresar preocupaciones, dudas u opiniones de manera clara, directa y respetuosa, buscando la seguridad sin ser pasivo ni agresivo.", "Aceptar todas las sugerencias de los pasajeros sin cuestionar."], answer: 2 },
+    { q: "El tono de voz, el volumen, el contacto visual y la postura corporal forman parte de la:", options: ["Comunicación verbal.", "Comunicación escrita.", "Comunicación no verbal (o paraverbal), que puede transmitir más información que las propias palabras.", "Comunicación asíncrona."], answer: 2 },
+    { q: "¿Cuál de las siguientes es una barrera común para la comunicación efectiva en el avión?", options: ["Realizar un briefing pre-vuelo.", "El ruido ambiental excesivo (barrera física) y las diferencias culturales/jerárquicas (barreras psicosociales).", "Usar el sistema de PA (Public Address).", "El contacto visual directo."], answer: 1 },
+    { q: "¿Qué técnica de comunicación se utiliza para confirmar que un mensaje vital (como armar toboganes o una instrucción de emergencia) fue entendido correctamente?", options: ["Ignorar al emisor.", "Feedback o Retroalimentación (ej. readback o repetir la orden recibida).", "Gritar la orden varias veces.", "Mandar un correo electrónico al finalizar el vuelo."], answer: 1 },
+    { q: "Si un TCP observa que el avión está acelerando en la pista para el despegue pero hay un compartimento superior abierto, su comunicación debe ser:", options: ["Pasiva: Esperar a que otro TCP se dé cuenta.", "Agresiva: Gritarle al pasajero por abrir el compartimento.", "Asertiva y urgente: Notificar inmediatamente por el interphone a la cabina de mando (Cockpit) utilizando lenguaje claro y directo ('Stop, bin abierto').", "Silenciosa: Correr a cerrarlo en pleno despegue sin avisar."], answer: 2 },
+
+    // LIDERAZGO, SINERGIA Y TRABAJO EN EQUIPO
+    { q: "¿Qué es la 'Sinergia' en el contexto del Trabajo en Equipo (CRM)?", options: ["Cuando un solo tripulante hace el trabajo de tres.", "Un fenómeno donde el resultado conjunto del equipo es superior a la suma de los aportes individuales (1+1=3).", "El conflicto inevitable entre pilotos y TCPs.", "El agotamiento físico por exceso de vuelos."], answer: 1 },
+    { q: "¿Qué estilo de liderazgo situacional es el más adecuado durante una emergencia de tiempo crítico (ej. evacuación inminente)?", options: ["Liderazgo Participativo: Hacer una reunión para votar qué puerta abrir.", "Liderazgo Delegativo: Dejar que cada TCP decida qué hacer.", "Liderazgo Directivo (Autoritario): Dar órdenes claras, precisas y sin lugar a debate para asegurar una acción rápida.", "Liderazgo Pasivo: Esperar a que los bomberos den la orden."], answer: 2 },
+    { q: "El 'Liderazgo Situacional' sugiere que:", options: ["El líder debe usar el mismo estilo rudo con todos los tripulantes.", "No existe un único estilo de liderazgo óptimo; el líder debe adaptar su comportamiento según la situación y el nivel de madurez/competencia de su equipo.", "Solo los pilotos pueden ser líderes.", "El líder no debe intervenir nunca en los problemas de cabina."], answer: 1 },
+    { q: "Un equipo de trabajo a bordo fracasa (pierde su sinergia) comúnmente cuando:", options: ["Tienen objetivos claros y roles definidos.", "Existe una comunicación fluida y retroalimentación.", "Hay metas confusas, falta de confianza, fallos en la comunicación y un alto nivel de individualismo.", "Todos los miembros tienen diferentes niveles de experiencia."], answer: 2 },
+    { q: "¿Cuál es una característica fundamental de un buen líder dentro del avión (ej. Jefe de Cabina)?", options: ["No aceptar sugerencias de tripulantes más jóvenes.", "Micro-gestionar cada movimiento de los TCPs en la cabina.", "Fomentar un clima de confianza que permita a cualquier miembro del equipo levantar la voz si observa un problema de seguridad.", "Evitar tomar decisiones para no equivocarse."], answer: 2 },
+    
+    // PROCESOS COGNITIVOS, FATIGA Y ESTRÉS
+    { q: "Dentro de los procesos cognitivos, la 'Atención Selectiva' permite a un Tripulante:", options: ["Recordar eventos de su infancia durante el vuelo.", "Enfocarse en un estímulo o tarea crítica (ej. escuchar una instrucción del Capitán) ignorando el ruido de fondo o las distracciones de los pasajeros.", "Realizar múltiples tareas manuales sin mirar.", "Proyectar el nivel de combustible del avión."], answer: 1 },
+    { q: "La fatiga operacional afecta gravemente la seguridad porque:", options: ["Hace que el tripulante coma más durante el vuelo.", "Mejora la velocidad de reacción pero disminuye la memoria.", "Degrada casi todas las funciones cognitivas: ralentiza los tiempos de reacción, empeora la toma de decisiones, reduce la vigilancia y disminuye la asertividad.", "Solo afecta el estado de ánimo, sin alterar el rendimiento físico."], answer: 2 },
+    { q: "¿Qué es el 'Estrés Positivo' (Eustrés)?", options: ["El estrés crónico que causa enfermedades cardíacas.", "Un nivel óptimo de tensión que motiva, aumenta el rendimiento y ayuda a mantener el estado de alerta ante un desafío (ej. estar atento durante el despegue).", "La sensación de pánico incontrolable.", "La falta total de estímulos o aburrimiento crónico."], answer: 1 },
+    { q: "Si la carga de trabajo (Workload) de un tripulante supera su capacidad de procesamiento debido a una suma de problemas a bordo, el resultado más directo es:", options: ["Una mejora espontánea de la sinergia.", "La pérdida de Conciencia Situacional y el aumento drástico en la probabilidad de cometer errores activos.", "La automatización biológica perfecta de las tareas.", "Un aumento en el Nivel 3 de proyección."], answer: 1 },
+
+    // PREGUNTAS MIXTAS - CONSOLIDACIÓN DE CONCEPTOS
+    { q: "¿Cuál de los siguientes NO es un componente del acrónimo SHELL?", options: ["Software.", "Hardware.", "Environment.", "Logistics."], answer: 3 },
+    { q: "En la resolución de conflictos a bordo, la estrategia más efectiva desde la perspectiva del CRM es:", options: ["Evitar el problema y no hablarle más al compañero.", "Confrontación agresiva frente a los pasajeros.", "Abordar el problema directamente en privado, atacando el problema y no a la persona, buscando un consenso seguro (ganar-ganar).", "Quejarse inmediatamente con gerencia sin hablar con el involucrado."], answer: 2 },
+    { q: "El 'Briefing' previo al vuelo es una herramienta fundamental de CRM porque:", options: ["Permite que la tripulación duerma unos minutos más.", "Establece el tono de liderazgo, clarifica expectativas, define roles ante emergencias y crea un ambiente abierto para la comunicación.", "Es un requisito puramente administrativo para cobrar el sueldo.", "Se utiliza exclusivamente para revisar los uniformes."], answer: 1 },
+    { q: "Un pasajero comienza a mostrarse agresivo durante el servicio (interfaz L-L). Aplicando asertividad, el TCP debe:", options: ["Gritarle de vuelta para establecer autoridad.", "Ignorarlo completamente y saltarse su fila.", "Mantener la calma, establecer límites claros con firmeza pero con respeto, y buscar apoyo de otro tripulante si la situación escala.", "Lanzarle la comida y huir al galley."], answer: 2 },
+    { q: "¿Qué significa 'Complacencia' (Complacency) en el contexto de Factores Humanos?", options: ["Ser muy amable con los pasajeros de clase ejecutiva.", "Un estado de falsa seguridad y pérdida de vigilancia, generalmente asociado a realizar tareas rutinarias o volar con equipos altamente automatizados, lo que degrada la Conciencia Situacional.", "La satisfacción de terminar un vuelo sin demoras.", "La capacidad de complacer las demandas gerenciales."], answer: 1 },
+    { q: "El uso estricto de la 'Lista de Chequeo' (Checklist) es una defensa del sistema (Queso Suizo) que interactúa principalmente en la interfaz:", options: ["Liveware - Liveware.", "Liveware - Software (El tripulante siguiendo un procedimiento/manual).", "Hardware - Environment.", "Environment - Software."], answer: 1 },
+    { q: "Durante un descenso rápido de emergencia, un TCP nota que su compañero se queda congelado por el pánico. El liderazgo adecuado dictaría:", options: ["Ignorarlo y hacer el trabajo de ambos.", "Gritarle que es un inútil frente a los pasajeros.", "Tomar el control directivo, asignarle una tarea muy específica y simple (ej. '¡Siéntate y abróchate!') para sacarlo del bloqueo.", "Ponerse a llorar con él."], answer: 2 },
+    { q: "La 'Cultura Justa' (Just Culture) promovida por el CRM significa que:", options: ["A los tripulantes jamás se les despide, hagan lo que hagan.", "Se castiga severamente cualquier error, sin importar si fue intencional o no.", "Se fomenta el reporte de errores genuinos sin miedo a castigos, pero NO se toleran las infracciones intencionales, negligencias graves o actos de sabotaje.", "Solo se castiga a los mecánicos y no a los TCP."], answer: 2 },
+    { q: "¿Qué es el 'Efecto Halo' en la evaluación o interacción entre Liveware-Liveware?", options: ["Ver aros de luz alrededor de las luces de pista.", "Un sesgo cognitivo donde la impresión general positiva de una persona (ej. 'es muy simpático') hace que se ignoren sus errores o deficiencias profesionales.", "La comunicación perfecta sin necesidad de hablar.", "El reflejo del sol en las ventanas de la cabina."], answer: 1 },
+    { q: "La 'Sobrecarga de Información' (Information Overload) puede llevar a:", options: ["Una mejora en la retención de la memoria a largo plazo.", "Que el cerebro deseche información crítica, estrechando la atención y resultando en una toma de decisiones deficiente.", "Mayor capacidad de escuchar comunicaciones del ATC.", "Un aumento de la presión sanguínea sin efectos cognitivos."], answer: 1 },
+    { q: "En la estructura de un equipo de alto rendimiento a bordo, los roles son:", options: ["Estáticos, el Jefe de Cabina hace todo.", "Dinámicos e interdependientes; todos tienen un rol vital que cumplir para que el resultado final sea seguro y exitoso.", "Competitivos, cada TCP debe demostrar ser mejor que el otro.", "Innecesarios si el avión es moderno."], answer: 1 },
+    { q: "¿Cuál es el propósito del 'Debriefing' al finalizar un vuelo?", options: ["Anotar las horas de vuelo.", "Analizar qué salió bien, qué errores se cometieron y qué se puede mejorar para el próximo vuelo, cerrando el ciclo de aprendizaje.", "Despedirse de los pasajeros en la puerta.", "Limpiar la cabina de mando."], answer: 1 },
+    { q: "La interfaz Liveware - Liveware (L-L) se ve fuertemente afectada negativamente por:", options: ["Un exceso de manuales (Software).", "Una temperatura de cabina ideal.", "Barreras de idioma, prejuicios personales, diferencias culturales y conflictos de personalidad no resueltos.", "El diseño ergonómico de los carros de servicio (Trolleys)."], answer: 2 },
+    { q: "Si las defensas organizacionales, técnicas e individuales fallan simultáneamente, según James Reason, ocurre:", options: ["Un aumento de sueldo.", "Una auditoría de la DGAC.", "La trayectoria del accidente se completa, resultando en un incidente grave o catástrofe.", "Solo una advertencia verbal del supervisor."], answer: 2 },
+    { q: "Una excelente técnica de asertividad estructurada frente a un desvío de seguridad es la regla de los 'Dos Desafíos' (Two-Challenge Rule), que implica:", options: ["Retar al Capitán a una pelea.", "Expresar la preocupación de seguridad dos veces de forma clara; si no hay respuesta o corrección, asumir que la persona está incapacitada (física o cognitivamente) y tomar el control de la situación.", "Preguntar a dos pasajeros qué opinan.", "Avisar a la torre de control en el segundo intento."], answer: 1 },
+    { q: "El 'Síndrome del Co-Piloto' (o subordinado) es una falla del CRM donde:", options: ["El tripulante asume el mando total.", "El tripulante subalterno nota un error del superior, pero no dice nada por miedo a la jerarquía, exceso de respeto o falta de asertividad.", "El copiloto se enferma de la comida del avión.", "Todos hablan al mismo tiempo y nadie lidera."], answer: 1 },
+    // ---------------------------------------------------------
+        // BLOQUE 2: PREGUNTAS AVANZADAS - CRM Y FACTORES HUMANOS
+        // ---------------------------------------------------------
+
+        // PROCESOS COGNITIVOS Y APRENDIZAJE
+        { q: "Un TCP nota un sonido inusual en el galley, pero al estar concentrado atendiendo a un pasajero molesto, no lo registra conscientemente. ¿Qué limitación cognitiva explica esto?", options: ["Pérdida de memoria a corto plazo.", "Atención selectiva canalizada (visión/audición de túnel) por alta carga de trabajo.", "Falta de motivación personal.", "Estilo de aprendizaje kinestésico predominante."], answer: 1 },
+        { q: "La 'Memoria a Corto Plazo' o Memoria de Trabajo en un ser humano tiene una limitación natural. En promedio, ¿cuántos 'ítems' o bloques de información puede retener simultáneamente?", options: ["Entre 1 y 2 ítems.", "Alrededor de 7 (± 2) ítems.", "Un máximo de 20 ítems.", "Capacidad ilimitada si hay concentración."], answer: 1 },
+        { q: "¿Qué proceso cognitivo es fundamental para pasar información crítica de la Memoria a Corto Plazo a la Memoria a Largo Plazo?", options: ["La repetición oral (Rehearsal) y la asociación de significados.", "La hiperventilación.", "Ignorar los estímulos externos.", "El estrés físico excesivo."], answer: 0 },
+        { q: "Según los estilos de percepción, un tripulante que aprende mejor operando los equipos de emergencia directamente con sus manos (en lugar de leer el manual) tiene una predominancia de aprendizaje:", options: ["Auditiva.", "Visual.", "Kinestésica (o Corporal).", "Lecto-escritora."], answer: 2 },
         
-        // EQUIPOS MÉDICOS Y OXÍGENO
-        { q: "¿Para qué está diseñado el botiquín de primeros auxilios o FAK (First Aid Kit)?", options: ["Para realizar cirugías menores.", "Para uso exclusivo de médicos.", "Para el manejo de emergencias médicas rutinarias y primeros auxilios, pudiendo ser utilizado por la Tripulación de Cabina.", "Para almacenar los medicamentos personales de los pasajeros."], answer: 2 },
-        { q: "¿Quién está autorizado para abrir y utilizar los medicamentos e instrumental del Botiquín Médico (MK o EMK)?", options: ["Cualquier pasajero voluntario.", "Únicamente un profesional de la salud calificado (Médico).", "El Jefe de Cabina en cualquier circunstancia.", "Cualquier TCP que haya tomado el curso básico."], answer: 1 },
-        { q: "El UPK (Universal Precaution Kit) o Kit de Precaución Universal se utiliza principalmente para:", options: ["Manejo de pasajeros con sospecha de enfermedades infectocontagiosas y limpieza segura de fluidos corporales.", "Tratar paros cardíacos.", "Reparar daños menores en la estructura de la cabina.", "Inmovilizar fracturas múltiples."], answer: 0 },
-        { q: "Al preparar una botella de oxígeno médico a bordo, ¿cuál es el remanente (presión mínima) que NUNCA se debe sobrepasar para asegurar que la botella no se vacíe completamente?", options: ["1000 PSI.", "50 PSI.", "500 PSI.", "0 PSI, se debe vaciar toda."], answer: 2 },
-        { q: "Si se selecciona la válvula en posición 'HI' (Flujo Alto) en una botella de oxígeno portátil a bordo, entregará aproximadamente:", options: ["2 litros por minuto.", "4 litros por minuto.", "10 litros por minuto.", "15 litros por minuto."], answer: 1 },
-        { q: "¿Cuál es la regla de oro respecto a los extintores médicos/botiquines y los UM (Menores No Acompañados)?", options: ["Solo se les puede dar paracetamol.", "Nunca se les debe administrar ningún tipo de medicamento.", "Pueden recibir medicación si lo aprueba otro pasajero.", "Solo se les administra si lloran mucho."], answer: 1 },
+        // ANÁLISIS PROFUNDO DEL ERROR (REASON)
+        { q: "En la taxonomía del error, un 'Lapsus' (Lapse) se diferencia de un 'Desliz' (Slip) en que:", options: ["El lapsus es intencional y el desliz no.", "El lapsus es una falla de memoria (olvidar un paso), mientras que el desliz es una falla de atención en la ejecución (hacer algo distinto a lo planeado).", "El lapsus solo ocurre en tierra y el desliz en vuelo.", "No hay diferencia, son el mismo concepto."], answer: 1 },
+        { q: "Una tripulación decide omitir conscientemente la lectura cruzada del 'Cross-Check' de puertas para ahorrar tiempo en una escala corta. Esto se clasifica como:", options: ["Un error latente del fabricante.", "Un desliz (Slip) por fatiga.", "Una infracción (Violación) rutinaria o de optimización.", "Un fallo de diseño del sistema."], answer: 2 },
+        { q: "El concepto de 'Cultura Justa' (Just Culture) en aviación fomenta un entorno donde:", options: ["Se ocultan los errores para proteger a la aerolínea.", "No hay consecuencias sin importar la gravedad del acto.", "Se promueve el reporte transparente de errores (fallos honestos) sin temor a castigo, pero se traza una línea estricta frente a negligencias inaceptables o sabotaje.", "Se despide inmediatamente a quien cometa un error documentado."], answer: 2 },
+        { q: "Dentro del modelo del Queso Suizo, si una aerolínea implementa un manual con procedimientos confusos y contradictorios, estamos ante:", options: ["Un fallo activo.", "Una barrera física infranqueable.", "Una condición latente generada a nivel organizacional.", "Una infracción directa."], answer: 2 },
 
-        // FATIGA Y ESTRÉS
-        { q: "Desde el punto de vista aeromédico, la fatiga afecta principalmente:", options: ["El crecimiento muscular.", "La agudeza visual diurna.", "Todas las etapas de procesamiento de la información, generando respuestas lentas y mala toma de decisiones.", "Exclusivamente el estado de ánimo, sin afectar la operación."], answer: 2 },
-        { q: "¿Cuál es la principal medida de prevención contra la fatiga en las tripulaciones de vuelo?", options: ["Tomar bebidas energéticas antes de cada vuelo.", "Correcta disciplina en el régimen de vida: alimentación balanceada, actividad física y respetar las horas de sueño.", "Aumentar el consumo de café en los vuelos nocturnos.", "Escuchar música a alto volumen durante los descansos."], answer: 1 },
-        { q: "El alcohol es considerado una droga:", options: ["Estimulante.", "Alucinógena.", "Depresora del Sistema Nervioso Central, ya que disminuye la alerta y el juicio.", "Sintética."], answer: 2 },
-        { q: "Las drogas estimulantes (como la cocaína o anfetaminas) son peligrosas en aviación porque:", options: ["Inducen sueño profundo inmediato.", "Generan una falsa seguridad, sobre-reacción, hiperalerta y agotamiento severo posterior.", "Mejoran demasiado los reflejos.", "Reducen el ritmo cardíaco a niveles críticos."], answer: 1 },
+        // ESTRÉS, FATIGA Y LÍMITES HUMANOS
+        { q: "¿Cuál es la diferencia fisiológica clave entre la Fatiga Aguda y la Fatiga Crónica?", options: ["La aguda dura meses, la crónica solo unas horas.", "La aguda se alivia con un período de sueño normal e ininterrumpido; la crónica persiste a pesar del descanso y requiere intervención a largo plazo.", "La aguda solo afecta la fuerza física, la crónica solo la vista.", "Ninguna, ambas se curan bebiendo café."], answer: 1 },
+        { q: "El Síndrome de Adaptación General (respuesta al estrés) consta de tres fases. Si el estrés se prolonga demasiado en el tiempo, el cuerpo entra en la fase de:", options: ["Alarma (producción de adrenalina).", "Resistencia.", "Agotamiento (donde aparecen enfermedades psicosomáticas y colapso).", "Relajación muscular."], answer: 2 },
+        { q: "El ritmo circadiano humano tiene sus puntos más bajos (mayor somnolencia y menor rendimiento cognitivo) generalmente entre:", options: ["Las 09:00 y las 11:00 horas.", "Las 16:00 y las 18:00 horas.", "Las 03:00 y las 05:00 horas (y un valle secundario a primera hora de la tarde).", "Las 20:00 y las 22:00 horas."], answer: 2 },
+        { q: "¿Qué es el 'Distrés' en la operación de un vuelo?", options: ["El estrés positivo que mantiene alerta al TCP durante el despegue.", "La distancia entre dos puntos de emergencia.", "El estrés negativo que supera la capacidad de manejo del tripulante, provocando desequilibrio, ansiedad y degradación del desempeño.", "El proceso de relajación tras aterrizar."], answer: 2 },
 
-        // RCP, OVACE Y EMERGENCIAS (AMPLIACIÓN)
-        { q: "En la evaluación primaria de un pasajero inconsciente, la secuencia C-A-B corresponde a:", options: ["Cabeza, Abdomen, Brazos.", "Compresiones, Apertura de la vía aérea, Buena ventilación.", "Control, Ayuda, Búsqueda.", "Circulación, Accidente, Botiquín."], answer: 1 },
-        { q: "¿Cómo se define el Paro Cardiorrespiratorio (PCR)?", options: ["Desmayo repentino por baja presión.", "Cese de la actividad cardíaca mecánica: la víctima no responde, no respira normalmente (o jadea) y no tiene pulso.", "Dificultad severa para respirar pero con pulso fuerte.", "Sensación de dolor opresivo en el pecho sin pérdida de conciencia."], answer: 1 },
-        { q: "En caso de encontrar a un pasajero adulto que no responde y no respira, el ritmo adecuado de las compresiones torácicas es:", options: ["60 a 80 por minuto.", "100 a 120 por minuto.", "150 por minuto.", "30 por minuto."], answer: 1 },
-        { q: "¿Cuál es la técnica recomendada para abrir la vía aérea en un pasajero inconsciente que NO tiene sospecha de lesión cervical?", options: ["Maniobra de tracción mandibular.", "Maniobra frente-mentón.", "Levantar la cabeza del pasajero apoyándola en una almohada.", "Girar el cuello bruscamente hacia un lado."], answer: 1 },
-        { q: "Al utilizar un DEA (Desfibrilador Externo Automático), ¿cuál es el PRIMER paso universal a seguir?", options: ["Pegar los parches en el pecho desnudo.", "Encender el equipo y escuchar las instrucciones por voz.", "Pulsar el botón de descarga.", "Dar respiración boca a boca."], answer: 1 },
-        { q: "Para desobstruir la vía aérea (OVACE) en una mujer con embarazo evidente, ¿qué maniobra se utiliza?", options: ["Compresiones abdominales altas (Heimlich normal).", "Solo golpes en la espalda.", "Compresiones torácicas (sobre el esternón, no en el abdomen) combinadas con golpes en la espalda.", "No se hace nada para proteger al feto."], answer: 2 },
-        { q: "¿Qué debe hacer un TCP si durante la maniobra de Heimlich el pasajero pierde el conocimiento?", options: ["Dejarlo sentado y esperar a que reaccione.", "Acomodarlo en el suelo, activar emergencia médica e iniciar inmediatamente RCP (empezando por las compresiones).", "Seguir haciendo Heimlich en el piso.", "Darle 5 ventilaciones de rescate de inmediato."], answer: 1 },
-        { q: "¿A qué distancia se deben hacer las ligaduras del cordón umbilical en un parto a bordo antes de cortarlo?", options: ["A 1 dedo del abdomen del bebé y la segunda pegada a la placenta.", "Ambas ligaduras juntas a 10 dedos de distancia.", "A 4 dedos desde el abdomen del recién nacido la primera, y a 4 dedos de esta la segunda.", "No se debe ligar, solo cortar de un tirón."], answer: 2 },
-        { q: "Luego de la expulsión del bebé, ¿qué proceso fisiológico sigue en un parto (Alumbramiento)?", options: ["La primera vez que el bebé abre los ojos.", "La expulsión de la placenta, que puede tardar de 5 a 30 minutos.", "El primer llanto del recién nacido.", "La caída del cordón umbilical."], answer: 1 },
-        { q: "Si la placenta es expulsada durante el vuelo, ¿qué debe hacer la tripulación con ella?", options: ["Desecharla en el inodoro del avión.", "Guardarla en la bolsa de riesgo biológico (mercancías peligrosas).", "Dejarla expuesta en un asiento vacío.", "Entregársela inmediatamente a la madre para que la sostenga."], answer: 1 },
-        { q: "En caso de un sangrado nasal (epistaxis) en vuelo, la acción correcta es:", options: ["Inclinar la cabeza del pasajero completamente hacia atrás.", "Acostar al pasajero boca arriba.", "Que el pasajero se siente, incline levemente la cabeza hacia adelante y presione la parte blanda de su nariz por 10 minutos.", "Introducir gasas profundas hasta el fondo de las fosas nasales."], answer: 2 },
-        { q: "¿Qué es la Posición Lateral de Seguridad (PLS) o posición de recuperación?", options: ["Acostar al paciente boca abajo con los brazos estirados.", "Sentar al paciente con la cabeza entre las piernas.", "Acostar al paciente inconsciente pero que respira de lado (decúbito lateral), para evitar la aspiración de vómito o que la lengua obstruya la vía aérea.", "Mantener al paciente de pie apoyado contra el bulkhead."], answer: 2 },
-        { q: "¿Qué característica distingue a una hemorragia arterial de una venosa?", options: ["La arterial es roja oscura y sale de forma continua.", "La arterial es roja brillante y sale a chorros (pulsátil) al ritmo de los latidos del corazón.", "La arterial casi no duele y coagula en segundos.", "No hay forma de distinguirlas a simple vista."], answer: 1 },
-        { q: "En caso de que un TCP sufra salpicadura de fluidos biológicos (sangre) en sus ojos durante la atención de un paciente, debe:", options: ["Limpiarse rápidamente con alcohol gel.", "Lavar con abundante agua limpia o suero fisiológico durante varios minutos y reportarlo de inmediato.", "Aplicar colirio antibiótico del FAK.", "Cerrar los ojos fuertemente y terminar el vuelo."], answer: 1 },
-        { q: "¿Qué indica la presencia de cianosis en un pasajero?", options: ["Que tiene la presión arterial demasiado alta.", "Oxigenación deficiente en la sangre, observable como coloración azulada en labios y lechos ungueales (uñas).", "Que el pasajero está sufriendo un ataque de pánico sin gravedad.", "Es una reacción normal al frío de la cabina."], answer: 1 },
-        { q: "¿Cuál es el tratamiento de primera línea ante una sospecha de shock anafiláctico (alergia severa) a bordo?", options: ["Administrar analgésicos fuertes.", "Solicitar asistencia médica para administrar Epinefrina/Adrenalina mediante autoinyector si está disponible en el MK.", "Dar agua con azúcar al paciente.", "Esperar a ver si los síntomas desaparecen solos tras el descenso."], answer: 1 },
-        { q: "Un pasajero diabético se muestra confuso, sudoroso, pálido y agresivo. ¿Cuál es el problema más probable y su solución inicial si está consciente?", options: ["Hiperglicemia; no hacer nada.", "Hipoglicemia; darle hidratos de carbono de absorción rápida (jugos azucarados, azúcar).", "Derrame cerebral; iniciar RCP.", "Intoxicación; inducir el vómito."], answer: 1 },
-        { q: "¿En qué situación de quemadura NUNCA debe aplicarse agua fría directa?", options: ["En quemaduras de 1° grado tipo solar.", "En quemaduras eléctricas severas o cuando hay exposición extensa de tejidos profundos, por riesgo de hipotermia y shock.", "En quemaduras químicas.", "En quemaduras pequeñas por café caliente."], answer: 1 },
-        { q: "¿Cómo se reconoce una quemadura de Segundo Grado (Espesor Parcial)?", options: ["La piel está carbonizada y no hay dolor.", "Solo hay enrojecimiento superficial (eritema).", "Hay presencia de flictenas (ampollas), enrojecimiento y dolor intenso.", "Expone tejido muscular y óseo."], answer: 2 },
-        { q: "Ante la sospecha de una fractura de columna vertebral o cuello tras turbulencia severa, la regla principal es:", options: ["Hacer caminar al pasajero para ver si siente dolor.", "Inmovilizar la zona y, a menos que haya un peligro inminente (fuego), NO MOVER al pasajero, manteniendo su cabeza alineada.", "Sentarlo rápidamente y abrocharle el cinturón de seguridad a presión.", "Aplicar masajes fuertes en la espalda."], answer: 1 },
-        { q: "¿Cuál es la función principal del desfibrilador (DEA)?", options: ["Tomar la presión arterial con alta precisión.", "Hacer reiniciar un corazón que está completamente detenido sin actividad eléctrica (asistolia).", "Analizar el ritmo cardíaco y entregar un choque eléctrico controlado para revertir una arritmia mortal (Fibrilación Ventricular o Taquicardia Ventricular sin pulso).", "Dar ventilaciones automáticas a los pulmones."], answer: 2 },
-        { q: "En caso de encontrar a un pasajero sufriendo un Síncope Vasovagal (desmayo común), el procedimiento es:", options: ["Iniciar RCP de inmediato.", "Sentarlo con la cabeza atrás y darle cachetadas para que despierte.", "Acostarlo boca arriba, elevar sus piernas y aflojar ropas ajustadas para mejorar el retorno venoso al cerebro.", "Darle oxígeno a flujo alto de inmediato."], answer: 2 },
-        { q: "En el contexto de emergencias médicas, ¿qué significa la nemotecnia SAMPLE que usan algunos servicios de emergencia?", options: ["Síntomas, Alergias, Medicamentos, Patologías previas, Libaciones (última comida), Eventos previos.", "Sangrado, Asfixia, Mareo, Parálisis, Lesión, Enfermedad.", "Sonido, Aire, Movimiento, Presión, Latido, Elevación.", "Secure, Alert, Medical, Passenger, Landing, Emergency."], answer: 0 }
-    ];
+        // BARRERAS EN LA COMUNICACIÓN Y SINERGIA
+        { q: "El 'Sesgo de Autoridad' (o gradiente de autoridad excesivamente alto) en la cabina ocurre cuando:", options: ["El Capitán delega demasiadas tareas al TCP.", "Un miembro junior no cuestiona ni advierte sobre un error evidente de un superior por miedo a represalias o por exceso de sumisión.", "Todos los miembros tienen exactamente la misma experiencia.", "Los pasajeros no obedecen las instrucciones de seguridad."], answer: 1 },
+        { q: "Durante un briefing, el Jefe de Cabina cruza los brazos, evita el contacto visual y mira su reloj constantemente mientras los TCP hablan. Esta comunicación no verbal indica:", options: ["Apertura y escucha activa profunda.", "Sinergia positiva.", "Barreras de actitud, desinterés o impaciencia, lo que inhibe la comunicación abierta del equipo.", "Liderazgo participativo."], answer: 2 },
+        { q: "Para que la Retroalimentación (Feedback) sea constructiva tras un incidente L-L (Liveware-Liveware), debe ser:", options: ["Pública, personal y enfocada en culpar.", "Oportuna, descriptiva, específica y enfocada en el comportamiento a mejorar, no en atacar a la persona.", "Retrasada varios meses hasta la evaluación anual.", "Anónima y basada en rumores."], answer: 1 },
+        { q: "En la resolución de conflictos, la postura de 'Evitación' (ganar-perder a largo plazo) se caracteriza por:", options: ["Buscar un punto intermedio donde ambos ceden.", "Imponer la voluntad propia a toda costa.", "Retirarse del conflicto, no expresar la opinión propia ni satisfacer los intereses del otro, dejando el problema de seguridad sin resolver.", "Colaborar para encontrar una nueva solución superadora."], answer: 2 },
+
+        // CONCIENCIA SITUACIONAL Y TOMA DE DECISIONES AVANZADA
+        { q: "¿Qué es la 'Fijación' (o canalización) en el contexto de la Conciencia Situacional?", options: ["Asegurar correctamente los carros de servicio en el galley.", "Enfocarse obsesivamente en un solo problema o instrumento, ignorando otra información vital (ej. intentar arreglar una cafetera mientras hay humo en otro sector).", "Mantener un panorama general perfecto de toda la cabina.", "La memorización exacta de un procedimiento de emergencia."], answer: 1 },
+        { q: "En la toma de decisiones, el sesgo de 'Exceso de Confianza' (Overconfidence) es peligroso porque:", options: ["Hace que la tripulación consulte los manuales demasiadas veces.", "Lleva a subestimar los riesgos y sobreestimar la propia capacidad para manejar la situación basándose en éxitos pasados.", "Genera pánico inmovilizador.", "Incentiva el uso excesivo de listas de chequeo cruzadas."], answer: 1 },
+        { q: "El modelo FOR-DEC es una herramienta estructurada para:", options: ["Manejar extintores de fuego.", "Calcular el peso y balance del avión.", "La toma de decisiones aeronáuticas metódica (Facts, Options, Risks & Benefits, Decision, Execution, Check).", "Atender exclusivamente urgencias médicas."], answer: 2 },
+        { q: "Una tripulación mantiene su plan de continuar un aproximación desestabilizada a pesar de múltiples alarmas, pensando 'ya estamos casi ahí'. Esto ilustra el sesgo de:", options: ["Cultura Justa.", "Sinergia de grupo.", "Compromiso con el plan / Continuación (Press-on-itis), donde se ignora nueva evidencia para no abandonar el esfuerzo ya invertido.", "Liderazgo Directivo."], answer: 2 },
+
+        // INTERFACES DEL MODELO SHELL PROFUNDIZADAS
+        { q: "La fatiga visual por mala iluminación en el galley, que lleva a un TCP a leer mal una etiqueta médica, es un fallo en la interfaz:", options: ["Liveware - Liveware.", "Liveware - Environment.", "Liveware - Software.", "Hardware - Software."], answer: 1 },
+        { q: "Un TCP comete un error porque el diseño del seguro del tobogán es contraintuitivo y fácil de activar por accidente. Esta es una deficiencia en la interfaz:", options: ["Liveware - Software.", "Environment - Hardware.", "Liveware - Hardware (ergonomía y diseño).", "Liveware - Liveware."], answer: 2 },
+        { q: "Un conflicto interpersonal crónico entre pilotos y TCPs que impide notificar contingencias adecuadamente, representa una ruptura crítica en la interfaz:", options: ["Liveware - Hardware.", "Software - Environment.", "Liveware - Liveware.", "Hardware - Hardware."], answer: 2 },
+        { q: "Un manual de procedimientos (Software) desactualizado que obliga al TCP a improvisar, interactúa negativamente de forma directa con:", options: ["El clima externo (Environment).", "El tripulante (Liveware), incrementando su carga de trabajo mental y el riesgo de error.", "La turbina del avión (Hardware).", "Los equipos de apoyo en tierra."], answer: 1 },
+
+        // LIDERAZGO SITUACIONAL Y EQUIPOS
+        { q: "Según la matriz de Liderazgo Situacional, si un TCP es completamente nuevo, inseguro y sin experiencia en la ruta, el Jefe de Cabina debe adoptar un estilo inicial:", options: ["Delegativo (darle toda la responsabilidad).", "Participativo (dejar que él decida).", "Directivo / Instructivo (dar instrucciones claras, detalladas y supervisión constante).", "Evitativo (no interferir)."], answer: 2 },
+        { q: "El estilo de liderazgo 'Participativo' es altamente efectivo cuando:", options: ["Hay un fuego no controlado a bordo y quedan 30 segundos.", "El equipo está compuesto por profesionales altamente maduros, competentes y se dispone de tiempo para analizar opciones y fomentar el compromiso.", "Nadie sabe qué hacer y hay pánico general.", "El líder no quiere asumir ninguna responsabilidad."], answer: 1 },
+        { q: "En el trabajo de cabina, ¿qué es la 'Difusión de la Responsabilidad'?", options: ["Cuando el Capitán asume toda la culpa.", "Un fenómeno psicológico donde, en presencia de un grupo grande, los individuos asumen que 'alguien más se hará cargo' de una emergencia, retrasando la acción.", "Repartir las tareas del galley de forma equitativa.", "La lectura en voz alta de un checklist."], answer: 1 },
+        { q: "¿Cuál es el principal antídoto en CRM contra la Difusión de la Responsabilidad durante una emergencia a bordo?", options: ["Gritar en voz baja.", "Asignar tareas específicas apuntando y nombrando (ej. 'Tú, el de camisa roja, trae el extintor').", "Esperar a que el pasajero reaccione solo.", "Mirar por la ventana."], answer: 1 },
+
+        // MISCELÁNEOS AVANZADOS
+        { q: "Una 'Defensa de Sistema' (rebanada de queso) basada en la persona se considera 'blanda' (soft defense) porque:", options: ["Está hecha de materiales flexibles.", "Depende del comportamiento humano (ej. disciplina para leer una checklist), lo cual es inherentemente falible y variable por fatiga o estrés.", "Está programada en el software del avión.", "No tiene ninguna importancia real."], answer: 1 },
+        { q: "¿Por qué los programas de CRM modernos insisten en el concepto de 'Resiliencia' del equipo?", options: ["Para enseñarles a no dormir en los hoteles.", "Porque es imposible prevenir el 100% de los errores; el equipo debe estar preparado para detectar el error rápidamente, mitigar sus consecuencias y recuperar la operación segura.", "Para obligarlos a trabajar turnos dobles sin cansarse.", "Solo para cumplir normas estéticas corporativas."], answer: 1 },
+        { q: "El concepto de 'Automatización Complaciente' (Automation Complacency) ocurre cuando:", options: ["Los TCP usan el horno del avión de forma eficiente.", "La tripulación confía tan ciegamente en los sistemas automáticos del avión que deja de monitorear activamente los parámetros de vuelo o el entorno.", "La aerolínea automatiza el pago de salarios.", "Se reemplazan las funciones manuales por robots."], answer: 1 },
+        { q: "El 'Efecto de Halo' negativo (o efecto Cuerno) puede afectar la seguridad a bordo si un TCP:", options: ["Ve luces alrededor de los motores.", "Asume que una advertencia de seguridad de un compañero es falsa simplemente porque le desagrada personalmente o lo considera inexperto.", "Usa un tono de voz demasiado suave.", "Se distrae con el paisaje nocturno."], answer: 1 },
+        { q: "Durante un proceso de asimilación de nueva información bajo alta carga de estrés, un tripulante sufrirá principalmente de:", options: ["Sinergia extrema.", "Una reducción drástica de su Memoria de Trabajo y capacidad para analizar opciones lógicas.", "Un aumento incontrolable de la empatía.", "Mejora en su percepción periférica visual."], answer: 1 },
+        { q: "El 'Comportamiento Disruptivo' de un pasajero afecta principalmente la seguridad operacional porque:", options: ["Molesta a otros pasajeros.", "Ensucia la cabina rápidamente.", "Actúa como un distractor masivo, absorbiendo los recursos atencionales de la tripulación y degradando la conciencia situacional frente a otros riesgos reales.", "Retrasa el servicio de comidas."], answer: 2 },
+        { q: "En la comunicación en cabina, el término 'Readback' (Colación o lectura de confirmación) es esencial porque:", options: ["Permite saber quién tiene mejor voz.", "Cierra el bucle de comunicación, confirmando que el receptor no solo escuchó, sino que comprendió exactamente lo que el emisor quería transmitir.", "Es un protocolo exclusivo para hablar con la torre de control, nunca entre tripulantes.", "Evita que la radio se apague."], answer: 1 },
+        { q: "¿Cuál es una técnica recomendada para mantener el Nivel 3 de Conciencia Situacional (Proyección) durante un vuelo de crucero largo y rutinario?", options: ["Jugar en el teléfono móvil.", "Practicar mentalmente escenarios de contingencia ('¿Qué pasaría si...?' o 'What if...') para anticipar posibles respuestas.", "Dormir en el jumpseat.", "Ignorar los procedimientos estándar para no aburrirse."], answer: 1 },
+        
+        // COMUNICACIÓN AVANZADA
+        { q: "Si un jefe de cabina dice 'Deberíamos revisar esa puerta, ¿no creen?', está utilizando un estilo de comunicación:", options: ["Directo y asertivo.", "Indirecto / Mitigado (lo cual en emergencias puede ser peligroso porque resta urgencia al mensaje).", "Agresivo.", "Participativo extremo."], answer: 1 },
+        { q: "La comunicación 'No Verbal' (gestos, postura) y 'Paraverbal' (tono, volumen) representan aproximadamente:", options: ["El 10% del mensaje total.", "El 30% del mensaje total.", "Más del 70% del impacto real de un mensaje en la comunicación interpersonal.", "No tienen impacto si las palabras son correctas."], answer: 2 },
+        { q: "En CRM, el concepto de 'Briefing Interactivo' se prefiere sobre el 'Briefing de Monólogo' porque:", options: ["Es más corto y ahorra tiempo.", "Fomenta la participación, asegura que el equipo realmente asimiló la información y establece un clima donde es seguro hacer preguntas.", "Permite que el líder descanse la voz.", "Evita tocar temas de seguridad."], answer: 1 },
+        
+        // ESCENARIOS Y CASOS PRÁCTICOS
+        { q: "Caso Práctico: Durante un abordaje caótico, un TCP novato olvida asegurar un galley. El TCP más antiguo lo nota, lo corrige agresivamente frente a los pasajeros y no le habla en todo el vuelo. Este evento degrada la seguridad porque:", options: ["Aumenta la carga de trabajo físico del TCP antiguo.", "Destruye la interfaz L-L, anula la asertividad futura del TCP novato y elimina la sinergia del equipo ante una eventual emergencia real.", "Retrasa el despegue 5 minutos.", "Los pasajeros podrían asustarse y bajarse del avión."], answer: 1 },
+        { q: "Caso Práctico: El equipo percibe un ligero olor a quemado (Nivel 1). El Jefe de Cabina deduce que es un cable pelado en el horno (Nivel 2) y decide apagar el horno y notificar al capitán, asumiendo que si no lo hace, podría iniciarse un fuego oculto. ¿Qué nivel de conciencia situacional acaba de aplicar?", options: ["Nivel 1 (Percepción).", "Nivel 2 (Comprensión).", "Nivel 3 (Proyección del estado futuro y toma de acción preventiva).", "Nivel 4 (Resolución total)."], answer: 2 },
+        { q: "Un TCP nota hielo en las alas (una amenaza potencial). Decide no reportarlo al Capitán porque 'los pilotos son expertos y seguro ya lo vieron'. Esto es un claro ejemplo de:", options: ["Asertividad y respeto jerárquico.", "Sinergia positiva.", "Complacencia y asunción errónea, una falla crítica que rompe la cadena de seguridad (Síndrome del Copiloto/Subordinado).", "Una excelente evaluación de riesgos."], answer: 2 },
+        { q: "En un vuelo con turbulencia severa, el estrés de la tripulación es altísimo. Para evitar el bloqueo mental, la técnica recomendada es:", options: ["Respiración profunda, control emocional y apegarse estrictamente a los procedimientos estandarizados (SOPs) entrenados.", "Improvisar nuevas soluciones para distraer a la mente.", "Correr rápidamente por el pasillo para calmar a la gente.", "Aumentar el tono de voz al máximo para demostrar autoridad."], answer: 0 },
+        { q: "El 'Efecto Túnel' visual y auditivo experimentado durante una emergencia extrema es causado por:", options: ["Un fallo en el sistema eléctrico del avión.", "Una respuesta fisiológica masiva de estrés agudo (descarga de catecolaminas) que concentra toda la atención del cerebro en la amenaza inmediata, bloqueando estímulos periféricos.", "La despresurización de la cabina únicamente.", "Cansancio visual por las luces del avión."], answer: 1 },
+        
+        // CONCEPTOS FINALES
+        { q: "La resiliencia humana en la aviación se define como:", options: ["La fuerza física para abrir una puerta armada.", "La capacidad del tripulante y del equipo para absorber un impacto (estrés, error, emergencia), adaptarse rápidamente y recuperar el control de la situación.", "La capacidad de trabajar sin dormir 24 horas.", "El blindaje técnico de las ventanas de la cabina."], answer: 1 },
+        { q: "Según James Reason, los 'Errores Basados en Reglas' (Rule-based mistakes) ocurren cuando:", options: ["Se aplica una regla correcta a la situación equivocada, o se aplica una regla defectuosa.", "Un TCP olvida amarrarse el cinturón.", "Se rompe una ventana intencionalmente.", "El fabricante diseña mal el avión."], answer: 0 },
+        { q: "¿Qué busca mitigar la filosofía de operación del 'Crew Resource Management' (CRM)?", options: ["El desgaste de las piezas mecánicas de la turbina.", "Los errores humanos inevitables, transformando a un grupo de individuos en un equipo cohesionado que actúa como red de seguridad multicapa.", "El consumo excesivo de combustible en tierra.", "Las quejas de los pasajeros por la comida."], answer: 1 },
+        { q: "En la comunicación de cabina, la redundancia (ej. avisos luminosos + alarmas sonoras + confirmación verbal) se utiliza para:", options: ["Gastar más energía eléctrica.", "Molestar a los pasajeros distraídos.", "Asegurar que la información crítica cruce múltiples canales sensoriales, minimizando la probabilidad de que un mensaje vital sea ignorado por falta de atención o ruido ambiental.", "Cumplir con leyes anticuadas de aviación."], answer: 2 },
+        { q: "La principal diferencia entre el Liderazgo y el Poder (o Autoridad jerárquica) en una cabina es que:", options: ["El poder se gana con el tiempo, el liderazgo te lo da el manual.", "La autoridad se impone por el cargo (ej. 'Soy el Capitán'), pero el liderazgo se gana inspirando confianza, respeto y guiando al equipo hacia un objetivo común.", "No hay diferencia, el que tiene más galones siempre es el mejor líder.", "El liderazgo solo lo pueden ejercer los TCPs."], answer: 1 },
+        { q: "El 'Groupthink' (Pensamiento de Grupo) es un riesgo para la seguridad porque:", options: ["Todos piensan diferente y discuten constantemente.", "El deseo de mantener la armonía y evitar conflictos dentro del equipo lleva a aceptar decisiones irracionales o inseguras sin cuestionarlas críticamente.", "Aumenta demasiado el nivel 3 de conciencia situacional.", "Los TCPs se vuelven demasiado analíticos y lentos."], answer: 1 }
+];
 
     let currentSessionQuestions = [];
     let currentQuestionIndex = 0;
     let score = 0;
 
+    // ALGORITMO FISHER-YATES: Mezcla perfecta de alta precisión matemática
+    function shuffleArray(array) {
+        let shuffled = [...array];
+        for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        }
+        return shuffled;
+    }
+
     function startQuiz(numQuestions) {
-        // Mezclar banco
-        const shuffled = [...questionBank].sort(() => 0.5 - Math.random());
-        // Cortar la cantidad deseada (20 o 40)
-        currentSessionQuestions = shuffled.slice(0, numQuestions);
+        const totalAvailable = Math.min(numQuestions, questionBank.length);
+        currentSessionQuestions = shuffleArray(questionBank).slice(0, totalAvailable);
         currentQuestionIndex = 0;
         score = 0;
 
@@ -347,6 +450,12 @@
         document.getElementById('question-counter').innerText = `Pregunta ${currentQuestionIndex + 1} de ${currentSessionQuestions.length}`;
         document.getElementById('question-text').innerText = q.q;
         
+        // Reiniciar animaciones
+        const qContainer = document.getElementById('q-container');
+        qContainer.style.animation = 'none';
+        qContainer.offsetHeight; /* Trigger reflow para reiniciar la animación */
+        qContainer.style.animation = 'slideIn 0.4s ease-out';
+
         const optionsDiv = document.getElementById('options');
         optionsDiv.innerHTML = '';
         
@@ -358,16 +467,17 @@
             optionsDiv.appendChild(btn);
         });
 
-        // Actualizar barra de progreso
+        // Actualizar barra de progreso fluidamente
         const progressPercentage = (currentQuestionIndex / currentSessionQuestions.length) * 100;
         document.getElementById('progress').style.width = `${progressPercentage}%`;
 
         document.getElementById('controls').classList.add('hidden');
-        document.getElementById('love-message').innerText = '';
+        const loveMsg = document.getElementById('love-message');
+        loveMsg.innerText = '';
+        loveMsg.classList.remove('show');
     }
 
     function selectAnswer(selectedIndex, btnElement) {
-        // Bloquear opciones
         const options = document.getElementById('options').children;
         for (let btn of options) {
             btn.disabled = true;
@@ -375,6 +485,7 @@
         }
 
         const correctIndex = currentSessionQuestions[currentQuestionIndex].answer;
+        const loveMsg = document.getElementById('love-message');
         
         if (selectedIndex === correctIndex) {
             btnElement.classList.add('correct');
@@ -383,8 +494,9 @@
         } else {
             btnElement.classList.add('incorrect');
             options[correctIndex].classList.add('correct');
-            document.getElementById('love-message').innerText = "¡Casi! Esa era un poco engañosa, pero ya no se te olvidará.";
-            document.getElementById('love-message').style.color = 'var(--pizarra-oscuro)';
+            loveMsg.innerText = "¡Casi! Esa era engañosa, pero ya no se te olvidará. 💫";
+            loveMsg.style.color = 'var(--pizarra-oscuro)';
+            loveMsg.classList.add('show');
         }
 
         document.getElementById('controls').classList.remove('hidden');
@@ -394,7 +506,8 @@
         const msg = loveMessages[Math.floor(Math.random() * loveMessages.length)];
         const msgEl = document.getElementById('love-message');
         msgEl.innerText = msg;
-        msgEl.style.color = '#D53F8C'; // Pinkish para amor
+        msgEl.style.color = 'var(--rosa-fuerte)';
+        msgEl.classList.add('show');
     }
 
     function nextQuestion() {
@@ -410,6 +523,9 @@
         document.getElementById('quiz-screen').classList.add('hidden');
         document.getElementById('result-screen').classList.remove('hidden');
         
+        // Llenar barra de progreso al 100% al terminar
+        document.getElementById('progress').style.width = '100%';
+
         const percentage = Math.round((score / currentSessionQuestions.length) * 100);
         document.getElementById('score-display').innerText = `${percentage}%`;
 
@@ -417,17 +533,16 @@
         const msgText = document.getElementById('result-message');
 
         if (percentage === 100) {
-            titleText.innerText = "¡PERFECTO!";
-            msgText.innerText = "Eres una experta. Me llenas de orgullo Mi Amorcitooo! Ese examen será un paseo por las nubes para ti! Te Amooo Muchooo!";
+            titleText.innerText = "¡PERFECTO! 🥇";
+            msgText.innerText = "Eres una experta. ¡Me llenas de orgullo Mi Amorcitooo! Ese examen será un paseo por las nubes para ti. ¡Te Amooo Muchooo! ❤️";
         } else if (percentage >= 80) {
-            titleText.innerText = "¡Excelente Trabajo Mi Vida!";
-            msgText.innerText = "Tienes los conocimientos listos. Confía en lo que sabes, respira profundo y ve por todo. Te irá maravilloso! Creo en ti!";
+            titleText.innerText = "¡Excelente Trabajo Mi Vida! 🌟";
+            msgText.innerText = "Tienes los conocimientos listos. Confía en lo que sabes, respira profundo y ve por todo. ¡Te irá maravilloso! ¡Creo en ti Mi Bebé! 💖";
         } else {
-            titleText.innerText = "¡Buen repaso Mi Princesa!";
-            msgText.innerText = "Lo importante es aprender de los errores ahora para no cometerlos en el examen. Dale una leída rápida más y estarás lista. ¡Yo creo en ti siempre Mi Niña!";
+            titleText.innerText = "¡Buen repaso Mi Princesa! ☁️";
+            msgText.innerText = "Lo importante es aprender de los errores ahora. Dale una leída rápida más y estarás lista. ¡Yo creo en ti siempre Mi Niña! 💪";
         }
     }
 </script>
-
 </body>
 </html>
