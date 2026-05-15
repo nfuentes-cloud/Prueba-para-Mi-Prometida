@@ -3,507 +3,351 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Examen TCP - Para mi futura tripulante ✈️</title>
+    <title>Examen TCP - Para Mi Princesa ✈️</title>
     <style>
         :root {
-            --pizarra-oscuro: #4A5568; /* Un tono oscuro pero más suave para no contrastar tan duro */
-            --rosa-principal: #FF758C; /* Rosa vibrante y tierno para botones y barras */
-            --rosa-fuerte: #D53F8C; /* Magenta para textos importantes y títulos */
-            --rosa-pastel: #FFE4E6; /* Fondos de botones seleccionados */
-            --fondo-suave: #FFF0F5; /* Lavender blush, súper romántico y tierno */
+            --pizarra-oscuro: #4A5568;
+            --rosa-principal: #FF758C;
+            --rosa-fuerte: #D53F8C;
+            --rosa-pastel: #FFE4E6;
+            --fondo-suave: #FFF0F5;
             --blanco: #FFFFFF;
-            --error: #FB7185; /* Un rojo más apastelado */
-            --exito: #34D399; /* Verde esmeralda suave */
+            --error: #FB7185;
+            --exito: #34D399;
+            --tarjeta-bg: rgba(255, 255, 255, 0.9);
         }
 
-        * {
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Quicksand, Roboto, Helvetica, Arial, sans-serif;
+        /* --- MODO OSCURO AUTOMÁTICO (MIDNIGHT ROMANCE) --- */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --fondo-suave: #1A202C; 
+                --blanco: #2D3748; 
+                --pizarra-oscuro: #F7FAFC; 
+                --rosa-principal: #FF7EB3;
+                --rosa-fuerte: #F687B3; 
+                --rosa-pastel: #4A5568; 
+                --tarjeta-bg: rgba(45, 55, 72, 0.95);
+            }
+            body {
+                background-image: radial-gradient(circle at 10% 20%, rgba(255, 126, 179, 0.05) 0%, transparent 25%),
+                                  radial-gradient(circle at 90% 80%, rgba(213, 63, 140, 0.08) 0%, transparent 25%) !important;
+            }
+            .option-btn {
+                background-color: #1A202C !important;
+                border-color: #4A5568 !important;
+                color: #E2E8F0 !important;
+            }
+            .option-btn:hover:not(:disabled) {
+                background-color: #4A5568 !important;
+                border-color: var(--rosa-principal) !important;
+                color: var(--rosa-principal) !important;
+            }
+            .progress-bar { background-color: #4A5568 !important; }
+            .debrief-item { background-color: #1A202C !important; border-color: #4A5568 !important;}
+            select, input[type="checkbox"] { background-color: #1A202C; color: white; border-color: #4A5568;}
         }
+
+        * { box-sizing: border-box; font-family: 'Segoe UI', Quicksand, Roboto, sans-serif; }
 
         body {
             background-color: var(--fondo-suave);
             color: var(--pizarra-oscuro);
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            margin: 0; padding: 20px;
+            display: flex; flex-direction: column; align-items: center;
             min-height: 100vh;
-            /* Gradiente de fondo ultra tierno */
             background-image: radial-gradient(circle at 15% 50%, rgba(255, 117, 140, 0.08) 0%, transparent 25%),
                               radial-gradient(circle at 85% 30%, rgba(213, 63, 140, 0.06) 0%, transparent 25%);
         }
 
-        /* --- ANIMACIONES TIERNAS --- */
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-8px); }
-            100% { transform: translateY(0px); }
-        }
-
-        @keyframes slideIn {
-            from { opacity: 0; transform: translateX(20px); }
-            to { opacity: 1; transform: translateX(0); }
-        }
-
-        @keyframes pop {
-            0% { transform: scale(0.9); opacity: 0; }
-            50% { transform: scale(1.08); opacity: 1; }
-            100% { transform: scale(1); opacity: 1; }
-        }
-
-        @keyframes pulseGlow {
-            0% { box-shadow: 0 4px 15px rgba(255, 117, 140, 0.4); }
-            50% { box-shadow: 0 4px 25px rgba(255, 117, 140, 0.7); }
-            100% { box-shadow: 0 4px 15px rgba(255, 117, 140, 0.4); }
-        }
+        @keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-8px); } 100% { transform: translateY(0px); } }
+        @keyframes slideIn { from { opacity: 0; transform: translateX(20px); } to { opacity: 1; transform: translateX(0); } }
+        @keyframes pop { 0% { transform: scale(0.9); opacity: 0; } 50% { transform: scale(1.05); opacity: 1; } 100% { transform: scale(1); opacity: 1; } }
+        @keyframes pulseRed { 0% { color: var(--error); } 50% { color: #9F1239; transform: scale(1.1); } 100% { color: var(--error); } }
 
         .container {
-            background-color: var(--blanco);
-            border-radius: 35px; /* Súper redondeado y amigable */
-            box-shadow: 0 15px 40px rgba(255, 117, 140, 0.15);
+            background-color: var(--tarjeta-bg);
+            border-radius: 35px;
+            box-shadow: 0 15px 40px rgba(213, 63, 140, 0.1);
             padding: 40px 30px;
-            width: 100%;
-            max-width: 500px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-            border: 3px solid #FFF1F2; /* Borde sutil rosado */
+            width: 100%; max-width: 550px;
+            text-align: center; position: relative;
+            border: 3px solid rgba(255, 117, 140, 0.1);
         }
 
-        h1 {
-            color: var(--rosa-fuerte);
-            font-size: 1.8rem;
-            margin-bottom: 10px;
-            animation: float 4s ease-in-out infinite; 
-            text-shadow: 1px 1px 2px rgba(213, 63, 140, 0.1);
+        h1 { color: var(--rosa-fuerte); font-size: 1.8rem; margin-bottom: 10px; animation: float 4s ease-in-out infinite; }
+        
+        .setup-group {
+            text-align: left; margin-bottom: 25px;
+            background: rgba(255, 117, 140, 0.05); padding: 15px; border-radius: 20px;
         }
 
-        p.subtitle {
-            font-size: 1.1rem;
-            color: #718096;
-            margin-bottom: 30px;
-            font-style: italic;
+        select {
+            width: 100%; padding: 12px; border-radius: 15px;
+            border: 2px solid var(--rosa-principal); font-size: 1rem;
+            margin-top: 5px; outline: none; cursor: pointer;
         }
+
+        .checkbox-container {
+            display: flex; align-items: center; gap: 10px;
+            margin-top: 15px; font-weight: bold; cursor: pointer;
+        }
+
+        .checkbox-container input { width: 20px; height: 20px; accent-color: var(--rosa-principal); cursor: pointer; }
 
         .btn {
             background: linear-gradient(135deg, #FF7EB3 0%, #FF758C 100%);
-            color: var(--blanco);
-            border: none;
-            border-radius: 30px; 
-            padding: 16px 20px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            cursor: pointer;
-            width: 100%;
-            margin-bottom: 15px;
-            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-            box-shadow: 0 6px 15px rgba(255, 117, 140, 0.3);
+            color: white; border: none; border-radius: 30px;
+            padding: 16px 20px; font-size: 1.1rem; font-weight: bold;
+            cursor: pointer; width: 100%; margin-bottom: 10px;
+            transition: all 0.3s; box-shadow: 0 6px 15px rgba(255, 117, 140, 0.3);
+        }
+        .btn:hover:not(:disabled) { transform: translateY(-3px) scale(1.02); box-shadow: 0 10px 25px rgba(255, 117, 140, 0.5); }
+        .btn:disabled { background: #CBD5E0; cursor: not-allowed; box-shadow: none; transform: none; }
+
+        .hidden { display: none !important; }
+
+        /* HUD: HUD elements (Lives, Timer, Highscore) */
+        .hud-top {
+            display: flex; justify-content: space-between; align-items: center;
+            margin-bottom: 15px; padding-bottom: 10px; border-bottom: 2px dashed rgba(255, 117, 140, 0.2);
+        }
+        .lives { font-size: 1.5rem; letter-spacing: 5px; transition: all 0.3s; }
+        .timer { font-size: 1.2rem; font-weight: bold; color: var(--rosa-fuerte); display: flex; align-items: center; gap: 5px; }
+        .timer.danger { animation: pulseRed 1s infinite; }
+        
+        .high-score-badge {
+            background: rgba(255, 117, 140, 0.1); color: var(--rosa-fuerte);
+            padding: 8px 15px; border-radius: 20px; font-weight: bold;
+            display: inline-block; margin-bottom: 20px; font-size: 0.9rem;
         }
 
-        .btn:hover {
-            transform: translateY(-3px) scale(1.02);
-            box-shadow: 0 10px 25px rgba(255, 117, 140, 0.5);
-        }
-
-        .btn:active {
-            transform: translateY(0) scale(0.98);
-        }
-
-        .hidden {
-            display: none !important;
-        }
-
-        .question-container {
-            text-align: left;
-            animation: slideIn 0.4s ease-out; 
-        }
-
-        .question-text {
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin-bottom: 25px;
-            line-height: 1.4;
-            color: var(--pizarra-oscuro);
-        }
-
-        .options-container {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
+        .question-container { text-align: left; animation: slideIn 0.3s ease-out; }
+        .question-text { font-size: 1.3rem; font-weight: 600; margin-bottom: 20px; line-height: 1.4; color: var(--pizarra-oscuro); }
+        
+        .options-container { display: flex; flex-direction: column; gap: 12px; }
         .option-btn {
-            background-color: #FAFAFA;
-            border: 2px solid #F1F5F9;
-            border-radius: 20px;
-            padding: 16px;
-            font-size: 1.05rem;
-            color: var(--pizarra-oscuro);
-            cursor: pointer;
-            text-align: left;
-            transition: all 0.2s ease;
-            line-height: 1.4;
+            background-color: #FAFAFA; border: 2px solid #E2E8F0; border-radius: 20px;
+            padding: 15px; font-size: 1.05rem; color: var(--pizarra-oscuro);
+            cursor: pointer; text-align: left; transition: all 0.2s ease;
         }
+        .option-btn:hover:not(:disabled) { border-color: var(--rosa-principal); background-color: var(--rosa-pastel); transform: translateX(5px); }
+        .option-btn.correct { border-color: var(--exito); background-color: rgba(52, 211, 153, 0.15); color: #065F46; font-weight: bold; }
+        .option-btn.incorrect { border-color: var(--error); background-color: rgba(251, 113, 133, 0.15); color: #9F1239; opacity: 0.8; }
 
-        .option-btn:hover:not(:disabled) {
-            border-color: var(--rosa-principal);
-            background-color: var(--rosa-pastel);
-            transform: translateX(5px); 
-            color: var(--rosa-fuerte);
-        }
+        .progress-bar { width: 100%; height: 8px; background-color: #FEE2E2; border-radius: 4px; margin-bottom: 20px; overflow: hidden; }
+        .progress-fill { height: 100%; background: linear-gradient(90deg, #FF7EB3, #FF758C); width: 0%; transition: width 0.4s; }
 
-        .option-btn.selected {
-            border-color: var(--rosa-principal);
-            background-color: var(--rosa-pastel);
-            font-weight: bold;
-        }
+        .love-message { margin-top: 15px; font-size: 1.1rem; color: var(--rosa-fuerte); font-weight: bold; min-height: 28px; opacity: 0; }
+        .love-message.show { animation: pop 0.4s forwards; }
 
-        .option-btn.correct {
-            border-color: var(--exito);
-            background-color: rgba(52, 211, 153, 0.15);
-            color: #065F46;
-            font-weight: bold;
-            box-shadow: 0 0 15px rgba(52, 211, 153, 0.3);
+        /* Debriefing Styles */
+        .debrief-container { text-align: left; margin-top: 20px; max-height: 300px; overflow-y: auto; padding-right: 10px; }
+        .debrief-item {
+            background: #FAFAFA; border: 1px solid #E2E8F0; border-radius: 15px;
+            padding: 15px; margin-bottom: 15px; font-size: 0.95rem;
         }
-
-        .option-btn.incorrect {
-            border-color: var(--error);
-            background-color: rgba(251, 113, 133, 0.15);
-            color: #9F1239;
-            opacity: 0.8;
-        }
-
-        .progress-bar {
-            width: 100%;
-            height: 12px;
-            background-color: #FEE2E2; /* Fondo rosa ultra clarito */
-            border-radius: 6px;
-            margin-bottom: 25px;
-            overflow: hidden;
-            box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
-        }
-
-        .progress-fill {
-            height: 100%;
-            background: linear-gradient(90deg, #FF7EB3, #FF758C);
-            width: 0%;
-            transition: width 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
-            border-radius: 6px;
-        }
-
-        .love-message {
-            margin-top: 25px;
-            font-size: 1.15rem;
-            color: var(--rosa-fuerte);
-            font-weight: bold;
-            min-height: 28px;
-            opacity: 0;
-            text-shadow: 1px 1px 2px rgba(213, 63, 140, 0.1);
-        }
-
-        .love-message.show {
-            animation: pop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
-        }
-
-        .controls {
-            margin-top: 25px;
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        #next-btn {
-            width: auto;
-            padding: 12px 30px;
-            margin-bottom: 0;
-            background: linear-gradient(135deg, #D53F8C 0%, #FF7EB3 100%);
-            animation: pulseGlow 2s infinite; /* El botón palpita sutilmente cuando aparece */
-        }
-
-        .results {
-            text-align: center;
-        }
+        .debrief-q { font-weight: bold; color: var(--pizarra-oscuro); margin-bottom: 8px; }
+        .debrief-wrong { color: var(--error); text-decoration: line-through; margin-bottom: 5px; }
+        .debrief-right { color: var(--exito); font-weight: bold; }
 
         .score-circle {
-            width: 160px;
-            height: 160px;
-            border-radius: 50%;
-            border: 10px solid var(--rosa-principal);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3rem;
-            font-weight: bold;
-            color: var(--rosa-fuerte);
-            margin: 0 auto 20px auto;
-            animation: pop 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            background-color: var(--fondo-suave);
-            box-shadow: 0 10px 25px rgba(255, 117, 140, 0.2);
+            width: 140px; height: 140px; border-radius: 50%;
+            border: 8px solid var(--rosa-principal); display: flex; align-items: center; justify-content: center;
+            font-size: 2.5rem; font-weight: bold; color: var(--rosa-fuerte);
+            margin: 0 auto 15px auto; animation: pop 0.6s;
         }
-        /* --- MODO OSCURO AUTOMÁTICO (MIDNIGHT ROMANCE) --- */
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --fondo-suave: #1A202C; /* Fondo oscuro profundo */
-                --blanco: #2D3748; /* Color de las tarjetas */
-                --pizarra-oscuro: #F7FAFC; /* Texto claro */
-                --rosa-principal: #FF7EB3;
-                --rosa-fuerte: #F687B3; /* Rosa más brillante para contrastar en oscuro */
-                --rosa-pastel: #4A5568; /* Fondo para opciones seleccionadas */
-                --error: #FC8181;
-                --exito: #68D391;
-            }
-
-            body {
-                background-image: radial-gradient(circle at 10% 20%, rgba(255, 126, 179, 0.05) 0%, transparent 25%),
-                                  radial-gradient(circle at 90% 80%, rgba(213, 63, 140, 0.08) 0%, transparent 25%);
-            }
-
-            .container {
-                border-color: #4A5568;
-                box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
-            }
-
-            .option-btn {
-                background-color: #2D3748;
-                border-color: #4A5568;
-                color: #E2E8F0;
-            }
-
-            .option-btn:hover:not(:disabled) {
-                background-color: #4A5568;
-                color: var(--rosa-principal);
-            }
-
-            .progress-bar {
-                background-color: #4A5568;
-                box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
-            }
-        }
+        
+        /* Custom Scrollbar for Debriefing */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: var(--rosa-principal); border-radius: 10px; }
     </style>
 </head>
 <body>
 
 <div class="container" id="home-screen">
     <h1>¡Hola Mi Princesa Perfecta! 💖✈️</h1>
-    <p class="subtitle">Sé que te irá increíble con esta materia. Confío plenamente en ti y en todo lo que has estudiado. ¡A volar alto Mi Niña Maravillosa!</p>
-    <p style="font-weight: 500; margin-bottom: 20px; color: var(--rosa-fuerte);">Elige tu misión de hoy:</p>
-    <button class="btn" onclick="startQuiz(20)">Hacer 20 preguntas (Repaso Rápido)</button>
-    <button class="btn" onclick="startQuiz(40)">Hacer 40 preguntas (Simulador)</button>
-    <button class="btn" onclick="startQuiz(100)">Hacer 100 preguntas (Desafío Total)</button>
+    <p style="color: #718096; font-style: italic; margin-bottom: 20px;">Lista para tu próximo vuelo. ¡Confío plenamente en ti!</p>
+    
+    <div id="highscore-display" class="high-score-badge hidden">🏆 Récord en esta materia: <span id="hs-value">0</span>%</div>
+
+    <div class="setup-group">
+        <label style="font-weight: bold; color: var(--rosa-fuerte);">📚 Selecciona la Materia:</label>
+        <select id="subject-selector" onchange="updateHighScoreDisplay()">
+            <option value="https://raw.githubusercontent.com/nfuentes-cloud/Prueba-para-Mi-Prometida/refs/heads/main/CRM%20y%20Factores%20Humanos.json" data-id="crm">CRM y Factores Humanos</option>
+            <option value="urgencias">Urgencias Médicas (Próximamente)</option>
+            <option value="aerodinamica">Aerodinámica (Próximamente)</option>
+        </select>
+
+        <label class="checkbox-container">
+            <input type="checkbox" id="timer-toggle">
+            ⏳ Modo Contrarreloj (1 min x pregunta)
+        </label>
+    </div>
+
+    <button class="btn" id="btn-20" onclick="initiateLoad(20)">Misión Rápida (20 Preguntas)</button>
+    <button class="btn" id="btn-40" onclick="initiateLoad(40)">Simulador (40 Preguntas)</button>
+    <button class="btn" id="btn-100" onclick="initiateLoad(100)">Desafío Total (Todo)</button>
+    <p id="loading-msg" class="hidden" style="color: var(--rosa-fuerte); font-weight: bold; margin-top: 15px;">Descargando plan de vuelo... ☁️</p>
 </div>
 
 <div class="container hidden" id="quiz-screen">
-    <div class="progress-bar">
-        <div class="progress-fill" id="progress"></div>
+    <div class="hud-top">
+        <div class="lives" id="lives-display">💖💖💖</div>
+        <div class="timer hidden" id="timer-display">⏱️ <span id="time-left">00:00</span></div>
     </div>
+    
+    <div class="progress-bar"><div class="progress-fill" id="progress"></div></div>
+    
     <div class="question-container" id="q-container">
-        <span id="question-counter" style="font-size: 0.95rem; color: #F43F5E; margin-bottom: 15px; display: block; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;"></span>
+        <span id="question-counter" style="font-size: 0.9rem; color: #F43F5E; font-weight: bold; letter-spacing: 1px;"></span>
         <div class="question-text" id="question-text"></div>
         <div class="options-container" id="options"></div>
     </div>
+    
     <div class="love-message" id="love-message"></div>
-    <div class="controls hidden" id="controls">
-        <button class="btn" id="next-btn" onclick="nextQuestion()">Siguiente ✨</button>
+    <div style="text-align: right; margin-top: 20px;">
+        <button class="btn hidden" id="next-btn" style="width: auto; padding: 12px 30px;" onclick="nextQuestion()">Siguiente ✨</button>
     </div>
 </div>
 
 <div class="container hidden" id="result-screen">
-    <h1>¡Misión Cumplida! ¡Eres la mejor! 🎉</h1>
+    <h1 id="result-main-title">¡Misión Cumplida! 🎉</h1>
     <div class="score-circle" id="score-display">100%</div>
-    <h2 id="result-title" style="color: var(--rosa-fuerte); margin-bottom: 10px;"></h2>
-    <p id="result-message" style="font-size: 1.1rem; line-height: 1.6; color: #4A5568;"></p>
-    <button class="btn" style="margin-top: 30px;" onclick="location.reload()">Volver a repasar ☁️💕</button>
+    <h2 id="result-title" style="color: var(--rosa-fuerte); margin-bottom: 5px;"></h2>
+    <p id="result-message" style="color: #4A5568; line-height: 1.5;"></p>
+    
+    <div id="debrief-section" class="hidden">
+        <h3 style="color: var(--pizarra-oscuro); text-align: left; margin-top: 25px; border-bottom: 2px solid var(--rosa-pastel); padding-bottom: 5px;">📋 Debriefing del Vuelo (A revisar)</h3>
+        <div class="debrief-container" id="debrief-list"></div>
+    </div>
+
+    <button class="btn" style="margin-top: 25px;" onclick="location.reload()">Volver a la Base ☁️💕</button>
 </div>
 
 <script>
-    const loveMessages = [
-        "¡Qué inteligente eres Mi Amorcito! 💕",
-        "¡Esa es mi futura TCP! ✈️",
-        "¡Sigue así, lo estás haciendo excelente! ✨",
-        "Respira profundo, tú te sabes esto de memoria ☁️",
-        "¡Confío en ti Mi Bebé! 💖",
-        "¡Eres brillante Prometida Mía! 🌟",
-        "¡No hay examen que te detenga Mi Amor! 💪",
-        "Estoy muy orgulloso de ti, enserio Mi Amor 🥰"
-    ];
-
-    const questionBank = [
-        // MODELO SHELL Y CONCEPTOS BÁSICOS
-        { q: "¿Cuál es el objetivo principal del Crew Resource Management (CRM)?", options: ["Automatizar las funciones de la aeronave.", "Optimizar las defensas del sistema aeronáutico contra el error humano mediante el uso de todos los recursos.", "Aumentar la rentabilidad de las aerolíneas.", "Sustituir el entrenamiento técnico de las tripulaciones."], answer: 1 },
-        { q: "En el modelo SHELL, ¿qué representa el componente 'Software' (S)?", options: ["Las computadoras de vuelo del avión.", "El clima y la altitud.", "Las reglas, procedimientos, manuales, normativas y listas de chequeo.", "Las relaciones interpersonales de la tripulación."], answer: 2 },
-        { q: "¿Qué elemento del modelo SHELL ocupa el centro del sistema?", options: ["El Hardware (H), porque el avión es lo más importante.", "El Liveware (L), es decir, el factor humano.", "El Environment (E), ya que el clima condiciona el vuelo.", "El Software (S), por las regulaciones internacionales."], answer: 1 },
-        { q: "La interfaz Liveware - Hardware (L-H) del modelo SHELL se refiere a:", options: ["La relación entre el tripulante y los procedimientos.", "La interacción del ser humano con el diseño de los asientos, cinturones, pantallas y controles del avión.", "El trabajo en equipo entre TCP y pilotos.", "La adaptación del cuerpo humano a los cambios de presión (Environment)."], answer: 1 },
-        { q: "¿Qué interfaz del modelo SHELL es la encargada de analizar el Trabajo en Equipo, el Liderazgo y la Comunicación?", options: ["Liveware - Environment (L-E).", "Liveware - Software (L-S).", "Liveware - Liveware (L-L).", "Liveware - Hardware (L-H)."], answer: 2 },
-        { q: "En el contexto del CRM, las 'Habilidades No Técnicas' (Non-Technical Skills) son:", options: ["Conocer la aerodinámica del avión.", "Saber operar los extintores y toboganes.", "Habilidades cognitivas e interpersonales como la toma de decisiones, la comunicación asertiva y el liderazgo.", "El conocimiento de idiomas extranjeros exclusivamente."], answer: 2 },
-        { q: "¿Qué accidente histórico es considerado el principal catalizador para la creación de los programas CRM en la aviación?", options: ["El accidente de Air Florida en 1982.", "La colisión de dos Boeing 747 en el aeropuerto de Tenerife en 1977.", "El acuatizaje en el río Hudson en 2009.", "El accidente de United Airlines en Portland en 1978."], answer: 1 },
-
-        // TEORÍA DEL ERROR Y JAMES REASON (QUESO SUIZO)
-        { q: "Según la teoría de James Reason, ¿qué son los 'Fallos Activos'?", options: ["Errores de diseño de las aeronaves.", "Decisiones gerenciales de la aerolínea que afectan a largo plazo.", "Errores o infracciones cometidos por el personal de primera línea (pilotos, TCP, mecánicos) que tienen un impacto inmediato.", "Las fallas en los motores del avión."], answer: 2 },
-        { q: "¿Cuál de las siguientes opciones describe una 'Condición Latente' según el modelo del Queso Suizo?", options: ["Un piloto ignorando una alarma.", "Un TCP que olvida armar un tobogán.", "Deficiencias en la cultura organizacional, falta de entrenamiento adecuado o procedimientos confusos que permanecen ocultos.", "Una turbulencia severa inesperada."], answer: 2 },
-        { q: "La diferencia fundamental entre un 'Error' y una 'Infracción' es que:", options: ["El error siempre causa accidentes, la infracción no.", "El error es un fallo cognitivo no intencional, mientras que la infracción es un desvío consciente y deliberado de las reglas.", "Las infracciones solo son cometidas por los pasajeros.", "No hay diferencia, ambos términos son sinónimos en aviación."], answer: 1 },
-        { q: "Según el estudio de Factores Humanos, el error humano es:", options: ["Totalmente evitable si la persona presta 100% de atención.", "Una señal de incompetencia profesional.", "Inevitable y omnipresente; todas las personas, independientemente de su experiencia, cometen errores.", "Un acto intencional de sabotaje."], answer: 2 },
-        { q: "El modelo del Queso Suizo de James Reason ilustra que los accidentes ocurren cuando:", options: ["El clima es excepcionalmente malo.", "Un solo tripulante comete un error fatal.", "Las 'rebanadas' (defensas del sistema) tienen fallos (agujeros) y estos se alinean en un momento específico, permitiendo que la trayectoria del accidente se complete.", "Los sistemas informáticos del avión se reinician solos."], answer: 2 },
-        
-        // CONCIENCIA SITUACIONAL Y TOMA DE DECISIONES
-        { q: "¿Cómo se define la Conciencia Situacional en el entorno aeronáutico?", options: ["Conocer los nombres de toda la tripulación.", "La capacidad de percibir el entorno, comprender su significado y proyectar su estado futuro a corto plazo.", "Saber exactamente la ruta de vuelo en el mapa.", "La habilidad de leer los manuales sin cometer errores ortográficos."], answer: 1 },
-        { q: "¿Cuál es el Nivel 1 de la Conciencia Situacional?", options: ["Percepción de los elementos en el entorno (ver, oír, notar datos relevantes).", "Comprensión del significado de la información.", "Proyección del estado futuro.", "Toma de decisiones final."], answer: 0 },
-        { q: "Un TCP huele humo en la cabina pero asume que es la comida del horno sin investigar. ¿En qué nivel de la conciencia situacional falló?", options: ["Nivel 1 (Percepción).", "Nivel 2 (Comprensión), porque percibió el estímulo pero interpretó incorrectamente su gravedad o significado.", "Nivel 3 (Proyección).", "No hubo pérdida de conciencia situacional."], answer: 1 },
-        { q: "¿Qué efecto tienen las distracciones continuas o la carga de trabajo excesiva sobre la Conciencia Situacional?", options: ["Ayudan a mantener la mente activa y alerta.", "Reducen la atención disponible, provocando 'visión de túnel' y la pérdida del panorama general (pérdida de la conciencia situacional).", "Mejoran el trabajo en equipo.", "No tienen ningún efecto si el TCP tiene mucha experiencia."], answer: 1 },
-        { q: "En el proceso analítico de la Toma de Decisiones a bordo, ¿cuál es SIEMPRE el criterio de mayor prioridad?", options: ["La comodidad de los pasajeros VIP.", "La puntualidad del itinerario del vuelo.", "La seguridad operacional (Safety) de la aeronave, los pasajeros y la tripulación.", "El ahorro de combustible y costos operativos."], answer: 2 },
-        { q: "¿Qué es el sesgo de confirmación (confirmation bias) durante la toma de decisiones?", options: ["Confirmar siempre las instrucciones con el Capitán.", "La tendencia a buscar, interpretar o recordar información de una manera que confirme nuestras propias creencias o hipótesis preexistentes, ignorando datos que las contradigan.", "Hacer un briefing antes del vuelo.", "La revisión cruzada de puertas (cross-check)."], answer: 1 },
-
-        // COMUNICACIÓN ASERTIVA Y EFECTIVA
-        { q: "¿Cuándo se considera que un proceso de comunicación ha sido verdaderamente 'efectivo'?", options: ["Cuando el emisor habla en un tono de voz fuerte.", "Cuando se utiliza lenguaje técnico aeronáutico complejo.", "Cuando el mensaje es recibido, comprendido e interpretado por el receptor con el mismo significado que el emisor pretendía darle.", "Cuando el mensaje se entrega por escrito y firmado."], answer: 2 },
-        { q: "En el trabajo de tripulación de cabina, ¿qué significa actuar con 'Asertividad'?", options: ["Imponer siempre la propia opinión y órdenes sobre los demás compañeros.", "Guardar silencio ante una duda de seguridad para no causar conflictos con el Capitán.", "Expresar preocupaciones, dudas u opiniones de manera clara, directa y respetuosa, buscando la seguridad sin ser pasivo ni agresivo.", "Aceptar todas las sugerencias de los pasajeros sin cuestionar."], answer: 2 },
-        { q: "El tono de voz, el volumen, el contacto visual y la postura corporal forman parte de la:", options: ["Comunicación verbal.", "Comunicación escrita.", "Comunicación no verbal (o paraverbal), que puede transmitir más información que las propias palabras.", "Comunicación asíncrona."], answer: 2 },
-        { q: "¿Cuál de las siguientes es una barrera común para la comunicación efectiva en el avión?", options: ["Realizar un briefing pre-vuelo.", "El ruido ambiental excesivo (barrera física) y las diferencias culturales/jerárquicas (barreras psicosociales).", "Usar el sistema de PA (Public Address).", "El contacto visual directo."], answer: 1 },
-        { q: "¿Qué técnica de comunicación se utiliza para confirmar que un mensaje vital (como armar toboganes o una instrucción de emergencia) fue entendido correctamente?", options: ["Ignorar al emisor.", "Feedback o Retroalimentación (ej. readback o repetir la orden recibida).", "Gritar la orden varias veces.", "Mandar un correo electrónico al finalizar el vuelo."], answer: 1 },
-        { q: "Si un TCP observa que el avión está acelerando en la pista para el despegue pero hay un compartimento superior abierto, su comunicación debe ser:", options: ["Pasiva: Esperar a que otro TCP se dé cuenta.", "Agresiva: Gritarle al pasajero por abrir el compartimento.", "Asertiva y urgente: Notificar inmediatamente por el interphone a la cabina de mando (Cockpit) utilizando lenguaje claro y directo ('Stop, bin abierto').", "Silenciosa: Correr a cerrarlo en pleno despegue sin avisar."], answer: 2 },
-
-        // LIDERAZGO, SINERGIA Y TRABAJO EN EQUIPO
-        { q: "¿Qué es la 'Sinergia' en el contexto del Trabajo en Equipo (CRM)?", options: ["Cuando un solo tripulante hace el trabajo de tres.", "Un fenómeno donde el resultado conjunto del equipo es superior a la suma de los aportes individuales (1+1=3).", "El conflicto inevitable entre pilotos y TCPs.", "El agotamiento físico por exceso de vuelos."], answer: 1 },
-        { q: "¿Qué estilo de liderazgo situacional es el más adecuado durante una emergencia de tiempo crítico (ej. evacuación inminente)?", options: ["Liderazgo Participativo: Hacer una reunión para votar qué puerta abrir.", "Liderazgo Delegativo: Dejar que cada TCP decida qué hacer.", "Liderazgo Directivo (Autoritario): Dar órdenes claras, precisas y sin lugar a debate para asegurar una acción rápida.", "Liderazgo Pasivo: Esperar a que los bomberos den la orden."], answer: 2 },
-        { q: "El 'Liderazgo Situacional' sugiere que:", options: ["El líder debe usar el mismo estilo rudo con todos los tripulantes.", "No existe un único estilo de liderazgo óptimo; el líder debe adaptar su comportamiento según la situación y el nivel de madurez/competencia de su equipo.", "Solo los pilotos pueden ser líderes.", "El líder no debe intervenir nunca en los problemas de cabina."], answer: 1 },
-        { q: "Un equipo de trabajo a bordo fracasa (pierde su sinergia) comúnmente cuando:", options: ["Tienen objetivos claros y roles definidos.", "Existe una comunicación fluida y retroalimentación.", "Hay metas confusas, falta de confianza, fallos en la comunicación y un alto nivel de individualismo.", "Todos los miembros tienen diferentes niveles de experiencia."], answer: 2 },
-        { q: "¿Cuál es una característica fundamental de un buen líder dentro del avión (ej. Jefe de Cabina)?", options: ["No aceptar sugerencias de tripulantes más jóvenes.", "Micro-gestionar cada movimiento de los TCPs en la cabina.", "Fomentar un clima de confianza que permita a cualquier miembro del equipo levantar la voz si observa un problema de seguridad.", "Evitar tomar decisiones para no equivocarse."], answer: 2 },
-        
-        // PROCESOS COGNITIVOS, FATIGA Y ESTRÉS
-        { q: "Dentro de los procesos cognitivos, la 'Atención Selectiva' permite a un Tripulante:", options: ["Recordar eventos de su infancia durante el vuelo.", "Enfocarse en un estímulo o tarea crítica (ej. escuchar una instrucción del Capitán) ignorando el ruido de fondo o las distracciones de los pasajeros.", "Realizar múltiples tareas manuales sin mirar.", "Proyectar el nivel de combustible del avión."], answer: 1 },
-        { q: "La fatiga operacional afecta gravemente la seguridad porque:", options: ["Hace que el tripulante coma más durante el vuelo.", "Mejora la velocidad de reacción pero disminuye la memoria.", "Degrada casi todas las funciones cognitivas: ralentiza los tiempos de reacción, empeora la toma de decisiones, reduce la vigilancia y disminuye la asertividad.", "Solo afecta el estado de ánimo, sin alterar el rendimiento físico."], answer: 2 },
-        { q: "¿Qué es el 'Estrés Positivo' (Eustrés)?", options: ["El estrés crónico que causa enfermedades cardíacas.", "Un nivel óptimo de tensión que motiva, aumenta el rendimiento y ayuda a mantener el estado de alerta ante un desafío (ej. estar atento durante el despegue).", "La sensación de pánico incontrolable.", "La falta total de estímulos o aburrimiento crónico."], answer: 1 },
-        { q: "Si la carga de trabajo (Workload) de un tripulante supera su capacidad de procesamiento debido a una suma de problemas a bordo, el resultado más directo es:", options: ["Una mejora espontánea de la sinergia.", "La pérdida de Conciencia Situacional y el aumento drástico en la probabilidad de cometer errores activos.", "La automatización biológica perfecta de las tareas.", "Un aumento en el Nivel 3 de proyección."], answer: 1 },
-
-        // PREGUNTAS MIXTAS - CONSOLIDACIÓN DE CONCEPTOS
-        { q: "¿Cuál de los siguientes NO es un componente del acrónimo SHELL?", options: ["Software.", "Hardware.", "Environment.", "Logistics."], answer: 3 },
-        { q: "En la resolución de conflictos a bordo, la estrategia más efectiva desde la perspectiva del CRM es:", options: ["Evitar el problema y no hablarle más al compañero.", "Confrontación agresiva frente a los pasajeros.", "Abordar el problema directamente en privado, atacando el problema y no a la persona, buscando un consenso seguro (ganar-ganar).", "Quejarse inmediatamente con gerencia sin hablar con el involucrado."], answer: 2 },
-        { q: "El 'Briefing' previo al vuelo es una herramienta fundamental de CRM porque:", options: ["Permite que la tripulación duerma unos minutos más.", "Establece el tono de liderazgo, clarifica expectativas, define roles ante emergencias y crea un ambiente abierto para la comunicación.", "Es un requisito puramente administrativo para cobrar el sueldo.", "Se utiliza exclusivamente para revisar los uniformes."], answer: 1 },
-        { q: "Un pasajero comienza a mostrarse agresivo durante el servicio (interfaz L-L). Aplicando asertividad, el TCP debe:", options: ["Gritarle de vuelta para establecer autoridad.", "Ignorarlo completamente y saltarse su fila.", "Mantener la calma, establecer límites claros con firmeza pero con respeto, y buscar apoyo de otro tripulante si la situación escala.", "Lanzarle la comida y huir al galley."], answer: 2 },
-        { q: "¿Qué significa 'Complacencia' (Complacency) en el contexto de Factores Humanos?", options: ["Ser muy amable con los pasajeros de clase ejecutiva.", "Un estado de falsa seguridad y pérdida de vigilancia, generalmente asociado a realizar tareas rutinarias o volar con equipos altamente automatizados, lo que degrada la Conciencia Situacional.", "La satisfacción de terminar un vuelo sin demoras.", "La capacidad de complacer las demandas gerenciales."], answer: 1 },
-        { q: "El uso estricto de la 'Lista de Chequeo' (Checklist) es una defensa del sistema (Queso Suizo) que interactúa principalmente en la interfaz:", options: ["Liveware - Liveware.", "Liveware - Software (El tripulante siguiendo un procedimiento/manual).", "Hardware - Environment.", "Environment - Software."], answer: 1 },
-        { q: "Durante un descenso rápido de emergencia, un TCP nota que su compañero se queda congelado por el pánico. El liderazgo adecuado dictaría:", options: ["Ignorarlo y hacer el trabajo de ambos.", "Gritarle que es un inútil frente a los pasajeros.", "Tomar el control directivo, asignarle una tarea muy específica y simple (ej. '¡Siéntate y abróchate!') para sacarlo del bloqueo.", "Ponerse a llorar con él."], answer: 2 },
-        { q: "La 'Cultura Justa' (Just Culture) promovida por el CRM significa que:", options: ["A los tripulantes jamás se les despide, hagan lo que hagan.", "Se castiga severamente cualquier error, sin importar si fue intencional o no.", "Se fomenta el reporte de errores genuinos sin miedo a castigos, pero NO se toleran las infracciones intencionales, negligencias graves o actos de sabotaje.", "Solo se castiga a los mecánicos y no a los TCP."], answer: 2 },
-        { q: "¿Qué es el 'Efecto Halo' en la evaluación o interacción entre Liveware-Liveware?", options: ["Ver aros de luz alrededor de las luces de pista.", "Un sesgo cognitivo donde la impresión general positiva de una persona (ej. 'es muy simpático') hace que se ignoren sus errores o deficiencias profesionales.", "La comunicación perfecta sin necesidad de hablar.", "El reflejo del sol en las ventanas de la cabina."], answer: 1 },
-        { q: "La 'Sobrecarga de Información' (Information Overload) puede llevar a:", options: ["Una mejora en la retención de la memoria a largo plazo.", "Que el cerebro deseche información crítica, estrechando la atención y resultando en una toma de decisiones deficiente.", "Mayor capacidad de escuchar comunicaciones del ATC.", "Un aumento de la presión sanguínea sin efectos cognitivos."], answer: 1 },
-        { q: "En la estructura de un equipo de alto rendimiento a bordo, los roles son:", options: ["Estáticos, el Jefe de Cabina hace todo.", "Dinámicos e interdependientes; todos tienen un rol vital que cumplir para que el resultado final sea seguro y exitoso.", "Competitivos, cada TCP debe demostrar ser mejor que el otro.", "Innecesarios si el avión es moderno."], answer: 1 },
-        { q: "¿Cuál es el propósito del 'Debriefing' al finalizar un vuelo?", options: ["Anotar las horas de vuelo.", "Analizar qué salió bien, qué errores se cometieron y qué se puede mejorar para el próximo vuelo, cerrando el ciclo de aprendizaje.", "Despedirse de los pasajeros en la puerta.", "Limpiar la cabina de mando."], answer: 1 },
-        { q: "La interfaz Liveware - Liveware (L-L) se ve fuertemente afectada negativamente por:", options: ["Un exceso de manuales (Software).", "Una temperatura de cabina ideal.", "Barreras de idioma, prejuicios personales, diferencias culturales y conflictos de personalidad no resueltos.", "El diseño ergonómico de los carros de servicio (Trolleys)."], answer: 2 },
-        { q: "Si las defensas organizacionales, técnicas e individuales fallan simultáneamente, según James Reason, ocurre:", options: ["Un aumento de sueldo.", "Una auditoría de la DGAC.", "La trayectoria del accidente se completa, resultando en un incidente grave o catástrofe.", "Solo una advertencia verbal del supervisor."], answer: 2 },
-        { q: "Una excelente técnica de asertividad estructurada frente a un desvío de seguridad es la regla de los 'Dos Desafíos' (Two-Challenge Rule), que implica:", options: ["Retar al Capitán a una pelea.", "Expresar la preocupación de seguridad dos veces de forma clara; si no hay respuesta o corrección, asumir que la persona está incapacitada (física o cognitivamente) y tomar el control de la situación.", "Preguntar a dos pasajeros qué opinan.", "Avisar a la torre de control en el segundo intento."], answer: 1 },
-        { q: "El 'Síndrome del Co-Piloto' (o subordinado) es una falla del CRM donde:", options: ["El tripulante asume el mando total.", "El tripulante subalterno nota un error del superior, pero no dice nada por miedo a la jerarquía, exceso de respeto o falta de asertividad.", "El copiloto se enferma de la comida del avión.", "Todos hablan al mismo tiempo y nadie lidera."], answer: 1 },
-        // ---------------------------------------------------------
-        // BLOQUE 2: PREGUNTAS AVANZADAS - CRM Y FACTORES HUMANOS
-        // ---------------------------------------------------------
-
-        // PROCESOS COGNITIVOS Y APRENDIZAJE
-        { q: "Un TCP nota un sonido inusual en el galley, pero al estar concentrado atendiendo a un pasajero molesto, no lo registra conscientemente. ¿Qué limitación cognitiva explica esto?", options: ["Pérdida de memoria a corto plazo.", "Atención selectiva canalizada (visión/audición de túnel) por alta carga de trabajo.", "Falta de motivación personal.", "Estilo de aprendizaje kinestésico predominante."], answer: 1 },
-        { q: "La 'Memoria a Corto Plazo' o Memoria de Trabajo en un ser humano tiene una limitación natural. En promedio, ¿cuántos 'ítems' o bloques de información puede retener simultáneamente?", options: ["Entre 1 y 2 ítems.", "Alrededor de 7 (± 2) ítems.", "Un máximo de 20 ítems.", "Capacidad ilimitada si hay concentración."], answer: 1 },
-        { q: "¿Qué proceso cognitivo es fundamental para pasar información crítica de la Memoria a Corto Plazo a la Memoria a Largo Plazo?", options: ["La repetición oral (Rehearsal) y la asociación de significados.", "La hiperventilación.", "Ignorar los estímulos externos.", "El estrés físico excesivo."], answer: 0 },
-        { q: "Según los estilos de percepción, un tripulante que aprende mejor operando los equipos de emergencia directamente con sus manos (en lugar de leer el manual) tiene una predominancia de aprendizaje:", options: ["Auditiva.", "Visual.", "Kinestésica (o Corporal).", "Lecto-escritora."], answer: 2 },
-        
-        // ANÁLISIS PROFUNDO DEL ERROR (REASON)
-        { q: "En la taxonomía del error, un 'Lapsus' (Lapse) se diferencia de un 'Desliz' (Slip) en que:", options: ["El lapsus es intencional y el desliz no.", "El lapsus es una falla de memoria (olvidar un paso), mientras que el desliz es una falla de atención en la ejecución (hacer algo distinto a lo planeado).", "El lapsus solo ocurre en tierra y el desliz en vuelo.", "No hay diferencia, son el mismo concepto."], answer: 1 },
-        { q: "Una tripulación decide omitir conscientemente la lectura cruzada del 'Cross-Check' de puertas para ahorrar tiempo en una escala corta. Esto se clasifica como:", options: ["Un error latente del fabricante.", "Un desliz (Slip) por fatiga.", "Una infracción (Violación) rutinaria o de optimización.", "Un fallo de diseño del sistema."], answer: 2 },
-        { q: "El concepto de 'Cultura Justa' (Just Culture) en aviación fomenta un entorno donde:", options: ["Se ocultan los errores para proteger a la aerolínea.", "No hay consecuencias sin importar la gravedad del acto.", "Se promueve el reporte transparente de errores (fallos honestos) sin temor a castigo, pero se traza una línea estricta frente a negligencias inaceptables o sabotaje.", "Se despide inmediatamente a quien cometa un error documentado."], answer: 2 },
-        { q: "Dentro del modelo del Queso Suizo, si una aerolínea implementa un manual con procedimientos confusos y contradictorios, estamos ante:", options: ["Un fallo activo.", "Una barrera física infranqueable.", "Una condición latente generada a nivel organizacional.", "Una infracción directa."], answer: 2 },
-
-        // ESTRÉS, FATIGA Y LÍMITES HUMANOS
-        { q: "¿Cuál es la diferencia fisiológica clave entre la Fatiga Aguda y la Fatiga Crónica?", options: ["La aguda dura meses, la crónica solo unas horas.", "La aguda se alivia con un período de sueño normal e ininterrumpido; la crónica persiste a pesar del descanso y requiere intervención a largo plazo.", "La aguda solo afecta la fuerza física, la crónica solo la vista.", "Ninguna, ambas se curan bebiendo café."], answer: 1 },
-        { q: "El Síndrome de Adaptación General (respuesta al estrés) consta de tres fases. Si el estrés se prolonga demasiado en el tiempo, el cuerpo entra en la fase de:", options: ["Alarma (producción de adrenalina).", "Resistencia.", "Agotamiento (donde aparecen enfermedades psicosomáticas y colapso).", "Relajación muscular."], answer: 2 },
-        { q: "El ritmo circadiano humano tiene sus puntos más bajos (mayor somnolencia y menor rendimiento cognitivo) generalmente entre:", options: ["Las 09:00 y las 11:00 horas.", "Las 16:00 y las 18:00 horas.", "Las 03:00 y las 05:00 horas (y un valle secundario a primera hora de la tarde).", "Las 20:00 y las 22:00 horas."], answer: 2 },
-        { q: "¿Qué es el 'Distrés' en la operación de un vuelo?", options: ["El estrés positivo que mantiene alerta al TCP durante el despegue.", "La distancia entre dos puntos de emergencia.", "El estrés negativo que supera la capacidad de manejo del tripulante, provocando desequilibrio, ansiedad y degradación del desempeño.", "El proceso de relajación tras aterrizar."], answer: 2 },
-
-        // BARRERAS EN LA COMUNICACIÓN Y SINERGIA
-        { q: "El 'Sesgo de Autoridad' (o gradiente de autoridad excesivamente alto) en la cabina ocurre cuando:", options: ["El Capitán delega demasiadas tareas al TCP.", "Un miembro junior no cuestiona ni advierte sobre un error evidente de un superior por miedo a represalias o por exceso de sumisión.", "Todos los miembros tienen exactamente la misma experiencia.", "Los pasajeros no obedecen las instrucciones de seguridad."], answer: 1 },
-        { q: "Durante un briefing, el Jefe de Cabina cruza los brazos, evita el contacto visual y mira su reloj constantemente mientras los TCP hablan. Esta comunicación no verbal indica:", options: ["Apertura y escucha activa profunda.", "Sinergia positiva.", "Barreras de actitud, desinterés o impaciencia, lo que inhibe la comunicación abierta del equipo.", "Liderazgo participativo."], answer: 2 },
-        { q: "Para que la Retroalimentación (Feedback) sea constructiva tras un incidente L-L (Liveware-Liveware), debe ser:", options: ["Pública, personal y enfocada en culpar.", "Oportuna, descriptiva, específica y enfocada en el comportamiento a mejorar, no en atacar a la persona.", "Retrasada varios meses hasta la evaluación anual.", "Anónima y basada en rumores."], answer: 1 },
-        { q: "En la resolución de conflictos, la postura de 'Evitación' (ganar-perder a largo plazo) se caracteriza por:", options: ["Buscar un punto intermedio donde ambos ceden.", "Imponer la voluntad propia a toda costa.", "Retirarse del conflicto, no expresar la opinión propia ni satisfacer los intereses del otro, dejando el problema de seguridad sin resolver.", "Colaborar para encontrar una nueva solución superadora."], answer: 2 },
-
-        // CONCIENCIA SITUACIONAL Y TOMA DE DECISIONES AVANZADA
-        { q: "¿Qué es la 'Fijación' (o canalización) en el contexto de la Conciencia Situacional?", options: ["Asegurar correctamente los carros de servicio en el galley.", "Enfocarse obsesivamente en un solo problema o instrumento, ignorando otra información vital (ej. intentar arreglar una cafetera mientras hay humo en otro sector).", "Mantener un panorama general perfecto de toda la cabina.", "La memorización exacta de un procedimiento de emergencia."], answer: 1 },
-        { q: "En la toma de decisiones, el sesgo de 'Exceso de Confianza' (Overconfidence) es peligroso porque:", options: ["Hace que la tripulación consulte los manuales demasiadas veces.", "Lleva a subestimar los riesgos y sobreestimar la propia capacidad para manejar la situación basándose en éxitos pasados.", "Genera pánico inmovilizador.", "Incentiva el uso excesivo de listas de chequeo cruzadas."], answer: 1 },
-        { q: "El modelo FOR-DEC es una herramienta estructurada para:", options: ["Manejar extintores de fuego.", "Calcular el peso y balance del avión.", "La toma de decisiones aeronáuticas metódica (Facts, Options, Risks & Benefits, Decision, Execution, Check).", "Atender exclusivamente urgencias médicas."], answer: 2 },
-        { q: "Una tripulación mantiene su plan de continuar un aproximación desestabilizada a pesar de múltiples alarmas, pensando 'ya estamos casi ahí'. Esto ilustra el sesgo de:", options: ["Cultura Justa.", "Sinergia de grupo.", "Compromiso con el plan / Continuación (Press-on-itis), donde se ignora nueva evidencia para no abandonar el esfuerzo ya invertido.", "Liderazgo Directivo."], answer: 2 },
-
-        // INTERFACES DEL MODELO SHELL PROFUNDIZADAS
-        { q: "La fatiga visual por mala iluminación en el galley, que lleva a un TCP a leer mal una etiqueta médica, es un fallo en la interfaz:", options: ["Liveware - Liveware.", "Liveware - Environment.", "Liveware - Software.", "Hardware - Software."], answer: 1 },
-        { q: "Un TCP comete un error porque el diseño del seguro del tobogán es contraintuitivo y fácil de activar por accidente. Esta es una deficiencia en la interfaz:", options: ["Liveware - Software.", "Environment - Hardware.", "Liveware - Hardware (ergonomía y diseño).", "Liveware - Liveware."], answer: 2 },
-        { q: "Un conflicto interpersonal crónico entre pilotos y TCPs que impide notificar contingencias adecuadamente, representa una ruptura crítica en la interfaz:", options: ["Liveware - Hardware.", "Software - Environment.", "Liveware - Liveware.", "Hardware - Hardware."], answer: 2 },
-        { q: "Un manual de procedimientos (Software) desactualizado que obliga al TCP a improvisar, interactúa negativamente de forma directa con:", options: ["El clima externo (Environment).", "El tripulante (Liveware), incrementando su carga de trabajo mental y el riesgo de error.", "La turbina del avión (Hardware).", "Los equipos de apoyo en tierra."], answer: 1 },
-
-        // LIDERAZGO SITUACIONAL Y EQUIPOS
-        { q: "Según la matriz de Liderazgo Situacional, si un TCP es completamente nuevo, inseguro y sin experiencia en la ruta, el Jefe de Cabina debe adoptar un estilo inicial:", options: ["Delegativo (darle toda la responsabilidad).", "Participativo (dejar que él decida).", "Directivo / Instructivo (dar instrucciones claras, detalladas y supervisión constante).", "Evitativo (no interferir)."], answer: 2 },
-        { q: "El estilo de liderazgo 'Participativo' es altamente efectivo cuando:", options: ["Hay un fuego no controlado a bordo y quedan 30 segundos.", "El equipo está compuesto por profesionales altamente maduros, competentes y se dispone de tiempo para analizar opciones y fomentar el compromiso.", "Nadie sabe qué hacer y hay pánico general.", "El líder no quiere asumir ninguna responsabilidad."], answer: 1 },
-        { q: "En el trabajo de cabina, ¿qué es la 'Difusión de la Responsabilidad'?", options: ["Cuando el Capitán asume toda la culpa.", "Un fenómeno psicológico donde, en presencia de un grupo grande, los individuos asumen que 'alguien más se hará cargo' de una emergencia, retrasando la acción.", "Repartir las tareas del galley de forma equitativa.", "La lectura en voz alta de un checklist."], answer: 1 },
-        { q: "¿Cuál es el principal antídoto en CRM contra la Difusión de la Responsabilidad durante una emergencia a bordo?", options: ["Gritar en voz baja.", "Asignar tareas específicas apuntando y nombrando (ej. 'Tú, el de camisa roja, trae el extintor').", "Esperar a que el pasajero reaccione solo.", "Mirar por la ventana."], answer: 1 },
-
-        // MISCELÁNEOS AVANZADOS
-        { q: "Una 'Defensa de Sistema' (rebanada de queso) basada en la persona se considera 'blanda' (soft defense) porque:", options: ["Está hecha de materiales flexibles.", "Depende del comportamiento humano (ej. disciplina para leer una checklist), lo cual es inherentemente falible y variable por fatiga o estrés.", "Está programada en el software del avión.", "No tiene ninguna importancia real."], answer: 1 },
-        { q: "¿Por qué los programas de CRM modernos insisten en el concepto de 'Resiliencia' del equipo?", options: ["Para enseñarles a no dormir en los hoteles.", "Porque es imposible prevenir el 100% de los errores; el equipo debe estar preparado para detectar el error rápidamente, mitigar sus consecuencias y recuperar la operación segura.", "Para obligarlos a trabajar turnos dobles sin cansarse.", "Solo para cumplir normas estéticas corporativas."], answer: 1 },
-        { q: "El concepto de 'Automatización Complaciente' (Automation Complacency) ocurre cuando:", options: ["Los TCP usan el horno del avión de forma eficiente.", "La tripulación confía tan ciegamente en los sistemas automáticos del avión que deja de monitorear activamente los parámetros de vuelo o el entorno.", "La aerolínea automatiza el pago de salarios.", "Se reemplazan las funciones manuales por robots."], answer: 1 },
-        { q: "El 'Efecto de Halo' negativo (o efecto Cuerno) puede afectar la seguridad a bordo si un TCP:", options: ["Ve luces alrededor de los motores.", "Asume que una advertencia de seguridad de un compañero es falsa simplemente porque le desagrada personalmente o lo considera inexperto.", "Usa un tono de voz demasiado suave.", "Se distrae con el paisaje nocturno."], answer: 1 },
-        { q: "Durante un proceso de asimilación de nueva información bajo alta carga de estrés, un tripulante sufrirá principalmente de:", options: ["Sinergia extrema.", "Una reducción drástica de su Memoria de Trabajo y capacidad para analizar opciones lógicas.", "Un aumento incontrolable de la empatía.", "Mejora en su percepción periférica visual."], answer: 1 },
-        { q: "El 'Comportamiento Disruptivo' de un pasajero afecta principalmente la seguridad operacional porque:", options: ["Molesta a otros pasajeros.", "Ensucia la cabina rápidamente.", "Actúa como un distractor masivo, absorbiendo los recursos atencionales de la tripulación y degradando la conciencia situacional frente a otros riesgos reales.", "Retrasa el servicio de comidas."], answer: 2 },
-        { q: "En la comunicación en cabina, el término 'Readback' (Colación o lectura de confirmación) es esencial porque:", options: ["Permite saber quién tiene mejor voz.", "Cierra el bucle de comunicación, confirmando que el receptor no solo escuchó, sino que comprendió exactamente lo que el emisor quería transmitir.", "Es un protocolo exclusivo para hablar con la torre de control, nunca entre tripulantes.", "Evita que la radio se apague."], answer: 1 },
-        { q: "¿Cuál es una técnica recomendada para mantener el Nivel 3 de Conciencia Situacional (Proyección) durante un vuelo de crucero largo y rutinario?", options: ["Jugar en el teléfono móvil.", "Practicar mentalmente escenarios de contingencia ('¿Qué pasaría si...?' o 'What if...') para anticipar posibles respuestas.", "Dormir en el jumpseat.", "Ignorar los procedimientos estándar para no aburrirse."], answer: 1 },
-        
-        // COMUNICACIÓN AVANZADA
-        { q: "Si un jefe de cabina dice 'Deberíamos revisar esa puerta, ¿no creen?', está utilizando un estilo de comunicación:", options: ["Directo y asertivo.", "Indirecto / Mitigado (lo cual en emergencias puede ser peligroso porque resta urgencia al mensaje).", "Agresivo.", "Participativo extremo."], answer: 1 },
-        { q: "La comunicación 'No Verbal' (gestos, postura) y 'Paraverbal' (tono, volumen) representan aproximadamente:", options: ["El 10% del mensaje total.", "El 30% del mensaje total.", "Más del 70% del impacto real de un mensaje en la comunicación interpersonal.", "No tienen impacto si las palabras son correctas."], answer: 2 },
-        { q: "En CRM, el concepto de 'Briefing Interactivo' se prefiere sobre el 'Briefing de Monólogo' porque:", options: ["Es más corto y ahorra tiempo.", "Fomenta la participación, asegura que el equipo realmente asimiló la información y establece un clima donde es seguro hacer preguntas.", "Permite que el líder descanse la voz.", "Evita tocar temas de seguridad."], answer: 1 },
-        
-        // ESCENARIOS Y CASOS PRÁCTICOS
-        { q: "Caso Práctico: Durante un abordaje caótico, un TCP novato olvida asegurar un galley. El TCP más antiguo lo nota, lo corrige agresivamente frente a los pasajeros y no le habla en todo el vuelo. Este evento degrada la seguridad porque:", options: ["Aumenta la carga de trabajo físico del TCP antiguo.", "Destruye la interfaz L-L, anula la asertividad futura del TCP novato y elimina la sinergia del equipo ante una eventual emergencia real.", "Retrasa el despegue 5 minutos.", "Los pasajeros podrían asustarse y bajarse del avión."], answer: 1 },
-        { q: "Caso Práctico: El equipo percibe un ligero olor a quemado (Nivel 1). El Jefe de Cabina deduce que es un cable pelado en el horno (Nivel 2) y decide apagar el horno y notificar al capitán, asumiendo que si no lo hace, podría iniciarse un fuego oculto. ¿Qué nivel de conciencia situacional acaba de aplicar?", options: ["Nivel 1 (Percepción).", "Nivel 2 (Comprensión).", "Nivel 3 (Proyección del estado futuro y toma de acción preventiva).", "Nivel 4 (Resolución total)."], answer: 2 },
-        { q: "Un TCP nota hielo en las alas (una amenaza potencial). Decide no reportarlo al Capitán porque 'los pilotos son expertos y seguro ya lo vieron'. Esto es un claro ejemplo de:", options: ["Asertividad y respeto jerárquico.", "Sinergia positiva.", "Complacencia y asunción errónea, una falla crítica que rompe la cadena de seguridad (Síndrome del Copiloto/Subordinado).", "Una excelente evaluación de riesgos."], answer: 2 },
-        { q: "En un vuelo con turbulencia severa, el estrés de la tripulación es altísimo. Para evitar el bloqueo mental, la técnica recomendada es:", options: ["Respiración profunda, control emocional y apegarse estrictamente a los procedimientos estandarizados (SOPs) entrenados.", "Improvisar nuevas soluciones para distraer a la mente.", "Correr rápidamente por el pasillo para calmar a la gente.", "Aumentar el tono de voz al máximo para demostrar autoridad."], answer: 0 },
-        { q: "El 'Efecto Túnel' visual y auditivo experimentado durante una emergencia extrema es causado por:", options: ["Un fallo en el sistema eléctrico del avión.", "Una respuesta fisiológica masiva de estrés agudo (descarga de catecolaminas) que concentra toda la atención del cerebro en la amenaza inmediata, bloqueando estímulos periféricos.", "La despresurización de la cabina únicamente.", "Cansancio visual por las luces del avión."], answer: 1 },
-        
-        // CONCEPTOS FINALES
-        { q: "La resiliencia humana en la aviación se define como:", options: ["La fuerza física para abrir una puerta armada.", "La capacidad del tripulante y del equipo para absorber un impacto (estrés, error, emergencia), adaptarse rápidamente y recuperar el control de la situación.", "La capacidad de trabajar sin dormir 24 horas.", "El blindaje técnico de las ventanas de la cabina."], answer: 1 },
-        { q: "Según James Reason, los 'Errores Basados en Reglas' (Rule-based mistakes) ocurren cuando:", options: ["Se aplica una regla correcta a la situación equivocada, o se aplica una regla defectuosa.", "Un TCP olvida amarrarse el cinturón.", "Se rompe una ventana intencionalmente.", "El fabricante diseña mal el avión."], answer: 0 },
-        { q: "¿Qué busca mitigar la filosofía de operación del 'Crew Resource Management' (CRM)?", options: ["El desgaste de las piezas mecánicas de la turbina.", "Los errores humanos inevitables, transformando a un grupo de individuos en un equipo cohesionado que actúa como red de seguridad multicapa.", "El consumo excesivo de combustible en tierra.", "Las quejas de los pasajeros por la comida."], answer: 1 },
-        { q: "En la comunicación de cabina, la redundancia (ej. avisos luminosos + alarmas sonoras + confirmación verbal) se utiliza para:", options: ["Gastar más energía eléctrica.", "Molestar a los pasajeros distraídos.", "Asegurar que la información crítica cruce múltiples canales sensoriales, minimizando la probabilidad de que un mensaje vital sea ignorado por falta de atención o ruido ambiental.", "Cumplir con leyes anticuadas de aviación."], answer: 2 },
-        { q: "La principal diferencia entre el Liderazgo y el Poder (o Autoridad jerárquica) en una cabina es que:", options: ["El poder se gana con el tiempo, el liderazgo te lo da el manual.", "La autoridad se impone por el cargo (ej. 'Soy el Capitán'), pero el liderazgo se gana inspirando confianza, respeto y guiando al equipo hacia un objetivo común.", "No hay diferencia, el que tiene más galones siempre es el mejor líder.", "El liderazgo solo lo pueden ejercer los TCPs."], answer: 1 },
-        { q: "El 'Groupthink' (Pensamiento de Grupo) es un riesgo para la seguridad porque:", options: ["Todos piensan diferente y discuten constantemente.", "El deseo de mantener la armonía y evitar conflictos dentro del equipo lleva a aceptar decisiones irracionales o inseguras sin cuestionarlas críticamente.", "Aumenta demasiado el nivel 3 de conciencia situacional.", "Los TCPs se vuelven demasiado analíticos y lentos."], answer: 1 }
-    ];
-
-    let currentSessionQuestions = [];
-    let currentQuestionIndex = 0;
+    // Variables de estado
+    let currentBank = [];
+    let sessionQuestions = [];
+    let currentIndex = 0;
     let score = 0;
+    let lives = 3;
+    let mistakes = []; // Guarda los errores para el debriefing
+    
+    // Variables Timer
+    let timerInterval;
+    let totalSeconds = 0;
 
-    // ALGORITMO FISHER-YATES: Mezcla perfecta de alta precisión matemática
-    function shuffleArray(array) {
-        let shuffled = [...array];
+    const loveMessages = [
+        "¡Qué inteligente eres Mi Amorcito! 💕", "¡Esa es mi futura TCP! ✈️", 
+        "¡Lo estás haciendo excelente! ✨", "Respira profundo, te lo sabes de memoria ☁️",
+        "¡Eres brillante Prometida Mía! 🌟", "¡Estoy muy orgulloso de ti, enserio! 🥰"
+    ];
+
+    // --- AL INICIAR ---
+    window.onload = () => { updateHighScoreDisplay(); }
+
+    function updateHighScoreDisplay() {
+        const select = document.getElementById('subject-selector');
+        const subjectId = select.options[select.selectedIndex].getAttribute('data-id');
+        const record = localStorage.getItem(`TCP_Record_${subjectId}`);
+        const display = document.getElementById('highscore-display');
+        
+        if (record) {
+            document.getElementById('hs-value').innerText = record;
+            display.classList.remove('hidden');
+        } else {
+            display.classList.add('hidden');
+        }
+    }
+
+    // --- FETCH ASÍNCRONO DE PREGUNTAS DESDE GITHUB ---
+    async function initiateLoad(numQuestions) {
+        document.getElementById('loading-msg').classList.remove('hidden');
+        const buttons = document.querySelectorAll('#home-screen .btn');
+        buttons.forEach(b => b.disabled = true);
+
+        // Obtenemos la URL del select
+        const subjectUrl = document.getElementById('subject-selector').value;
+        
+        try {
+            // Llamada asíncrona y directa a tu GitHub
+            const response = await fetch(subjectUrl);
+            
+            if (!response.ok) throw new Error('No se pudo descargar el archivo');
+            
+            const data = await response.json();
+            
+            currentBank = data; // Guardamos el banco de preguntas descargado
+            startQuiz(numQuestions); // Iniciamos el examen
+
+        } catch (error) {
+            console.error(error);
+            alert("Error de conexión al cargar la materia. Verifica tu internet o que el enlace de GitHub sea correcto.");
+            document.getElementById('loading-msg').classList.add('hidden');
+            buttons.forEach(b => b.disabled = false);
+        }
+    }
+    // --- LÓGICA PRINCIPAL ---
+    function startQuiz(numQuestions) {
+        // Mezclar y cortar
+        let shuffled = [...currentBank];
         for (let i = shuffled.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
         }
-        return shuffled;
-    }
+        
+        const totalAvailable = Math.min(numQuestions, shuffled.length);
+        sessionQuestions = shuffled.slice(0, totalAvailable);
+        
+        // Reset Variables
+        currentIndex = 0; score = 0; lives = 3; mistakes = [];
+        document.getElementById('lives-display').innerHTML = "💖💖💖";
 
-    function startQuiz(numQuestions) {
-        const totalAvailable = Math.min(numQuestions, questionBank.length);
-        currentSessionQuestions = shuffleArray(questionBank).slice(0, totalAvailable);
-        currentQuestionIndex = 0;
-        score = 0;
+        // Setup Timer
+        const isTimerOn = document.getElementById('timer-toggle').checked;
+        if (isTimerOn) {
+            totalSeconds = sessionQuestions.length * 60; // 1 minuto por pregunta
+            document.getElementById('timer-display').classList.remove('hidden');
+            updateTimerUI();
+            timerInterval = setInterval(tickTimer, 1000);
+        }
 
+        // Cambio de pantalla
         document.getElementById('home-screen').classList.add('hidden');
         document.getElementById('quiz-screen').classList.remove('hidden');
         
         loadQuestion();
     }
 
+    function tickTimer() {
+        if (totalSeconds <= 0) {
+            clearInterval(timerInterval);
+            endGame(false, "¡Se acabó el tiempo en cabina! ⏰");
+            return;
+        }
+        totalSeconds--;
+        updateTimerUI();
+    }
+
+    function updateTimerUI() {
+        const mins = String(Math.floor(totalSeconds / 60)).padStart(2, '0');
+        const secs = String(totalSeconds % 60).padStart(2, '0');
+        const timerUI = document.getElementById('time-left');
+        timerUI.innerText = `${mins}:${secs}`;
+        
+        if (totalSeconds < 60) {
+            document.getElementById('timer-display').classList.add('danger');
+        }
+    }
+
     function loadQuestion() {
-        const q = currentSessionQuestions[currentQuestionIndex];
-        document.getElementById('question-counter').innerText = `Pregunta ${currentQuestionIndex + 1} de ${currentSessionQuestions.length}`;
+        const q = sessionQuestions[currentIndex];
+        document.getElementById('question-counter').innerText = `Pregunta ${currentIndex + 1} de ${sessionQuestions.length}`;
         document.getElementById('question-text').innerText = q.q;
         
-        // Reiniciar animaciones
         const qContainer = document.getElementById('q-container');
-        qContainer.style.animation = 'none';
-        qContainer.offsetHeight; /* Trigger reflow para reiniciar la animación */
-        qContainer.style.animation = 'slideIn 0.4s ease-out';
+        qContainer.style.animation = 'none'; qContainer.offsetHeight; qContainer.style.animation = 'slideIn 0.3s ease-out';
 
         const optionsDiv = document.getElementById('options');
         optionsDiv.innerHTML = '';
@@ -512,84 +356,121 @@
             const btn = document.createElement('button');
             btn.className = 'option-btn';
             btn.innerText = opt;
-            btn.onclick = () => selectAnswer(index, btn);
+            btn.onclick = () => selectAnswer(index, btn, q);
             optionsDiv.appendChild(btn);
         });
 
-        // Actualizar barra de progreso fluidamente
-        const progressPercentage = (currentQuestionIndex / currentSessionQuestions.length) * 100;
-        document.getElementById('progress').style.width = `${progressPercentage}%`;
-
-        document.getElementById('controls').classList.add('hidden');
-        const loveMsg = document.getElementById('love-message');
-        loveMsg.innerText = '';
-        loveMsg.classList.remove('show');
+        document.getElementById('progress').style.width = `${(currentIndex / sessionQuestions.length) * 100}%`;
+        document.getElementById('next-btn').classList.add('hidden');
+        document.getElementById('love-message').classList.remove('show');
     }
 
-    function selectAnswer(selectedIndex, btnElement) {
+    function selectAnswer(selectedIndex, btnElement, qData) {
         const options = document.getElementById('options').children;
-        for (let btn of options) {
-            btn.disabled = true;
-            btn.style.cursor = 'default';
-        }
+        for (let btn of options) { btn.disabled = true; btn.style.cursor = 'default'; }
 
-        const correctIndex = currentSessionQuestions[currentQuestionIndex].answer;
+        const correctIndex = qData.answer;
         const loveMsg = document.getElementById('love-message');
         
         if (selectedIndex === correctIndex) {
             btnElement.classList.add('correct');
             score++;
-            showRandomLoveMessage();
+            loveMsg.innerText = loveMessages[Math.floor(Math.random() * loveMessages.length)];
+            loveMsg.style.color = 'var(--rosa-fuerte)';
         } else {
             btnElement.classList.add('incorrect');
             options[correctIndex].classList.add('correct');
+            
+            // Restar vida y registrar error
+            lives--;
+            updateLivesUI();
+            mistakes.push({ 
+                q: qData.q, 
+                wrong: qData.options[selectedIndex], 
+                right: qData.options[correctIndex] 
+            });
+
             loveMsg.innerText = "¡Casi! Esa era engañosa, pero ya no se te olvidará. 💫";
             loveMsg.style.color = 'var(--pizarra-oscuro)';
-            loveMsg.classList.add('show');
+
+            if (lives <= 0) {
+                setTimeout(() => endGame(false, "Te quedaste sin vidas Mi Princesa 💔"), 1500);
+                return;
+            }
         }
 
-        document.getElementById('controls').classList.remove('hidden');
+        loveMsg.classList.add('show');
+        document.getElementById('next-btn').classList.remove('hidden');
     }
 
-    function showRandomLoveMessage() {
-        const msg = loveMessages[Math.floor(Math.random() * loveMessages.length)];
-        const msgEl = document.getElementById('love-message');
-        msgEl.innerText = msg;
-        msgEl.style.color = 'var(--rosa-fuerte)';
-        msgEl.classList.add('show');
+    function updateLivesUI() {
+        let hearts = "";
+        for(let i=0; i<3; i++) { hearts += (i < lives) ? "💖" : "🤍"; }
+        document.getElementById('lives-display').innerHTML = hearts;
     }
 
     function nextQuestion() {
-        currentQuestionIndex++;
-        if (currentQuestionIndex < currentSessionQuestions.length) {
+        currentIndex++;
+        if (currentIndex < sessionQuestions.length) {
             loadQuestion();
         } else {
-            showResults();
+            endGame(true, "");
         }
     }
 
-    function showResults() {
+    // --- FIN DEL JUEGO Y DEBRIEFING ---
+    function endGame(completed, abortMessage) {
+        clearInterval(timerInterval);
         document.getElementById('quiz-screen').classList.add('hidden');
         document.getElementById('result-screen').classList.remove('hidden');
         
-        // Llenar barra de progreso al 100% al terminar
-        document.getElementById('progress').style.width = '100%';
-
-        const percentage = Math.round((score / currentSessionQuestions.length) * 100);
+        const percentage = Math.round((score / sessionQuestions.length) * 100);
         document.getElementById('score-display').innerText = `${percentage}%`;
-
+        
         const titleText = document.getElementById('result-title');
         const msgText = document.getElementById('result-message');
+        const mainTitle = document.getElementById('result-main-title');
 
-        if (percentage === 100) {
-            titleText.innerText = "¡PERFECTO! 🥇";
-            msgText.innerText = "Eres una experta. ¡Me llenas de orgullo Mi Amorcitooo! Ese examen será un paseo por las nubes para ti. ¡Te Amooo Muchooo! ❤️";
-        } else if (percentage >= 80) {
-            titleText.innerText = "¡Excelente Trabajo Mi Vida! 🌟";
-            msgText.innerText = "Tienes los conocimientos listos. Confía en lo que sabes, respira profundo y ve por todo. ¡Te irá maravilloso! ¡Creo en ti Mi Bebé! 💖";
+        if (!completed) {
+            mainTitle.innerText = "¡Vuelo Abortado! 🚨";
+            titleText.innerText = abortMessage;
+            msgText.innerText = "No te preocupes Mi Vida, los simuladores están para equivocarse y aprender. ¡Inténtalo de nuevo, tú puedes!";
+            document.getElementById('score-display').style.borderColor = "var(--error)";
+            document.getElementById('score-display').style.color = "var(--error)";
         } else {
-            titleText.innerText = "¡Buen repaso Mi Princesa! ☁️";
-            msgText.innerText = "Lo importante es aprender de los errores ahora. Dale una leída rápida más y estarás lista. ¡Yo creo en ti siempre Mi Niña! 💪";
+            // Guardar High Score
+            const subject = document.getElementById('subject-selector').value;
+            const currentRecord = localStorage.getItem(`TCP_Record_${subject}`) || 0;
+            if (percentage > currentRecord) {
+                localStorage.setItem(`TCP_Record_${subject}`, percentage);
+            }
+
+            if (percentage === 100) {
+                titleText.innerText = "¡PERFECTO! 🥇";
+                msgText.innerText = "Eres una experta. ¡Me llenas de orgullo Mi Amorcitooo! Ese examen será un paseo por las nubes para ti.";
+            } else if (percentage >= 80) {
+                titleText.innerText = "¡Excelente Trabajo Mi Vida! 🌟";
+                msgText.innerText = "Tienes los conocimientos listos. Confía en lo que sabes, respira profundo y ve por todo.";
+            } else {
+                titleText.innerText = "¡Buen repaso Mi Princesa! ☁️";
+                msgText.innerText = "Lo importante es aprender de los errores ahora. Échale un vistazo al debriefing aquí abajo.";
+            }
+        }
+
+        // Renderizar Debriefing si hubo errores
+        if (mistakes.length > 0) {
+            document.getElementById('debrief-section').classList.remove('hidden');
+            const list = document.getElementById('debrief-list');
+            list.innerHTML = '';
+            mistakes.forEach(m => {
+                list.innerHTML += `
+                    <div class="debrief-item">
+                        <div class="debrief-q">${m.q}</div>
+                        <div class="debrief-wrong">❌ Elegiste: ${m.wrong}</div>
+                        <div class="debrief-right">✅ Correcta: ${m.right}</div>
+                    </div>
+                `;
+            });
         }
     }
 </script>
