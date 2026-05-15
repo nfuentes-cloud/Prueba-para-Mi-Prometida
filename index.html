@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen TCP - Para mi futura tripulante ✈️</title>
+    <style>
+        :root {
+            --pizarra-oscuro: #2F3E46;
+            --teal-electrico: #38B2AC;
+            --fondo-suave: #F7FAFC;
+            --blanco: #FFFFFF;
+            --error: #E53E3E;
+            --exito: #38A169;
+        }
+
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--fondo-suave);
+            color: var(--pizarra-oscuro);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: var(--blanco);
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(47, 62, 70, 0.1);
+            padding: 30px;
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        h1 {
+            color: var(--teal-electrico);
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        p.subtitle {
+            font-size: 1.1rem;
+            color: var(--pizarra-oscuro);
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .btn {
+            background-color: var(--teal-electrico);
+            color: var(--blanco);
+            border: none;
+            border-radius: 12px;
+            padding: 15px 20px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 15px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(56, 178, 172, 0.4);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .question-container {
+            text-align: left;
+        }
+
+        .question-text {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        .options-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .option-btn {
+            background-color: var(--fondo-suave);
+            border: 2px solid #E2E8F0;
+            border-radius: 10px;
+            padding: 15px;
+            font-size: 1rem;
+            color: var(--pizarra-oscuro);
+            cursor: pointer;
+            text-align: left;
+            transition: all 0.2s;
+        }
+
+        .option-btn.selected {
+            border-color: var(--teal-electrico);
+            background-color: rgba(56, 178, 172, 0.1);
+        }
+
+        .option-btn.correct {
+            border-color: var(--exito);
+            background-color: rgba(56, 161, 105, 0.1);
+            color: var(--exito);
+            font-weight: bold;
+        }
+
+        .option-btn.incorrect {
+            border-color: var(--error);
+            background-color: rgba(229, 62, 62, 0.1);
+            color: var(--error);
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background-color: #E2E8F0;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background-color: var(--teal-electrico);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        .love-message {
+            margin-top: 25px;
+            font-size: 1rem;
+            color: #D53F8C;
+            font-weight: bold;
+            min-height: 24px;
+        }
+
+        .controls {
+            margin-top: 25px;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        #next-btn {
+            width: auto;
+            padding: 12px 25px;
+            margin-bottom: 0;
+        }
+
+        .results {
+            text-align: center;
+        }
+
+        .score-circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 8px solid var(--teal-electrico);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--pizarra-oscuro);
+            margin: 0 auto 20px auto;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container" id="home-screen">
+    <h1>¡Hola Keilyn, mi amor! ❤️</h1>
+    <p class="subtitle">Sé que te irá increíble hoy. Confío plenamente en ti y en todo lo que has estudiado. ¡Un pasito más cerca de volar juntos!</p>
+    <p>Elige cómo quieres repasar:</p>
+    <button class="btn" onclick="startQuiz(20)">Hacer 20 preguntas al azar</button>
+    <button class="btn" onclick="startQuiz(40)">Repasar TODO (40 preguntas)</button>
+</div>
+
+<div class="container hidden" id="quiz-screen">
+    <div class="progress-bar">
+        <div class="progress-fill" id="progress"></div>
+    </div>
+    <div class="question-container">
+        <span id="question-counter" style="font-size: 0.9rem; color: #718096; margin-bottom: 10px; display: block;"></span>
+        <div class="question-text" id="question-text"></div>
+        <div class="options-container" id="options"></div>
+    </div>
+    <div class="love-message" id="love-message"></div>
+    <div class="controls hidden" id="controls">
+        <button class="btn" id="next-btn" onclick="nextQuestion()">Siguiente ✈️</button>
+    </div>
+</div>
+
+<div class="container hidden" id="result-screen">
+    <h1>¡Examen Terminado!</h1>
+    <div class="score-circle" id="score-display">100%</div>
+    <h2 id="result-title" style="color: var(--teal-electrico);"></h2>
+    <p id="result-message" style="font-size: 1.1rem; line-height: 1.5;"></p>
+    <button class="btn" style="margin-top: 20px;" onclick="location.reload()">Volver a repasar</button>
+</div>
+
+<script>
+    const loveMessages = [
+        "¡Qué inteligente eres, mi vida!",
+        "¡Esa es mi futura TCP!",
+        "Sigue así, lo estás haciendo excelente.",
+        "Respira profundo, tú te sabes esto de memoria.",
+        "¡Nos vemos en el cielo! Confío en ti.",
+        "Eres brillante, Keilyn.",
+        "No hay examen que te detenga.",
+        "Estoy muy orgulloso de ti."
+    ];
+
+    const questionBank = [
+        // PRIMEROS AUXILIOS 2
+        { q: "¿Cómo identifica un tripulante una herida punzante a simple vista?", options: ["Presenta bordes limpios y sangrado abundante.", "Se genera por fricción y tiene poco sangrado superficial.", "Tiene un orificio de entrada pequeño, puede ser profunda y el sangrado externo puede ser escaso.", "Presenta desgarro de tejidos y exposición de hueso."], answer: 2 },
+        { q: "Ante un pasajero con una quemadura significativa a bordo, ¿qué factores determinan principalmente su gravedad?", options: ["El color de la ropa del pasajero y la altitud de la cabina.", "La extensión, la profundidad (grado) y la zona del cuerpo afectada (ej. vías aéreas).", "Exclusivamente si hay dolor intenso o no.", "El tiempo que falta para aterrizar."], answer: 1 },
+        { q: "¿Cuál es el procedimiento inmediato frente a una obstrucción TOTAL de la vía aérea en un adulto consciente?", options: ["Ofrecer agua inmediatamente.", "Dar 5 golpes en la espalda seguidos de RCP.", "Animarlo a toser fuertemente.", "Aplicar la maniobra de Heimlich (compresiones abdominales) hasta que expulse el objeto o pierda el conocimiento."], answer: 3 },
+        { q: "¿Cuáles son las características de las compresiones torácicas efectivas en la RCP de un adulto?", options: ["Profundidad de 5 a 6 cm, permitir expansión completa del tórax y un ritmo de 100-120 por minuto.", "Profundidad de 2 cm y ritmo de 80 por minuto.", "Profundidad máxima, sin importar el ritmo, apoyando todo el peso sin soltar.", "Masaje suave para no fracturar costillas, ritmo de 60 por minuto."], answer: 0 },
+        { q: "Ante un paro cardiorrespiratorio en vuelo, ¿cuál debe ser la PRIMERA acción de la tripulación?", options: ["Buscar el botiquín de primeros auxilios.", "Evaluar la seguridad, comprobar consciencia, pedir ayuda y que traigan el DEA de inmediato.", "Avisar al capitán antes de tocar al pasajero.", "Dar 2 ventilaciones boca a boca."], answer: 1 },
+        { q: "¿Por qué un resfriado aumenta el riesgo de sufrir barosinusitis o barodontalgia durante el vuelo?", options: ["Porque el virus se expande con la baja presión.", "Porque la mucosidad bloquea los conductos (como la trompa de Eustaquio o los senos paranasales), impidiendo ecualizar los gases atrapados al cambiar la presión.", "Porque el frío de la cabina empeora la fiebre.", "Porque los oídos producen más cera en la altura."], answer: 1 },
+        { q: "¿Cuál es el manejo adecuado de una fractura cerrada a bordo por parte de la tripulación?", options: ["Intentar alinear el hueso inmediatamente para calmar el dolor.", "Aplicar calor directo y dar analgésicos.", "Inmovilizar la extremidad en la posición en la que se encontró, aplicar frío local si es posible y mantener en reposo.", "Hacer caminar al pasajero para mantener la circulación."], answer: 2 },
+        { q: "Mientras llega el DEA a la escena de un paro cardiorrespiratorio, la tripulación debe:", options: ["Esperar sin hacer nada para no alterar el ritmo cardíaco.", "Buscar a un médico a bordo y esperar sus instrucciones.", "Iniciar y mantener compresiones torácicas continuas a un ritmo de 100-120 por minuto.", "Tomar la presión arterial del pasajero."], answer: 2 },
+        { q: "El manejo correcto de una herida sangrante en vuelo incluye:", options: ["Lavar con alcohol, dejar al aire libre y aplicar torniquete.", "Aplicar presión directa con apósitos limpios, si se empapan colocar más encima (no retirar los primeros) y elevar la extremidad.", "Retirar los coágulos formados y aplicar ungüento.", "Soplar la herida para secarla rápidamente."], answer: 1 },
+        { q: "En el contexto de RCP a bordo, ¿en qué situación puede justificarse priorizar o aplicar el boca a boca (ventilaciones)?", options: ["Siempre que sea un adulto por problemas cardíacos.", "Cuando se cuenta con equipo de protección de barrera (mascarilla) y se está capacitado, o en casos de asfixia/ahogamiento y niños.", "Nunca debe hacerse bajo ninguna circunstancia.", "Solo si el pasajero es un familiar del tripulante."], answer: 1 },
+        { q: "¿Por qué los tripulantes NO deben recomendar ni administrar medicamentos de uso personal a los pasajeros?", options: ["Porque los medicamentos en vuelo pierden su efecto.", "Porque es ilegal y existe el riesgo de provocar reacciones alérgicas severas, interacciones o empeorar un cuadro clínico no diagnosticado.", "Porque se agotarían los suministros de la aerolínea.", "Solo porque lo prohíbe el manual de la aeronave, sin razón médica."], answer: 1 },
+        { q: "Ante una hemorragia abundante, ¿por qué NO se deben retirar los apósitos empapados en sangre?", options: ["Porque ensucia la cabina.", "Porque aumenta el dolor del pasajero al tirar de la piel.", "Porque destruiría el coágulo que se está formando para detener el sangrado, reactivando la hemorragia.", "Porque el material de los apósitos es tóxico si se remueve."], answer: 2 },
+        { q: "¿Cómo se diferencian las compresiones de RCP en un lactante (menor de 1 año) respecto a un adulto?", options: ["Se usa una sola mano y se comprime 5 cm.", "Se usan 2 dedos (índice y medio) en el centro del pecho, comprimiendo aproximadamente 4 cm (1/3 del tórax).", "Se comprime el abdomen en lugar del tórax.", "No se hacen compresiones, solo ventilaciones."], answer: 1 },
+        { q: "Durante una RCP a bordo, ¿cada cuánto tiempo se debe reevaluar al pasajero y/o alternar al compresor?", options: ["Cada 5 minutos.", "Cada 2 minutos (o 5 ciclos de 30:2), para evitar la fatiga del reanimador y asegurar compresiones de alta calidad.", "Cada vez que el pasajero cambie de color.", "No se debe reevaluar hasta que llegue el avión al suelo."], answer: 1 },
+        { q: "Ante una descompresión explosiva, ¿cuál es la reacción INMEDIATA y prioritaria de la tripulación?", options: ["Asegurar su propia mascarilla de oxígeno inmediatamente antes de ayudar a los pasajeros (considerando el Tiempo Útil de Conciencia - TUC).", "Correr por el pasillo entregando mascarillas a los niños.", "Avisar al capitán por el interfono.", "Sentarse en el suelo y taparse los oídos."], answer: 0 },
+        { q: "En la troposfera (donde ocurren la mayoría de los vuelos), ¿cómo se comporta la temperatura y la presión a medida que se asciende?", options: ["Ambas aumentan gradualmente.", "La temperatura se mantiene constante y la presión baja.", "Ambas disminuyen gradualmente con la altitud.", "La temperatura aumenta pero la presión disminuye."], answer: 2 },
+        { q: "¿Por qué el nitrógeno juega un rol clave en las enfermedades por descompresión?", options: ["Porque se vuelve tóxico y ataca los pulmones.", "Porque ante una caída brusca de presión, el nitrógeno disuelto en los tejidos forma burbujas que pueden bloquear vasos sanguíneos o causar dolor articular.", "Porque reemplaza al oxígeno en la sangre.", "Porque hace que el pasajero se hiperventile de inmediato."], answer: 1 },
+        { q: "Una descompresión explosiva se caracteriza por:", options: ["Durar más de 10 segundos, sin ruidos fuertes.", "Durar menos de 1 segundo, generando un ruido sordo, niebla en cabina, caída de temperatura y succión de objetos.", "Ser indetectable hasta que caen las mascarillas.", "Aumentar la temperatura de la cabina y generar olor a quemado."], answer: 1 },
+        { q: "¿Cuál es la relación fisiológica entre altura y presión atmosférica en vuelo?", options: ["A mayor altitud, menor presión atmosférica, lo que reduce la presión parcial de oxígeno y dificulta su absorción en los pulmones (causando hipoxia).", "A mayor altitud, mayor presión, lo que aplasta los pulmones.", "La altitud no afecta al cuerpo gracias a los motores del avión.", "A mayor altitud, menor gravedad, lo que afecta el corazón."], answer: 0 },
+        { q: "¿Por qué la posición de seguridad (brace position) varía en mujeres embarazadas?", options: ["Para que estén más cómodas y puedan ver las salidas de emergencia.", "Porque deben estirar las piernas para no generar coágulos.", "Para evitar la compresión directa del abdomen; se les instruye colocar el cinturón por debajo del vientre y apoyar la cabeza sobre brazos cruzados sin presionar la panza.", "No varía, es exactamente igual para todos los pasajeros."], answer: 2 },
+
+        // PRIMEROS AUXILIOS 1
+        { q: "¿Cómo se identifica a simple vista una herida abrasiva (raspadura)?", options: ["Es un corte profundo con bordes rectos.", "Hay pérdida de las capas superficiales de la piel por fricción, con sangrado en 'puntillado'.", "Es un orificio profundo causado por un clavo.", "Expone el hueso y los músculos internos."], answer: 1 },
+        { q: "¿Cuál es el manejo correcto frente a una convulsión en pleno vuelo?", options: ["Sujetar fuertemente las extremidades del pasajero para que no se golpee y meterle un lápiz en la boca.", "Dejarlo en su asiento sin tocarlo hasta que despierte.", "Despejar el área de objetos peligrosos, proteger su cabeza con almohadas/mantas, no inmovilizar a la fuerza y no introducir nada en la boca.", "Darle a beber agua con azúcar mientras convulsiona."], answer: 2 },
+        { q: "¿Qué es el shock y cuáles son sus signos característicos?", options: ["Un ataque de pánico; los signos son gritos y llanto incontrolable.", "Falta de oxigenación a los tejidos; signos incluyen piel pálida, fría y sudorosa, pulso rápido y débil, respiración superficial y alteración mental.", "Un golpe eléctrico; signos de quemaduras en las manos.", "Una reacción alérgica leve; picazón y enrojecimiento."], answer: 1 },
+        { q: "¿Cómo se debe manejar un episodio consciente de hipoglicemia (baja de azúcar) a bordo?", options: ["Administrar insulina del botiquín médico de inmediato.", "Darle bebidas con alcohol para subir la presión.", "Administrar carbohidratos de absorción rápida (jugo dulce, bebida azucarada, sobres de azúcar) y evaluar recuperación.", "Acostar al pasajero y esperar a que pase sin darle nada."], answer: 2 },
+        { q: "La hipoxia en aviación se define como:", options: ["Exceso de oxígeno en la sangre por hiperventilación.", "La deficiencia en el suministro de oxígeno a los tejidos del cuerpo, siendo crítica porque altera el juicio y lleva a la pérdida de conciencia.", "La pérdida de presión en los oídos al descender.", "El mareo causado por turbulencias severas."], answer: 1 },
+        { q: "¿Por qué un pasajero fumador tiene MAYOR riesgo de sufrir hipoxia hipémica?", options: ["Porque el humo daña sus pulmones impidiendo que se expandan.", "Porque el monóxido de carbono del tabaco se une a la hemoglobina más fuerte que el oxígeno, reduciendo la capacidad de transporte de O2 en la sangre.", "Porque fuma a escondidas en el baño.", "Porque el tabaco destruye los glóbulos rojos al instante."], answer: 1 },
+        { q: "La secuencia correcta de RCP en un adulto según normas internacionales (AHA) es:", options: ["C-A-B (Compresiones, Vía Aérea, Buena Respiración) - 30 compresiones por 2 ventilaciones.", "A-B-C (Vía Aérea, Buena Respiración, Compresiones) - 15 compresiones por 2 ventilaciones.", "B-C-A (Buena Respiración, Compresiones, Vía Aérea) - Solo ventilaciones.", "C-B-A - 5 compresiones por 1 ventilación."], answer: 0 },
+        { q: "¿Qué son las sibilancias y cómo se manejan si un pasajero las presenta?", options: ["Son manchas en la piel; se aplica crema con corticoides.", "Son sonidos agudos (silbidos) al respirar, comunes en crisis de asma; se debe calmar al pasajero, sentarlo erguido y ayudarlo a usar su inhalador si lo tiene.", "Son ronquidos profundos; se debe despertar al pasajero.", "Son latidos cardíacos irregulares; requiere DEA de inmediato."], answer: 1 },
+        { q: "El manejo correcto de un esguince de tobillo a bordo implica la nemotecnia RICE, que significa:", options: ["Reposo, Inmovilización, Compresión local y Elevación (aplicar frío para reducir la inflamación y dolor).", "Respiración, Inhalación, Calor y Elevación.", "Revisión, Inyección, Caminata y Ejercicio.", "Retirar zapatos, Intentar enderezar, Calentar y Esperar."], answer: 0 },
+        { q: "¿Quién está legalmente autorizado para certificar el fallecimiento de un pasajero a bordo?", options: ["El Capitán de la aeronave.", "El Jefe de Cabina (Sobrecargo).", "Cualquier Tripulante de Cabina tras 30 minutos de RCP.", "Únicamente un Médico (ya sea pasajero a bordo o el servicio médico en tierra a la llegada)."], answer: 3 },
+        { q: "Durante un parto a bordo, ¿qué señales indican que la pasajera se encuentra en periodo expulsivo?", options: ["Solo tiene contracciones suaves cada 20 minutos.", "Rotura de fuente (bolsa de agua) reciente sin dolor.", "Contracciones muy frecuentes y fuertes, necesidad incontrolable de pujar y abombamiento/coronación (se ve la cabeza del bebé).", "La madre se queda dormida profundamente."], answer: 2 },
+        { q: "Inmediatamente después de ocurrir una quemadura, ¿qué factor es crucial evaluar?", options: ["Si el pasajero ha comido recientemente.", "Si la quemadura involucra la cara, el cuello o las vías respiratorias (por riesgo inminente de asfixia por inflamación).", "Si la piel se puso roja o morada.", "Cuánto costaba la ropa que se arruinó."], answer: 1 },
+        { q: "Si un pasajero cae INCONSCIENTE durante la maniobra de Heimlich, la tripulación debe:", options: ["Continuar con las compresiones abdominales en el suelo.", "Dejarlo solo y buscar ayuda.", "Acomodarlo con cuidado en el suelo, activar emergencias e INICIAR RCP (comenzando por compresiones torácicas).", "Hacer respiración boca a boca inmediatamente sin compresiones."], answer: 2 },
+        { q: "Antes de administrar una descarga con el DEA, la medida de SEGURIDAD vital que debe cumplir la tripulación es:", options: ["Asegurarse de que el pasajero esté bien abrigado.", "Asegurarse de que nadie (ni la tripulación ni otros pasajeros) esté tocando al paciente, gritando '¡Todos fuera!'.", "Apagar los motores del avión.", "Sujetar fuertemente las manos del pasajero para que no salte."], answer: 1 },
+        { q: "Para reconocer un posible Accidente Cerebrovascular (ACV) a bordo, se utiliza la escala FAST. ¿Qué significa?", options: ["Face (Cara asimétrica), Arms (Brazos con debilidad), Speech (Habla arrastrada o incomprensible), Time (Tiempo de actuar rápido).", "Fiebre, Asfixia, Sudoración, Temblor.", "Frecuencia, Altitud, Sensibilidad, Temperatura.", "First Aid, Safety, Turbulence."], answer: 0 },
+        { q: "¿Qué son los disbarismos?", options: ["Miedo irracional a volar en aviones cerrados.", "Problemas gastrointestinales por comida de avión.", "Alteraciones fisiológicas producidas por los cambios de presión barométrica (ej. dolor de oídos, gases expandidos, dolores articulares).", "Pérdida de la visión temporal por la altitud."], answer: 2 },
+        { q: "¿Por qué una descompresión lenta es muy peligrosa y puede pasar desapercibida?", options: ["Porque el oxígeno no se escapa, solo cambia la temperatura.", "Porque no hay ruido fuerte, niebla ni señales visuales evidentes, y la hipoxia se instaura gradualmente, alterando el juicio del pasajero/tripulante antes de que se den cuenta.", "Porque solo afecta a los motores del avión.", "Porque el sistema de oxígeno bloquea las máscaras para que no caigan."], answer: 1 },
+        { q: "¿Por qué la Enfermedad por Descompresión Tipo II es más grave que la Tipo I?", options: ["Porque la Tipo I solo da comezón, mientras que la Tipo II genera burbujas de nitrógeno que afectan el Sistema Nervioso Central, sistema respiratorio o cardiovascular, poniendo en riesgo la vida.", "Porque la Tipo II solo afecta la piel.", "Porque la Tipo II dura más días pero duele menos.", "Porque la Tipo II es contagiosa."], answer: 0 },
+        { q: "Ante un pasajero con hiperventilación (respiración rápida y superficial por ansiedad), el tripulante debe:", options: ["Darle oxígeno de flujo alto inmediatamente.", "Gritarle para que reaccione y se asuste.", "Transmitirle calma, hablarle con voz pausada, guiar su respiración pidiéndole que imite su ritmo respiratorio (ej. inspirar en 3, espirar en 3).", "Administrarle RCP de inmediato."], answer: 2 },
+        { q: "¿Por qué un pasajero que ha buceado con tanque (scuba diving) debe esperar (generalmente 24h) antes de volar?", options: ["Porque sus oídos quedan con mucha agua y la presión los puede reventar.", "Porque sus tejidos están saturados de nitrógeno bajo presión; al volar (menor presión), el nitrógeno formaría burbujas rápidamente causando una grave enfermedad por descompresión.", "Porque el equipo de buceo es pesado y afecta el balance del avión.", "Porque el cansancio del buceo causa hipoglicemia en la altura."], answer: 1 }
+    ];
+
+    let currentSessionQuestions = [];
+    let currentQuestionIndex = 0;
+    let score = 0;
+
+    function startQuiz(numQuestions) {
+        // Mezclar banco
+        const shuffled = [...questionBank].sort(() => 0.5 - Math.random());
+        // Cortar la cantidad deseada (20 o 40)
+        currentSessionQuestions = shuffled.slice(0, numQuestions);
+        currentQuestionIndex = 0;
+        score = 0;
+
+        document.getElementById('home-screen').classList.add('hidden');
+        document.getElementById('quiz-screen').classList.remove('hidden');
+        
+        loadQuestion();
+    }
+
+    function loadQuestion() {
+        const q = currentSessionQuestions[currentQuestionIndex];
+        document.getElementById('question-counter').innerText = `Pregunta ${currentQuestionIndex + 1} de ${currentSessionQuestions.length}`;
+        document.getElementById('question-text').innerText = q.q;
+        
+        const optionsDiv = document.getElementById('options');
+        optionsDiv.innerHTML = '';
+        
+        q.options.forEach((opt, index) => {
+            const btn = document.createElement('button');
+            btn.className = 'option-btn';
+            btn.innerText = opt;
+            btn.onclick = () => selectAnswer(index, btn);
+            optionsDiv.appendChild(btn);
+        });
+
+        // Actualizar barra de progreso
+        const progressPercentage = (currentQuestionIndex / currentSessionQuestions.length) * 100;
+        document.getElementById('progress').style.width = `${progressPercentage}%`;
+
+        document.getElementById('controls').classList.add('hidden');
+        document.getElementById('love-message').innerText = '';
+    }
+
+    function selectAnswer(selectedIndex, btnElement) {
+        // Bloquear opciones
+        const options = document.getElementById('options').children;
+        for (let btn of options) {
+            btn.disabled = true;
+            btn.style.cursor = 'default';
+        }
+
+        const correctIndex = currentSessionQuestions[currentQuestionIndex].answer;
+        
+        if (selectedIndex === correctIndex) {
+            btnElement.classList.add('correct');
+            score++;
+            showRandomLoveMessage();
+        } else {
+            btnElement.classList.add('incorrect');
+            options[correctIndex].classList.add('correct');
+            document.getElementById('love-message').innerText = "¡Casi! Esa era un poco engañosa, pero ya no se te olvida.";
+            document.getElementById('love-message').style.color = 'var(--pizarra-oscuro)';
+        }
+
+        document.getElementById('controls').classList.remove('hidden');
+    }
+
+    function showRandomLoveMessage() {
+        const msg = loveMessages[Math.floor(Math.random() * loveMessages.length)];
+        const msgEl = document.getElementById('love-message');
+        msgEl.innerText = msg;
+        msgEl.style.color = '#D53F8C'; // Pinkish para amor
+    }
+
+    function nextQuestion() {
+        currentQuestionIndex++;
+        if (currentQuestionIndex < currentSessionQuestions.length) {
+            loadQuestion();
+        } else {
+            showResults();
+        }
+    }
+
+    function showResults() {
+        document.getElementById('quiz-screen').classList.add('hidden');
+        document.getElementById('result-screen').classList.remove('hidden');
+        
+        const percentage = Math.round((score / currentSessionQuestions.length) * 100);
+        document.getElementById('score-display').innerText = `${percentage}%`;
+
+        const titleText = document.getElementById('result-title');
+        const msgText = document.getElementById('result-message');
+
+        if (percentage === 100) {
+            titleText.innerText = "¡PERFECTO!";
+            msgText.innerText = "Eres una experta. Me llenas de orgullo, amor. ¡Ese examen será un paseo por las nubes para ti! Te amo.";
+        } else if (percentage >= 80) {
+            titleText.innerText = "¡Excelente Trabajo!";
+            msgText.innerText = "Tienes los conocimientos listos. Confía en lo que sabes, respira profundo y ve por todo. ¡Te irá maravilloso!";
+        } else {
+            titleText.innerText = "¡Buen repaso!";
+            msgText.innerText = "Lo importante es aprender de los errores ahora para no cometerlos en el examen. Dale una leída rápida más y estarás lista. ¡Yo creo en ti siempre!";
+        }
+    }
+</script>
+
+</body>
+</html>
