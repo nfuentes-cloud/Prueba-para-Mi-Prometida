@@ -798,5 +798,205 @@
             "Secure, Alert, Medical, Passenger, Landing, Emergency."
         ],
         "answer": 0
+    },
+    {
+        "q": "En una emergencia con múltiples heridos a bordo, el procedimiento de Triage consiste en:",
+        "options": [
+            "Atender primero a los pasajeros de primera clase.",
+            "Clasificar a los heridos según la gravedad de sus lesiones y probabilidades de supervivencia para priorizar la atención médica.",
+            "Evacuar primero a los pasajeros que puedan caminar solos.",
+            "Atender exclusivamente a los miembros de la tripulación."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "¿Cómo se deben aplicar las compresiones torácicas durante la RCP a un niño (de 1 año hasta la pubertad)?",
+        "options": [
+            "Con dos dedos, comprimiendo 4 cm.",
+            "Con una o dos manos en el centro del pecho, comprimiendo aproximadamente 5 cm (un tercio de la profundidad del tórax).",
+            "Aplastando todo el tórax con ambas manos y el peso del cuerpo completo.",
+            "En los niños solo se dan ventilaciones, nunca compresiones."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "¿Cuál es el síntoma clásico y más característico de un Infarto Agudo de Miocardio (Ataque al corazón) en un adulto?",
+        "options": [
+            "Dolor de cabeza punzante y visión borrosa.",
+            "Dolor abdominal agudo acompañado de fiebre alta.",
+            "Dolor o presión intensa y opresiva en el centro del pecho, que puede irradiarse al brazo izquierdo, mandíbula o espalda.",
+            "Dolor punzante en la pierna derecha que sube hasta la cadera."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Al utilizar un DEA (Desfibrilador) en un pasajero con abundante vello en el pecho, ¿qué problema técnico puede surgir?",
+        "options": [
+            "El vello absorberá toda la electricidad y quemará al paciente.",
+            "El DEA se apagará automáticamente por seguridad.",
+            "Los parches pueden no adherirse bien a la piel, impidiendo que el DEA analice el ritmo o administre la descarga correctamente.",
+            "La descarga será el doble de potente."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "¿Se puede utilizar un Desfibrilador Externo Automático (DEA) si el piso del galley o la cabina está mojado?",
+        "options": [
+            "No, bajo ninguna circunstancia.",
+            "Sí, pero se debe mover al pasajero a una zona seca si es posible y secar rápidamente su pecho antes de colocar los parches.",
+            "Sí, el agua mejora la conductividad eléctrica del DEA.",
+            "Solo si los TCP usan botas de goma."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Después de que un pasajero sufre una convulsión, cesan los temblores y recobra la respiración normal, ¿qué debe hacer el TCP?",
+        "options": [
+            "Hacerlo caminar por el pasillo para reactivar la circulación.",
+            "Darle agua inmediatamente para hidratarlo.",
+            "Colocarlo en la Posición Lateral de Seguridad (PLS) para mantener la vía aérea despejada mientras recupera la conciencia.",
+            "Sentarlo y amarrarlo al asiento."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Si ocurre una emergencia médica crítica (ej. pasajero inconsciente) mientras el avión se encuentra en rodaje (taxi) hacia la pista para despegar, el TCP debe:",
+        "options": [
+            "Permanecer sentado en silencio hasta que el avión despegue.",
+            "Correr a buscar el botiquín sin avisar a nadie.",
+            "Notificar inmediatamente al Capitán por el interfono para que detenga el avión y evalúe el retorno a la puerta de embarque.",
+            "Pedirle a otro pasajero que le haga RCP."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Inmediatamente después del nacimiento de un bebé en un parto a bordo, la primera acción crítica del TCP respecto al recién nacido es:",
+        "options": [
+            "Cortar el cordón umbilical inmediatamente sin ligarlo.",
+            "Bañar al bebé con agua fría para estimularlo.",
+            "Limpiar y despejar las vías aéreas (boca y nariz) usando una perilla de succión o gasas para que pueda respirar.",
+            "Pesar al bebé usando las básculas de equipaje."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Si un pasajero conocido como diabético se encuentra completamente INCONSCIENTE, la acción correcta de primeros auxilios es:",
+        "options": [
+            "Obligarlo a tragar jugo de naranja o agua con azúcar.",
+            "Inyectarle insulina del botiquín médico rápidamente.",
+            "No darle nada por boca por riesgo de asfixia; administrar oxígeno, colocar en PLS si respira y buscar asistencia médica.",
+            "Darle galletas secas."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "En el manejo de un pasajero con cinetosis (mareo por movimiento, náuseas y vómitos), el TCP debe:",
+        "options": [
+            "Ofrecerle abundante comida grasosa para asentar el estómago.",
+            "Ubicarlo en la zona de mayor movimiento del avión.",
+            "Proporcionarle bolsas para mareo, ofrecerle agua fría, dirigir el aire acondicionado hacia su cara y sugerirle que mire a un punto fijo.",
+            "Darle pastillas para dormir."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Al retirarse los guantes de látex o nitrilo después de atender una emergencia con fluidos biológicos, el TCP debe:",
+        "options": [
+            "Lavarlos con jabón para volver a usarlos en otro vuelo.",
+            "Quitárselos de forma segura tirando desde el borde inferior para que queden al revés, desecharlos en la bolsa de riesgo biológico y lavarse las manos inmediatamente.",
+            "Tirarlos en la papelera común del baño.",
+            "Soplar dentro de ellos para comprobar que no tengan agujeros."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Un pasajero presenta un dolor abdominal extremadamente agudo, abdomen rígido (duro como tabla) al tacto, fiebre y náuseas. Esto podría indicar:",
+        "options": [
+            "Una simple indigestión por el catering.",
+            "Un cuadro de abdomen agudo (como apendicitis o peritonitis), que es una emergencia médica que requiere evaluación para posible desvío del vuelo.",
+            "Gases atrapados que se alivian haciendo abdominales en el pasillo.",
+            "Un ataque de pánico focalizado."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "En primeros auxilios a bordo, ¿cuál es el protocolo actual sobre el uso del torniquete para controlar hemorragias?",
+        "options": [
+            "Debe ser la primera opción ante cualquier sangrado, incluso un corte pequeño.",
+            "Se aplica en el cuello si el sangrado es en la cabeza.",
+            "Se utiliza SOLO como último recurso en hemorragias exanguinantes masivas en extremidades que no pueden controlarse con presión directa.",
+            "Nunca se debe usar bajo ningún motivo."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "El manejo inicial de una fractura abierta (expuesta), donde el hueso asoma por la piel, consiste en:",
+        "options": [
+            "Presionar el hueso fuertemente para meterlo de nuevo en su lugar.",
+            "Lavar con alcohol y aplicar calor.",
+            "No intentar acomodar el hueso, cubrir la herida con apósitos estériles o limpios para evitar infecciones e inmovilizar la extremidad tal como se encontró.",
+            "Mover la extremidad constantemente para que no pierda circulación."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Al comunicarse vía radio o teléfono satelital con el servicio médico en tierra (ej. MedLink) durante una emergencia en vuelo, el TCP debe proporcionar, idealmente:",
+        "options": [
+            "Un diagnóstico médico final y exacto de la enfermedad.",
+            "Datos precisos recopilados mediante la nemotecnia SAMPLE, signos vitales si es posible, edad, sexo y síntomas observados objetivamente.",
+            "Solo el número de asiento del pasajero.",
+            "El peso del equipaje del pasajero."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "En caso de un pasajero que sufre de hipotermia leve a moderada tras un incidente, el manejo adecuado es:",
+        "options": [
+            "Frotar vigorosamente todo su cuerpo y darle alcohol para beber.",
+            "Sumergirlo en agua caliente inmediatamente.",
+            "Quitarle la ropa mojada, abrigarlo con mantas secas gradualmente, protegerlo de corrientes de aire y ofrecerle líquidos calientes si está plenamente consciente.",
+            "Hacerlo correr por el pasillo."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Un pasajero se levanta bruscamente de su asiento después de dormir todo el vuelo transatlántico, siente mareo, visión borrosa y se desmaya brevemente cayendo al suelo. Esto es muy probablemente:",
+        "options": [
+            "Un derrame cerebral masivo.",
+            "Una hipotensión ortostática o síncope vasovagal benigno, causado por la rápida bajada de presión arterial al ponerse de pie.",
+            "Un coma diabético.",
+            "Una convulsión epiléptica grave."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Si un pasajero sufre un cuadro severo de asma, tiene cianosis (coloración azul) e imposibilidad para hablar, y su propio inhalador de rescate no surte efecto, el TCP debe:",
+        "options": [
+            "Indicarle que respire dentro de una bolsa de papel.",
+            "Suministrar oxígeno médico inmediatamente a flujo alto y solicitar a un médico a bordo (o MedLink) autorización para uso de medicación avanzada del EMK.",
+            "Darle leche caliente para desinflamar los bronquios.",
+            "Sentarlo boca abajo."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Ante un sangrado nasal (epistaxis) severo que no se detiene después de 10 minutos de presión directa, ¿qué otra medida puede aplicar el TCP?",
+        "options": [
+            "Aplicar compresas frías o hielo en el puente de la nariz/frente para ayudar a la vasoconstricción, y continuar la presión.",
+            "Obligar al pasajero a sonarse la nariz con mucha fuerza.",
+            "Inclinar la cabeza completamente hacia atrás hasta que la sangre baje por la garganta.",
+            "Introducir pinzas médicas en las fosas nasales."
+        ],
+        "answer": 0
+    },
+    {
+        "q": "Si un pasajero con antecedentes de EPOC (Enfermedad Pulmonar Obstructiva Crónica) experimenta dificultad respiratoria en vuelo y requiere oxígeno, el flujo a administrar suele ser:",
+        "options": [
+            "Flujo alto (High) a 15 litros por minuto siempre.",
+            "Flujo bajo (Low) a 2 o 4 litros por minuto, ya que un flujo muy alto de oxígeno puede inhibir su impulso respiratorio natural.",
+            "Solo ventilaciones boca a boca.",
+            "No se les debe dar oxígeno bajo ninguna circunstancia."
+        ],
+        "answer": 1
     }
 ]
