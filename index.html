@@ -232,7 +232,7 @@
     let currentIndex = 0;
     let score = 0;
     let lives = 3;
-    let mistakes = []; // Guarda los errores para el debriefing
+    let mistakes = []; 
     
     // Variables Timer
     let timerInterval;
@@ -267,30 +267,49 @@
         const buttons = document.querySelectorAll('#home-screen .btn');
         buttons.forEach(b => b.disabled = true);
 
-        // Obtenemos la URL del select
-        const subjectUrl = document.getElementById('subject-selector').value;
+        let subjectUrl = document.getElementById('subject-selector').value;
         
+        // Limpieza de URL táctica (por si usas el formato refs/heads)
+        subjectUrl = subjectUrl.replace("/refs/heads/", "/");
+        
+        // Si el usuario elige una opción que dice "Próximamente" (sin link HTTP)
+        if (!subjectUrl.startsWith("http")) {
+            alert("⚠️ Esta materia aún está en desarrollo. Selecciona CRM.");
+            document.getElementById('loading-msg').classList.add('hidden');
+            buttons.forEach(b => b.disabled = false);
+            return;
+        }
+
         try {
-            // Llamada asíncrona y directa a tu GitHub
             const response = await fetch(subjectUrl);
             
-            if (!response.ok) throw new Error('No se pudo descargar el archivo');
+            if (!response.ok) throw new Error(`Error de red HTTP: ${response.status}`);
             
+            // Si el archivo en GitHub tiene un error de formato (falta una coma, sobra un corchete), fallará aquí
             const data = await response.json();
             
-            currentBank = data; // Guardamos el banco de preguntas descargado
-            startQuiz(numQuestions); // Iniciamos el examen
+            currentBank = data; 
+            startQuiz(numQuestions); 
 
         } catch (error) {
-            console.error(error);
-            alert("Error de conexión al cargar la materia. Verifica tu internet o que el enlace de GitHub sea correcto.");
+            console.error("DIAGNÓSTICO DE ERROR:", error);
+            
+            // Sistema de alerta de fallos de alta precisión
+            let mensajeError = "Error de conexión al cargar la materia.";
+            if (error.message.includes("JSON") || error.message.includes("Unexpected token")) {
+                mensajeError = "¡Alerta de Sintaxis! El archivo en GitHub tiene un error de formato JSON (probablemente una coma fuera de lugar, comillas faltantes o un corchete mal cerrado). Revisa tu archivo .json en GitHub.";
+            } else if (error.message.includes("HTTP")) {
+                mensajeError = "El enlace de GitHub no funciona o el archivo fue borrado/es privado. " + error.message;
+            }
+            
+            alert(mensajeError + "\n\nDetalle técnico: " + error.message);
             document.getElementById('loading-msg').classList.add('hidden');
             buttons.forEach(b => b.disabled = false);
         }
     }
+
     // --- LÓGICA PRINCIPAL ---
     function startQuiz(numQuestions) {
-        // Mezclar y cortar
         let shuffled = [...currentBank];
         for (let i = shuffled.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
@@ -300,20 +319,20 @@
         const totalAvailable = Math.min(numQuestions, shuffled.length);
         sessionQuestions = shuffled.slice(0, totalAvailable);
         
-        // Reset Variables
         currentIndex = 0; score = 0; lives = 3; mistakes = [];
         document.getElementById('lives-display').innerHTML = "💖💖💖";
 
-        // Setup Timer
         const isTimerOn = document.getElementById('timer-toggle').checked;
         if (isTimerOn) {
-            totalSeconds = sessionQuestions.length * 60; // 1 minuto por pregunta
+            totalSeconds = sessionQuestions.length * 60; 
             document.getElementById('timer-display').classList.remove('hidden');
             updateTimerUI();
             timerInterval = setInterval(tickTimer, 1000);
+        } else {
+            // Asegurar que el timer esté oculto si no se seleccionó
+            document.getElementById('timer-display').classList.add('hidden');
         }
 
-        // Cambio de pantalla
         document.getElementById('home-screen').classList.add('hidden');
         document.getElementById('quiz-screen').classList.remove('hidden');
         
@@ -338,6 +357,8 @@
         
         if (totalSeconds < 60) {
             document.getElementById('timer-display').classList.add('danger');
+        } else {
+            document.getElementById('timer-display').classList.remove('danger');
         }
     }
 
@@ -381,7 +402,6 @@
             btnElement.classList.add('incorrect');
             options[correctIndex].classList.add('correct');
             
-            // Restar vida y registrar error
             lives--;
             updateLivesUI();
             mistakes.push({ 
@@ -438,11 +458,13 @@
             document.getElementById('score-display').style.borderColor = "var(--error)";
             document.getElementById('score-display').style.color = "var(--error)";
         } else {
-            // Guardar High Score
-            const subject = document.getElementById('subject-selector').value;
-            const currentRecord = localStorage.getItem(`TCP_Record_${subject}`) || 0;
+            // CORRECCIÓN TÁCTICA: Guardar High Score usando el ID corto, no la URL
+            const select = document.getElementById('subject-selector');
+            const subjectId = select.options[select.selectedIndex].getAttribute('data-id');
+            const currentRecord = localStorage.getItem(`TCP_Record_${subjectId}`) || 0;
+            
             if (percentage > currentRecord) {
-                localStorage.setItem(`TCP_Record_${subject}`, percentage);
+                localStorage.setItem(`TCP_Record_${subjectId}`, percentage);
             }
 
             if (percentage === 100) {
@@ -457,7 +479,6 @@
             }
         }
 
-        // Renderizar Debriefing si hubo errores
         if (mistakes.length > 0) {
             document.getElementById('debrief-section').classList.remove('hidden');
             const list = document.getElementById('debrief-list');
@@ -474,5 +495,3 @@
         }
     }
 </script>
-</body>
-</html>
