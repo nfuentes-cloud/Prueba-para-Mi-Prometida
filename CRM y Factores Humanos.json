@@ -988,5 +988,15 @@
             "Los TCPs se vuelven demasiado analíticos y lentos."
         ],
         "answer": 1
+    },
+    {
+    "q": "¿Cuál es el propósito de la regla de la 'Cabina Estéril' (Sterile Cockpit) en aviación?",
+        "options": [
+            "Mantener la cabina de mando completamente desinfectada mediante aerosoles especiales.",
+            "Evitar que los pasajeros llamen a los tripulantes durante el abordaje.",
+            "Prohibir toda comunicación o actividad no esencial con la cabina de mando durante las fases críticas del vuelo (generalmente por debajo de los 10.000 pies) para evitar distracciones.",
+            "Silenciar todas las alarmas de la cabina de pasajeros durante el aterrizaje."
+        ],
+        "answer": 2
     }
 ]
