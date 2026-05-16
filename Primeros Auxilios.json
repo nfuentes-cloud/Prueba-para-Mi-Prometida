@@ -1,0 +1,802 @@
+[
+    {
+        "q": "¿Cómo identifica un tripulante una herida punzante a simple vista?",
+        "options": [
+            "Presenta bordes limpios y sangrado abundante.",
+            "Se genera por fricción y tiene poco sangrado superficial.",
+            "Tiene un orificio de entrada pequeño, puede ser profunda y el sangrado externo puede ser escaso.",
+            "Presenta desgarro de tejidos y exposición de hueso."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Ante un pasajero con una quemadura significativa a bordo, ¿qué factores determinan principalmente su gravedad?",
+        "options": [
+            "El color de la ropa del pasajero y la altitud de la cabina.",
+            "La extensión, la profundidad (grado) y la zona del cuerpo afectada (ej. vías aéreas).",
+            "Exclusivamente si hay dolor intenso o no.",
+            "El tiempo que falta para aterrizar."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "¿Cuál es el procedimiento inmediato frente a una obstrucción TOTAL de la vía aérea en un adulto consciente?",
+        "options": [
+            "Ofrecer agua inmediatamente.",
+            "Dar 5 golpes en la espalda seguidos de RCP.",
+            "Animarlo a toser fuertemente.",
+            "Aplicar la maniobra de Heimlich (compresiones abdominales) hasta que expulse el objeto o pierda el conocimiento."
+        ],
+        "answer": 3
+    },
+    {
+        "q": "¿Cuáles son las características de las compresiones torácicas efectivas en la RCP de un adulto?",
+        "options": [
+            "Profundidad de 5 a 6 cm, permitir expansión completa del tórax y un ritmo de 100-120 por minuto.",
+            "Profundidad de 2 cm y ritmo de 80 por minuto.",
+            "Profundidad máxima, sin importar el ritmo, apoyando todo el peso sin soltar.",
+            "Masaje suave para no fracturar costillas, ritmo de 60 por minuto."
+        ],
+        "answer": 0
+    },
+    {
+        "q": "Ante un paro cardiorrespiratorio en vuelo, ¿cuál debe ser la PRIMERA acción de la tripulación?",
+        "options": [
+            "Buscar el botiquín de primeros auxilios.",
+            "Evaluar la seguridad, comprobar consciencia, pedir ayuda y que traigan el DEA de inmediato.",
+            "Avisar al capitán antes de tocar al pasajero.",
+            "Dar 2 ventilaciones boca a boca."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "¿Por qué un resfriado aumenta el riesgo de sufrir barosinusitis o barodontalgia durante el vuelo?",
+        "options": [
+            "Porque el virus se expande con la baja presión.",
+            "Porque la mucosidad bloquea los conductos (como la trompa de Eustaquio o los senos paranasales), impidiendo ecualizar los gases atrapados al cambiar la presión.",
+            "Porque el frío de la cabina empeora la fiebre.",
+            "Porque los oídos producen más cera en la altura."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "¿Cuál es el manejo adecuado de una fractura cerrada a bordo por parte de la tripulación?",
+        "options": [
+            "Intentar alinear el hueso inmediatamente para calmar el dolor.",
+            "Aplicar calor directo y dar analgésicos.",
+            "Inmovilizar la extremidad en la posición en la que se encontró, aplicar frío local si es posible y mantener en reposo.",
+            "Hacer caminar al pasajero para mantener la circulación."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Mientras llega el DEA a la escena de un paro cardiorrespiratorio, la tripulación debe:",
+        "options": [
+            "Esperar sin hacer nada para no alterar el ritmo cardíaco.",
+            "Buscar a un médico a bordo y esperar sus instrucciones.",
+            "Iniciar y mantener compresiones torácicas continuas a un ritmo de 100-120 por minuto.",
+            "Tomar la presión arterial del pasajero."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "El manejo correcto de una herida sangrante en vuelo incluye:",
+        "options": [
+            "Lavar con alcohol, dejar al aire libre y aplicar torniquete.",
+            "Aplicar presión directa con apósitos limpios, si se empapan colocar más encima (no retirar los primeros) y elevar la extremidad.",
+            "Retirar los coágulos formados y aplicar ungüento.",
+            "Soplar la herida para secarla rápidamente."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "En el contexto de RCP a bordo, ¿en qué situación puede justificarse priorizar o aplicar el boca a boca (ventilaciones)?",
+        "options": [
+            "Siempre que sea un adulto por problemas cardíacos.",
+            "Cuando se cuenta con equipo de protección de barrera (mascarilla) y se está capacitado, o en casos de asfixia/ahogamiento y niños.",
+            "Nunca debe hacerse bajo ninguna circunstancia.",
+            "Solo si el pasajero es un familiar del tripulante."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "¿Por qué los tripulantes NO deben recomendar ni administrar medicamentos de uso personal a los pasajeros?",
+        "options": [
+            "Porque los medicamentos en vuelo pierden su efecto.",
+            "Porque es ilegal y existe el riesgo de provocar reacciones alérgicas severas, interacciones o empeorar un cuadro clínico no diagnosticado.",
+            "Porque se agotarían los suministros de la aerolínea.",
+            "Solo porque lo prohíbe el manual de la aeronave, sin razón médica."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Ante una hemorragia abundante, ¿por qué NO se deben retirar los apósitos empapados en sangre?",
+        "options": [
+            "Porque ensucia la cabina.",
+            "Porque aumenta el dolor del pasajero al tirar de la piel.",
+            "Porque destruiría el coágulo que se está formando para detener el sangrado, reactivando la hemorragia.",
+            "Porque el material de los apósitos es tóxico si se remueve."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "¿Cómo se diferencian las compresiones de RCP en un lactante (menor de 1 año) respecto a un adulto?",
+        "options": [
+            "Se usa una sola mano y se comprime 5 cm.",
+            "Se usan 2 dedos (índice y medio) en el centro del pecho, comprimiendo aproximadamente 4 cm (1/3 del tórax).",
+            "Se comprime el abdomen en lugar del tórax.",
+            "No se hacen compresiones, solo ventilaciones."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Durante una RCP a bordo, ¿cada cuánto tiempo se debe reevaluar al pasajero y/o alternar al compresor?",
+        "options": [
+            "Cada 5 minutos.",
+            "Cada 2 minutos (o 5 ciclos de 30:2), para evitar la fatiga del reanimador y asegurar compresiones de alta calidad.",
+            "Cada vez que el pasajero cambie de color.",
+            "No se debe reevaluar hasta que llegue el avión al suelo."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Ante una descompresión explosiva, ¿cuál es la reacción INMEDIATA y prioritaria de la tripulación?",
+        "options": [
+            "Asegurar su propia mascarilla de oxígeno inmediatamente antes de ayudar a los pasajeros (considerando el Tiempo Útil de Conciencia - TUC).",
+            "Correr por el pasillo entregando mascarillas a los niños.",
+            "Avisar al capitán por el interfono.",
+            "Sentarse en el suelo y taparse los oídos."
+        ],
+        "answer": 0
+    },
+    {
+        "q": "En la troposfera (donde ocurren la mayoría de los vuelos), ¿cómo se comporta la temperatura y la presión a medida que se asciende?",
+        "options": [
+            "Ambas aumentan gradualmente.",
+            "La temperatura se mantiene constante y la presión baja.",
+            "Ambas disminuyen gradualmente con la altitud.",
+            "La temperatura aumenta pero la presión disminuye."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "¿Por qué el nitrógeno juega un rol clave en las enfermedades por descompresión?",
+        "options": [
+            "Porque se vuelve tóxico y ataca los pulmones.",
+            "Porque ante una caída brusca de presión, el nitrógeno disuelto en los tejidos forma burbujas que pueden bloquear vasos sanguíneos o causar dolor articular.",
+            "Porque reemplaza al oxígeno en la sangre.",
+            "Porque hace que el pasajero se hiperventile de inmediato."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Una descompresión explosiva se caracteriza por:",
+        "options": [
+            "Durar más de 10 segundos, sin ruidos fuertes.",
+            "Durar menos de 1 segundo, generando un ruido sordo, niebla en cabina, caída de temperatura y succión de objetos.",
+            "Ser indetectable hasta que caen las mascarillas.",
+            "Aumentar la temperatura de la cabina y generar olor a quemado."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "¿Cuál es la relación fisiológica entre altura y presión atmosférica en vuelo?",
+        "options": [
+            "A mayor altitud, menor presión atmosférica, lo que reduce la presión parcial de oxígeno y dificulta su absorción en los pulmones (causando hipoxia).",
+            "A mayor altitud, mayor presión, lo que aplasta los pulmones.",
+            "La altitud no afecta al cuerpo gracias a los motores del avión.",
+            "A mayor altitud, menor gravedad, lo que afecta el corazón."
+        ],
+        "answer": 0
+    },
+    {
+        "q": "¿Por qué la posición de seguridad (brace position) varía en mujeres embarazadas?",
+        "options": [
+            "Para que estén más cómodas y puedan ver las salidas de emergencia.",
+            "Porque deben estirar las piernas para no generar coágulos.",
+            "Para evitar la compresión directa del abdomen; se les instruye colocar el cinturón por debajo del vientre y apoyar la cabeza sobre brazos cruzados sin presionar la panza.",
+            "No varía, es exactamente igual para todos los pasajeros."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "¿Cómo se identifica a simple vista una herida abrasiva (raspadura)?",
+        "options": [
+            "Es un corte profundo con bordes rectos.",
+            "Hay pérdida de las capas superficiales de la piel por fricción, con sangrado en 'puntillado'.",
+            "Es un orificio profundo causado por un clavo.",
+            "Expone el hueso y los músculos internos."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "¿Cuál es el manejo correcto frente a una convulsión en pleno vuelo?",
+        "options": [
+            "Sujetar fuertemente las extremidades del pasajero para que no se golpee y meterle un lápiz en la boca.",
+            "Dejarlo en su asiento sin tocarlo hasta que despierte.",
+            "Despejar el área de objetos peligrosos, proteger su cabeza con almohadas/mantas, no inmovilizar a la fuerza y no introducir nada en la boca.",
+            "Darle a beber agua con azúcar mientras convulsiona."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "¿Qué es el shock y cuáles son sus signos característicos?",
+        "options": [
+            "Un ataque de pánico; los signos son gritos y llanto incontrolable.",
+            "Falta de oxigenación a los tejidos; signos incluyen piel pálida, fría y sudorosa, pulso rápido y débil, respiración superficial y alteración mental.",
+            "Un golpe eléctrico; signos de quemaduras en las manos.",
+            "Una reacción alérgica leve; picazón y enrojecimiento."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "¿Cómo se debe manejar un episodio consciente de hipoglicemia (baja de azúcar) a bordo?",
+        "options": [
+            "Administrar insulina del botiquín médico de inmediato.",
+            "Darle bebidas con alcohol para subir la presión.",
+            "Administrar carbohidratos de absorción rápida (jugo dulce, bebida azucarada, sobres de azúcar) y evaluar recuperación.",
+            "Acostar al pasajero y esperar a que pase sin darle nada."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "La hipoxia en aviación se define como:",
+        "options": [
+            "Exceso de oxígeno en la sangre por hiperventilación.",
+            "La deficiencia en el suministro de oxígeno a los tejidos del cuerpo, siendo crítica porque altera el juicio y lleva a la pérdida de conciencia.",
+            "La pérdida de presión en los oídos al descender.",
+            "El mareo causado por turbulencias severas."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "¿Por qué un pasajero fumador tiene MAYOR riesgo de sufrir hipoxia hipémica?",
+        "options": [
+            "Porque el humo daña sus pulmones impidiendo que se expandan.",
+            "Porque el monóxido de carbono del tabaco se une a la hemoglobina más fuerte que el oxígeno, reduciendo la capacidad de transporte de O2 en la sangre.",
+            "Porque fuma a escondidas en el baño.",
+            "Porque el tabaco destruye los glóbulos rojos al instante."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "La secuencia correcta de RCP en un adulto según normas internacionales (AHA) es:",
+        "options": [
+            "C-A-B (Compresiones, Vía Aérea, Buena Respiración) - 30 compresiones por 2 ventilaciones.",
+            "A-B-C (Vía Aérea, Buena Respiración, Compresiones) - 15 compresiones por 2 ventilaciones.",
+            "B-C-A (Buena Respiración, Compresiones, Vía Aérea) - Solo ventilaciones.",
+            "C-B-A - 5 compresiones por 1 ventilación."
+        ],
+        "answer": 0
+    },
+    {
+        "q": "¿Qué son las sibilancias y cómo se manejan si un pasajero las presenta?",
+        "options": [
+            "Son manchas en la piel; se aplica crema con corticoides.",
+            "Son sonidos agudos (silbidos) al respirar, comunes en crisis de asma; se debe calmar al pasajero, sentarlo erguido y ayudarlo a usar su inhalador si lo tiene.",
+            "Son ronquidos profundos; se debe despertar al pasajero.",
+            "Son latidos cardíacos irregulares; requiere DEA de inmediato."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "El manejo correcto de un esguince de tobillo a bordo implica la nemotecnia RICE, que significa:",
+        "options": [
+            "Reposo, Inmovilización, Compresión local y Elevación (aplicar frío para reducir la inflamación y dolor).",
+            "Respiración, Inhalación, Calor y Elevación.",
+            "Revisión, Inyección, Caminata y Ejercicio.",
+            "Retirar zapatos, Intentar enderezar, Calentar y Esperar."
+        ],
+        "answer": 0
+    },
+    {
+        "q": "¿Quién está legalmente autorizado para certificar el fallecimiento de un pasajero a bordo?",
+        "options": [
+            "El Capitán de la aeronave.",
+            "El Jefe de Cabina (Sobrecargo).",
+            "Cualquier Tripulante de Cabina tras 30 minutos de RCP.",
+            "Únicamente un Médico (ya sea pasajero a bordo o el servicio médico en tierra a la llegada)."
+        ],
+        "answer": 3
+    },
+    {
+        "q": "Durante un parto a bordo, ¿qué señales indican que la pasajera se encuentra en periodo expulsivo?",
+        "options": [
+            "Solo tiene contracciones suaves cada 20 minutos.",
+            "Rotura de fuente (bolsa de agua) reciente sin dolor.",
+            "Contracciones muy frecuentes y fuertes, necesidad incontrolable de pujar y abombamiento/coronación (se ve la cabeza del bebé).",
+            "La madre se queda dormida profundamente."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Inmediatamente después de ocurrir una quemadura, ¿qué factor es crucial evaluar?",
+        "options": [
+            "Si el pasajero ha comido recientemente.",
+            "Si la quemadura involucra la cara, el cuello o las vías respiratorias (por riesgo inminente de asfixia por inflamación).",
+            "Si la piel se puso roja o morada.",
+            "Cuánto costaba la ropa que se arruinó."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Si un pasajero cae INCONSCIENTE durante la maniobra de Heimlich, la tripulación debe:",
+        "options": [
+            "Continuar con las compresiones abdominales en el suelo.",
+            "Dejarlo solo y buscar ayuda.",
+            "Acomodarlo con cuidado en el suelo, activar emergencias e INICIAR RCP (comenzando por compresiones torácicas).",
+            "Hacer respiración boca a boca inmediatamente sin compresiones."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Antes de administrar una descarga con el DEA, la medida de SEGURIDAD vital que debe cumplir la tripulación es:",
+        "options": [
+            "Asegurarse de que el pasajero esté bien abrigado.",
+            "Asegurarse de que nadie (ni la tripulación ni otros pasajeros) esté tocando al paciente, gritando '¡Todos fuera!'.",
+            "Apagar los motores del avión.",
+            "Sujetar fuertemente las manos del pasajero para que no salte."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Para reconocer un posible Accidente Cerebrovascular (ACV) a bordo, se utiliza la escala FAST. ¿Qué significa?",
+        "options": [
+            "Face (Cara asimétrica), Arms (Brazos con debilidad), Speech (Habla arrastrada o incomprensible), Time (Tiempo de actuar rápido).",
+            "Fiebre, Asfixia, Sudoración, Temblor.",
+            "Frecuencia, Altitud, Sensibilidad, Temperatura.",
+            "First Aid, Safety, Turbulence."
+        ],
+        "answer": 0
+    },
+    {
+        "q": "¿Qué son los disbarismos?",
+        "options": [
+            "Miedo irracional a volar en aviones cerrados.",
+            "Problemas gastrointestinales por comida de avión.",
+            "Alteraciones fisiológicas producidas por los cambios de presión barométrica (ej. dolor de oídos, gases expandidos, dolores articulares).",
+            "Pérdida de la visión temporal por la altitud."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "¿Por qué una descompresión lenta es muy peligrosa y puede pasar desapercibida?",
+        "options": [
+            "Porque el oxígeno no se escapa, solo cambia la temperatura.",
+            "Porque no hay ruido fuerte, niebla ni señales visuales evidentes, y la hipoxia se instaura gradualmente, alterando el juicio del pasajero/tripulante antes de que se den cuenta.",
+            "Porque solo afecta a los motores del avión.",
+            "Porque el sistema de oxígeno bloquea las máscaras para que no caigan."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "¿Por qué la Enfermedad por Descompresión Tipo II es más grave que la Tipo I?",
+        "options": [
+            "Porque la Tipo I solo da comezón, mientras que la Tipo II genera burbujas de nitrógeno que afectan el Sistema Nervioso Central, sistema respiratorio o cardiovascular, poniendo en riesgo la vida.",
+            "Porque la Tipo II solo afecta la piel.",
+            "Porque la Tipo II dura más días pero duele menos.",
+            "Porque la Tipo II es contagiosa."
+        ],
+        "answer": 0
+    },
+    {
+        "q": "Ante un pasajero con hiperventilación (respiración rápida y superficial por ansiedad), el tripulante debe:",
+        "options": [
+            "Darle oxígeno de flujo alto inmediatamente.",
+            "Gritarle para que reaccione y se asuste.",
+            "Transmitirle calma, hablarle con voz pausada, guiar su respiración pidiéndole que imite su ritmo respiratorio (ej. inspirar en 3, espirar en 3).",
+            "Administrarle RCP de inmediato."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "¿Por qué un pasajero que ha buceado con tanque (scuba diving) debe esperar (generalmente 24h) antes de volar?",
+        "options": [
+            "Porque sus oídos quedan con mucha agua y la presión los puede reventar.",
+            "Porque sus tejidos están saturados de nitrógeno bajo presión; al volar (menor presión), el nitrógeno formaría burbujas rápidamente causando una grave enfermedad por descompresión.",
+            "Porque el equipo de buceo es pesado y afecta el balance del avión.",
+            "Porque el cansancio del buceo causa hipoglicemia en la altura."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "¿En qué capa de la atmósfera se desarrollan casi todos los fenómenos meteorológicos y ocurre la mayor parte de los vuelos comerciales?",
+        "options": [
+            "Estratosfera.",
+            "Troposfera.",
+            "Mesosfera.",
+            "Termosfera."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "¿Cuál es la composición aproximada del aire en la atmósfera terrestre?",
+        "options": [
+            "50% Oxígeno, 50% Nitrógeno.",
+            "78% Oxígeno, 21% Nitrógeno, 1% Otros gases.",
+            "78% Nitrógeno, 21% Oxígeno, 1% Otros gases.",
+            "90% Nitrógeno, 10% Oxígeno."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "La Ley de Boyle establece que, a temperatura constante, el volumen de un gas es inversamente proporcional a la presión. En vuelo, esto explica por qué:",
+        "options": [
+            "Los gases atrapados en el cuerpo se expanden al ascender (menor presión).",
+            "El oxígeno se disuelve mejor en la sangre a mayor altura.",
+            "El nitrógeno forma burbujas al descender.",
+            "El frío extremo de la altitud contrae los pulmones."
+        ],
+        "answer": 0
+    },
+    {
+        "q": "¿Qué es el Tiempo Útil de Conciencia (TUC)?",
+        "options": [
+            "El tiempo máximo que puede volar un TCP sin descansar.",
+            "El tiempo disponible desde que se interrumpe el suministro de oxígeno hasta que la persona pierde la capacidad de tomar decisiones lógicas o actuar.",
+            "El tiempo que tarda el avión en descender tras una emergencia.",
+            "El tiempo que dura una botella de oxígeno médico a bordo."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Si un avión sufre una descompresión a 35.000 pies de altitud, el Tiempo Útil de Conciencia (TUC) de la tripulación sin oxígeno sería aproximadamente de:",
+        "options": [
+            "10 a 15 minutos.",
+            "3 a 5 minutos.",
+            "30 a 60 segundos.",
+            "Más de 1 hora."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "¿Qué síntoma es característico de una Barotitis Media durante el descenso del avión?",
+        "options": [
+            "Dolor intenso en los senos paranasales.",
+            "Dolor punzante en el oído debido a la contracción de gases, pudiendo llegar a la rotura del tímpano si no se ecualiza.",
+            "Sangrado nasal abundante e incontrolable.",
+            "Dolor agudo en piezas dentales con caries crónicas."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "¿Por qué se prohíbe volar inmediatamente después de realizar buceo autónomo (Scuba Diving)?",
+        "options": [
+            "Para evitar una severa Enfermedad por Descompresión, ya que los tejidos están saturados de nitrógeno a alta presión.",
+            "Porque el agua salada daña el sistema de presurización.",
+            "Porque los oídos quedan con mucha cera temporalmente.",
+            "Para evitar la fatiga extrema por el peso del equipo."
+        ],
+        "answer": 0
+    },
+    {
+        "q": "¿Para qué está diseñado el botiquín de primeros auxilios o FAK (First Aid Kit)?",
+        "options": [
+            "Para realizar cirugías menores.",
+            "Para uso exclusivo de médicos.",
+            "Para el manejo de emergencias médicas rutinarias y primeros auxilios, pudiendo ser utilizado por la Tripulación de Cabina.",
+            "Para almacenar los medicamentos personales de los pasajeros."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "¿Quién está autorizado para abrir y utilizar los medicamentos e instrumental del Botiquín Médico (MK o EMK)?",
+        "options": [
+            "Cualquier pasajero voluntario.",
+            "Únicamente un profesional de la salud calificado (Médico).",
+            "El Jefe de Cabina en cualquier circunstancia.",
+            "Cualquier TCP que haya tomado el curso básico."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "El UPK (Universal Precaution Kit) o Kit de Precaución Universal se utiliza principalmente para:",
+        "options": [
+            "Manejo de pasajeros con sospecha de enfermedades infectocontagiosas y limpieza segura de fluidos corporales.",
+            "Tratar paros cardíacos.",
+            "Reparar daños menores en la estructura de la cabina.",
+            "Inmovilizar fracturas múltiples."
+        ],
+        "answer": 0
+    },
+    {
+        "q": "Al preparar una botella de oxígeno médico a bordo, ¿cuál es el remanente (presión mínima) que NUNCA se debe sobrepasar para asegurar que la botella no se vacíe completamente?",
+        "options": [
+            "1000 PSI.",
+            "50 PSI.",
+            "500 PSI.",
+            "0 PSI, se debe vaciar toda."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Si se selecciona la válvula en posición 'HI' (Flujo Alto) en una botella de oxígeno portátil a bordo, entregará aproximadamente:",
+        "options": [
+            "2 litros por minuto.",
+            "4 litros por minuto.",
+            "10 litros por minuto.",
+            "15 litros por minuto."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "¿Cuál es la regla de oro respecto a los extintores médicos/botiquines y los UM (Menores No Acompañados)?",
+        "options": [
+            "Solo se les puede dar paracetamol.",
+            "Nunca se les debe administrar ningún tipo de medicamento.",
+            "Pueden recibir medicación si lo aprueba otro pasajero.",
+            "Solo se les administra si lloran mucho."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Desde el punto de vista aeromédico, la fatiga afecta principalmente:",
+        "options": [
+            "El crecimiento muscular.",
+            "La agudeza visual diurna.",
+            "Todas las etapas de procesamiento de la información, generando respuestas lentas y mala toma de decisiones.",
+            "Exclusivamente el estado de ánimo, sin afectar la operación."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "¿Cuál es la principal medida de prevención contra la fatiga en las tripulaciones de vuelo?",
+        "options": [
+            "Tomar bebidas energéticas antes de cada vuelo.",
+            "Correcta disciplina en el régimen de vida: alimentación balanceada, actividad física y respetar las horas de sueño.",
+            "Aumentar el consumo de café en los vuelos nocturnos.",
+            "Escuchar música a alto volumen durante los descansos."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "El alcohol es considerado una droga:",
+        "options": [
+            "Estimulante.",
+            "Alucinógena.",
+            "Depresora del Sistema Nervioso Central, ya que disminuye la alerta y el juicio.",
+            "Sintética."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Las drogas estimulantes (como la cocaína o anfetaminas) son peligrosas en aviación porque:",
+        "options": [
+            "Inducen sueño profundo inmediato.",
+            "Generan una falsa seguridad, sobre-reacción, hiperalerta y agotamiento severo posterior.",
+            "Mejoran demasiado los reflejos.",
+            "Reducen el ritmo cardíaco a niveles críticos."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "En la evaluación primaria de un pasajero inconsciente, la secuencia C-A-B corresponde a:",
+        "options": [
+            "Cabeza, Abdomen, Brazos.",
+            "Compresiones, Apertura de la vía aérea, Buena ventilación.",
+            "Control, Ayuda, Búsqueda.",
+            "Circulación, Accidente, Botiquín."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "¿Cómo se define el Paro Cardiorrespiratorio (PCR)?",
+        "options": [
+            "Desmayo repentino por baja presión.",
+            "Cese de la actividad cardíaca mecánica: la víctima no responde, no respira normalmente (o jadea) y no tiene pulso.",
+            "Dificultad severa para respirar pero con pulso fuerte.",
+            "Sensación de dolor opresivo en el pecho sin pérdida de conciencia."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "En caso de encontrar a un pasajero adulto que no responde y no respira, el ritmo adecuado de las compresiones torácicas es:",
+        "options": [
+            "60 a 80 por minuto.",
+            "100 a 120 por minuto.",
+            "150 por minuto.",
+            "30 por minuto."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "¿Cuál es la técnica recomendada para abrir la vía aérea en un pasajero inconsciente que NO tiene sospecha de lesión cervical?",
+        "options": [
+            "Maniobra de tracción mandibular.",
+            "Maniobra frente-mentón.",
+            "Levantar la cabeza del pasajero apoyándola en una almohada.",
+            "Girar el cuello bruscamente hacia un lado."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Al utilizar un DEA (Desfibrilador Externo Automático), ¿cuál es el PRIMER paso universal a seguir?",
+        "options": [
+            "Pegar los parches en el pecho desnudo.",
+            "Encender el equipo y escuchar las instrucciones por voz.",
+            "Pulsar el botón de descarga.",
+            "Dar respiración boca a boca."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Para desobstruir la vía aérea (OVACE) en una mujer con embarazo evidente, ¿qué maniobra se utiliza?",
+        "options": [
+            "Compresiones abdominales altas (Heimlich normal).",
+            "Solo golpes en la espalda.",
+            "Compresiones torácicas (sobre el esternón, no en el abdomen) combinadas con golpes en la espalda.",
+            "No se hace nada para proteger al feto."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "¿Qué debe hacer un TCP si durante la maniobra de Heimlich el pasajero pierde el conocimiento?",
+        "options": [
+            "Dejarlo sentado y esperar a que reaccione.",
+            "Acomodarlo en el suelo, activar emergencia médica e iniciar inmediatamente RCP (empezando por las compresiones).",
+            "Seguir haciendo Heimlich en el piso.",
+            "Darle 5 ventilaciones de rescate de inmediato."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "¿A qué distancia se deben hacer las ligaduras del cordón umbilical en un parto a bordo antes de cortarlo?",
+        "options": [
+            "A 1 dedo del abdomen del bebé y la segunda pegada a la placenta.",
+            "Ambas ligaduras juntas a 10 dedos de distancia.",
+            "A 4 dedos desde el abdomen del recién nacido la primera, y a 4 dedos de esta la segunda.",
+            "No se debe ligar, solo cortar de un tirón."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Luego de la expulsión del bebé, ¿qué proceso fisiológico sigue en un parto (Alumbramiento)?",
+        "options": [
+            "La primera vez que el bebé opens los ojos.",
+            "La expulsión de la placenta, que puede tardar de 5 a 30 minutos.",
+            "El primer llanto del recién nacido.",
+            "La caída del cordón umbilical."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Si la placenta es expulsada durante el vuelo, ¿qué debe hacer la tripulación con ella?",
+        "options": [
+            "Desecharla en el inodoro del avión.",
+            "Guardarla en la bolsa de riesgo biológico (mercancías peligrosas).",
+            "Dejarla expuesta en un asiento vacío.",
+            "Entregársela inmediatamente a la madre para que la sostenga."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "En caso de un sangrado nasal (epistaxis) en vuelo, la acción correcta es:",
+        "options": [
+            "Inclinar la cabeza del pasajero completamente hacia atrás.",
+            "Acostar al pasajero boca arriba.",
+            "Que el pasajero se siente, incline levemente la cabeza hacia adelante y presione la parte blanda de su nariz por 10 minutos.",
+            "Introducir gasas profundas hasta el fondo de las fosas nasales."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "¿Qué es la Posición Lateral de Seguridad (PLS) o posición de recuperación?",
+        "options": [
+            "Acostar al paciente boca abajo con los brazos estirados.",
+            "Sentar al paciente con la cabeza entre las piernas.",
+            "Acostar al paciente inconsciente pero que respira de lado (decúbito lateral), para evitar la aspiración de vómito o que la lengua obstruya la vía aérea.",
+            "Mantener al paciente de pie apoyado contra el bulkhead."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "¿Qué característica distingue a una hemorragia arterial de una venosa?",
+        "options": [
+            "La arterial es roja oscura y sale de forma continua.",
+            "La arterial es roja brillante y sale a chorros (pulsátil) al ritmo de los latidos del corazón.",
+            "La arterial casi no duele y coagula en segundos.",
+            "No hay forma de distinguirlas a simple vista."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "En caso de que un TCP sufra salpicadura de fluidos biológicos (sangre) en sus ojos durante la atención de un paciente, debe:",
+        "options": [
+            "Limpiarse rápidamente con alcohol gel.",
+            "Lavar con abundante agua limpia o suero fisiológico durante varios minutos y reportarlo de inmediato.",
+            "Aplicar colirio antibiótico del FAK.",
+            "Cerrar los ojos fuertemente y terminar el vuelo."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "¿Qué indica la presencia de cianosis en un pasajero?",
+        "options": [
+            "Que tiene la presión arterial demasiado alta.",
+            "Oxigenación deficiente en la sangre, observable como coloración azulada en labios y lechos ungueales (uñas).",
+            "Que el pasajero está sufriendo un ataque de pánico sin gravedad.",
+            "Es una reacción normal al frío de la cabina."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "¿Cuál es el tratamiento de primera línea ante una sospecha de shock anafiláctico (alergia severa) a bordo?",
+        "options": [
+            "Administrar analgésicos fuertes.",
+            "Solicitar asistencia médica para administrar Epinefrina/Adrenalina mediante autoinyector si está disponible en el MK.",
+            "Dar agua con azúcar al paciente.",
+            "Esperar a ver si los síntomas desaparecen solos tras el descenso."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Un pasajero diabético se muestra confuso, sudoroso, pálido y agresivo. ¿Cuál es el problema más probable y su solución inicial si está consciente?",
+        "options": [
+            "Hiperglicemia; no hacer nada.",
+            "Hipoglicemia; darle hidratos de carbono de absorción rápida (jugos azucarados, azúcar).",
+            "Derrame cerebral; iniciar RCP.",
+            "Intoxicación; inducir el vómito."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "¿En qué situación de quemadura NUNCA debe aplicarse agua fría directa?",
+        "options": [
+            "En quemaduras de 1° grado tipo solar.",
+            "En quemaduras eléctricas severas o cuando hay exposición extensa de tejidos profundos, por riesgo de hipotermia y shock.",
+            "En quemaduras químicas.",
+            "En quemaduras pequeñas por café caliente."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "¿Cómo se reconoce una quemadura de Segundo Grado (Espesor Parcial)?",
+        "options": [
+            "La piel está carbonizada y no hay dolor.",
+            "Solo hay enrojecimiento superficial (eritema).",
+            "Hay presencia de flictenas (ampollas), enrojecimiento y dolor intenso.",
+            "Expone tejido muscular y óseo."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Ante la sospecha de una fractura de columna vertebral o cuello tras turbulencia severa, la regla principal es:",
+        "options": [
+            "Hacer caminar al pasajero para ver si siente dolor.",
+            "Inmovilizar la zona y, a menos que haya un peligro inminente (fuego), NO MOVER al pasajero, manteniendo su cabeza alineada.",
+            "Sentarlo rápidamente y abrocharle el cinturón de seguridad a presión.",
+            "Aplicar masajes fuertes en la espalda."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "¿Cuál es la función principal del desfibrilador (DEA)?",
+        "options": [
+            "Tomar la presión arterial con alta precisión.",
+            "Hacer reiniciar un corazón que está completamente detenido sin actividad eléctrica (asistolia).",
+            "Analizar el ritmo cardíaco y entregar un choque eléctrico controlado para revertir una arritmia mortal (Fibrilación Ventricular o Taquicardia Ventricular sin pulso).",
+            "Dar ventilaciones automáticas a los pulmones."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "En caso de encontrar a un pasajero sufriendo un Síncope Vasovagal (desmayo común), el procedimiento es:",
+        "options": [
+            "Iniciar RCP de inmediato.",
+            "Sentarlo con la cabeza atrás y darle cachetadas para que despierte.",
+            "Acostarlo boca arriba, elevar sus piernas y aflojar ropas ajustadas para mejorar el retorno venoso al cerebro.",
+            "Darle oxígeno a flujo alto de inmediato."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "En el contexto de emergencias médicas, ¿qué significa la nemotecnia SAMPLE que usan algunos servicios de emergencia?",
+        "options": [
+            "Síntomas, Alergias, Medicamentos, Patologías previas, Libaciones (última comida), Eventos previos.",
+            "Sangrado, Asfixia, Mareo, Parálisis, Lesión, Enfermedad.",
+            "Sonido, Aire, Movimiento, Presión, Latido, Elevación.",
+            "Secure, Alert, Medical, Passenger, Landing, Emergency."
+        ],
+        "answer": 0
+    }
+]
