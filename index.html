@@ -174,7 +174,7 @@
     <div class="setup-group">
         <label style="font-weight: bold; color: var(--rosa-fuerte);">📚 Selecciona la Materia:</label>
         <select id="subject-selector" onchange="updateHighScoreDisplay()">
-            <option value="https://raw.githubusercontent.com/nfuentes-cloud/Prueba-para-Mi-Prometida/refs/heads/main/CRM%20y%20Factores%20Humanos.json" data-id="crm">CRM y Factores Humanos</option>
+            <option value="https://raw.githubusercontent.com/nfuentes-cloud/Prueba-para-Mi-Prometida/main/CRM%20y%20Factores%20Humanos.json?v=1" data-id="crm">CRM y Factores Humanos</option>
             <option value="urgencias">Urgencias Médicas (Próximamente)</option>
             <option value="aerodinamica">Aerodinámica (Próximamente)</option>
         </select>
@@ -183,8 +183,13 @@
             <input type="checkbox" id="timer-toggle">
             ⏳ Modo Contrarreloj (1 min x pregunta)
         </label>
-    </div>
 
+        <label class="checkbox-container">
+            <input type="checkbox" id="lives-toggle" checked>
+            💖 Sistema de Vidas (3 Oportunidades)
+        </label>
+    </div>
+    
     <button class="btn" id="btn-20" onclick="initiateLoad(20)">Misión Rápida (20 Preguntas)</button>
     <button class="btn" id="btn-40" onclick="initiateLoad(40)">Simulador (40 Preguntas)</button>
     <button class="btn" id="btn-100" onclick="initiateLoad(100)">Desafío Total (Todo)</button>
@@ -232,6 +237,7 @@
     let currentIndex = 0;
     let score = 0;
     let lives = 3;
+    let useLives = true; // Nueva variable para controlar el modo
     let mistakes = []; 
     
     // Variables Timer
@@ -268,11 +274,8 @@
         buttons.forEach(b => b.disabled = true);
 
         let subjectUrl = document.getElementById('subject-selector').value;
-        
-        // Limpieza de URL táctica (por si usas el formato refs/heads)
         subjectUrl = subjectUrl.replace("/refs/heads/", "/");
         
-        // Si el usuario elige una opción que dice "Próximamente" (sin link HTTP)
         if (!subjectUrl.startsWith("http")) {
             alert("⚠️ Esta materia aún está en desarrollo. Selecciona CRM.");
             document.getElementById('loading-msg').classList.add('hidden');
@@ -282,26 +285,20 @@
 
         try {
             const response = await fetch(subjectUrl);
-            
             if (!response.ok) throw new Error(`Error de red HTTP: ${response.status}`);
             
-            // Si el archivo en GitHub tiene un error de formato (falta una coma, sobra un corchete), fallará aquí
             const data = await response.json();
-            
             currentBank = data; 
             startQuiz(numQuestions); 
 
         } catch (error) {
             console.error("DIAGNÓSTICO DE ERROR:", error);
-            
-            // Sistema de alerta de fallos de alta precisión
             let mensajeError = "Error de conexión al cargar la materia.";
             if (error.message.includes("JSON") || error.message.includes("Unexpected token")) {
-                mensajeError = "¡Alerta de Sintaxis! El archivo en GitHub tiene un error de formato JSON (probablemente una coma fuera de lugar, comillas faltantes o un corchete mal cerrado). Revisa tu archivo .json en GitHub.";
+                mensajeError = "¡Alerta de Sintaxis! El archivo en GitHub tiene un error de formato JSON.";
             } else if (error.message.includes("HTTP")) {
                 mensajeError = "El enlace de GitHub no funciona o el archivo fue borrado/es privado. " + error.message;
             }
-            
             alert(mensajeError + "\n\nDetalle técnico: " + error.message);
             document.getElementById('loading-msg').classList.add('hidden');
             buttons.forEach(b => b.disabled = false);
@@ -319,9 +316,19 @@
         const totalAvailable = Math.min(numQuestions, shuffled.length);
         sessionQuestions = shuffled.slice(0, totalAvailable);
         
-        currentIndex = 0; score = 0; lives = 3; mistakes = [];
-        document.getElementById('lives-display').innerHTML = "💖💖💖";
+        currentIndex = 0; score = 0; mistakes = [];
+        
+        // Configurar Vidas
+        useLives = document.getElementById('lives-toggle').checked;
+        if (useLives) {
+            lives = 3;
+            document.getElementById('lives-display').classList.remove('hidden');
+            document.getElementById('lives-display').innerHTML = "💖💖💖";
+        } else {
+            document.getElementById('lives-display').classList.add('hidden');
+        }
 
+        // Configurar Timer
         const isTimerOn = document.getElementById('timer-toggle').checked;
         if (isTimerOn) {
             totalSeconds = sessionQuestions.length * 60; 
@@ -329,7 +336,6 @@
             updateTimerUI();
             timerInterval = setInterval(tickTimer, 1000);
         } else {
-            // Asegurar que el timer esté oculto si no se seleccionó
             document.getElementById('timer-display').classList.add('hidden');
         }
 
@@ -402,20 +408,26 @@
             btnElement.classList.add('incorrect');
             options[correctIndex].classList.add('correct');
             
-            lives--;
-            updateLivesUI();
             mistakes.push({ 
                 q: qData.q, 
                 wrong: qData.options[selectedIndex], 
                 right: qData.options[correctIndex] 
             });
 
-            loveMsg.innerText = "¡Casi! Esa era engañosa, pero ya no se te olvidará. 💫";
-            loveMsg.style.color = 'var(--pizarra-oscuro)';
+            if (useLives) {
+                lives--;
+                updateLivesUI();
+                loveMsg.innerText = "¡Casi! Esa era engañosa, pero ya no se te olvidará. 💫";
+                loveMsg.style.color = 'var(--pizarra-oscuro)';
 
-            if (lives <= 0) {
-                setTimeout(() => endGame(false, "Te quedaste sin vidas Mi Princesa 💔"), 1500);
-                return;
+                if (lives <= 0) {
+                    setTimeout(() => endGame(false, "Te quedaste sin vidas Mi Princesa 💔"), 1500);
+                    return;
+                }
+            } else {
+                // Si el modo vidas está desactivado, solo muestra un mensaje de ánimo
+                loveMsg.innerText = "¡Casi! Revisa bien la correcta, la repasamos en el debriefing. 💫";
+                loveMsg.style.color = 'var(--pizarra-oscuro)';
             }
         }
 
@@ -458,7 +470,6 @@
             document.getElementById('score-display').style.borderColor = "var(--error)";
             document.getElementById('score-display').style.color = "var(--error)";
         } else {
-            // CORRECCIÓN TÁCTICA: Guardar High Score usando el ID corto, no la URL
             const select = document.getElementById('subject-selector');
             const subjectId = select.options[select.selectedIndex].getAttribute('data-id');
             const currentRecord = localStorage.getItem(`TCP_Record_${subjectId}`) || 0;
