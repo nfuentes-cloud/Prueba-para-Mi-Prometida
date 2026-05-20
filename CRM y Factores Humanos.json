@@ -998,5 +998,505 @@
             "Silenciar todas las alarmas de la cabina de pasajeros durante el aterrizaje."
         ],
         "answer": 2
+    },
+    {
+        "q": "Dentro de la aviación, ¿cuál es el propósito primordial de aplicar el modelo conceptual de Factores Humanos en las operaciones diarias?",
+        "options": [
+            "Reemplazar progresivamente a las tripulaciones con sistemas altamente automatizados.",
+            "Optimizar la interacción entre las personas y el sistema para potenciar la seguridad y eficiencia operativa.",
+            "Aumentar la rentabilidad corporativa reduciendo los tiempos de entrenamiento en simulador.",
+            "Centrarse de manera exclusiva en el bienestar psicológico en tierra."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Durante una emergencia, el Tripulante de Cabina (TCP) debe usar una lista de chequeo. Si las instrucciones impresas son ambiguas y llevan a un error, ¿qué componente del modelo SHELL presenta una deficiencia primaria?",
+        "options": [
+            "Hardware (H)",
+            "Environment (E)",
+            "Software (S)",
+            "Liveware (L)"
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Un diseño deficiente en el seguro de un tobogán de evacuación causa que un tripulante se lastime la mano al intentarlo armar. Esta situación refleja un problema en la interfaz:",
+        "options": [
+            "Liveware - Software",
+            "Liveware - Liveware",
+            "Liveware - Hardware",
+            "Hardware - Environment"
+        ],
+        "answer": 2
+    },
+    {
+        "q": "¿Cómo ayuda principalmente el uso del modelo SHELL a la identificación y prevención de errores en la aviación?",
+        "options": [
+            "Garantiza que las tripulaciones operen sin fatiga.",
+            "Permite clasificar los fallos únicamente atribuyéndolos a la tecnología.",
+            "Facilita el análisis estructurado de cómo los desajustes en las interfaces provocan incidentes.",
+            "Automatiza el despido del personal infractor."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "El trágico accidente de Los Rodeos (Tenerife) en 1977 fue el catalizador principal para el desarrollo del CRM porque evidenció que:",
+        "options": [
+            "Las fallas en comunicación, el sesgo de autoridad y la pérdida de conciencia situacional pueden destruir aviones perfectamente operativos.",
+            "Era urgente rediseñar los motores de las aeronaves pesadas.",
+            "La niebla densa es el único factor incontrolable en aviación.",
+            "Se requerían pistas más largas para el despegue."
+        ],
+        "answer": 0
+    },
+    {
+        "q": "¿Qué representa exactamente el CRM (Crew Resource Management) como herramienta práctica de los Factores Humanos?",
+        "options": [
+            "Un curso técnico sobre el funcionamiento aerodinámico del avión.",
+            "El uso efectivo de todos los recursos disponibles para operar de manera segura y eficiente.",
+            "Una evaluación psicológica obligatoria anual.",
+            "Un protocolo exclusivo para tripulantes de cabina en caso de emergencias médicas."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "En el contexto de CRM, las 'Habilidades No Técnicas' se refieren a:",
+        "options": [
+            "La capacidad para operar el panel de emergencia de forma manual.",
+            "Conocer la normativa legal internacional de memoria.",
+            "Las competencias cognitivas y sociales, como el liderazgo y la toma de decisiones.",
+            "La preparación de servicios de comida en el galley."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Dentro de la teoría de Factores Humanos, el 'error humano' es considerado:",
+        "options": [
+            "Evitable si la tripulación presta atención constante.",
+            "Consecuencia ineludible y normal de las limitaciones de la cognición humana.",
+            "Motivo de despido inmediato bajo la Cultura Justa.",
+            "Una señal exclusiva de fatiga crónica profunda."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Un tripulante olvida asegurar un contenedor (galley) debido a que su atención fue desviada por un pasajero. Según la taxonomía, esto representa:",
+        "options": [
+            "Una violación de optimización.",
+            "Una condición latente de diseño.",
+            "Un error honesto por pérdida de atención o lapsus.",
+            "Un acto de sabotaje."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "La diferencia fundamental y crítica entre un 'Error' y una 'Infracción' radica en:",
+        "options": [
+            "La intención o voluntad de desviarse de los procedimientos establecidos.",
+            "El grado de daño material que causan a la aeronave.",
+            "El nivel de experiencia técnica del tripulante.",
+            "La interfaz del modelo SHELL donde se origina el problema."
+        ],
+        "answer": 0
+    },
+    {
+        "q": "Según el modelo del Queso Suizo de James Reason, los 'Fallos Activos' son definidos como:",
+        "options": [
+            "Decisiones gerenciales de alto nivel.",
+            "Condiciones meteorológicas que causan turbulencia.",
+            "Deficiencias persistentes en el entrenamiento corporativo.",
+            "Acciones u omisiones inseguras cometidas por operadores de primera línea."
+        ],
+        "answer": 3
+    },
+    {
+        "q": "Al auditar los manuales de una compañía, se descubre que durante años los procedimientos de evacuación han estado redactados de manera confusa. En el marco teórico del CRM, esto clasifica como:",
+        "options": [
+            "Un fallo activo inminente.",
+            "Una condición latente organizacional.",
+            "Una violación rutinaria de la tripulación.",
+            "Un sesgo de complacencia."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "De acuerdo con el modelo del Queso Suizo, ¿qué debe suceder para que un peligro se convierta finalmente en un accidente?",
+        "options": [
+            "Las condiciones meteorológicas deben superar los límites estructurales de la aeronave.",
+            "El piloto al mando debe cometer una infracción consciente.",
+            "Las fallas en las múltiples capas defensivas del sistema deben alinearse perfectamente.",
+            "El sistema informático de la aeronave debe reiniciarse en pleno vuelo."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "¿Por qué las distracciones y las interrupciones imprevistas son altamente peligrosas en el entorno operativo?",
+        "options": [
+            "Porque promueven el estilo de liderazgo autoritario en la tripulación.",
+            "Porque destruyen la memoria a corto plazo, borrando los pasos secuenciales de una tarea crítica.",
+            "Porque incrementan innecesariamente el peso al despegue.",
+            "Porque aceleran el estrés positivo, causando sobre-reacciones."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "En el contexto de los procesos cognitivos, la 'Atención Selectiva' permite a un tripulante:",
+        "options": [
+            "Concentrarse de manera efectiva en un estímulo relevante ignorando el ruido o factores externos.",
+            "Mantenerse despierto durante vuelos transoceánicos prolongados sin descansar.",
+            "Delegar automáticamente las tareas operativas a la computadora de a bordo.",
+            "Manejar diez emergencias al mismo tiempo sin cometer un solo error."
+        ],
+        "answer": 0
+    },
+    {
+        "q": "La Conciencia Situacional es una de las habilidades no técnicas más críticas. ¿Cómo se define formalmente en aviación?",
+        "options": [
+            "Saber de memoria todos los manuales de la compañía aérea.",
+            "El cumplimiento estricto y mecánico de las listas de chequeo.",
+            "Tener la visión clara del panorama general, saber qué ha ocurrido, qué ocurre ahora y prever qué puede ocurrir en un futuro próximo.",
+            "La capacidad para hablar asertivamente frente a los pasajeros rebeldes."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Un Jefe de Cabina percibe humo en el galley (Nivel 1 de CS). Determina que huele a un circuito eléctrico quemado (Nivel 2). Inmediatamente toma un extintor de Halón y apaga la energía, pues sabe que de no hacerlo se desatará un incendio mayor. ¿Qué nivel de Conciencia Situacional acaba de aplicar en su decisión final?",
+        "options": [
+            "Nivel 3: Proyección del estado futuro.",
+            "Nivel 2: Comprensión exclusiva.",
+            "Nivel 1: Percepción.",
+            "Nivel Cero: Reacción instintiva de pánico."
+        ],
+        "answer": 0
+    },
+    {
+        "q": "La fatiga operacional afecta críticamente el desempeño del tripulante porque:",
+        "options": [
+            "Provoca exclusivamente dolores musculares que impiden armar las puertas.",
+            "Aumenta la impulsividad, haciendo que las decisiones se tomen demasiado rápido y asertivamente.",
+            "Degrada insidiosamente los tiempos de reacción, la vigilancia, la memoria a corto plazo y la capacidad de comunicación.",
+            "Altera temporalmente la visión cromática del individuo."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "¿Cuál es una diferencia clínica esencial entre la Fatiga Aguda y la Fatiga Crónica en la aviación?",
+        "options": [
+            "La fatiga crónica se cura rápidamente con una o dos noches de sueño profundo, la aguda no.",
+            "La fatiga aguda se acumula durante meses y requiere asistencia médica especializada.",
+            "La fatiga aguda es reversible con períodos de descanso normales, mientras que la crónica persiste a pesar del sueño e impacta la salud integral.",
+            "No existe diferencia, ambas son conceptos que describen el estrés positivo del vuelo."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "En el proceso de la comunicación efectiva dentro del CRM, se considera que el ciclo ha sido exitoso única y exclusivamente cuando:",
+        "options": [
+            "El emisor proyecta la instrucción con un tono de voz fuerte y directivo.",
+            "El mensaje es interpretado y comprendido por el receptor exactamente con el mismo significado que pretendía darle el emisor.",
+            "La instrucción es repetida a través del sistema de altavoces (PA) dos veces.",
+            "El mensaje queda registrado en la bitácora técnica de mantenimiento."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "La retroalimentación (Feedback o Readback) es una herramienta de comunicación vital porque:",
+        "options": [
+            "Permite al emisor descansar su voz dejando que el receptor hable.",
+            "Obliga a la tripulación a memorizar las instrucciones sin cuestionarlas.",
+            "Confirma de forma activa que el receptor asimiló correctamente un mensaje crítico, mitigando la ambigüedad.",
+            "Solo se usa para comunicaciones exclusivas entre los pilotos y los controladores de tráfico."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "El comportamiento 'Asertivo' es un pilar del CRM y se caracteriza por:",
+        "options": [
+            "Imponer firmemente la propia opinión sobre los demás para acelerar la resolución del problema.",
+            "Expresar opiniones, dudas operativas y emociones de forma clara, directa y honesta, respetando los derechos y la posición de los demás.",
+            "Mantener un silencio prudente frente a los superiores para mantener el buen clima de trabajo.",
+            "Criticar abiertamente los errores técnicos de los compañeros frente a los pasajeros."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "La técnica conocida como la Regla de los Dos Desafíos (Two-Challenge Rule) es una estrategia asertiva diseñada para:",
+        "options": [
+            "Cuestionar siempre dos veces al despachador de vuelo respecto a la cantidad de combustible.",
+            "Asumir las riendas operativas de inmediato si otro tripulante, al ser advertido claramente dos veces sobre una desviación de seguridad, no responde ni corrige el rumbo.",
+            "Obligar a que cualquier decisión sea votada democráticamente dos veces antes de ejecutarse.",
+            "Asegurar que el cliente siempre tenga la razón dándole dos alternativas."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "En la resolución de conflictos a bordo (L-L), abordar el problema con un enfoque 'Ganar-Ganar' (Win-Win) requiere:",
+        "options": [
+            "Atacar firmemente las fallas de personalidad del oponente para someterlo.",
+            "Retirarse del conflicto y ceder en la opinión propia para no causar tensiones.",
+            "Involucrar a los gerentes de operaciones en medio del vuelo.",
+            "Focalizarse en el problema y no en la persona, colaborando de manera franca para buscar un consenso que beneficie la seguridad del vuelo."
+        ],
+        "answer": 3
+    },
+    {
+        "q": "La comunicación 'No Verbal' y 'Paraverbal' en una tripulación es esencial porque:",
+        "options": [
+            "Solo se usa cuando los auriculares de interfonía fallan.",
+            "Representa estadísticamente una mínima fracción del mensaje total transmitido.",
+            "Es el factor principal que define la honestidad, actitud y nivel de apertura en un intercambio de ideas, superando muchas veces el poder de las palabras mismas.",
+            "Ayuda a ocultar los niveles de estrés negativo frente a los pasajeros."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "En cuanto al rol del liderazgo en la cabina, el concepto moderno promovido por el CRM establece que el líder debe:",
+        "options": [
+            "Fomentar un entorno inclusivo que motive a todos los miembros del equipo a opinar y reportar errores sin miedo a represalias excesivas.",
+            "Concentrar absolutamente toda la toma de decisiones sin consultar, pues eso demuestra debilidad técnica.",
+            "Delegar su responsabilidad legal al TCP más antiguo a bordo.",
+            "Evitar hacer briefings para no mostrar una actitud autoritaria."
+        ],
+        "answer": 0
+    },
+    {
+        "q": "El Liderazgo Situacional indica que no existe un único estilo correcto para dirigir. ¿Cuándo sería apropiado aplicar un estilo estrictamente 'Directivo' (dar órdenes claras sin discusión)?",
+        "options": [
+            "Durante una reunión mensual de revisión de estándares.",
+            "Frente a emergencias inminentes, fuego no controlado o evacuaciones, donde el factor tiempo es el recurso más escaso.",
+            "Siempre que la tripulación sea muy experta y lleve años volando la ruta.",
+            "Únicamente cuando se interactúa con el personal de rampa."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "¿Qué estilo de Liderazgo Situacional aplicaría mejor un Jefe de Cabina con una tripulación de TCPs altamente competentes, maduros y con mucha experiencia operativa?",
+        "options": [
+            "Liderazgo Participativo, donde micro-gestiona y supervisa minuciosamente cada procedimiento.",
+            "Liderazgo Directivo, asumiendo que eventualmente olvidarán sus obligaciones.",
+            "Liderazgo Delegativo, permitiendo gran autonomía en la ejecución de las funciones, confiando en sus capacidades probadas.",
+            "Liderazgo Autoritario pasivo, esperando a que cometan un error para corregirlos."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "En el Trabajo en Equipo, el fenómeno psicológico de la 'Sinergia' se entiende matemáticamente como '1 + 1 = 3'. Esto significa que:",
+        "options": [
+            "El rendimiento individual disminuye porque todos trabajan a menor capacidad.",
+            "El resultado final del esfuerzo grupal cohesionado y coordinado es superior a la simple suma de los aportes individuales aislados.",
+            "Es necesario sobrecargar de horas a una persona para que rinda por tres.",
+            "La responsabilidad legal en caso de accidente se divide equitativamente entre más personas."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "¿Cuál de los siguientes factores es considerado un destructor clásico del trabajo en equipo (pérdida de la Sinergia) en la cabina?",
+        "options": [
+            "El uso adecuado de los briefings estandarizados.",
+            "La presencia de individualismo, metas operativas confusas y falta de confianza en los compañeros.",
+            "Que los tripulantes posean distintas personalidades y estilos de aprendizaje.",
+            "La asertividad en la exposición de dudas de seguridad."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "La Cultura Justa (Just Culture) organizacional incentiva principalmente:",
+        "options": [
+            "El castigo sistemático frente a cualquier mínimo desvío de los manuales.",
+            "Que los tripulantes reporten sus errores genuinos en un clima de confianza, estableciendo una línea divisoria clara frente a negligencias o sabotajes inaceptables.",
+            "La eliminación absoluta de procesos disciplinarios para los pilotos.",
+            "Reportar rumores anónimos para evaluar el desempeño interpersonal."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "En la Toma de Decisiones Aeronáuticas, ¿cuál debe ser siempre el filtro primordial y no negociable ante cualquier análisis (como en el modelo FOR-DEC)?",
+        "options": [
+            "Mantener la puntualidad del itinerario comercial.",
+            "Ahorrar combustible para maximizar la rentabilidad.",
+            "Evitar inconvenientes y papeleos administrativos con el departamento legal.",
+            "La seguridad operacional (Safety) de la aeronave, los pasajeros y la propia tripulación."
+        ],
+        "answer": 3
+    },
+    {
+        "q": "El 'Sesgo de Confirmación' (Confirmation Bias) puede ser letal en cabina porque induce a la tripulación a:",
+        "options": [
+            "Buscar proactivamente el consejo de colegas y mecánicos de mantenimiento externos.",
+            "Filtrar inconscientemente la información: aceptar todo lo que confirma su diagnóstico inicial y descartar activamente lo que lo contradice.",
+            "Dudar de todo y paralizarse en el proceso de toma de decisión.",
+            "Realizar listas de chequeo redundantes con un exceso de precaución técnica."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "En la interfaz Liveware-Liveware, el 'Efecto Halo' ocurre cuando:",
+        "options": [
+            "El reflejo del sol incide en el panel de instrumentos cegando a la tripulación.",
+            "Un tripulante asume que un colega es sumamente capaz operativamente solo porque tiene una personalidad agradable o extrovertida.",
+            "Se percibe que la tripulación está envuelta en un aura protectora contra los accidentes.",
+            "El Jefe de Cabina distribuye las tareas equilibradamente entre todos."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "¿Qué escenario describe correctamente una manifestación de 'Complacencia' (Automation Complacency) en la cabina?",
+        "options": [
+            "Cumplir meticulosamente con los procedimientos exigidos por la gerencia para evitar sanciones.",
+            "Asumir ciegamente que el avión resolverá cualquier desviación operativa por sí solo, dejando de monitorear activamente los sistemas básicos.",
+            "Aumentar voluntariamente la carga de trabajo en rutas ya conocidas para combatir el aburrimiento.",
+            "Cuestionar frecuentemente al despachador respecto de la meteorología."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Frente al problema psicológico conocido como 'Difusión de la Responsabilidad' (bystander effect) durante una emergencia médica en el pasillo, ¿cuál es la mejor técnica asertiva de liderazgo que debe emplear el TCP a cargo?",
+        "options": [
+            "Gritar al aire: '¡Alguien consiga un médico rápido, por favor!'.",
+            "Esperar en silencio hasta que algún pasajero ofrece ayuda voluntariamente.",
+            "Señalar a una persona en particular, mirarla a los ojos y decir de forma clara: 'Usted, señor de la chaqueta azul, consiga un médico ahora'.",
+            "Acercarse a la cabina de vuelo a consultar el manual médico."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "En la taxonomía del error, existe una sutil diferencia entre un 'Lapsus' (Lapse) y un 'Desliz' (Slip). El 'Lapsus' se define predominantemente como:",
+        "options": [
+            "Una falla de memoria (olvidar realizar una acción planificada), a menudo encubierta y no visible para otros.",
+            "Un error de atención en la ejecución motora (apretar el botón incorrecto al intentar apretar el correcto).",
+            "Una decisión consciente basada en el desconocimiento total de la regla (falta de formación).",
+            "Un fallo provocado directamente por el software del avión."
+        ],
+        "answer": 0
+    },
+    {
+        "q": "El fenómeno de 'Fijación' (Canalización de la Atención) sucede frecuentemente bajo mucho estrés o alta carga de trabajo. ¿En qué consiste?",
+        "options": [
+            "En inmovilizar físicamente los equipos rodantes en el pasillo usando frenos automáticos.",
+            "En que la mente del operador concentra el 100% de su capacidad atencional en resolver un único problema o indicador menor, quedando completamente ciego y sordo ante amenazas mucho mayores en la cabina.",
+            "En retener permanentemente todos los procedimientos de emergencia en la memoria a largo plazo.",
+            "En atar el cinturón de seguridad excesivamente fuerte tras una turbulencia severa."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Las decisiones bajo un sesgo de 'Press-on-itis' (Compromiso con la Continuación o Plan Bias) se caracterizan porque la tripulación:",
+        "options": [
+            "Cambia de planes y aeropuertos alternos al primer indicador meteorológico negativo.",
+            "Insiste obsesivamente en aterrizar en el destino original previsto a pesar de que toda la información actual (alertas, clima, fallos) sugiere que intentar el aterrizaje es una maniobra altamente peligrosa.",
+            "Solicita repetidas veces asistencia médica para atender a un pasajero indispuesto.",
+            "Rehúsa despegar argumentando dudas sobre el estado de mantenimiento técnico."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "A nivel organizacional, las condiciones de 'Carga de Trabajo' (Workload) y 'Sobrecarga de Información' en una interfaz Liveware-Software, derivan típicamente en:",
+        "options": [
+            "Una agudización milagrosa de la memoria de corto plazo para procesar las nuevas alertas.",
+            "Un estrechamiento atencional y el abandono involuntario de tareas vitales (shedding) para que la mente se enfoque en lo que percibe, a veces erróneamente, como más amenazante.",
+            "Un estado fisiológico de sueño y relajación de los músculos oculares.",
+            "La erradicación espontánea del sesgo de confirmación."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "El 'Briefing' previo a cada vuelo es una de las mayores defensas de CRM en la cabina porque su principal propósito psicológico y operativo es:",
+        "options": [
+            "Repasar los perfiles académicos y la trayectoria formativa individual del equipo.",
+            "Delegar anticipadamente la culpa al personal más novato en caso de contingencias.",
+            "Ahorrar horas de instrucción de simulador con repasos rápidos en tierra firme.",
+            "Establecer autoridad respetuosa, unificar la comprensión del entorno situacional de ese día y fijar los protocolos de emergencia para evitar la improvisación."
+        ],
+        "answer": 3
+    },
+    {
+        "q": "En contraste con el Briefing, el 'Debriefing' se realiza siempre al finalizar la jornada. ¿Qué meta busca este proceso?",
+        "options": [
+            "Informar disciplinariamente a recursos humanos sobre la convivencia emocional en la ruta.",
+            "Cerrar el ciclo constructivo evaluando qué salió bien, qué errores honestos ocurrieron y cómo se puede aprender colectivamente para incrementar las defensas organizacionales.",
+            "Reportar las horas y el consumo de queroseno para el balance comercial de la empresa.",
+            "Obligar a firmar de manera escrita las felicitaciones por el nivel de servicio a los pasajeros a bordo."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "El estrés que mantiene al Tripulante alerta ante un entorno cambiante, con capacidad analítica precisa y respuestas motivadas y adecuadas se denomina:",
+        "options": [
+            "Distrés severo y prolongado.",
+            "Fatiga del lóbulo frontal.",
+            "Eustrés (o estrés positivo óptimo).",
+            "Síndrome de Generalización Atencional."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Ante una situación donde la sobrecarga operativa, la mala comunicación y el distrés ya han generado fallos (las rebanadas del queso suizo se alinearon), el último eslabón crítico que evita un desastre catastrófico es la capacidad del equipo humano de:",
+        "options": [
+            "Aceptar resignadamente el destino trágico inevitable.",
+            "Aplicar de memoria el Código Penal Aeronáutico y la Ley de Navegación Aérea.",
+            "Demostrar 'Resiliencia' (Resilience), detectando la cadena de fallas activas y adaptándose de inmediato para recuperar el entorno operativo seguro.",
+            "Llamar exclusivamente por teléfono a la mesa de asistencia médica."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Si el Jefe de Cabina utiliza un Gradiente de Autoridad 'demasiado empinado' o pronunciado frente a sus subalternos, la interfaz Liveware-Liveware puede verse gravemente afectada generando:",
+        "options": [
+            "Sinergia operativa inmediata por el orden marcial estricto, reduciendo los errores por infracción unánimemente.",
+            "El peligroso 'Síndrome del Subordinado' (o Síndrome del Copiloto), donde el personal omite cuestionar riesgos inminentes temiendo la reprimenda del líder autoritario.",
+            "Un entorno participativo generalizado para combatir aburrimiento en los trayectos rutinarios largos.",
+            "Un flujo desmedido de comunicación y confianza social que rompe los niveles de seriedad laboral."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "El acrónimo FOR-DEC es una metodología metódica de toma de decisiones aeronáuticas (Facts, Options, Risks/Benefits, Decision, Execution, Check). En el contexto de un aterrizaje con tren de nariz atascado, la etapa 'C' (Check) exige específicamente:",
+        "options": [
+            "Confirmar en los manuales técnicos si el fabricante de la aeronave ha publicado exenciones operativas.",
+            "Revisar los costos y recargos comerciales que traerá aterrizar en el puerto alternativo más cercano a la eventual falla original.",
+            "Cerrar todo el proceso realizando una reevaluación empírica constante: verificar si la decisión implementada está rindiendo de modo previsible o si demanda ser alterada urgentemente ante variables nuevas.",
+            "Colacionar la orden de control de tráfico para asegurarse de tener prioridad total de descenso veloz."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Se descubre que el diseño del panel y de la botonera de un altavoz del interfono en cierto modelo de avión tiene los controles de volumen y evacuación de emergencia juntos, de igual color y tamaño táctil idéntico. Según la filosofía de interacciones sistémicas SHELL, el riesgo altísimo de activación accidental y los constantes deslices que produce corresponden al área de:",
+        "options": [
+            "Deficiencia endémica en el Liveware-Software al no tener listas de chequeo redundantes coloreadas distintivamente en las carpetas.",
+            "Una incompatibilidad en la interfaz Liveware-Hardware, provocada por una pésima aplicación ergonómica de los controles táctiles de advertencia crítica y su retroalimentación directa a las manos del humano.",
+            "Descuido en las habilidades no técnicas Liveware-Liveware, puesto que los demás miembros deberían observar continuamente la mano del emisor.",
+            "Una desastrosa adaptación del Software al Environment térmico cabina adentro, que dilata las botoneras."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "¿De qué modo la limitación de la 'Memoria de Trabajo' (o Memoria de Corto Plazo) impacta las tácticas comunicacionales que un piloto usa para darle órdenes crudas al Jefe de Cabina durante un despegue abortado o RTO brusco?",
+        "options": [
+            "Determina que el Jefe de Cabina almacene emocionalmente solo las gesticulaciones verbales pero olvide mecánicamente las luces encendidas del pasillo.",
+            "Obliga a que el piloto reduzca la sobrecarga informativa verbal limitando el cúmulo de instrucciones a un número inferior a 7 (usualmente agrupando bloques de 3 a 5 items) para asegurar la retención exacta del mensaje.",
+            "Exige que se anoten todas las instrucciones frenéticamente en un anotador (tablet del EFB) antes de emprender ninguna resolución motora visible.",
+            "Demuestra la total infalibilidad del Nivel 1 de Conciencia Operacional del Tripulante en contextos donde sobra luz y silencio generalizado de fondo en los motores."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "En la etapa de 'Percepción' o de recolección de los datos de vuelo del modelo SHELL interaccional (primer Nivel de CS del operador a bordo), ¿cuál de los siguientes casos expone severamente el fracaso atencional por una barrera puramente externa (Interface L-E)?",
+        "options": [
+            "Un piloto en aproximación nocturna en condiciones IMC obvia un anuncio de radio debido a que la altísima fricción aerodinámica de la granizada y el ruido ensordecedor ahogaron física y acústicamente el parlante.",
+            "El TCP experimenta fuertes migrañas personales recurrentes a causa del nivel de iluminación excesivamente intenso que posee el baño de clase turista.",
+            "Un operario sufre el sesgo cultural inconsciente de acatar pasivamente la instrucción sin revisar porque sus regulaciones empresariales castigan disentir frente a tripulantes de mayor antigüedad en la cabina.",
+            "Una tripulación interpreta fallidamente el nivel de altura en radar producto del estrés crónico o fatiga de viaje (lapsus en discernimiento intelectual temporal)."
+        ],
+        "answer": 0
+    },
+    {
+        "q": "A nivel conceptual, un pilar esencial del abordaje de James Reason y la filosofía contemporánea dictamina que todo Error Humano operativo es:",
+        "options": [
+            "Un rasgo intrínsecamente patológico del individuo que debe segregarse social y permanentemente de las actividades aéreas con castigos disciplinarios severísimos.",
+            "Relegable y remediable al 100% mediante cursillos intensivos mensuales, garantizando la total infalibilidad del TCP si se superan las metas formales horarias de entrenamiento corporativo.",
+            "La mera prueba final irrefutable de que un individuo particular sufría complacencia negligente de raíz con el cumplimiento de toda la industria en sí mismo.",
+            "Una secuela operativa natural esperable de interactuar bajo gran presión en un esquema complejo; el sistema debe diseñarse robusto, multicapa y tolerante para absorber y gestionar los errores sin que resulten fatales en cadena."
+        ],
+        "answer": 3
     }
 ]
