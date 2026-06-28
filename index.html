@@ -245,22 +245,8 @@
     let timerInterval;
     let totalSeconds = 0;
 
-    let correctPhrases = [
-        "¡Qué inteligente eres Mi Amorcito! 💕", "¡Esa es mi futura TCP! ✈️",
-        "¡Lo estás haciendo excelente! ✨", "Respira profundo, te lo sabes de memoria ☁️",
-        "¡Eres brillante Prometida Mía! 🌟", "¡Estoy muy orgulloso de ti, enserio! 🥰",
-        "¡Eres perfecta! Sigue así 💖", "¡Tú puedes con todo, Mi Vida! 🌈"
-    ];
-    let incorrectPhrases = [
-        "¡Casi! Esa era engañosa, pero ya no se te olvidará. 💫",
-        "¡Casi! Revisa bien la correcta, la repasamos en el debriefing. 💫",
-        "No te rindas, del error se aprende. ¡Tú puedes! 🌟",
-        "Respira hondo y sigue adelante Mi Vida ☁️",
-        "Tranquila, lo importante es aprender. ¡A seguir! 💪",
-        "Te tengo fe, la próxima la tienes 🥰",
-        "Los errores son parte del aprendizaje. ¡Vamos! ✈️",
-        "Concéntrate Corazón, tú sabes esto 💕"
-    ];
+    let correctPhrases = [];
+    let incorrectPhrases = [];
 
     async function loadPhrases() {
         try {
