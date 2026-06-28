@@ -1,0 +1,1502 @@
+[
+  {
+    "pregunta": "¿Cuál es el techo operacional del Airbus A320 indicado en la información general?",
+    "opciones": [
+      "35.000 pies",
+      "39.000 pies",
+      "41.000 pies",
+      "33.000 pies"
+    ],
+    "respuesta_correcta": "39.000 pies"
+  },
+  {
+    "pregunta": "¿Cuál es la velocidad crucero del Airbus A320?",
+    "opciones": [
+      "800 kms/hr",
+      "850 kms/hr",
+      "880 kms/hr",
+      "900 kms/hr"
+    ],
+    "respuesta_correcta": "880 kms/hr"
+  },
+  {
+    "pregunta": "¿Cuánto mide el largo del fuselaje del Airbus A320?",
+    "opciones": [
+      "34 mts",
+      "39 mts",
+      "42 mts",
+      "36.5 mts"
+    ],
+    "respuesta_correcta": "39 mts"
+  },
+  {
+    "pregunta": "¿Cuál es la envergadura del avión?",
+    "opciones": [
+      "32 mts",
+      "34 mts",
+      "36 mts",
+      "39 mts"
+    ],
+    "respuesta_correcta": "34 mts"
+  },
+  {
+    "pregunta": "¿Cuál es la altura especificada en el manual de la aeronave?",
+    "opciones": [
+      "3.40 mts",
+      "4.10 mts",
+      "3.90 mts",
+      "5.20 mts"
+    ],
+    "respuesta_correcta": "3.40 mts"
+  },
+  {
+    "pregunta": "¿Qué sistema principal de control de vuelo utilizan los aviones de la familia A320?",
+    "opciones": [
+      "Sistema de poleas mecánicas",
+      "Fly by Wire",
+      "Full Hydraulic Control",
+      "Manual Reversion System"
+    ],
+    "respuesta_correcta": "Fly by Wire"
+  },
+  {
+    "pregunta": "¿Cómo son controladas primariamente las superficies de control primarias y secundarias?",
+    "opciones": [
+      "Mecánicamente",
+      "Hidráulicamente",
+      "Eléctricamente",
+      "Neumáticamente"
+    ],
+    "respuesta_correcta": "Eléctricamente"
+  },
+  {
+    "pregunta": "¿Qué fuente de poder activa físicamente las superficies de control tras recibir la señal eléctrica?",
+    "opciones": [
+      "Motores eléctricos",
+      "Sistemas neumáticos",
+      "Cables de acero trenzado",
+      "Presión hidráulica (hidráulicamente activas)"
+    ],
+    "respuesta_correcta": "Presión hidráulica (hidráulicamente activas)"
+  },
+  {
+    "pregunta": "¿Qué dispositivos se usan en la cabina de mando para controlar el cabeceo y alabeo?",
+    "opciones": [
+      "Bastones laterales (Sidesticks)",
+      "Volantes (Yokes)",
+      "Pedales exclusivos",
+      "Palancas de empuje"
+    ],
+    "respuesta_correcta": "Bastones laterales (Sidesticks)"
+  },
+  {
+    "pregunta": "¿Con qué otro mando se coordinan los virajes al usar los bastones laterales?",
+    "opciones": [
+      "Con los spoilers",
+      "Con el estabilizador horizontal",
+      "Con el timón de dirección",
+      "Con los flaps"
+    ],
+    "respuesta_correcta": "Con el timón de dirección"
+  },
+  {
+    "pregunta": "¿Cómo se denomina el sistema de monitoreo centralizado del avión?",
+    "opciones": [
+      "FMS",
+      "ECAM",
+      "EICAS",
+      "MCDU"
+    ],
+    "respuesta_correcta": "ECAM"
+  },
+  {
+    "pregunta": "¿Cuál es la configuración máxima de asientos para pasajeros mencionada para esta habilitación?",
+    "opciones": [
+      "150",
+      "164",
+      "186",
+      "190"
+    ],
+    "respuesta_correcta": "186"
+  },
+  {
+    "pregunta": "¿Cuántos Jumpseats se especifican de manera general en la configuración del avión?",
+    "opciones": [
+      "1/2",
+      "2/3",
+      "3/4",
+      "4/5"
+    ],
+    "respuesta_correcta": "2/3"
+  },
+  {
+    "pregunta": "¿Qué elementos de flotación se mencionan para la cabina de pasajeros?",
+    "opciones": [
+      "Solo chalecos salvavidas",
+      "Solo cojines",
+      "Cojín o Chaleco",
+      "Balsas y toboganes"
+    ],
+    "respuesta_correcta": "Cojín o Chaleco"
+  },
+  {
+    "pregunta": "¿A qué filas de asientos corresponde el área denominada 'Sector Alarm'?",
+    "opciones": [
+      "Fila 1 y 2",
+      "Fila 11 y 12 / 12 y 13",
+      "Fila 14 y 15",
+      "Fila 20 y 21"
+    ],
+    "respuesta_correcta": "Fila 11 y 12 / 12 y 13"
+  },
+  {
+    "pregunta": "¿Cuál es la distribución de las máscaras de oxígeno ubicadas sobre los asientos de pasajeros?",
+    "opciones": [
+      "1 máscara exacta por asiento",
+      "1 adicional en todas las filas de asientos",
+      "2 adicionales por fila",
+      "Máscaras solo en asientos de ventanilla"
+    ],
+    "respuesta_correcta": "1 adicional en todas las filas de asientos"
+  },
+  {
+    "pregunta": "¿Cuáles son los componentes principales detallados en el equipamiento de los asientos de pasajeros?",
+    "opciones": [
+      "Cinturón, bandeja plegable, chaleco o cojín",
+      "Pantalla táctil y audífonos",
+      "Reposapiés y luz individual",
+      "Máscara de oxígeno integrada al respaldo"
+    ],
+    "respuesta_correcta": "Cinturón, bandeja plegable, chaleco o cojín"
+  },
+  {
+    "pregunta": "¿En qué áreas o puertas están ubicadas las estaciones de Tripulante de Cabina (TC)?",
+    "opciones": [
+      "Solo en las salidas sobre el ala",
+      "FWD y AFT (Delanteras y Traseras)",
+      "Exclusivamente en FWD",
+      "Exclusivamente en AFT"
+    ],
+    "respuesta_correcta": "FWD y AFT (Delanteras y Traseras)"
+  },
+  {
+    "pregunta": "Según el sistema ACP, ¿Qué indica una luz ÁMBAR Fija?",
+    "opciones": [
+      "Humo en el baño",
+      "Llamada desde el baño",
+      "Llamada de pasajero",
+      "Emergencia desde el cockpit"
+    ],
+    "respuesta_correcta": "Llamada desde el baño"
+  },
+  {
+    "pregunta": "¿Qué luz se enciende de forma automática en el panel ACP si se detecta humo en el baño?",
+    "opciones": [
+      "ÁMBAR Fija",
+      "ROJO Intermitente",
+      "ÁMBAR Intermitente",
+      "AZUL Fija"
+    ],
+    "respuesta_correcta": "ÁMBAR Intermitente"
+  },
+  {
+    "pregunta": "Si un tripulante observa una luz ROJA Fija en el ACP, esto significa que hay una...",
+    "opciones": [
+      "Emergencia desde el cockpit",
+      "Llamada desde el cockpit o entre TAC",
+      "Fuego en los motores",
+      "Humo en la cabina de mando"
+    ],
+    "respuesta_correcta": "Llamada desde el cockpit o entre TAC"
+  },
+  {
+    "pregunta": "¿Cuál es la alerta visual en el ACP para una Emergencia declarada desde el Cockpit?",
+    "opciones": [
+      "ROJO Fija",
+      "ÁMBAR Intermitente",
+      "ROJO Intermitente",
+      "AZUL Intermitente"
+    ],
+    "respuesta_correcta": "ROJO Intermitente"
+  },
+  {
+    "pregunta": "¿Qué indica la luz AZUL Fija encendida en el Area Call Panel (ACP)?",
+    "opciones": [
+      "Falla en el sistema de agua del galley",
+      "Llamada de otro tripulante",
+      "Llamada de pasajero",
+      "Aviso de cinturones encendido"
+    ],
+    "respuesta_correcta": "Llamada de pasajero"
+  },
+  {
+    "pregunta": "¿Por dónde se extrae el aire usado para la ventilación de los baños?",
+    "opciones": [
+      "Por debajo del lavamanos",
+      "A través de una rejilla en el techo del baño",
+      "Por la ranura de la puerta hacia el pasillo",
+      "Mediante el sistema de vacío del inodoro"
+    ],
+    "respuesta_correcta": "A través de una rejilla en el techo del baño"
+  },
+  {
+    "pregunta": "¿Hacia dónde es descargado completamente el aire extraído del baño?",
+    "opciones": [
+      "Hacia los filtros de recirculación HEPA",
+      "Hacia el exterior del avión",
+      "Hacia la bodega de carga presurizada",
+      "De vuelta a los ductos de aire acondicionado"
+    ],
+    "respuesta_correcta": "Hacia el exterior del avión"
+  },
+  {
+    "pregunta": "¿Qué equipo de emergencia se encuentra resguardado dentro del compartimiento superior en los baños?",
+    "opciones": [
+      "El detector de humo",
+      "El extintor automático del basurero",
+      "Máscaras de oxígeno",
+      "Botiquín de primeros auxilios"
+    ],
+    "respuesta_correcta": "Máscaras de oxígeno"
+  },
+  {
+    "pregunta": "¿Qué significan operativamente las siglas TTL en el seguro del Jumpseat?",
+    "opciones": [
+      "Time To Land",
+      "Taxi, Take off and Landing",
+      "Total Time Limit",
+      "Transit, Take off and Landing"
+    ],
+    "respuesta_correcta": "Taxi, Take off and Landing"
+  },
+  {
+    "pregunta": "¿De qué color es la indicación visual que queda a la vista al bajar correctamente el seguro TTL?",
+    "opciones": [
+      "Roja",
+      "Verde",
+      "Amarilla",
+      "Naranja"
+    ],
+    "respuesta_correcta": "Amarilla"
+  },
+  {
+    "pregunta": "¿Qué se debe verificar obligatoriamente antes de proceder a asegurar o liberar el Jumpseat cercano a un baño?",
+    "opciones": [
+      "Que los pasajeros estén todos sentados",
+      "Que el baño esté desocupado y la puerta cerrada",
+      "Que las luces de cabina estén atenuadas",
+      "Que los carros del galley estén frenados"
+    ],
+    "respuesta_correcta": "Que el baño esté desocupado y la puerta cerrada"
+  },
+  {
+    "pregunta": "¿Hacia qué posición se debe girar el seguro del JMP para lograr liberar el asiento del Jumpseat?",
+    "opciones": [
+      "Posición horizontal",
+      "Posición vertical",
+      "Presionarlo hacia adentro",
+      "Tirarlo hacia afuera"
+    ],
+    "respuesta_correcta": "Posición vertical"
+  },
+  {
+    "pregunta": "¿Qué acción mecánica debe cumplir obligatoriamente el Jumpseat para ser considerado operativo en el chequeo pre vuelo?",
+    "opciones": [
+      "Reclinarse al máximo",
+      "Permitir ajuste lumbar",
+      "Plegado automático del asiento",
+      "Deslizarse por rieles laterales"
+    ],
+    "respuesta_correcta": "Plegado automático del asiento"
+  },
+  {
+    "pregunta": "Durante el chequeo pre vuelo de la Estación de TC, además del asiento propiamente tal, se debe verificar...",
+    "opciones": [
+      "Las luces de lectura regulables",
+      "Cinturón y arnés operativos y el equipo de emergencia asociado",
+      "La carga del intercomunicador",
+      "El suministro de oxígeno portátil"
+    ],
+    "respuesta_correcta": "Cinturón y arnés operativos y el equipo de emergencia asociado"
+  },
+  {
+    "pregunta": "Para asistir a un pasajero con necesidades especiales al baño, el primer paso a realizar con el asiento plegable es...",
+    "opciones": [
+      "Desmontar el asiento de sus bisagras",
+      "Presionar el pestillo para abrir la bandeja del asiento y bajarla a posición horizontal",
+      "Levantar completamente los apoyabrazos",
+      "Bloquear la puerta del baño desde adentro"
+    ],
+    "respuesta_correcta": "Presionar el pestillo para abrir la bandeja del asiento y bajarla a posición horizontal"
+  },
+  {
+    "pregunta": "Al asistir al pasajero en silla de ruedas hacia el baño, ¿Cómo debe posicionarse la silla de ruedas respecto a la bandeja?",
+    "opciones": [
+      "De frente",
+      "De espaldas",
+      "En diagonal hacia la bandeja",
+      "Paralela al pasillo central"
+    ],
+    "respuesta_correcta": "En diagonal hacia la bandeja"
+  },
+  {
+    "pregunta": "¿Qué parte específica de la silla de ruedas se debe colocar dentro del LAV para iniciar la acomodación del pasajero?",
+    "opciones": [
+      "La rueda trasera derecha",
+      "La rueda delantera izquierda",
+      "Ambas ruedas delanteras al mismo tiempo",
+      "La rueda trasera izquierda"
+    ],
+    "respuesta_correcta": "La rueda delantera izquierda"
+  },
+  {
+    "pregunta": "Respecto a la mitigación de incendios en zonas de carga, los aviones A320 están equipados con...",
+    "opciones": [
+      "Extintores de agua portátiles de largo alcance",
+      "Sistemas fijos de detección y extinción controlados desde la cabina de mando",
+      "Extintores mecánicos operados de forma manual",
+      "Sistemas autónomos sin intervención de los pilotos"
+    ],
+    "respuesta_correcta": "Sistemas fijos de detección y extinción controlados desde la cabina de mando"
+  },
+  {
+    "pregunta": "¿Qué indican las siglas del sistema de interfonía de cabina de pasajeros?",
+    "opciones": [
+      "COMM CABIN ALL",
+      "PA INTPH ALL",
+      "INTERCOM SYS FWD",
+      "ALL STATIONS CALL"
+    ],
+    "respuesta_correcta": "PA INTPH ALL"
+  },
+  {
+    "pregunta": "El A320 requiere 1 máscara de oxígeno adicional por fila de asientos. Su propósito principal es beneficiar a...",
+    "opciones": [
+      "Pilotos en periodo de descanso",
+      "Pasajeros que viajen con mascotas",
+      "Infantes o personas que estén en tránsito por el pasillo",
+      "Solo a los Tripulantes de Cabina en servicio"
+    ],
+    "respuesta_correcta": "Infantes o personas que estén en tránsito por el pasillo"
+  },
+  {
+    "pregunta": "Si durante las fases críticas verificas el Jumpseat y ves la indicación AMARILLA, confirmas que...",
+    "opciones": [
+      "El arnés de seguridad está trabado",
+      "El seguro TTL está correctamente posicionado hacia abajo",
+      "El asiento está inutilizado",
+      "Existe una llamada entrante desde la cabina"
+    ],
+    "respuesta_correcta": "El seguro TTL está correctamente posicionado hacia abajo"
+  },
+  {
+    "pregunta": "¿En qué familia de aeronaves comerciales se enfoca específicamente el manual de esta habilitación?",
+    "opciones": [
+      "Boeing 737",
+      "Airbus A330",
+      "Airbus A320",
+      "Embraer 190"
+    ],
+    "respuesta_correcta": "Airbus A320"
+  },
+  {
+    "pregunta": "Si un sensor detecta humo dentro del baño, ¿Cuál de los siguientes eventos se gatilla en el sistema de llamadas?",
+    "opciones": [
+      "Luz roja intermitente en todo el avión",
+      "Luz ámbar fija constante",
+      "Luz ámbar intermitente en el panel ACP",
+      "Luz azul intermitente en el techo"
+    ],
+    "respuesta_correcta": "Luz ámbar intermitente en el panel ACP"
+  },
+  {
+    "pregunta": "¿Desde dónde se controlan directamente los sistemas fijos de extinción de fuego del avión?",
+    "opciones": [
+      "Por los TCP desde el panel FAP",
+      "Por el personal de mantenimiento en tierra",
+      "Por los pilotos desde la cabina de mando",
+      "Se despliegan automáticamente al detectar calor"
+    ],
+    "respuesta_correcta": "Por los pilotos desde la cabina de mando"
+  },
+  {
+    "pregunta": "El diseño moderno de controles Fly by Wire implica que las órdenes del piloto se transmiten de forma...",
+    "opciones": [
+      "Mecánica mediante cables de acero hasta las alas",
+      "Neumática utilizando la presión de los motores",
+      "Eléctrica hacia las computadoras de vuelo",
+      "Hidráulica directa desde el yoke de mando"
+    ],
+    "respuesta_correcta": "Eléctrica hacia las computadoras de vuelo"
+  },
+  {
+    "pregunta": "¿Cuál es el objetivo principal de aprendizaje del curso según la presentación?",
+    "opciones": [
+      "Aprender tácticas de primeros auxilios",
+      "Conocer las características del Airbus 320 según lo establecido en el MTAC",
+      "Aprender a asistir a los pilotos en vuelo",
+      "Memorizar las rutas y destinos internacionales"
+    ],
+    "respuesta_correcta": "Conocer las características del Airbus 320 según lo establecido en el MTAC"
+  },
+  {
+    "pregunta": "¿Qué tipo de asientos forman parte integral de las 'estaciones de TC' (Tripulante de Cabina)?",
+    "opciones": [
+      "Asientos de clase ejecutiva",
+      "Los Jumpseats (JS/JP)",
+      "Los asientos designados en salidas de emergencia",
+      "Asientos de descanso rotativo de la tripulación"
+    ],
+    "respuesta_correcta": "Los Jumpseats (JS/JP)"
+  },
+  {
+    "pregunta": "¿Cuál es el principal riesgo operativo de no verificar que el baño esté desocupado antes de usar el seguro TTL en el Jumpseat?",
+    "opciones": [
+      "Que el baño pierda hermetismo",
+      "Que un pasajero quede encerrado debido al bloqueo del área exterior",
+      "Que suene por error la alarma de humo",
+      "Que se activen las máscaras de oxígeno por despresurización"
+    ],
+    "respuesta_correcta": "Que un pasajero quede encerrado debido al bloqueo del área exterior"
+  },
+  {
+    "pregunta": "Si un tripulante realiza una llamada de rutina a la cabina de mando desde el interfono, el ACP mostraría un color...",
+    "opciones": [
+      "Rojo fijo",
+      "Verde fijo",
+      "Ámbar fijo",
+      "Azul fijo"
+    ],
+    "respuesta_correcta": "Rojo fijo"
+  },
+  {
+    "pregunta": "¿Qué mecanismo específico provee la fuerza necesaria para mover físicamente las superficies primarias en las alas y cola?",
+    "opciones": [
+      "Actuadores eléctricos directos",
+      "Actuadores hidráulicos (son hidráulicamente activas)",
+      "Cables de tensión operados a mano",
+      "Sistemas de vacío de los motores"
+    ],
+    "respuesta_correcta": "Actuadores hidráulicos (son hidráulicamente activas)"
+  },
+  {
+    "pregunta": "Las filas 11 y 12 (o 12 y 13) del Airbus A320 están críticamente designadas como...",
+    "opciones": [
+      "Zonas de descanso extendido",
+      "Sector Alarm",
+      "Área de cuna médica",
+      "Galley trasero secundario"
+    ],
+    "respuesta_correcta": "Sector Alarm"
+  },
+  {
+    "pregunta": "Además de la altitud y velocidad crucero, ¿Qué otra dimensión clave define la separación externa de la aeronave A320?",
+    "opciones": [
+      "Diámetro específico de los motores",
+      "Grosor máximo del fuselaje",
+      "Envergadura de 34 mts",
+      "Distancia longitudinal entre trenes de aterrizaje"
+    ],
+    "respuesta_correcta": "Envergadura de 34 mts"
+  },
+  {
+    "pregunta": "¿Cuál es el objetivo principal de aprendizaje expuesto en el documento?",
+    "opciones": [
+      "Conocer las características del Airbus 320 según lo establecido en el MTAC",
+      "Aprender a pilotar el Airbus 320 en condiciones meteorológicas adversas",
+      "Conocer los sistemas de entretenimiento a bordo exclusivos de pasajeros",
+      "Establecer normas de seguridad para aeropuertos internacionales"
+    ],
+    "respuesta_correcta": "Conocer las características del Airbus 320 según lo establecido en el MTAC"
+  },
+  {
+    "pregunta": "¿Qué significan las siglas CIDS?",
+    "opciones": [
+      "Cabin Information Display Screen",
+      "Cabin Intercommunication Data System",
+      "Cockpit Integrated Data System",
+      "Crew Interphone Digital System"
+    ],
+    "respuesta_correcta": "Cabin Intercommunication Data System"
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes sistemas NO está conectado al sistema CIDS de la cabina?",
+    "opciones": [
+      "Aire acondicionado",
+      "Comunicaciones e Iluminación",
+      "Tren de aterrizaje",
+      "Agua y desechos"
+    ],
+    "respuesta_correcta": "Tren de aterrizaje"
+  },
+  {
+    "pregunta": "¿Qué panel permite a la Tripulación controlar ciertos sistemas de cabina y verificar su estatus mediante el CIDS?",
+    "opciones": [
+      "ACP (Area Call Panel)",
+      "AAP (Additional Attendant Panel)",
+      "FAP (Forward Attendant Panel)",
+      "AIP (Attendant Indication Panel)"
+    ],
+    "respuesta_correcta": "FAP (Forward Attendant Panel)"
+  },
+  {
+    "pregunta": "¿Cuáles son las dos versiones del FAP que se pueden encontrar en el avión?",
+    "opciones": [
+      "Pantalla táctil o pantalla rígida/de botones",
+      "Analógico con manivelas o digital por voz",
+      "Pantalla holográfica o panel de control de radio",
+      "Panel principal de pasajeros o secundario de tripulación"
+    ],
+    "respuesta_correcta": "Pantalla táctil o pantalla rígida/de botones"
+  },
+  {
+    "pregunta": "En el FAP Touch Screen, ¿cómo se divide físicamente el módulo?",
+    "opciones": [
+      "En panel de fusibles y panel de iluminación",
+      "En pantalla táctil y sub panel",
+      "En módulo delantero y módulo trasero",
+      "En luces de emergencia y módulo de temperatura"
+    ],
+    "respuesta_correcta": "En pantalla táctil y sub panel"
+  },
+  {
+    "pregunta": "¿Qué función cumple el botón CAUT en la pantalla del FAP Touch Screen?",
+    "opciones": [
+      "Es el botón para reiniciar el sistema operativo",
+      "Indica que el avión está listo para el despegue",
+      "Es el botón de apagado manual de la pantalla",
+      "Es un botón de alerta de mal funcionamiento de un sistema"
+    ],
+    "respuesta_correcta": "Es un botón de alerta de mal funcionamiento de un sistema"
+  },
+  {
+    "pregunta": "En la línea de información del FAP, ¿qué significa si aparece una flecha delante de un mensaje de texto?",
+    "opciones": [
+      "Que el sistema requiere actualización de software",
+      "Que hay más de un mensaje presente",
+      "Que la instrucción debe ejecutarse de inmediato",
+      "Que es una llamada proveniente del Cockpit"
+    ],
+    "respuesta_correcta": "Que hay más de un mensaje presente"
+  },
+  {
+    "pregunta": "Si el CIDS recibe una alerta de humo, ¿qué sucede en el FAP Touch Screen?",
+    "opciones": [
+      "Despliega la página SMOKE y sobre comanda cualquier otra página",
+      "Apaga la pantalla automáticamente para ahorrar energía",
+      "Muestra la página de SYSTEM INFO en modo bloqueo",
+      "Bloquea todas las puertas de la aeronave"
+    ],
+    "respuesta_correcta": "Despliega la página SMOKE y sobre comanda cualquier otra página"
+  },
+  {
+    "pregunta": "De acuerdo a las prioridades del CIDS para mostrar páginas automáticas en el FAP, ¿qué página tiene la prioridad número 1?",
+    "opciones": [
+      "DOORS/SLIDES",
+      "SYSTEM INFO",
+      "AUDIO",
+      "SMOKE"
+    ],
+    "respuesta_correcta": "SMOKE"
+  },
+  {
+    "pregunta": "En las prioridades del CIDS para el FAP, ¿qué página aparece en la prioridad número 2?",
+    "opciones": [
+      "SMOKE",
+      "DOORS/SLIDES y WATER/WASTE",
+      "SYSTEM INFO",
+      "AUDIO"
+    ],
+    "respuesta_correcta": "DOORS/SLIDES y WATER/WASTE"
+  },
+  {
+    "pregunta": "¿Qué desactiva la función SCREEN OFF del FAP y vuelve a encender la pantalla?",
+    "opciones": [
+      "Encender las luces de emergencia",
+      "Un evento automático o tocar la pantalla",
+      "Hablar por el sistema PA",
+      "Abrir una puerta del avión"
+    ],
+    "respuesta_correcta": "Un evento automático o tocar la pantalla"
+  },
+  {
+    "pregunta": "¿En qué etapa del vuelo la Tripulación de Cabina debe presionar el botón CABIN READY en el FAP?",
+    "opciones": [
+      "Durante la turbulencia moderada o severa",
+      "Solo cuando se requiere realizar servicio a bordo",
+      "Previo al despegue y previo al aterrizaje",
+      "Al abrir la puerta para el desembarque"
+    ],
+    "respuesta_correcta": "Previo al despegue y previo al aterrizaje"
+  },
+  {
+    "pregunta": "¿Qué función cumple el botón LAV MAINT ubicado en el sub panel del FAP?",
+    "opciones": [
+      "Vacía automáticamente los estanques de los baños",
+      "Inactiva las luces de los baños para que no sean usados",
+      "Lleva las luces de los baños a máxima intensidad para mantenimiento",
+      "Bloquea electrónicamente las puertas de todos los lavabos"
+    ],
+    "respuesta_correcta": "Lleva las luces de los baños a máxima intensidad para mantenimiento"
+  },
+  {
+    "pregunta": "¿Qué acción realiza el botón SCREEN 30 SECS LOCK en el FAP?",
+    "opciones": [
+      "Mantiene el avión en tierra por 30 segundos",
+      "Pone la pantalla en modo pasivo por 30 segundos para limpieza",
+      "Bloquea el avión completo contra secuestros por 30 segundos",
+      "Activa las señales de cinturones de seguridad por medio minuto"
+    ],
+    "respuesta_correcta": "Pone la pantalla en modo pasivo por 30 segundos para limpieza"
+  },
+  {
+    "pregunta": "¿Para qué se utiliza el botón EVAC RESET del sub panel del FAP?",
+    "opciones": [
+      "Inicia la alarma general de evacuación en toda la cabina",
+      "Silencia la señal auditiva de evacuación para puertas Fwd (delanteras)",
+      "Reinicia la computadora principal de navegación",
+      "Borra todas las alertas visuales pero mantiene el sonido"
+    ],
+    "respuesta_correcta": "Silencia la señal auditiva de evacuación para puertas Fwd (delanteras)"
+  },
+  {
+    "pregunta": "¿Qué componente es el PTP y dónde está ubicado generalmente?",
+    "opciones": [
+      "Passenger Touch Panel, ubicado en los asientos traseros",
+      "Pilot Testing Program, integrado en los mandos de vuelo",
+      "Programming and Test Panel, ubicado al lado del FAP con pantalla botones",
+      "Public Telemetry Port, ubicado debajo del fuselaje"
+    ],
+    "respuesta_correcta": "Programming and Test Panel, ubicado al lado del FAP con pantalla botones"
+  },
+  {
+    "pregunta": "¿Dónde se encuentra habitualmente ubicado el panel AAP (Additional Attendant Panel)?",
+    "opciones": [
+      "Al costado de la puerta 1L",
+      "Al costado de la puerta 4L",
+      "En el interior de la cabina de pilotos",
+      "Detrás del ala izquierda"
+    ],
+    "respuesta_correcta": "Al costado de la puerta 4L"
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes sistemas se puede controlar desde el AAP?",
+    "opciones": [
+      "Descarga de los detectores de humo del compartimento de carga",
+      "Iluminación del área de entrada posterior y cabina de pasajeros",
+      "Programación del sistema operativo CIDS",
+      "Temperatura de los hornos del Galley delantero"
+    ],
+    "respuesta_correcta": "Iluminación del área de entrada posterior y cabina de pasajeros"
+  },
+  {
+    "pregunta": "¿Qué es el panel AIP en la cabina de pasajeros?",
+    "opciones": [
+      "Attendant Indication Panel",
+      "Airbus Information Panel",
+      "Automatic Intercom Program",
+      "Airplane Interior Power"
+    ],
+    "respuesta_correcta": "Attendant Indication Panel"
+  },
+  {
+    "pregunta": "En el AIP, ¿qué indica la luz LED verde fija?",
+    "opciones": [
+      "Información de comunicación normal",
+      "Fallo general del sistema eléctrico",
+      "Evacuación inminente requerida",
+      "Llamado exclusivo desde el baño"
+    ],
+    "respuesta_correcta": "Información de comunicación normal"
+  },
+  {
+    "pregunta": "¿Qué condición provoca que el LED rojo del AIP se ilumine de forma intermitente?",
+    "opciones": [
+      "Un pasajero llamando a la Tripulación de Cabina",
+      "Falla en el aire acondicionado de pasajeros",
+      "Llamado de emergencia desde Cockpit, alarma de humo o EVAC COMD activado",
+      "Turbulencia moderada esperada en los próximos minutos"
+    ],
+    "respuesta_correcta": "Llamado de emergencia desde Cockpit, alarma de humo o EVAC COMD activado"
+  },
+  {
+    "pregunta": "¿Qué mensaje muestra el AIP si hay una llamada generada desde un asiento de pasajero (PSU)?",
+    "opciones": [
+      "CALL CAPTAIN",
+      "CALL SR!",
+      "PA IN USE",
+      "SMOKE LAV X"
+    ],
+    "respuesta_correcta": "CALL SR!"
+  },
+  {
+    "pregunta": "Si un tripulante está realizando un anuncio general por micrófono, ¿qué mensaje de estado muestra el AIP?",
+    "opciones": [
+      "CNCL",
+      "OVER",
+      "PA IN USE",
+      "BUSY"
+    ],
+    "respuesta_correcta": "PA IN USE"
+  },
+  {
+    "pregunta": "¿Qué indica el mensaje de información 'CNCL' en la pantalla del AIP?",
+    "opciones": [
+      "El sistema de PA está siendo usado",
+      "Código erróneo ha sido ingresado",
+      "Se ha presionado el botón reset por accidente",
+      "Interrupción por llamado de mayor prioridad"
+    ],
+    "respuesta_correcta": "Interrupción por llamado de mayor prioridad"
+  },
+  {
+    "pregunta": "¿Dónde están instalados los paneles de llamada de área o ACP (Area Call Panel)?",
+    "opciones": [
+      "Debajo del asiento de cada auxiliar de cabina",
+      "Exclusivamente dentro del Cockpit para uso de los pilotos",
+      "En el techo, sobre el pasillo, cerca de las estaciones de TC",
+      "Integrados en el interior de los baños"
+    ],
+    "respuesta_correcta": "En el techo, sobre el pasillo, cerca de las estaciones de TC"
+  },
+  {
+    "pregunta": "¿Qué color se ilumina en el ACP cuando un pasajero efectúa una llamada desde su asiento?",
+    "opciones": [
+      "Rojo",
+      "Ámbar",
+      "Verde",
+      "Azul"
+    ],
+    "respuesta_correcta": "Azul"
+  },
+  {
+    "pregunta": "Con respecto a la luz azul del ACP originada por una llamada de pasajero, ¿cuál de estas afirmaciones es correcta?",
+    "opciones": [
+      "Se ilumina de forma intermitente siempre",
+      "Destella dos veces por segundo hasta que se atienda",
+      "Será siempre fija, nunca intermitente",
+      "Cambia a color rojo si el pasajero no es atendido en un minuto"
+    ],
+    "respuesta_correcta": "Será siempre fija, nunca intermitente"
+  },
+  {
+    "pregunta": "Si se activa el detector de humo de un baño, ¿qué luz se enciende en el respectivo ACP del pasillo?",
+    "opciones": [
+      "Luz azul fija",
+      "Luz roja fija",
+      "Luz ámbar intermitente",
+      "Luz verde parpadeante"
+    ],
+    "respuesta_correcta": "Luz ámbar intermitente"
+  },
+  {
+    "pregunta": "¿Qué combinación de luces del ACP corresponde a una llamada de emergencia proveniente del Cockpit?",
+    "opciones": [
+      "Luz roja intermitente",
+      "Luz azul fija",
+      "Luz ámbar fija",
+      "Luz ámbar intermitente"
+    ],
+    "respuesta_correcta": "Luz roja intermitente"
+  },
+  {
+    "pregunta": "En el control de temperatura de la Cabina de Mando, ¿qué rango de temperaturas se puede seleccionar?",
+    "opciones": [
+      "Entre 15°C y 25°C",
+      "Entre 18°C y 30°C",
+      "Entre 20°C y 35°C",
+      "Entre 10°C y 22°C"
+    ],
+    "respuesta_correcta": "Entre 18°C y 30°C"
+  },
+  {
+    "pregunta": "La Tripulación de Cabina puede variar la temperatura desde el panel FAP, pero esto tiene una limitación respecto a lo seleccionado en el Cockpit. ¿De cuánto es este margen?",
+    "opciones": [
+      "2.5°C más o menos de la temperatura seleccionada en la cabina de mando",
+      "5.0°C más o menos de la temperatura seleccionada en la cabina de mando",
+      "Puede cambiarse sin restricciones",
+      "Solo puede variarse 1.0°C"
+    ],
+    "respuesta_correcta": "2.5°C más o menos de la temperatura seleccionada en la cabina de mando"
+  },
+  {
+    "pregunta": "¿Cuál es la capacidad del tanque de agua potable en el Airbus 320 según el manual?",
+    "opciones": [
+      "100 litros",
+      "150 litros",
+      "170 litros",
+      "200 litros"
+    ],
+    "respuesta_correcta": "200 litros"
+  },
+  {
+    "pregunta": "¿Cómo logra presurizarse el sistema de agua para asegurar que haya suministro en Galleys y baños?",
+    "opciones": [
+      "Por acción exclusiva de la gravedad",
+      "Mediante una bomba de agua accionada manualmente por la tripulación",
+      "Se presuriza con aire comprimido",
+      "Mediante un sistema de succión eléctrica continua"
+    ],
+    "respuesta_correcta": "Se presuriza con aire comprimido"
+  },
+  {
+    "pregunta": "¿De cuántos litros es la capacidad del estanque de desechos en el Airbus 320?",
+    "opciones": [
+      "100 litros",
+      "170 litros",
+      "200 litros",
+      "300 litros"
+    ],
+    "respuesta_correcta": "170 litros"
+  },
+  {
+    "pregunta": "¿Hacia dónde drenan las aguas grises provenientes de lavamanos y Galleys?",
+    "opciones": [
+      "Se dirigen directamente al estanque principal de desechos junto con los sanitarios",
+      "Se vaporizan de inmediato mediante el sistema de aire acondicionado",
+      "Drenan al exterior a través de las válvulas Drain Masts que están calefaccionadas",
+      "Son recicladas en el tanque de agua de 200 litros tras pasar por un filtro"
+    ],
+    "respuesta_correcta": "Drenan al exterior a través de las válvulas Drain Masts que están calefaccionadas"
+  },
+  {
+    "pregunta": "Si en el módulo WATER AND WASTE del FAP se enciende la luz de SYSTEM INOP, ¿qué advierte?",
+    "opciones": [
+      "Que el suministro eléctrico en cabina falló por completo",
+      "Que el baño B o el baño C han sido bloqueados por un pasajero",
+      "Que el sistema de succión está inoperativo",
+      "Que el tanque de agua dulce superó su nivel máximo"
+    ],
+    "respuesta_correcta": "Que el sistema de succión está inoperativo"
+  },
+  {
+    "pregunta": "En el sistema de interfonía, ¿qué señal auditiva se emite cuando la Tripulación de Mando hace una llamada de Emergencia a Cabina de Pasajeros (EMER CALL)?",
+    "opciones": [
+      "1 chime Hi/Lo en la estación del sobrecargo",
+      "3 tonos Hi/Lo emitidos en todas las estaciones de TC",
+      "Un sonido de bocina estridente y continuo en el Cockpit",
+      "2 chimes agudos seguidos de la frase EVAC"
+    ],
+    "respuesta_correcta": "3 tonos Hi/Lo emitidos en todas las estaciones de TC"
+  },
+  {
+    "pregunta": "Si un Auxiliar de Cabina recibe en su panel AIP el texto CALL CAPTAIN con luz verde, ¿de qué tipo de llamada se trata?",
+    "opciones": [
+      "Llamada normal de TM a TC",
+      "Emergencia de evacuación confirmada por TM",
+      "Llamada de conferencia originada en la cabina de pasajeros",
+      "Llamada de emergencia hacia un asiento de pasajero enfermo"
+    ],
+    "respuesta_correcta": "Llamada normal de TM a TC"
+  },
+  {
+    "pregunta": "¿Qué estación o sistema tiene la máxima prioridad (Prioridad 1) sobre el uso del Public Address (PA)?",
+    "opciones": [
+      "El sistema de entretenimiento pregrabado (PRAM)",
+      "Cabina de pasajeros",
+      "Cockpit (Cabina de mando)",
+      "La estación trasera de los Tripulantes de Cabina"
+    ],
+    "respuesta_correcta": "Cockpit (Cabina de mando)"
+  },
+  {
+    "pregunta": "Según las prioridades establecidas del sistema PA, ¿cuál corresponde al número 3 de la lista de prioridad?",
+    "opciones": [
+      "Cockpit",
+      "Cabina de pasajeros",
+      "Llamadas interfonos TC-TC",
+      "Sistema de entretenimiento"
+    ],
+    "respuesta_correcta": "Sistema de entretenimiento"
+  },
+  {
+    "pregunta": "En el panel del sistema EVAC de la cabina de mando, si el interruptor está en posición CAPT, ¿qué indica?",
+    "opciones": [
+      "El comando de evacuación (EVAC) puede ser activado tanto desde Cockpit como desde el FAP",
+      "La evacuación se cancelará automáticamente después de tres minutos",
+      "El EVAC command puede ser activado sólo desde el cockpit",
+      "Se bloquean las comunicaciones con los pasajeros y asume el control el capitán"
+    ],
+    "respuesta_correcta": "El EVAC command puede ser activado sólo desde el cockpit"
+  },
+  {
+    "pregunta": "Por el contrario, si el interruptor EVAC COMMAND en el cockpit se deja en 'CAPT & PURS', ¿quién puede activar la evacuación?",
+    "opciones": [
+      "Exclusivamente el Capitán",
+      "Cualquier pasajero abriendo una de las ventanas de emergencia",
+      "Puede ser activado desde la cabina de mando y desde el FAP",
+      "Solamente la torre de control remotamente"
+    ],
+    "respuesta_correcta": "Puede ser activado desde la cabina de mando y desde el FAP"
+  },
+  {
+    "pregunta": "¿Qué ocurre al presionar el botón EVAC RESET del FAP cuando el sistema de evacuación ha sido activado?",
+    "opciones": [
+      "La alarma auditiva se detiene en ese sector",
+      "Se abren todos los toboganes de manera remota",
+      "El sistema repite el mensaje acústico a un volumen más alto",
+      "Se resetean y apagan las luces indicadoras rojas del piso"
+    ],
+    "respuesta_correcta": "La alarma auditiva se detiene en ese sector"
+  },
+  {
+    "pregunta": "¿Desde qué paneles la Tripulación de Cabina puede gestionar de manera operativa la iluminación general del avión?",
+    "opciones": [
+      "Sólo desde el Cockpit con autorización del comandante",
+      "Única y exclusivamente desde el panel táctil FAP",
+      "Desde el FAP para todo el avión, y el sector trasero desde el AAP",
+      "Desde los mandos individuales ubicados sobre cada asiento de pasajero (PSU)"
+    ],
+    "respuesta_correcta": "Desde el FAP para todo el avión, y el sector trasero desde el AAP"
+  },
+  {
+    "pregunta": "Si un Tripulante presiona la opción 'CABIN DIM 1' en el panel de luces AAP, ¿qué porcentaje de intensidad representa?",
+    "opciones": [
+      "100% de intensidad luminosa",
+      "75% aproximadamente",
+      "50% aproximadamente",
+      "10% aproximadamente"
+    ],
+    "respuesta_correcta": "50% aproximadamente"
+  },
+  {
+    "pregunta": "En los controles de luces del panel adicional AAP, ¿qué nivel de intensidad se asocia al botón ENTRY BRT?",
+    "opciones": [
+      "10% de la iluminación de entrada",
+      "25% para simular modo nocturno",
+      "50% aproximadamente",
+      "100% de intensidad"
+    ],
+    "respuesta_correcta": "100% de intensidad"
+  },
+  {
+    "pregunta": "Si la selección lumínica del Tripulante en el AAP es CABIN DIM 2, ¿cuál será la intensidad aproximada lograda?",
+    "opciones": [
+      "10% aproximadamente",
+      "25% aproximadamente",
+      "50% aproximadamente",
+      "100% de intensidad"
+    ],
+    "respuesta_correcta": "10% aproximadamente"
+  },
+  {
+    "pregunta": "¿Dónde se encuentran instaladas físicamente las luces de trabajo de Tripulación de Cabina?",
+    "opciones": [
+      "Únicamente al interior del Cockpit",
+      "En el piso demarcando las salidas de las alas",
+      "Cerca de los jumpseats y galleys",
+      "Debajo de las butacas de cada pasajero"
+    ],
+    "respuesta_correcta": "Cerca de los jumpseats y galleys"
+  },
+  {
+    "pregunta": "¿Cómo debe operar el Tripulante Auxiliar de Cabina las luces de trabajo de alta intensidad?",
+    "opciones": [
+      "Se accionan de forma completamente automática al abrir las puertas",
+      "Se manejan desde el FAP Touch Screen en el sub menú 'Work'",
+      "Se encienden únicamente bajando el nivel lumínico general a DIM 2",
+      "Son controladas manualmente: se presiona el botón para encender y nuevamente para apagar"
+    ],
+    "respuesta_correcta": "Son controladas manualmente: se presiona el botón para encender y nuevamente para apagar"
+  },
+  {
+    "pregunta": "¿Cuántas puertas y salidas sobre sector alar tiene el avión A320 según el manual?",
+    "opciones": [
+      "2 puertas y 2 salidas sector alar",
+      "4 puertas y 2 salidas sector alar",
+      "6 puertas y 4 salidas sector alar",
+      "4 puertas y 4 salidas sector alar"
+    ],
+    "respuesta_correcta": "4 puertas y 4 salidas sector alar"
+  },
+  {
+    "pregunta": "¿Cómo son consideradas las puertas de acceso y servicio del A320?",
+    "opciones": [
+      "Salidas secundarias de emergencia",
+      "Salidas a nivel de piso, consideradas salidas principales",
+      "Salidas exclusivas para la tripulación",
+      "Salidas sobre el ala de uso exclusivo en tierra"
+    ],
+    "respuesta_correcta": "Salidas a nivel de piso, consideradas salidas principales"
+  },
+  {
+    "pregunta": "¿Hacia dónde se despliega el tobogán rampa de las salidas sobre el sector alar?",
+    "opciones": [
+      "Hacia el borde de ataque del ala",
+      "Hacia el fuselaje central del avión",
+      "Hacia el borde de fuga del ala",
+      "Hacia el tren de aterrizaje"
+    ],
+    "respuesta_correcta": "Hacia el borde de fuga del ala"
+  },
+  {
+    "pregunta": "¿Es posible desconectar el tobogán rampa del avión en caso de amaraje?",
+    "opciones": [
+      "Sí, tirando de la manilla blanca 'HANDLE'",
+      "Sí, cortando la mooring line con el cuchillo",
+      "Sí, retirando el pasador de seguridad",
+      "No, ya que no se desconecta del avión"
+    ],
+    "respuesta_correcta": "No, ya que no se desconecta del avión"
+  },
+  {
+    "pregunta": "¿En qué lado del avión A320 se ubican las puertas de acceso de pasajeros?",
+    "opciones": [
+      "Lado derecho (1R, 4R)",
+      "Lado izquierdo (1L, 4L)",
+      "En ambos lados de forma simétrica",
+      "Solo en la parte delantera (1L, 1R)"
+    ],
+    "respuesta_correcta": "Lado izquierdo (1L, 4L)"
+  },
+  {
+    "pregunta": "¿En qué lado del avión A320 se ubican las puertas de servicio?",
+    "opciones": [
+      "Lado izquierdo (1L, 4L)",
+      "En la sección media sobre las alas",
+      "Lado derecho (1R, 4R)",
+      "Exclusivamente en la parte trasera (4L, 4R)"
+    ],
+    "respuesta_correcta": "Lado derecho (1R, 4R)"
+  },
+  {
+    "pregunta": "¿Qué luz se enciende cuando el tobogán está armado y la palanca de control es ligeramente subida?",
+    "opciones": [
+      "Luz roja intermitente CABIN PRESSURE",
+      "Luz verde fija LOCKED",
+      "Luz ámbar intermitente",
+      "Luz blanca fija SLIDE ARMED"
+    ],
+    "respuesta_correcta": "Luz blanca fija SLIDE ARMED"
+  },
+  {
+    "pregunta": "¿Cuál es la función principal de la luz SLIDE ARMED?",
+    "opciones": [
+      "Indicar que la puerta está mal cerrada",
+      "Alertar que hay presión en la cabina",
+      "Alertar que el tobogán está armado",
+      "Señalar que el avión está en vuelo"
+    ],
+    "respuesta_correcta": "Alertar que el tobogán está armado"
+  },
+  {
+    "pregunta": "¿Qué indica la luz roja intermitente CABIN PRESSURE?",
+    "opciones": [
+      "Hay presión residual en cabina y la puerta no debe abrirse",
+      "El avión ha alcanzado la altitud de crucero",
+      "El sistema de oxígeno de emergencia ha sido activado",
+      "Las máscaras de oxígeno están a punto de caer"
+    ],
+    "respuesta_correcta": "Hay presión residual en cabina y la puerta no debe abrirse"
+  },
+  {
+    "pregunta": "¿Bajo qué condiciones específicas se enciende la luz CABIN PRESSURE?",
+    "opciones": [
+      "Ambos motores encendidos y puerta cerrada",
+      "Tren de aterrizaje desplegado y puerta abierta",
+      "Tobogán armado y motores encendidos",
+      "Al menos un motor apagado, tobogán desarmado y presión residual"
+    ],
+    "respuesta_correcta": "Al menos un motor apagado, tobogán desarmado y presión residual"
+  },
+  {
+    "pregunta": "¿Qué función cumple el dispositivo que funciona como amortiguador en la puerta en operación normal?",
+    "opciones": [
+      "Mantener la cabina presurizada a grandes altitudes",
+      "Activar el tobogán en caso de emergencia",
+      "Regular el movimiento de la puerta, especialmente con viento",
+      "Bloquear la puerta durante el despegue"
+    ],
+    "respuesta_correcta": "Regular el movimiento de la puerta, especialmente con viento"
+  },
+  {
+    "pregunta": "Durante la apertura de una puerta en emergencia, ¿qué elemento asiste al amortiguador para empujar la puerta?",
+    "opciones": [
+      "Un resorte mecánico de titanio",
+      "La presión hidráulica de los motores",
+      "La fuerza manual de la tripulación",
+      "Un actuador (cilindro de nitrógeno presurizado)"
+    ],
+    "respuesta_correcta": "Un actuador (cilindro de nitrógeno presurizado)"
+  },
+  {
+    "pregunta": "¿Qué indicación visual en la puerta confirma que está correctamente asegurada?",
+    "opciones": [
+      "UNLOCKED en color rojo",
+      "LOCKED en color verde",
+      "ARMED en color rojo",
+      "SECURE en color blanco"
+    ],
+    "respuesta_correcta": "LOCKED en color verde"
+  },
+  {
+    "pregunta": "¿Qué indicación visual señala que la puerta NO está asegurada?",
+    "opciones": [
+      "LOCKED en color ámbar",
+      "OPEN en color verde",
+      "DISARMED en color verde",
+      "UNLOCKED en color rojo"
+    ],
+    "respuesta_correcta": "UNLOCKED en color rojo"
+  },
+  {
+    "pregunta": "En los aviones equipados con tobogán balsa, ¿dónde se encuentra la cuerda para conectar el kit de supervivencia?",
+    "opciones": [
+      "En el marco superior de la puerta de emergencia",
+      "En el centro del tubo de flotación superior",
+      "En la parte inferior del tobogán, cercana a la barra girt",
+      "En la caja del actuador neumático"
+    ],
+    "respuesta_correcta": "En la parte inferior del tobogán, cercana a la barra girt"
+  },
+  {
+    "pregunta": "En el chequeo pre-vuelo, si el tobogán está correctamente desarmado, ¿cómo se muestran el círculo y la flecha?",
+    "opciones": [
+      "Alineados perfectamente",
+      "No alineados",
+      "En posición cruzada",
+      "Cubiertos por una cinta roja"
+    ],
+    "respuesta_correcta": "No alineados"
+  },
+  {
+    "pregunta": "¿En qué rango de color debe encontrarse el indicador de presión del tobogán durante el chequeo pre-vuelo con la puerta cerrada?",
+    "opciones": [
+      "Rango rojo",
+      "Rango ámbar",
+      "Rango verde",
+      "Rango blanco"
+    ],
+    "respuesta_correcta": "Rango verde"
+  },
+  {
+    "pregunta": "Durante la operación normal de cierre de puertas, ¿qué se debe presionar para poder desplazar y cerrar la puerta?",
+    "opciones": [
+      "La palanca amarilla de armado",
+      "El visor de presión de cabina",
+      "El gust lock (botón blanco)",
+      "La luz de advertencia SLIDE ARMED"
+    ],
+    "respuesta_correcta": "El gust lock (botón blanco)"
+  },
+  {
+    "pregunta": "Para 'armar' el tobogán, ¿en qué posición se debe ubicar la palanca amarilla?",
+    "opciones": [
+      "En la posición DISARMED",
+      "En la posición LOCKED",
+      "En la posición READY",
+      "En la posición ARMED"
+    ],
+    "respuesta_correcta": "En la posición ARMED"
+  },
+  {
+    "pregunta": "Cuando el tobogán está armado, ¿qué indicación de color y texto se observa en el visor?",
+    "opciones": [
+      "ARMED (rojo)",
+      "ARMED (verde)",
+      "DISARMED (verde)",
+      "LOCKED (ámbar)"
+    ],
+    "respuesta_correcta": "ARMED (rojo)"
+  },
+  {
+    "pregunta": "Tras armar el tobogán, ¿dónde se debe insertar el pin de seguridad?",
+    "opciones": [
+      "En la bisagra superior de la puerta",
+      "En el orificio del brazo de la puerta, dejando la cinta no visible",
+      "En la barra girt, dejándolo colgar hacia el piso",
+      "Al lado del letrero DISARMED, dejando la cinta visible"
+    ],
+    "respuesta_correcta": "En el orificio del brazo de la puerta, dejando la cinta no visible"
+  },
+  {
+    "pregunta": "En el procedimiento de desarmado de tobogán (PUERTAS EN MANUAL), ¿en qué posición se coloca la palanca amarilla?",
+    "opciones": [
+      "En la posición ARMED",
+      "En la posición OPEN",
+      "En la posición DISARMED",
+      "En la posición MANUAL"
+    ],
+    "respuesta_correcta": "En la posición DISARMED"
+  },
+  {
+    "pregunta": "Cuando el tobogán se encuentra desarmado, ¿qué indicación muestra el visor?",
+    "opciones": [
+      "DISARMED (rojo)",
+      "ARMED (verde)",
+      "DISARMED (verde)",
+      "UNLOCKED (ámbar)"
+    ],
+    "respuesta_correcta": "DISARMED (verde)"
+  },
+  {
+    "pregunta": "Al realizar el desarmado del tobogán, ¿dónde se inserta el pin de seguridad?",
+    "opciones": [
+      "En el orificio del brazo de la puerta con la cinta oculta",
+      "En la caja del actuador neumático",
+      "Se entrega al Jefe de Cabina",
+      "Al lado del letrero DISARMED y con la cinta visible"
+    ],
+    "respuesta_correcta": "Al lado del letrero DISARMED y con la cinta visible"
+  },
+  {
+    "pregunta": "En la pantalla del FAP (Flight Attendant Panel), ¿qué indica un rectángulo rojo en la parte exterior del diagrama del avión?",
+    "opciones": [
+      "Tobogán armado",
+      "Puerta asegurada",
+      "Puerta abierta",
+      "Presión de cabina anormal"
+    ],
+    "respuesta_correcta": "Puerta abierta"
+  },
+  {
+    "pregunta": "En el FAP, ¿qué significa si una puerta se muestra con un rectángulo ámbar en la parte interior del diagrama?",
+    "opciones": [
+      "Puerta asegurada pero presurizada",
+      "Puerta abierta con tobogán armado",
+      "Falla en el sistema de cierre",
+      "Puerta cerrada con el tobogán desarmado"
+    ],
+    "respuesta_correcta": "Puerta cerrada con el tobogán desarmado"
+  },
+  {
+    "pregunta": "Si en la pantalla del FAP se observa un rectángulo verde en la parte interior del diagrama, ¿qué estado tiene la puerta?",
+    "opciones": [
+      "Puerta abierta para abordaje",
+      "Puerta cerrada con el tobogán armado",
+      "Puerta cerrada con falla de amortiguador",
+      "Puerta cerrada con el tobogán desarmado"
+    ],
+    "respuesta_correcta": "Puerta cerrada con el tobogán armado"
+  },
+  {
+    "pregunta": "En el subpanel del FAP (Hard Keys), ¿qué significa que la luz DOORS CLOSED esté apagada?",
+    "opciones": [
+      "Indica que todas las puertas están aseguradas y cerradas",
+      "Indica que el avión está en vuelo estacionario",
+      "Indica que 1 o más puertas están abiertas",
+      "Indica que el tobogán balsa ha sido desplegado"
+    ],
+    "respuesta_correcta": "Indica que 1 o más puertas están abiertas"
+  },
+  {
+    "pregunta": "Si la luz indicadora SLIDES ARMED en el FAP presenta luces verdes intermitentes, ¿qué alerta proporciona a la tripulación?",
+    "opciones": [
+      "Indica que todos los toboganes están armados",
+      "Indica que se ha perdido la presión hidráulica",
+      "Indica que 1 o más toboganes están desarmados",
+      "Indica un despliegue accidental del tobogán"
+    ],
+    "respuesta_correcta": "Indica que 1 o más toboganes están desarmados"
+  },
+  {
+    "pregunta": "Al abrir una puerta desde el exterior en operación normal, ¿qué se debe empujar primero para tomar la manilla?",
+    "opciones": [
+      "El botón blanco de gust lock",
+      "La palanca amarilla DISARM",
+      "El indicador rojo CABIN PRESSURE",
+      "La aleta con la inscripción PUSH HERE"
+    ],
+    "respuesta_correcta": "La aleta con la inscripción PUSH HERE"
+  },
+  {
+    "pregunta": "¿Qué se debe verificar de forma obligatoria antes de abrir la puerta desde el interior en operación normal?",
+    "opciones": [
+      "Que los motores estén encendidos a máxima potencia",
+      "Que el tobogán se encuentre completamente inflado",
+      "Que la luz CABIN PRESSURE esté apagada y la palanca amarilla en DISARMED",
+      "Que la luz CABIN PRESSURE esté encendida de forma roja fija"
+    ],
+    "respuesta_correcta": "Que la luz CABIN PRESSURE esté apagada y la palanca amarilla en DISARMED"
+  },
+  {
+    "pregunta": "Para que la tripulación abra la puerta en operación normal, ¿quién golpea la puerta desde el exterior para iniciar el proceso?",
+    "opciones": [
+      "El Capitán de la aeronave",
+      "El Primer Oficial",
+      "El agente de aeropuerto (personal de tierra)",
+      "Otro tripulante auxiliar desde una ventana"
+    ],
+    "respuesta_correcta": "El agente de aeropuerto (personal de tierra)"
+  },
+  {
+    "pregunta": "En una evacuación de emergencia, ¿cuál es la secuencia correcta de los tres pasos descritos para abrir la puerta?",
+    "opciones": [
+      "ABRIR, CHEQUEAR, SALTAR",
+      "DESARMAR, EMPUJAR, INFLAR",
+      "VERIFICAR, ABRIR, CHEQUEAR",
+      "CHEQUEAR, ABRIR, VERIFICAR"
+    ],
+    "respuesta_correcta": "CHEQUEAR, ABRIR, VERIFICAR"
+  },
+  {
+    "pregunta": "¿Desde dónde pueden ser abiertas las salidas sobre el ala (sector alar)?",
+    "opciones": [
+      "Únicamente desde el interior de la aeronave",
+      "Únicamente desde el exterior por rescatistas",
+      "Desde la cabina de mando de forma electrónica",
+      "Pueden ser abiertas tanto desde el interior como desde el exterior"
+    ],
+    "respuesta_correcta": "Pueden ser abiertas tanto desde el interior como desde el exterior"
+  },
+  {
+    "pregunta": "¿Cuándo se considera que una salida sector alar está habilitada para evacuación?",
+    "opciones": [
+      "Cuando la ventana de emergencia cae al piso",
+      "Cuando la baranda del tobogán rampa esté inflada",
+      "Cuando se activa la luz de evacuación interior",
+      "En el instante en que se quita la manilla plástica superior"
+    ],
+    "respuesta_correcta": "Cuando la baranda del tobogán rampa esté inflada"
+  },
+  {
+    "pregunta": "¿Cuál es el propósito principal de las 'Life Lines' (cuerdas zona alar) en caso de evacuación?",
+    "opciones": [
+      "Para arrastrar el equipaje por el ala",
+      "Para remolcar la balsa lejos de la aeronave",
+      "Para conectar eléctricamente la balsa con el fuselaje",
+      "Para sujeción y protección de pasajeros y tripulación en evacuación en agua"
+    ],
+    "respuesta_correcta": "Para sujeción y protección de pasajeros y tripulación en evacuación en agua"
+  },
+  {
+    "pregunta": "Si al abrir la ventana sector alar el tobogán rampa no se infla automáticamente, ¿qué acción manual debe realizarse?",
+    "opciones": [
+      "Reiniciar el sistema eléctrico de las puertas en el FAP",
+      "Tirar de la manija blanca HANDLE for ditching only",
+      "Cortar la mooring line con el cuchillo adosado",
+      "Tirar de la manija roja PULL TO INFLATE ubicada en el marco de la salida"
+    ],
+    "respuesta_correcta": "Tirar de la manija roja PULL TO INFLATE ubicada en el marco de la salida"
+  },
+  {
+    "pregunta": "Según las responsabilidades de zona, ¿qué sector corresponde a la ZONA A (TAC4 y JC)?",
+    "opciones": [
+      "Desde salidas sector alar hasta sector AFT",
+      "Exclusivamente la cabina de mando y galley delantero",
+      "Todo el sector trasero de la aeronave y alas",
+      "Desde sector FDW hasta salidas sector alar 1R y 1L"
+    ],
+    "respuesta_correcta": "Desde sector FDW hasta salidas sector alar 1R y 1L"
+  },
+  {
+    "pregunta": "Según las responsabilidades de zona, ¿qué salidas abarca la ZONA C (TAC3 y TAC2)?",
+    "opciones": [
+      "Desde la cabina de mando hasta las alas",
+      "Desde salidas sector alar hasta sector AFT (4L y 4R)",
+      "Solo las salidas ubicadas sobre el ala (Overwing)",
+      "Todo el lado izquierdo de la aeronave"
+    ],
+    "respuesta_correcta": "Desde salidas sector alar hasta sector AFT (4L y 4R)"
+  },
+  {
+    "pregunta": "En promedio, ¿cuántos segundos tarda en inflarse automáticamente un tobogán de 1 carril?",
+    "opciones": [
+      "2 segundos aproximadamente",
+      "10 segundos aproximadamente",
+      "5 segundos aproximadamente",
+      "15 segundos aproximadamente"
+    ],
+    "respuesta_correcta": "5 segundos aproximadamente"
+  },
+  {
+    "pregunta": "¿Cuál es el flujo de salida estipulado para un tobogán de 1 carril durante una evacuación en tierra?",
+    "opciones": [
+      "2 pasajeros por 1 segundo",
+      "1 pasajero cada 3 segundos",
+      "3 pasajeros por 2 segundos",
+      "1 pasajero por 1 segundo"
+    ],
+    "respuesta_correcta": "1 pasajero por 1 segundo"
+  },
+  {
+    "pregunta": "¿Cuál es el flujo de salida proyectado para un tobogán balsa o rampa de doble carril?",
+    "opciones": [
+      "4 pasajeros por 1 segundo",
+      "1 pasajero por 1 segundo",
+      "2 pasajeros por 1 segundo",
+      "2 pasajeros cada 3 segundos"
+    ],
+    "respuesta_correcta": "2 pasajeros por 1 segundo"
+  },
+  {
+    "pregunta": "¿Cómo se denomina a la cuerda que une el tobogán o balsa al avión para evitar que se aleje a la deriva?",
+    "opciones": [
+      "Cuerda salvavidas (Life line)",
+      "Cinta indicadora de seguridad",
+      "Cuerda de amarre (mooring line)",
+      "Cable de tensión estática"
+    ],
+    "respuesta_correcta": "Cuerda de amarre (mooring line)"
+  },
+  {
+    "pregunta": "Al usar el tobogán de 1 carril como elemento de flotación en agua, ¿cómo interactúan las personas con él?",
+    "opciones": [
+      "Se suben todos en la superficie del tobogán como si fuera una balsa",
+      "Se sientan alternadamente a ambos lados en el tobogán",
+      "Lo usan únicamente como señalizador visual",
+      "Se sujetan de la cuerda alrededor del tubo de flotación, pero no lo abordan (no es balsa)"
+    ],
+    "respuesta_correcta": "Se sujetan de la cuerda alrededor del tubo de flotación, pero no lo abordan (no es balsa)"
+  },
+  {
+    "pregunta": "¿Bajo qué inscripción se encuentra la manija blanca para desconectar el tobogán/balsa en caso de amaraje?",
+    "opciones": [
+      "PULL TO INFLATE",
+      "MANUAL RELEASE",
+      "SLIDE ARMED",
+      "FOR DITCHING ONLY"
+    ],
+    "respuesta_correcta": "FOR DITCHING ONLY"
+  },
+  {
+    "pregunta": "En un amaraje (ditching), una vez desconectado el tobogán balsa mediante la manija blanca, ¿qué paso adicional asegura su liberación total?",
+    "opciones": [
+      "Desenganchar los ganchos metálicos del marco de la puerta",
+      "Tirar de las correas de supervivencia hasta que cedan",
+      "Cortar la cuerda de amarre (mooring line) con el cuchillo provisto",
+      "Presionar el botón de desinflado secundario"
+    ],
+    "respuesta_correcta": "Cortar la cuerda de amarre (mooring line) con el cuchillo provisto"
+  },
+  {
+    "pregunta": "En un tobogán balsa abordado como balsa, ¿cómo deben ubicarse los pasajeros?",
+    "opciones": [
+      "Permanecer de pie al centro para balancear el peso",
+      "Acostarse boca abajo sobre la rampa doble",
+      "Sentarse todos mirando hacia la cola del avión",
+      "Sentarse alternadamente a ambos lados de espalda a los tubos de flotación"
+    ],
+    "respuesta_correcta": "Sentarse alternadamente a ambos lados de espalda a los tubos de flotación"
+  },
+  {
+    "pregunta": "¿Qué incluye el 'Kit de Supervivencia' asociado al tobogán balsa?",
+    "opciones": [
+      "Únicamente chalecos salvavidas adicionales",
+      "Equipos de comunicación radial de largo alcance exclusivamente",
+      "Repuestos mecánicos para reparar fisuras del ala",
+      "Elementos de protección, localización, agua, alimento, inflador, toldo y mástiles"
+    ],
+    "respuesta_correcta": "Elementos de protección, localización, agua, alimento, inflador, toldo y mástiles"
+  },
+  {
+    "pregunta": "¿Dónde se encuentran ubicados los kits de supervivencia para cada tobogán balsa?",
+    "opciones": [
+      "Dentro del baño delantero exclusivamente",
+      "Bajo los asientos de la primera fila",
+      "Adosados permanentemente en la parte exterior del tobogán balsa",
+      "En un OHB (Overhead Bin) cercanos a las puertas (2 en cada sector)"
+    ],
+    "respuesta_correcta": "En un OHB (Overhead Bin) cercanos a las puertas (2 en cada sector)"
+  },
+  {
+    "pregunta": "¿Cómo se debe lanzar un pasajero hacia un tobogán durante una evacuación en tierra?",
+    "opciones": [
+      "Deslizándose sentado lentamente desde el borde",
+      "Saltando de cabeza para ganar velocidad",
+      "Caminando apoyado en las barandas laterales",
+      "Saltando con los pies y manos hacia adelante"
+    ],
+    "respuesta_correcta": "Saltando con los pies y manos hacia adelante"
+  }
+]
