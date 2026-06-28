@@ -1498,5 +1498,505 @@
       "Saltando con los pies y manos hacia adelante"
     ],
     "respuesta_correcta": "Saltando con los pies y manos hacia adelante"
-  }
+  },
+    {
+        "pregunta": "¿Cuál es el objetivo de aprendizaje del módulo Sistema de Oxígeno según el MTAC?",
+        "opciones": [
+            "Reparar los tanques de oxígeno del A320",
+            "Identificar el sistema de oxígeno del A320 en cada vuelo",
+            "Sustituir los generadores químicos en tierra",
+            "Calcular la duración del oxígeno durante una despresurización"
+        ],
+        "respuesta_correcta": "Identificar el sistema de oxígeno del A320 en cada vuelo"
+    },
+    {
+        "pregunta": "¿De dónde proviene el oxígeno en la cabina de pasajeros del A320?",
+        "opciones": [
+            "Tanques de oxígeno presurizado en la bodega",
+            "Generadores químicos",
+            "Compresores de los motores",
+            "Filtros HEPA de la cabina"
+        ],
+        "respuesta_correcta": "Generadores químicos"
+    },
+    {
+        "pregunta": "¿Qué alimentan los generadores químicos de oxígeno en la cabina de pasajeros?",
+        "opciones": [
+            "Toda la cabina mediante los ductos de ventilación",
+            "Un grupo de máscaras",
+            "Exclusivamente las máscaras de los Tripulantes de Cabina",
+            "El sistema de sobrepresión del avión"
+        ],
+        "respuesta_correcta": "Un grupo de máscaras"
+    },
+    {
+        "pregunta": "¿A qué está adosada cada máscara oronasal en la cabina de pasajeros?",
+        "opciones": [
+            "A un pequeño cilindro de gas comprimido",
+            "Al asiento del pasajero delantero",
+            "A una bolsa de almacenamiento de oxígeno",
+            "Al chaleco salvavidas"
+        ],
+        "respuesta_correcta": "A una bolsa de almacenamiento de oxígeno"
+    },
+    {
+        "pregunta": "¿Cómo se conecta la bolsa de la máscara al generador de oxígeno?",
+        "opciones": [
+            "A través de una conexión inalámbrica",
+            "Directamente sin cables",
+            "Mediante una válvula reguladora de metal",
+            "Mediante una manguera"
+        ],
+        "respuesta_correcta": "Mediante una manguera"
+    },
+    {
+        "pregunta": "¿Cuál es el primer paso para iniciar el flujo en la máscara de oxígeno de pasajeros?",
+        "opciones": [
+            "Pulsar el botón rojo de la máscara",
+            "Tirar la manguera completamente hacia abajo",
+            "Soplar dentro de la bolsa de almacenamiento",
+            "Esperar a que se infle sola"
+        ],
+        "respuesta_correcta": "Tirar la manguera completamente hacia abajo"
+    },
+    {
+        "pregunta": "Después de colocar la máscara sobre nariz y boca, ¿qué se debe hacer?",
+        "opciones": [
+            "Apretar la bolsa de almacenamiento",
+            "Tirar del cordón amarillo secundario",
+            "Ajustar la banda elástica y respirar normalmente",
+            "Conectar el tubo al chaleco"
+        ],
+        "respuesta_correcta": "Ajustar la banda elástica y respirar normalmente"
+    },
+    {
+        "pregunta": "¿A qué altitud equivalente de cabina opera automáticamente el sistema de oxígeno de pasajeros?",
+        "opciones": [
+            "10.000 pies",
+            "12.000 pies",
+            "14.000 pies",
+            "18.000 pies"
+        ],
+        "respuesta_correcta": "14.000 pies"
+    },
+    {
+        "pregunta": "¿Quién puede activar el sistema de oxígeno de pasajeros desde la cabina de mando?",
+        "opciones": [
+            "El personal de mantenimiento únicamente",
+            "La Tripulación de Cabina (TC) desde el FAP",
+            "La Tripulación de Mando (TM)",
+            "Los pasajeros pulsando el botón de llamada"
+        ],
+        "respuesta_correcta": "La Tripulación de Mando (TM)"
+    },
+    {
+        "pregunta": "¿Cómo se activa manualmente el compartimento del sistema de oxígeno si falla el modo automático?",
+        "opciones": [
+            "Mediante la herramienta MRT en el orificio del PSU",
+            "Desatornillando el panel con una moneda",
+            "Golpeando suavemente la tapa del PSU",
+            "Tirando de la palanca roja del asiento"
+        ],
+        "respuesta_correcta": "Mediante la herramienta MRT en el orificio del PSU"
+    },
+    {
+        "pregunta": "¿Qué significan las siglas MRT?",
+        "opciones": [
+            "Main Release Tool",
+            "Manual Rescue Tool",
+            "Manual Release Tool",
+            "Mask Release Tube"
+        ],
+        "respuesta_correcta": "Manual Release Tool"
+    },
+    {
+        "pregunta": "¿Para qué se utiliza específicamente la herramienta MRT?",
+        "opciones": [
+            "Para destrabar los cinturones de seguridad trabados",
+            "Para abrir la puerta de la cabina de mando",
+            "Para desasegurar manualmente la tapa del compartimento del PSU",
+            "Para inflar los chalecos salvavidas"
+        ],
+        "respuesta_correcta": "Para desasegurar manualmente la tapa del compartimento del PSU"
+    },
+    {
+        "pregunta": "¿Cuántas herramientas MRT se encuentran ubicadas a bordo, según el texto?",
+        "opciones": [
+            "2 MRT",
+            "3 MRT",
+            "4 MRT",
+            "6 MRT"
+        ],
+        "respuesta_correcta": "4 MRT"
+    },
+    {
+        "pregunta": "¿Dónde se encuentran ubicados generalmente los MRT?",
+        "opciones": [
+            "En la cabina de vuelo",
+            "Dentro de los baños",
+            "En algunos jumpseats",
+            "Bajo los asientos de pasajeros"
+        ],
+        "respuesta_correcta": "En algunos jumpseats"
+    },
+    {
+        "pregunta": "En el panel OXYGEN, ¿qué botón permite a la tripulación de mando desplegar las máscaras de pasajeros?",
+        "opciones": [
+            "CREW SUPPLY",
+            "MASK MAN ON",
+            "SYS ON OFF",
+            "AUTO RESET"
+        ],
+        "respuesta_correcta": "MASK MAN ON"
+    },
+    {
+        "pregunta": "¿Para cuántas personas está diseñada la cabina de mando del A320?",
+        "opciones": [
+            "Dos pilotos y un ingeniero",
+            "Dos Tripulantes de Mando y dos observadores",
+            "Tres Tripulantes de Mando y un observador",
+            "Dos Tripulantes de Mando únicamente"
+        ],
+        "respuesta_correcta": "Dos Tripulantes de Mando y dos observadores"
+    },
+    {
+        "pregunta": "¿Cómo es la estructura de los asientos de observadores en la cabina de mando?",
+        "opciones": [
+            "Están montados sobre columnas fijas",
+            "Son de ajuste eléctrico completo",
+            "Son asientos plegables",
+            "Son asientos giratorios"
+        ],
+        "respuesta_correcta": "Son asientos plegables"
+    },
+    {
+        "pregunta": "¿Dónde están ubicados los asientos de observadores en la cabina de mando?",
+        "opciones": [
+            "Sujetos a la pared a ambos lados de la puerta",
+            "Detrás de los paneles de instrumentos",
+            "En el pasillo de acceso",
+            "Junto a las ventanas laterales"
+        ],
+        "respuesta_correcta": "Sujetos a la pared a ambos lados de la puerta"
+    },
+    {
+        "pregunta": "¿Cuál de las siguientes es una característica de la puerta de la cabina de mando?",
+        "opciones": [
+            "Es una cortina divisoria",
+            "Es de material plástico transparente",
+            "Es completamente blindada",
+            "Se desliza lateralmente"
+        ],
+        "respuesta_correcta": "Es completamente blindada"
+    },
+    {
+        "pregunta": "¿Qué ocurre con la puerta de la cabina de mando al estar cerrada?",
+        "opciones": [
+            "Permanece abierta hasta activar un seguro",
+            "Se asegura automáticamente",
+            "Debe trabarse manualmente con un pasador",
+            "Solo se asegura al encender los motores"
+        ],
+        "respuesta_correcta": "Se asegura automáticamente"
+    },
+    {
+        "pregunta": "¿Qué elemento permite a los pilotos visualizar la cabina de pasajeros desde el interior?",
+        "opciones": [
+            "Un espejo retrovisor",
+            "Una cámara CCTV",
+            "Un visor en la puerta",
+            "Un panel de vidrio templado completo"
+        ],
+        "respuesta_correcta": "Un visor en la puerta"
+    },
+    {
+        "pregunta": "¿Cómo autoriza la entrada a la cabina la Tripulación de Mando (TM)?",
+        "opciones": [
+            "Girando una llave",
+            "Desbloqueando la puerta desde el interior",
+            "Empujando la puerta desde dentro",
+            "Abriendo el panel de escape"
+        ],
+        "respuesta_correcta": "Desbloqueando la puerta desde el interior"
+    },
+    {
+        "pregunta": "Una vez que la puerta de mando es desbloqueada por la TM, ¿qué se debe hacer para entrar?",
+        "opciones": [
+            "Tirar de la manilla hacia afuera",
+            "La puerta se abre automáticamente hacia adentro",
+            "Esperar 5 segundos a que ceda",
+            "La puerta debe ser empujada"
+        ],
+        "respuesta_correcta": "La puerta debe ser empujada"
+    },
+    {
+        "pregunta": "En caso de emergencia, ¿cómo puede la Tripulación de Cabina (TC) abrir la puerta de mando?",
+        "opciones": [
+            "Usando una palanca roja manual",
+            "Golpeando el centro con el hacha",
+            "Introduciendo un código en el teclado (key pad)",
+            "Desactivando la corriente general"
+        ],
+        "respuesta_correcta": "Introduciendo un código en el teclado (key pad)"
+    },
+    {
+        "pregunta": "¿Dónde se encuentra instalado el teclado (key pad) para ingresar el código de emergencia?",
+        "opciones": [
+            "En el techo del galley",
+            "Junto a los asientos de los pasajeros de primera fila",
+            "Dentro del baño delantero",
+            "Al costado del FAP"
+        ],
+        "respuesta_correcta": "Al costado del FAP"
+    },
+    {
+        "pregunta": "Si un seguro del mecanismo de cierre falla, ¿qué elemento adicional de seguridad tiene la puerta?",
+        "opciones": [
+            "Una barra de titanio transversal",
+            "Un cerrojo de seguridad a nivel del centro al costado izquierdo",
+            "Una cadena de retención de acero",
+            "Cintas de bloqueo exterior"
+        ],
+        "respuesta_correcta": "Un cerrojo de seguridad a nivel del centro al costado izquierdo"
+    },
+    {
+        "pregunta": "¿Qué indica la luz verde encendida y/o roja en el panel exterior (Key pad)?",
+        "opciones": [
+            "Nivel de oxígeno bajo",
+            "El estado del tren de aterrizaje",
+            "Indicador de puerta asegurada/desasegurada",
+            "Temperatura de los motores"
+        ],
+        "respuesta_correcta": "Indicador de puerta asegurada/desasegurada"
+    },
+    {
+        "pregunta": "¿De qué manera son ajustables los asientos de la Tripulación de Mando (TM)?",
+        "opciones": [
+            "Solamente en altura con palancas mecánicas",
+            "En altura, posición y reclinación por palancas o switches eléctricos",
+            "Únicamente en posición longitudinal",
+            "No son ajustables, están fijos a las columnas"
+        ],
+        "respuesta_correcta": "En altura, posición y reclinación por palancas o switches eléctricos"
+    },
+    {
+        "pregunta": "¿Cuál de los siguientes elementos NO está mencionado como equipamiento del asiento de la TM?",
+        "opciones": [
+            "Máscara quick donning",
+            "Paracaídas de escape",
+            "Chaleco salvavidas y luminiscente",
+            "Linterna"
+        ],
+        "respuesta_correcta": "Paracaídas de escape"
+    },
+    {
+        "pregunta": "¿Cuántas ventanas de la cabina de mando pueden ser utilizadas como vías de evacuación alternativas?",
+        "opciones": [
+            "Solo una",
+            "Dos ventanas",
+            "Las tres ventanas frontales",
+            "Todas las ventanas laterales"
+        ],
+        "respuesta_correcta": "Dos ventanas"
+    },
+    {
+        "pregunta": "¿Desde dónde es posible abrir las ventanas de escape de la cabina de mando?",
+        "opciones": [
+            "Solo desde el interior",
+            "Solo desde el exterior",
+            "Desde el interior y el exterior",
+            "Únicamente mediante control remoto"
+        ],
+        "respuesta_correcta": "Solo desde el interior"
+    },
+    {
+        "pregunta": "¿Qué elemento se utiliza para descender por las ventanas de la cabina de mando en una emergencia?",
+        "opciones": [
+            "Un tobogán inflable frontal",
+            "Una escalera plegable de aluminio",
+            "Una cuerda de escape con nudos",
+            "Un arnés de descenso lento"
+        ],
+        "respuesta_correcta": "Una cuerda de escape con nudos"
+    },
+    {
+        "pregunta": "¿Cuál es la longitud de la cuerda de escape de las ventanas del cockpit?",
+        "opciones": [
+            "4.5 mts",
+            "5.5 mts",
+            "6.5 mts",
+            "8.0 mts"
+        ],
+        "respuesta_correcta": "5.5 mts"
+    },
+    {
+        "pregunta": "¿Dónde se almacena la cuerda de escape de las ventanas de la cabina de mando?",
+        "opciones": [
+            "Debajo del asiento del comandante",
+            "En el compartimento de la puerta",
+            "En un compartimento sobre cada ventana del cockpit",
+            "Junto al extintor de fuego"
+        ],
+        "respuesta_correcta": "En un compartimento sobre cada ventana del cockpit"
+    },
+    {
+        "pregunta": "¿Qué carga de peso aproximada pueden soportar las cuerdas de escape de la cabina de mando?",
+        "opciones": [
+            "100 Kg",
+            "150 Kg",
+            "181 Kg",
+            "250 Kg"
+        ],
+        "respuesta_correcta": "181 Kg"
+    },
+    {
+        "pregunta": "¿Cuál es la primera acción para abrir la ventana de la cabina de mando?",
+        "opciones": [
+            "Romper el sello de seguridad",
+            "Presionar el botón de la palanca de apertura",
+            "Deslizar la ventana hacia atrás",
+            "Tirar de la manilla roja de emergencia"
+        ],
+        "respuesta_correcta": "Presionar el botón de la palanca de apertura"
+    },
+    {
+        "pregunta": "Después de rotar la palanca de apertura de la ventana, ¿hacia dónde se debe mover la ventana?",
+        "opciones": [
+            "Deslizar hacia adelante",
+            "Empujar hacia afuera",
+            "Deslizar hacia atrás sujetando la palanca",
+            "Tirar hacia arriba"
+        ],
+        "respuesta_correcta": "Deslizar hacia atrás sujetando la palanca"
+    },
+    {
+        "pregunta": "¿Qué elemento provee oxígeno a la Cabina de Mando (distinto a la de pasajeros)?",
+        "opciones": [
+            "Generadores químicos individuales",
+            "Un tanque de oxígeno",
+            "Filtros de aire exterior",
+            "Un compresor portátil"
+        ],
+        "respuesta_correcta": "Un tanque de oxígeno"
+    },
+    {
+        "pregunta": "¿A cuántas máscaras provee oxígeno el tanque de la cabina de mando?",
+        "opciones": [
+            "2 máscaras",
+            "3 máscaras",
+            "4 máscaras",
+            "6 máscaras"
+        ],
+        "respuesta_correcta": "4 máscaras"
+    },
+    {
+        "pregunta": "¿Cómo se llaman las máscaras de oxígeno utilizadas por la Tripulación de Mando?",
+        "opciones": [
+            "Drop-down masks",
+            "Quick Donning",
+            "Oronasal bags",
+            "Full-face protective gear"
+        ],
+        "respuesta_correcta": "Quick Donning"
+    },
+    {
+        "pregunta": "¿Dónde se encuentran almacenadas las máscaras de la Tripulación de Mando?",
+        "opciones": [
+            "En el techo (PSU) sobre sus cabezas",
+            "En compartimentos dobles a cada lado en la cabina de mando",
+            "En el respaldo de los asientos",
+            "Detrás del pedestal central"
+        ],
+        "respuesta_correcta": "En compartimentos dobles a cada lado en la cabina de mando"
+    },
+    {
+        "pregunta": "¿Qué características tiene el arnés de las máscaras Quick Donning?",
+        "opciones": [
+            "Es de velcro ajustable manualmente",
+            "Es un arnés inflable de ajuste automático",
+            "Tiene correas elásticas convencionales",
+            "No tiene arnés, se sujeta con la mano"
+        ],
+        "respuesta_correcta": "Es un arnés inflable de ajuste automático"
+    },
+    {
+        "pregunta": "¿Se pueden usar las máscaras Quick Donning si el tripulante lleva lentes ópticos?",
+        "opciones": [
+            "No, deben retirarse antes de usarla",
+            "Solo si son lentes de contacto",
+            "Sí, pueden ser usadas con lentes ópticos",
+            "Depende del grosor del marco"
+        ],
+        "respuesta_correcta": "Sí, pueden ser usadas con lentes ópticos"
+    },
+    {
+        "pregunta": "¿Qué ocurre al presionar los clips rojos de la máscara Quick Donning?",
+        "opciones": [
+            "Se corta el suministro de oxígeno",
+            "Se libera la máscara del compartimento y el arnés se infla",
+            "Se desinfla el arnés para guardarla",
+            "Se activa el micrófono integrado exclusivamente"
+        ],
+        "respuesta_correcta": "Se libera la máscara del compartimento y el arnés se infla"
+    },
+    {
+        "pregunta": "¿Cómo se ajusta la máscara Quick Donning a la cabeza del piloto?",
+        "opciones": [
+            "Tirando de las correas laterales",
+            "Al ponerla y soltar los clips rojos, el arnés se desinfla ajustándose",
+            "Apretando un botón trasero",
+            "Inflándola manualmente con la boca"
+        ],
+        "respuesta_correcta": "Al ponerla y soltar los clips rojos, el arnés se desinfla ajustándose"
+    },
+    {
+        "pregunta": "¿Para qué sirve el selector de sobre presión (EMERGENCY) en la máscara Quick Donning?",
+        "opciones": [
+            "Para aumentar la temperatura del oxígeno",
+            "Para generar sobre presión que elimina condensación y previene humo/olores",
+            "Para activar la alarma general de evacuación",
+            "Para despresurizar el tanque principal"
+        ],
+        "respuesta_correcta": "Para generar sobre presión que elimina condensación y previene humo/olores"
+    },
+    {
+        "pregunta": "Si el selector N/100% de la máscara está en posición 100%, ¿qué recibe el piloto?",
+        "opciones": [
+            "Aire de la cabina purificado",
+            "Una mezcla de aire y oxígeno al 50%",
+            "Oxígeno puro",
+            "Solución química en aerosol"
+        ],
+        "respuesta_correcta": "Oxígeno puro"
+    },
+    {
+        "pregunta": "Si el selector N/100% está en la posición 'N', ¿qué provee el regulador?",
+        "opciones": [
+            "Solo oxígeno puro bajo presión constante",
+            "Una mezcla de aire ambiente y oxígeno a demanda",
+            "Aire ambiente sin oxígeno adicional",
+            "Nitrógeno presurizado"
+        ],
+        "respuesta_correcta": "Una mezcla de aire ambiente y oxígeno a demanda"
+    },
+    {
+        "pregunta": "Durante una demostración de seguridad en vivo, ¿dónde se ubica el TAC 1?",
+        "opciones": [
+            "Frente a la fila 1",
+            "Frente a la fila 12",
+            "Frente a la fila 22",
+            "En el Galley"
+        ],
+        "respuesta_correcta": "En el Galley"
+    },
+    {
+        "pregunta": "¿Qué tarea específica tiene asignada el TAC 1 durante la demostración en vivo según el manual?",
+        "opciones": [
+            "Abrir las salidas de emergencia",
+            "Lee fraseología",
+            "Repartir las máscaras de oxígeno",
+            "Bloquear la puerta de mando"
+        ],
+        "respuesta_correcta": "Lee fraseología"
+    }
 ]
