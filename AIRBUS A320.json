@@ -12,12 +12,12 @@
   {
     "pregunta": "¿Cuál es la velocidad crucero del Airbus A320?",
     "opciones": [
-      "800 kms/hr",
-      "850 kms/hr",
-      "880 kms/hr",
-      "900 kms/hr"
+      "800 k/h",
+      "850 k/h",
+      "880 k/h",
+      "900 k/h"
     ],
-    "respuesta_correcta": "880 kms/hr"
+    "respuesta_correcta": "880 k/h"
   },
   {
     "pregunta": "¿Cuánto mide el largo del fuselaje del Airbus A320?",
