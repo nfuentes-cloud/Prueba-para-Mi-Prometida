@@ -22,32 +22,32 @@
   {
     "pregunta": "¿Cuánto mide el largo del fuselaje del Airbus A320?",
     "opciones": [
-      "34 mts",
-      "39 mts",
-      "42 mts",
-      "36.5 mts"
+      "34m",
+      "39m",
+      "42m",
+      "36.5m"
     ],
-    "respuesta_correcta": "39 mts"
+    "respuesta_correcta": "39m"
   },
   {
     "pregunta": "¿Cuál es la envergadura del avión?",
     "opciones": [
-      "32 mts",
-      "34 mts",
-      "36 mts",
-      "39 mts"
+      "32m",
+      "34m",
+      "36m",
+      "39m"
     ],
-    "respuesta_correcta": "34 mts"
+    "respuesta_correcta": "34m"
   },
   {
     "pregunta": "¿Cuál es la altura especificada en el manual de la aeronave?",
     "opciones": [
-      "3.40 mts",
-      "4.10 mts",
-      "3.90 mts",
-      "5.20 mts"
+      "3.40m",
+      "4.10m",
+      "3.90m",
+      "5.20m"
     ],
-    "respuesta_correcta": "3.40 mts"
+    "respuesta_correcta": "3.40m"
   },
   {
     "pregunta": "¿Qué sistema principal de control de vuelo utilizan los aviones de la familia A320?",
@@ -494,10 +494,10 @@
     "opciones": [
       "Diámetro específico de los motores",
       "Grosor máximo del fuselaje",
-      "Envergadura de 34 mts",
+      "Envergadura de 34m",
       "Distancia longitudinal entre trenes de aterrizaje"
     ],
-    "respuesta_correcta": "Envergadura de 34 mts"
+    "respuesta_correcta": "Envergadura de 34m"
   },
   {
     "pregunta": "¿Cuál es el objetivo principal de aprendizaje expuesto en el documento?",
@@ -1822,12 +1822,12 @@
     {
         "pregunta": "¿Cuál es la longitud de la cuerda de escape de las ventanas del cockpit?",
         "opciones": [
-            "4.5 mts",
-            "5.5 mts",
-            "6.5 mts",
-            "8.0 mts"
+            "4.5m",
+            "5.5m",
+            "6.5m",
+            "8.0m"
         ],
-        "respuesta_correcta": "5.5 mts"
+        "respuesta_correcta": "5.5m"
     },
     {
         "pregunta": "¿Dónde se almacena la cuerda de escape de las ventanas de la cabina de mando?",
