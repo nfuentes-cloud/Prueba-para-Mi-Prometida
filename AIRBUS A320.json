@@ -1984,10 +1984,10 @@
         "opciones": [
             "Frente a la fila 1",
             "Frente a la fila 12",
-            "Frente a la fila 22",
-            "En el Galley"
+            "En el Galley AFT",
+            "En el Galley FWD"
         ],
-        "respuesta_correcta": "En el Galley"
+        "respuesta_correcta": "En el Galley FWD"
     },
     {
         "pregunta": "¿Qué tarea específica tiene asignada el TAC 1 durante la demostración en vivo según el manual?",
@@ -2498,5 +2498,105 @@
       "31 metros tomados y regidos por los protocolos constructores en línea central paralela piso entre nariz o pico protector del radar climático adosado radomo aeronáutico hacia el receptáculo cortafuego perimetral albergando íntegramente todo componente interior a la APU en vuelo o pernocte y rampa."
     ],
     "respuesta_correcta": "39 metros fraccionados y extendidos lineal de un punto imaginario de la punta a la marca de referencia de la cola de empenaje delimitador vertical contrapeso exterior aéreo en la nave clásica y neo modificada en estabilizador."
+  },
+  {
+    "pregunta": "Según las observaciones de operación del A320, ¿cuál es la norma respecto al abastecimiento de combustible?",
+    "opciones": [
+      "Se puede realizar con pasajeros a bordo siempre que las luces de emergencia estén encendidas",
+      "Se permite solo si está presente el TAC 1 en la puerta delantera",
+      "El abastecimiento de combustible no se puede realizar con pasajeros a bordo, embarcando o desembarcando",
+      "Se debe realizar exclusivamente con el motor derecho encendido"
+    ],
+    "respuesta_correcta": "El abastecimiento de combustible no se puede realizar con pasajeros a bordo, embarcando o desembarcando"
+  },
+  {
+    "pregunta": "En caso de una descompresión explosiva, ¿qué ocurre con la puerta blindada de la cabina de mando?",
+    "opciones": [
+      "Se abre violentamente hacia afuera por la diferencia de presión",
+      "Se desbloquea automáticamente, pero se mantiene cerrada",
+      "Se bloquea permanentemente con el cerrojo de seguridad lateral",
+      "Debe ser liberada manualmente por los pilotos usando los pasadores de escape"
+    ],
+    "respuesta_correcta": "Se desbloquea automáticamente, pero se mantiene cerrada"
+  },
+  {
+    "pregunta": "¿Cómo se asegura la ventilación entre la cabina de mando y la cabina de pasajeros durante una descompresión?",
+    "opciones": [
+      "Mediante las boquillas individuales de aire acondicionado del techo",
+      "A través de las válvulas de drenaje calefaccionadas drain mast",
+      "Por medio de rejillas ubicadas entre la cabina de mando y la cabina de pasajeros",
+      "Abriendo automáticamente el panel de escape de los pilotos"
+    ],
+    "respuesta_correcta": "Por medio de rejillas ubicadas entre la cabina de mando y la cabina de pasajeros"
+  },
+  {
+    "pregunta": "Si la puerta de la cabina de mando se atasca o traba en una emergencia, ¿cómo deben los pilotos remover el panel de escape?",
+    "opciones": [
+      "Golpeando las esquinas superiores con el hacha de rescate",
+      "Tirando los pasadores de liberación rápida hacia el centro y empujando el panel",
+      "Introduciendo el código de emergencia en el teclado exterior",
+      "Gira la palanca central a la posición UNLOCK por 30 segundos"
+    ],
+    "respuesta_correcta": "Tirando los pasadores de liberación rápida hacia el centro y empujando el panel"
+  },
+  {
+    "pregunta": "¿Qué sucede con la cerradura de la puerta del cockpit ante una falla de suministro eléctrico del avión?",
+    "opciones": [
+      "Queda bloqueada por completo requiriendo apertura mecánica con llave",
+      "La puerta se abre de par en par automáticamente",
+      "Se desbloquea automáticamente, pero permanece cerrada",
+      "Mantiene su última selección gracias a una batería de respaldo de 5 minutos"
+    ],
+    "respuesta_correcta": "Se desbloquea automáticamente, pero permanece cerrada"
+  },
+  {
+    "pregunta": "Si un Circuit Breaker (CB) salta automáticamente en el panel eléctrico del Galley, significa que el circuito se sobrecargó. ¿Qué acción corresponde al TAC?",
+    "opciones": [
+      "Debe esperar 3 minutos y resetear el CB presionándolo a fondo",
+      "Informar inmediatamente al Capitán; el CB no debe ser reseteado por riesgo eléctrico",
+      "Apagar el interruptor de la luz de trabajo y presionar el botón CAUT en el FAP",
+      "Desconectar los calentadores de agua y presionar el botón de reinicio en el AAP"
+    ],
+    "respuesta_correcta": "Informar inmediatamente al Capitán; el CB no debe ser reseteado por riesgo eléctrico"
+  },
+  {
+    "pregunta": "Si ante una filtración en un baño es necesario cerrar la válvula de corte de agua (shut-off valve), ¿qué medida obligatoria se debe tomar?",
+    "opciones": [
+      "Tirar de la argolla de drenaje rápido del lavamanos",
+      "Encender la luz de mantenimiento de baños desde el FAP",
+      "Apagar siempre el calentador de agua (water heater) para evitar daños al mismo",
+      "Avisar a los pasajeros por micrófono que el estanque de desechos está lleno"
+    ],
+    "respuesta_correcta": "Apagar siempre el calentador de agua (water heater) para evitar daños al mismo"
+  },
+  {
+    "pregunta": "¿Cuál es la designación oficial del baño equipado para pasajeros con movilidad reducida (PRM) en el A320?",
+    "opciones": [
+      "Baño LA",
+      "Baño LG",
+      "Baño LS",
+      "Baño LF"
+    ],
+    "respuesta_correcta": "Baño LF"
+  },
+  {
+    "pregunta": "¿Qué elemento estructural especial posee el baño 'LF' para asistir la transferencia de un pasajero en silla de ruedas hacia el inodoro?",
+    "opciones": [
+      "Una grúa eléctrica de techo operada por batería",
+      "Un asiento plegable montado en la pared (que baja a posición horizontal)",
+      "Un muro divisorio removible que conecta con el galley",
+      "Una camilla de lona estibada bajo el lavamanos"
+    ],
+    "respuesta_correcta": "Un asiento plegable montado en la pared (que baja a posición horizontal)"
+  },
+  {
+    "pregunta": "¿En qué posición debe quedar obligatoriamente el asiento plegable del baño PRM durante rodaje, despegue y aterrizaje?",
+    "opciones": [
+      "Bajo y asegurado en posición horizontal",
+      "Desmontado y guardado en el compartimento superior OHB",
+      "Bloqueado y estibado en posición vertical",
+      "Desplegado en diagonal bloqueando la puerta"
+    ],
+    "respuesta_correcta": "Bloqueado y estibado en posición vertical"
   }
 ]
