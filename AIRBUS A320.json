@@ -1998,5 +1998,505 @@
             "Bloquear la puerta de mando"
         ],
         "respuesta_correcta": "Lee fraseología"
-    }
+    },
+  {
+    "pregunta": "¿Por dónde se efectúa el carguío a presión del sistema de combustible y qué característica posee respecto a su drenaje en el A320?",
+    "opciones": [
+      "Por el ala izquierda (LH) y cuenta con un sistema de vaciado rápido.",
+      "Por el ala derecha (RH) y carece de sistema de vaciado rápido.",
+      "Por la sección central del fuselaje y posee vaciado rápido en ambas alas.",
+      "Por ambas alas simultáneamente con válvulas de transferencia de alta velocidad."
+    ],
+    "respuesta_correcta": "Por el ala derecha (RH) y carece de sistema de vaciado rápido."
+  },
+  {
+    "pregunta": "Además de requerir autorización o código de emergencia para abrirse desde fuera, ¿qué características integradas posee la puerta de la cabina de mando?",
+    "opciones": [
+      "Es de apertura manual simple, visor panorámico y panel de escape sin blindaje.",
+      "Es blindada, se asegura automáticamente, cuenta con visor, manilla, panel de escape y cerrojo de seguridad adicional.",
+      "Es corrediza, resistente al fuego y cuenta con panel de escape eléctrico.",
+      "Es blindada, requiere llave magnética, visor digital y escotilla superior."
+    ],
+    "respuesta_correcta": "Es blindada, se asegura automáticamente, cuenta con visor, manilla, panel de escape y cerrojo de seguridad adicional."
+  },
+  {
+    "pregunta": "Al activarse una alarma de humo en un baño, ¿cuál es la indicación visual exacta que se presenta en el Area Call Panel (ACP)?",
+    "opciones": [
+      "Luz roja intermitente.",
+      "Luz ámbar intermitente.",
+      "Luz ámbar fija.",
+      "Luz azul fija."
+    ],
+    "respuesta_correcta": "Luz ámbar intermitente."
+  },
+  {
+    "pregunta": "¿Cómo es el control de las superficies de vuelo en el sistema Fly-by-Wire de la aeronave A320?",
+    "opciones": [
+      "Las superficies primarias y secundarias son controladas eléctricamente e hidráulicamente activas.",
+      "Las superficies primarias se controlan hidráulicamente y las secundarias de forma manual.",
+      "Las superficies primarias se controlan por pedales analógicos y las secundarias eléctricamente.",
+      "Las superficies primarias y secundarias operan exclusivamente a través de cables de tensión automáticos."
+    ],
+    "respuesta_correcta": "Las superficies primarias y secundarias son controladas eléctricamente e hidráulicamente activas."
+  },
+  {
+    "pregunta": "¿Cuál es el techo operacional y la velocidad crucero de la aeronave A320 según los parámetros del MTAC?",
+    "opciones": [
+      "35.000 pies y 850 kms/hr.",
+      "39.000 pies y 880 kms/hr.",
+      "41.000 pies y 900 kms/hr.",
+      "37.000 pies y 820 kms/hr."
+    ],
+    "respuesta_correcta": "39.000 pies y 880 kms/hr."
+  },
+  {
+    "pregunta": "Además de la altitud y velocidad crucero, ¿Qué otra dimensión clave define la separación externa de la aeronave A320?",
+    "opciones": [
+      "Diámetro específico de los motores",
+      "Grosor máximo del fuselaje",
+      "Envergadura de 34 mts",
+      "Distancia longitudinal entre trenes de aterrizaje"
+    ],
+    "respuesta_correcta": "Envergadura de 34 mts"
+  },
+  {
+    "pregunta": "¿Cuál es la ubicación y función de la turbina Auxiliary Power Unit (APU)?",
+    "opciones": [
+      "En el vientre del avión, y suministra solo energía neumática.",
+      "En el empenaje del avión (cola), suministrando energía eléctrica y neumática.",
+      "Debajo de las alas, suministrando aire acondicionado directo al fuselaje.",
+      "En el tren de aterrizaje, para proveer presión hidráulica en tierra."
+    ],
+    "respuesta_correcta": "En el empenaje del avión (cola), suministrando energía eléctrica y neumática."
+  },
+  {
+    "pregunta": "Durante el proceso de vuelo, ¿Hacia dónde se retracta el tren de aterrizaje de nariz y el tren principal respectivamente?",
+    "opciones": [
+      "Nariz hacia atrás, principal hacia las alas.",
+      "Nariz hacia el centro, principal hacia adelante.",
+      "Nariz hacia adelante, principal hacia el centro.",
+      "Ambos se retractan hacia el centro del fuselaje."
+    ],
+    "respuesta_correcta": "Nariz hacia adelante, principal hacia el centro."
+  },
+  {
+    "pregunta": "¿Cuáles son las fuentes primarias de suministro de aire fresco para el sistema de aire acondicionado del avión?",
+    "opciones": [
+      "Exclusivamente el sistema APU encendido en vuelo.",
+      "Válvulas externas de admisión de impacto en el fuselaje lateral.",
+      "Exclusivamente los compresores de los generadores.",
+      "Los motores y la unidad APU."
+    ],
+    "respuesta_correcta": "Los motores y la unidad APU."
+  },
+  {
+    "pregunta": "¿Cuál es la disposición y característica exacta de las bodegas en la flota A320?",
+    "opciones": [
+      "Tres bodegas presurizadas sin calefacción con acceso por LH.",
+      "Dos bodegas presurizadas y una bodega pequeña denominada bulk (presurizada y calefaccionada), todas con acceso por lado RH.",
+      "Dos bodegas no presurizadas y una bulk ventilada por el lado LH.",
+      "Cuatro compartimentos independientes sin sistema fijo de detección de humo."
+    ],
+    "respuesta_correcta": "Dos bodegas presurizadas y una bodega pequeña denominada bulk (presurizada y calefaccionada), todas con acceso por lado RH."
+  },
+  {
+    "pregunta": "En caso de falla de los generadores de los motores, ¿cuáles son las fuentes alternativas de suministro eléctrico en tierra o en vuelo según corresponda?",
+    "opciones": [
+      "Baterías de emergencia y turbina RAT de aire de impacto.",
+      "El APU o el carro de tierra.",
+      "Generador hidráulico secundario y baterías de iones de litio.",
+      "Solamente el APU, ya que el carro de tierra provee únicamente aire acondicionado neumático."
+    ],
+    "respuesta_correcta": "El APU o el carro de tierra."
+  },
+  {
+    "pregunta": "¿A través de qué válvulas se controla automáticamente la presurización de la cabina y cuál es la altitud interna teórica al volar a un nivel de vuelo de 39.000 pies?",
+    "opciones": [
+      "Válvulas de purga cruzada (Crossbleed); altitud de cabina de 6.000 pies.",
+      "Válvulas inflow; altitud de cabina de 10.000 pies.",
+      "Válvulas out flow; altitud de cabina de 8.000 pies.",
+      "Válvulas de descarga de presión estática; altitud de cabina de 7.500 pies."
+    ],
+    "respuesta_correcta": "Válvulas out flow; altitud de cabina de 8.000 pies."
+  },
+  {
+    "pregunta": "Ante una descompresión de cabina, ¿qué sucede de manera automática con el sistema de energía para computadores personales (PED) en los asientos?",
+    "opciones": [
+      "Pasa a un modo de batería de bajo consumo durante 30 minutos.",
+      "Se corta automáticamente la energía provista por el avión.",
+      "Mantiene el voltaje pero solo habilita tomas USB de 5v.",
+      "Aumenta la frecuencia eléctrica para forzar un apagado rápido."
+    ],
+    "respuesta_correcta": "Se corta automáticamente la energía provista por el avión."
+  },
+  {
+    "pregunta": "¿A qué altitud exacta se despliegan automáticamente las máscaras de oxígeno en la cabina de pasajeros debido a una despresurización?",
+    "opciones": [
+      "A los 10.000 pies.",
+      "A los 12.000 pies.",
+      "A los 14.000 pies.",
+      "A los 16.000 pies."
+    ],
+    "respuesta_correcta": "A los 14.000 pies."
+  },
+  {
+    "pregunta": "¿Qué componente específico ubicado en el PSU suministra oxígeno a las máscaras que caen en la cabina de pasajeros?",
+    "opciones": [
+      "Un colector del tubo de distribución central presurizado.",
+      "Un generador químico de oxígeno.",
+      "Botellas de oxígeno gaseoso portátiles de alta presión.",
+      "El aire de purga de los motores filtrado a nivel respirable."
+    ],
+    "respuesta_correcta": "Un generador químico de oxígeno."
+  },
+  {
+    "pregunta": "En los compartimentos superiores (Overhead Bins u OHB), ¿cuál es la función de la barra stopper integrada?",
+    "opciones": [
+      "Soportar el peso adicional de equipajes de tamaño irregular.",
+      "Funcionar como pasamanos de seguridad en caso de turbulencia extrema.",
+      "Mantener los objetos en el interior evitando que caigan hacia el pasillo.",
+      "Asegurar el cierre hermético del compartimento en caso de fuego."
+    ],
+    "respuesta_correcta": "Mantener los objetos en el interior evitando que caigan hacia el pasillo."
+  },
+  {
+    "pregunta": "¿Con qué propósito operativo se diseña un panel movible o desplazable en los baños NEO LF y CEO LD de los aviones A320?",
+    "opciones": [
+      "Para permitir el ingreso de una camilla proporcionando el espacio necesario hacia el bloque del último asiento.",
+      "Para aislar rápidamente el ducto del baño en caso de detector de humo activado de manera persistente.",
+      "Para unir dos baños creando temporalmente uno adaptado para pasajeros con movilidad reducida severa.",
+      "Para servir de vía de escape secundaria ante el trabado accidental de la puerta pivotante."
+    ],
+    "respuesta_correcta": "Para permitir el ingreso de una camilla proporcionando el espacio necesario hacia el bloque del último asiento."
+  },
+  {
+    "pregunta": "En el sistema del baño, ¿qué función cumple operativamente la argolla que está ubicada directamente debajo del lavamanos?",
+    "opciones": [
+      "Cortar mecánicamente el suministro de agua fría en caso de fuga.",
+      "Permitir acelerar el drenaje del agua en el lavamanos.",
+      "Activar de forma manual el extintor encapsulado de basura.",
+      "Drenar la presión excedente del termo calentador (Water Heater)."
+    ],
+    "respuesta_correcta": "Permitir acelerar el drenaje del agua en el lavamanos."
+  },
+  {
+    "pregunta": "Al detectarse humo en un lavabo, ¿qué información específica alerta la pantalla del AIP (Attendant Indication Panel) en las estaciones de tripulación?",
+    "opciones": [
+      "Una luz ámbar fija y un mensaje en display que cita 'SMOKE DETECTED'.",
+      "Una luz roja fija en conjunto a un mensaje intermitente de 'FIRE LAV'.",
+      "Una luz ámbar intermitente acompañada de timbre ininterrumpido.",
+      "Una luz roja intermitente acompañada del mensaje de texto 'SMOKE LAV X' (o el baño afectado)."
+    ],
+    "respuesta_correcta": "Una luz roja intermitente acompañada del mensaje de texto 'SMOKE LAV X' (o el baño afectado)."
+  },
+  {
+    "pregunta": "¿Cuál es el contenido extintor alojado dentro de la esfera roja ubicada sobre el compartimento de basura de los baños del A320?",
+    "opciones": [
+      "Agua nebulizada saturada a alta presión.",
+      "Agente de Polvo Químico Seco (PQS) clase ABC.",
+      "Halon o Freón.",
+      "Dióxido de Carbono presurizado supercrítico (CO2)."
+    ],
+    "respuesta_correcta": "Halon o Freón."
+  },
+  {
+    "pregunta": "¿Qué sistemas o equipos se encuentran forzosamente incorporados como características de diseño en el Jumpseat de los Tripulantes Auxiliares (TAC)?",
+    "opciones": [
+      "Mecanismo de reclinación, cinturón de tres puntas, y soporte lumbar.",
+      "Arnés, cinturón de seguridad, equipo de emergencia asociado y sistema de plegado automático.",
+      "Anclaje inercial eléctrico de bloque, panel CIDS individual, y mascarilla en respaldo lateral.",
+      "Asiento presurizado independiente, extintor PQS, y sistema eyector estático."
+    ],
+    "respuesta_correcta": "Arnés, cinturón de seguridad, equipo de emergencia asociado y sistema de plegado automático."
+  },
+  {
+    "pregunta": "Respecto a la preparación de un Jumpseat Retráctil para despegue o aterrizaje, ¿qué secuencia mecánica libera el asiento de su confinamiento?",
+    "opciones": [
+      "Tirar fuertemente del cojín inferior hacia el pasillo destrabando su eje inferior.",
+      "Presionar el botón PUSH en la parte superior lateral del respaldo adosado a la pared.",
+      "Bajar el seguro TTL (Taxi, Take off and Landing) descubriendo una marca amarilla, y girando un segundo seguro del JMP a posición vertical.",
+      "Accionar la palanca hidráulica lateral para desenganchar automáticamente el anclaje electromagnético."
+    ],
+    "respuesta_correcta": "Bajar el seguro TTL (Taxi, Take off and Landing) descubriendo una marca amarilla, y girando un segundo seguro del JMP a posición vertical."
+  },
+  {
+    "pregunta": "¿A qué se refieren las siglas del sistema CIDS, pilar operativo de la tripulación en el A320?",
+    "opciones": [
+      "Control Integrated Direction System; asiste en comandos del timón y superficies secundarias en cabina de mando.",
+      "Cabin Intercommunication Data System; sistema que opera, controla y monitorea los sistemas principales de la cabina de pasajeros.",
+      "Centralized Information Display System; red que transmite parámetros geográficos directo a monitores de pasajeros.",
+      "Cockpit Intercom Data Screen; sistema analógico cerrado de comunicaciones para la cabina de vuelo."
+    ],
+    "respuesta_correcta": "Cabin Intercommunication Data System; sistema que opera, controla y monitorea los sistemas principales de la cabina de pasajeros."
+  },
+  {
+    "pregunta": "¿Cuáles son los dos tipos arquitectónicos de pantalla o interfaz que puede poseer el FAP (Forward Attendant Panel)?",
+    "opciones": [
+      "Panel de botones rotatorios y panel monocromo simple de diodos.",
+      "Pantalla táctil (Touch screen) o Pantalla rígida compuesta por una matriz de botones.",
+      "Panel principal Wi-Fi desmontable (Tablet) o panel fijo acoplado en el marco del Galley.",
+      "Interfaz holográfica de bajo relieve y un panel redundante de breakers manuales."
+    ],
+    "respuesta_correcta": "Pantalla táctil (Touch screen) o Pantalla rígida compuesta por una matriz de botones."
+  },
+  {
+    "pregunta": "En el sub panel físico de botones duros (Hard Keys) del FAP, ¿cuál es el objetivo del botón 'SCREEN 30 SEC LOCK'?",
+    "opciones": [
+      "Mandar una orden de cierre de pestillos electromagnéticos a todas las puertas por 30 segundos en aproximación.",
+      "Bloquear la caída temporal de mascarillas de oxígeno mientras se evalúa una despresurización lenta.",
+      "Activar un modo pasivo o de inactividad de la pantalla por 30 segundos para permitir su limpieza sin enviar comandos erróneos.",
+      "Pausar la reproducción del sistema de entretenimiento global por 30 segundos para emitir un anuncio prioritario desde cockpit."
+    ],
+    "respuesta_correcta": "Activa un modo pasivo o de inactividad de la pantalla por 30 segundos para permitir su limpieza sin enviar comandos erróneos."
+  },
+  {
+    "pregunta": "Si el CIDS capta la activación de un sensor de humo en el avión, ¿qué sucede automáticamente en el módulo táctil del FAP?",
+    "opciones": [
+      "Emite un led destellante sin modificar la página activa en pantalla a menos que el Jefe de Cabina intervenga.",
+      "Sufre un apagado preventivo bloqueando el sistema para prevenir cortocircuitos si la humedad del humo es elevada.",
+      "La página SMOKE aparece automáticamente priorizándose y sobre comandando cualquier otra pantalla en uso.",
+      "Cambia el display a blanco y negro delegando las funciones operativas a los switches mecánicos del panel secundario."
+    ],
+    "respuesta_correcta": "La página SMOKE aparece automáticamente priorizándose y sobre comandando cualquier otra pantalla en uso."
+  },
+  {
+    "pregunta": "¿Cuándo y con qué propósito procedimental debe presionar la Tripulación de Cabina el botón CABIN READY en el FAP?",
+    "opciones": [
+      "Durante la finalización del embarque para notificar a despacho que se completó el conteo de pax.",
+      "Estando activo, previo al despegue y previo al aterrizaje, confirmando así el reporte de Cabina Libre a los pilotos.",
+      "Tras la confirmación de aterrizaje seguro y motores detenidos para autorizar la desconexión de los seguros automáticos de puertas.",
+      "Al percatarse de un evento crítico para asegurar a la cabina de vuelo que todo el personal auxiliar de cabina (TAC) se encuentra atado a sus asientos."
+    ],
+    "respuesta_correcta": "Estando activo, previo al despegue y previo al aterrizaje, confirmando así el reporte de Cabina Libre a los pilotos."
+  },
+  {
+    "pregunta": "Considerando las funciones del Additional Attendant Panel (AAP) ubicado en puerta 4L, ¿qué sistemas pueden ser controlados o reseteados adicionalmente desde allí?",
+    "opciones": [
+      "Temperaturas de Galleys, control de disyuntores de presurización y rearmes de Wi-Fi de cabina.",
+      "Iluminación del área de entrada posterior, Iluminación de cabina, además de sistemas como EVAC, EVAC RESET y SMOKE RESET.",
+      "Armado de toboganes magnéticos, apertura eléctrica de las puertas de servicio y despliegue del oxígeno complementario trasero.",
+      "Selección de mensajes pregrabados de PA (Public Address), termostato auxiliar de baño AFT y luces de emergencia generales."
+    ],
+    "respuesta_correcta": "Iluminación del área de entrada posterior, Iluminación de cabina, además de sistemas como EVAC, EVAC RESET y SMOKE RESET."
+  },
+  {
+    "pregunta": "Para la confirmación visual de una información de comunicación normal entre tripulantes a través del AIP (Attendant Indication Panel), ¿cuál es el estado de la luz LED en este panel?",
+    "opciones": [
+      "El LED permanece rojo intermitente durante 3 segundos.",
+      "El LED se activa en verde de manera fija.",
+      "El LED enciende con un tono azul estático.",
+      "El LED presenta un color ámbar rotatorio y el visor alfanumérico titila."
+    ],
+    "respuesta_correcta": "El LED se activa en verde de manera fija."
+  },
+  {
+    "pregunta": "¿Qué señales combinadas se activan en un panel AIP cuando se efectúa un llamado clasificado como de Emergencia originado desde la cabina de mando?",
+    "opciones": [
+      "Luz verde de ritmo rápido en conjunto con la palabra amarilla 'URGENT'.",
+      "Luz roja fija sostenida mostrando la etiqueta 'COCKPIT COM ALERT'.",
+      "Luz roja intermitente acompañada invariablemente del mensaje textual 'EMERGENCY CALL'.",
+      "Luz ámbar fluctuante anulando toda información textual secundaria para evitar distracción."
+    ],
+    "respuesta_correcta": "Luz roja intermitente acompañada invariablemente del mensaje textual 'EMERGENCY CALL'."
+  },
+  {
+    "pregunta": "Al presionar el capitán el comando EVAC ON COMMAND desde la cabina de mando, se desencadenan múltiples alertas. De la siguiente lista, ¿cuál de ellas NO es un resultado de dicha acción?",
+    "opciones": [
+      "Activación de luz roja intermitente visualizable en el FAP del tripulante.",
+      "Un sonido de alerta audible de forma continua en toda la extensión de la cabina de pasajeros.",
+      "Iluminación de la luz roja de forma intermitente acompañada del mensaje CALL CAPTAIN EVACUATION ALERT en cada AIP.",
+      "Inyección de sobrepresión química forzando el despliegue automático e instantáneo de las mascarillas de oxígeno en todos los asientos."
+    ],
+    "respuesta_correcta": "Inyección de sobrepresión química forzando el despliegue automático e instantáneo de las mascarillas de oxígeno en todos los asientos."
+  },
+  {
+    "pregunta": "En un escenario normal de comunicación telefónica interna donde un TAC genera una llamada a otro TAC, ¿qué confirmación lumínica se exhibe en el indicador ACP (Area Call Panel)?",
+    "opciones": [
+      "Un bloque de luz encendido color verde fijo.",
+      "Una luz encendida de alerta color rojo intermitente de baja frecuencia.",
+      "Un bloque de luz encendido color rojo de manera fija.",
+      "Una luz azul estática visible desde el pasillo."
+    ],
+    "respuesta_correcta": "Un bloque de luz encendido color rojo de manera fija."
+  },
+  {
+    "pregunta": "¿Bajo qué situación particular operativa se activa un segmento de luz azul fija en el ACP?",
+    "opciones": [
+      "Cuando se produce una saturación incipiente de humo en un sector que no es considerado baño.",
+      "Cuando un pasajero pulsa el botón de asistencia desde el Panel de Servicio de Asiento (PSU).",
+      "Cuando personal de mantenimiento activa una prueba cíclica desde el compartimiento de aviónica.",
+      "Cuando las alarmas de presión marcan que uno o más cinturones de seguridad quedaron desabrochados en rodaje."
+    ],
+    "respuesta_correcta": "Cuando un pasajero pulsa el botón de asistencia desde el Panel de Servicio de Asiento (PSU)."
+  },
+  {
+    "pregunta": "Desde la interfaz Touch Screen del FAP para pasajeros, el control de climatización zonal posee una limitante de rango de ajuste. ¿Cuál es ese límite si se compara con el Master Switch en cabina de pilotos?",
+    "opciones": [
+      "El ajuste tolera alteraciones exclusivas de 1°C incremental o en decremento.",
+      "La temperatura de la cabina posee una variación máxima posibilitada al TAC de 2.5°C por arriba y 2.5°C por debajo de la impuesta por cabina de mando.",
+      "Se cuenta con potestad para variar de 5°C en más a 5°C en menos el parámetro central de temperatura ambiental.",
+      "La anulación de límite termal le permite al FAP predominar anulando enteramente la directriz que imponga el Cockpit."
+    ],
+    "respuesta_correcta": "La temperatura de la cabina posee una variación máxima posibilitada al TAC de 2.5°C por arriba y 2.5°C por debajo de la impuesta por cabina de mando."
+  },
+  {
+    "pregunta": "Las aguas grises producto del lavado de manos en baños y uso de tarjas en galleys no se envían al estanque de inodoros. ¿Hacia dónde se canaliza este líquido?",
+    "opciones": [
+      "Es enviado forzosamente mediante vacío hacia el estanque de retención primaria en la bodega trasera.",
+      "Pasa por cartuchos de carbono para emplearse cíclicamente en los fluxómetros del baño.",
+      "Drena hacia las inmediaciones exteriores del fuselaje a través de los conductos calefaccionados conocidos como válvulas DRAIN MASTS.",
+      "Resulta confinado en tanques estáticos receptores pequeños (sumps) ubicados individualmente debajo del marco del galley."
+    ],
+    "respuesta_correcta": "Drena hacia las inmediaciones exteriores del fuselaje a través de los conductos calefaccionados conocidos como válvulas DRAIN MASTS."
+  },
+  {
+    "pregunta": "¿Qué tipología de sonido acústico ambiental proyectan los parlantes públicos de la cabina al concretarse una llamada cursada vía interfono?",
+    "opciones": [
+      "Buzzer incesante comparable a una chicharra de alerta mayor.",
+      "Un 'chime' consistente en una secuencia harmónica de uno a múltiples tonos que alternan de frecuencia alta (HI) a frecuencia baja (LO).",
+      "Claxon estridente de alarma subdividido en 4 tiempos rítmicos intermitentes.",
+      "Tonalidad sintética continua de agudos no silenciables."
+    ],
+    "respuesta_correcta": "Un 'chime' consistente en una secuencia harmónica de uno a múltiples tonos que alternan de frecuencia alta (HI) a frecuencia baja (LO)."
+  },
+  {
+    "pregunta": "En el FAP Touch Screen, existe un orden prioritario sistémico con el cual el CIDS despliega notificaciones urgentes. ¿Cuál es la tríada de prioridad número 1, 2 y 3 respectivamente ante anomalías?",
+    "opciones": [
+      "1. DOORS/SLIDES, 2. SMOKE, 3. SYSTEM INFO.",
+      "1. WATER/WASTE, 2. DOORS/SLIDES, 3. AUDIO.",
+      "1. SMOKE, 2. DOORS/SLIDES, 3. WATER/WASTE.",
+      "1. SYSTEM INFO, 2. SOFTWARE DOWNLOAD, 3. SMOKE."
+    ],
+    "respuesta_correcta": "1. SMOKE, 2. DOORS/SLIDES, 3. WATER/WASTE."
+  },
+  {
+    "pregunta": "Si obviamos la típica llamada de asistencia para el pasajero (azul fija), ¿cómo se manifiestan las señales luminosas del ACP en el techo en medio de una situación catalogable de anormalidad técnica o emergencia?",
+    "opciones": [
+      "Abarcando destellos fijos estandarizados a un color azul oscuro intenso.",
+      "Con luces estables que mutan su ritmo desde intermitente a un estadio fijo después de los primeros 10 segundos continuos.",
+      "Los segmentos preestablecidos lucirán intermitentes iluminándose en sus tonos base para evidenciar el rigor de la alarma.",
+      "Se unifica cada panel en un bloque cegador y generalizado incandescente blanco continuo."
+    ],
+    "respuesta_correcta": "Los segmentos preestablecidos lucirán intermitentes iluminándose en sus tonos base para evidenciar el rigor de la alarma."
+  },
+  {
+    "pregunta": "Al intentar el tripulante (TAC) una emisión comunicacional hacia otra estación, ¿qué implica que su panel indicador AIP (Attendant Indication Panel) despliegue súbitamente las siglas 'CNCL'?",
+    "opciones": [
+      "Que el botón físico de silenciador o 'Reset' maestro fue hundido invalidando la alerta acústica.",
+      "Manifiesta que la interfonía en la otra estación emisora requerida se encuentra ahora con línea ocupada al otro mando.",
+      "Especifica que dicha comunicación inicial se vió forzosamente truncada por ingresar al sistema un llamado superior con mayor grado de prioridad.",
+      "Decreta una anomalía neumática de interrupción al sistema presurizador de datos desde el ordenador matriz del avión."
+    ],
+    "respuesta_correcta": "Especifica que dicha comunicación inicial se vió forzosamente truncada por ingresar al sistema un llamado superior con mayor grado de prioridad."
+  },
+  {
+    "pregunta": "De igual manera operando los terminales interfónicos (Handset), si en la pequeña pantalla LCD alfanumérica del AIP se estampa la nomenclatura 'ERR', el tripulante debe saber que ha ocurrido lo siguiente:",
+    "opciones": [
+      "Una contingencia o falla crítica severa del controlador primario CIDS que solicita reseteo integral desde cockpit.",
+      "Los rieles de suministro e iluminación de emergencia sufren caída transitoria de voltaje operativo detectado por los microprocesadores.",
+      "La megafonía general de transmisión pública (PA) acusa embotellamiento por transmisiones excesivas.",
+      "El número marcado carece de lógica de emparejamiento; básicamente un código erróneo ha sido tecleado y asimilado."
+    ],
+    "respuesta_correcta": "El número marcado carece de lógica de emparejamiento; básicamente un código erróneo ha sido tecleado y asimilado."
+  },
+  {
+    "pregunta": "Con respecto a la notificación imperativa de peligro EVAC CMD activada manual y explícitamente desde la botonera superior en el Cockpit (Overhead Panel), el resultado desencadenado afectará los equipos periféricos. ¿Qué sucederá dentro de cabina de pasajeros al ejecutarla?",
+    "opciones": [
+      "El encastre y cerrojo computarizado de las puertas principales se liberará instantáneamente perdiendo la presión de seguridad.",
+      "Los actuadores visuales en el FAP y AIP enviarán pulsos de luz roja intermitente sumado a la irrupción ininterrumpida de una sirena/bocina resonando en todos los pasajeros sin excepción.",
+      "Exclusivamente el piso del pasadizo se iluminará destellando una cadena inmersiva guiando la flecha hacia los pórticos de escape.",
+      "El procesador CIDS congelará las advertencias durante los iniciales 10 segundos cotejando parámetros de fuego para después alertar acústicamente la situación."
+    ],
+    "respuesta_correcta": "Los actuadores visuales en el FAP y AIP enviarán pulsos de luz roja intermitente sumado a la irrupción ininterrumpida de una sirena/bocina resonando en todos los pasajeros sin excepción."
+  },
+  {
+    "pregunta": "La flota posee en sus estancos inferiores sistemas fijos de detección en conjunto con equipamientos para la sofocación del fuego (extinción) para proteger el área de carga. El control central operativo recae sobre:",
+    "opciones": [
+      "Accionamientos cinéticos de rociadores sensibles a alzas termales graduadas sobre 75°C automatizados mecánicamente para eludir injerencia exterior.",
+      "El accionar en comando táctil central delegado por default al Jefe de Cabina utilizando la interfaz prioritaria en el FAP principal de abordo.",
+      "Actuadores anclados al vientre del avión perimetral de operación restrictiva y delegada al accionar en la tierra a brigadas bomberiles expertas.",
+      "La potestad absoluta centralizada que yace de manejo íntegro bajo controles y monitoreos emplazados explícitamente en la propia cabina de mando."
+    ],
+    "respuesta_correcta": "La potestad absoluta centralizada que yace de manejo íntegro bajo controles y monitoreos emplazados explícitamente en la propia cabina de mando."
+  },
+  {
+    "pregunta": "El depósito encargado de resguardar el desecho orgánico de inodoros o 'Waste Tank', posee una cota estandarizada de capacidad para retener volumen residual calculada en:",
+    "opciones": [
+      "100 litros alojados dentro de un envase presurizado al vacío absoluto e intransferible.",
+      "150 litros distribuidos en unidades modulares independientes tras las particiones de cada recinto lavatorio particular.",
+      "170 litros acumulativos en un solo receptáculo principal situado en la zona de fuselaje inferior.",
+      "200 litros acumulados internamente usando como aislador en el estanque generalizado la bolsa separadora de agua sanitaria de reposición."
+    ],
+    "respuesta_correcta": "170 litros acumulativos en un solo receptáculo principal situado en la zona de fuselaje inferior."
+  },
+  {
+    "pregunta": "Una disposición arquitectónica interna difiere entre variantes; tratándose de la posición pasiva de estiba de un Jumpseat catalogado como de tipo Giratorio correspondiente al modelo CEO del A320, la aseveración técnica correcta es:",
+    "opciones": [
+      "Descansa estructuralmente empotrado a 90 grados al respaldo de la tabiquería trasera sin poder alterar su posición.",
+      "Tanto respaldar como área de acomodo se agrupan compactándose colapsados perpendicular a la chapa lateral conformante del lavabo Le.",
+      "Su alojamiento disimula su existencia tras una corredera que es escamoteada de modo horizontal a la zona del clóset ropero de preferente.",
+      "Es extraído de cuajo en formato retráctil alojando sus guías por debajo del revestimiento metálico de nivel de alfombras en los pasillos de emergencia centrales."
+    ],
+    "respuesta_correcta": "Tanto respaldar como área de acomodo se agrupan compactándose colapsados perpendicular a la chapa lateral conformante del lavabo Le."
+  },
+  {
+    "pregunta": "¿Qué pauta de acondicionamiento de habitabilidad exige preparar al momento en que, a través de la metodología 'Opción 1', deba darse contención en baño de pasajero PMR (necesidades especiales) luego del aseguramiento de la silla?",
+    "opciones": [
+      "Apalancar los seguros basculantes empujando de fondo el asiento replegable recostado en vertical para ganar amplitud en la circunferencia para el giro de ruedas.",
+      "Extraer los bulones al ras de suelo que engarzan el asiento quitando dicho escollo estructural transportándolo transitoriamente en el vestíbulo frente al galley.",
+      "Presionar obligatoriamente su retén (pestillo de apertura) destrabándolo lo suficiente para abrir libre la bandeja y bajar al estado de uso horizontal facilitando el posicionamiento sedente de transferencia.",
+      "Acoplar y sobreponer protecciones plastificadas anti derrames arriba del asidero plegable protegiendo la placa antes del rodaje por encima de las camillas o llantas engomadas de las ruedas."
+    ],
+    "respuesta_correcta": "Presionar obligatoriamente su retén (pestillo de apertura) destrabándolo lo suficiente para abrir libre la bandeja y bajar al estado de uso horizontal facilitando el posicionamiento sedente de transferencia."
+  },
+  {
+    "pregunta": "¿Cómo interpreta lumínicamente desde los faros ubicados en el plafón del techo (ACP) la tripulación auxiliar que se han intentado contactar normalmente desde las líneas del interfono proveniente de la cabina de mando hacia su demarcación?",
+    "opciones": [
+      "Titila de modo rítmico encendiendo una luz color ámbar.",
+      "Queda clavado y brillante el tono rojo de manera fija estática.",
+      "Ilumina fuertemente color azul fijo atrayendo atención panorámica.",
+      "Altera un haz led verde intermitente y suave para no alarmar pasaje próximo."
+    ],
+    "respuesta_correcta": "Queda clavado y brillante el tono rojo de manera fija estática."
+  },
+  {
+    "pregunta": "Los botones analógicos blindados de seguridad debajo del FAP táctil conocidos como la fila de 'Hard Keys' administran procesos rudimentarios prioritarios. Identifica la función correcta del activador etiquetado en dicho segmento de emergencias como 'EMER':",
+    "opciones": [
+      "Corta y suministra la corriente maestra con 'LIGHTS MAIN ON/OFF'.",
+      "Maximiza luxes lumínicos con propósito de revisiones en 'LAV MAINT'.",
+      "Es el botón que, forzosamente en caso inminente de disrupción lumínica eléctrica estándar, activa de golpe el circuito anexo del sistema general de iluminación del escape y emergencia.",
+      "Comanda la eyección perentoria del grito evacuatorio acústico 'EVAC CMD' puenteando a la central en cabina de mando superior."
+    ],
+    "respuesta_correcta": "Es el botón que, forzosamente en caso inminente de disrupción lumínica eléctrica estándar, activa de golpe el circuito anexo del sistema general de iluminación del escape y emergencia."
+  },
+  {
+    "pregunta": "Para la evacuación de enfermos graves (Camillas) que deban pasar el portón trasero, se hace ineludible remover la barrera del recinto del lavabo en los pórticos del área LD. Si nos hallamos ante una hoja que es calificada de diseño 'plegable', su manipulación constreñida impone la siguiente praxis obligatoria:",
+    "opciones": [
+      "Ser abierta colapsándose lateral de manera al cien por ciento y se procede imperativo trancar un dispositivo que encastre de seguridad a la base del riel inferior conteniendo las vibraciones aéreas para evadir aplastamientos en rotación de viraje de cabina de fuselaje.",
+      "Resulta pre-requisito obligatorio ejecutar las labores de extirpación total usando cerrojos altos y bajos dispuestos por fuera a la hoja para remover de cuajo y desmontar la lámina entera fuera de sus goznes liberando a tope los ductos.",
+      "Se soltaran los frenos correderos logrando torcer la faja central propulsando los perfiles elásticos a la máxima holgura de angulación interior de los marcos para que el cuerpo inerte sobreponga sin roce la camilla ortopédica inmovilizadora de primeros auxilios y camilleros.",
+      "Sellar desde adentro impidiéndose un bloqueo cruzado echando candado o pestillo perimetral que acuse indicativo verde delator en cerradura impidiendo manipulaciones indeseadas colaterales accidentando el habitáculo y las contenciones paramédicas dispuestas a bordo transitoriamente."
+    ],
+    "respuesta_correcta": "Resulta pre-requisito obligatorio ejecutar las labores de extirpación total usando cerrojos altos y bajos dispuestos por fuera a la hoja para remover de cuajo y desmontar la lámina entera fuera de sus goznes liberando a tope los ductos."
+  },
+  {
+    "pregunta": "Revisando exhaustivo el Sub panel accesorio alojado complementario a los teclados bajo el sistema de pantalla Touch del FAP. A la vista del usuario avezado quedan emplazados allí interfaces alámbricas utilitarias tales como:",
+    "opciones": [
+      "Puertos multimedios y cableados que combinan HDMI de salida de monitoreo audiovisual global aunado en paridad simbiótica con transformador y enchufe tomacorriente regulador de 115v AC apto personal foráneo y TAC local de aseo y mantenimiento de base aeroportuaria adyacente a puertas de arribo.",
+      "Alojamiento digital y un plug lateral diseñado de resguardo a chips o formato de tarjeta expansible de SD que va ligada en su vecindad de chasis plástico a conectividad redundante para diagnósticos informáticos al estilo conector serial tipo video terminal.",
+      "Exhibe exclusivamente y de manera explícita conectores funcionales primarios emparejados a una base de enchufe cilíndrico de soporte físico vital para enganche o pernocte de auricular/handset interfónico de sobrecargo acompañado a su margen del conector multiuso normalizado de inserción del Puerto USB (bus serial universal) paramétrico.",
+      "Cajas o regletas de conectividad remota al área propulsora abarcando tomas tubulares testeo del sistema diagnóstico neumático valvular central emparejado con una roseta estructurada local (conector hembra ethernet) LAN integrativo satelital base."
+    ],
+    "respuesta_correcta": "Exhibe exclusivamente y de manera explícita conectores funcionales primarios emparejados a una base de enchufe cilíndrico de soporte físico vital para enganche o pernocte de auricular/handset interfónico de sobrecargo acompañado a su margen del conector multiuso normalizado de inserción del Puerto USB (bus serial universal) paramétrico."
+  },
+  {
+    "pregunta": "Teniendo por ciertos y memorizados los números de los márgenes y diagramas técnicos del material adjunto base, identifique el correcto registro geométrico exacto de largo total o cota de fuselaje longitudinal del clásico A320 desde proa a la base del APU:",
+    "opciones": [
+      "34 metros exactos inamovibles estandarizados longitudinales desde cúpula y radomo hasta los límites traseros del último ducto escape de los gases APU presurizados en estela perimetral de fuselajes tubulares de un pasillo único.",
+      "39 metros fraccionados y extendidos lineal de un punto imaginario de la punta a la marca de referencia de la cola de empenaje delimitador vertical contrapeso exterior aéreo en la nave clásica y neo modificada en estabilizador.",
+      "43 metros totales lineales en vuelo y estacionarios ponderando en su ecuación longitudinal geométrica perimetral estricta la extensión horizontal de los alerones estabilizadores o planos volados en voladizo expuestos externos en planta de la nave aérea A320 al estacionarla y pernoctarla.",
+      "31 metros tomados y regidos por los protocolos constructores en línea central paralela piso entre nariz o pico protector del radar climático adosado radomo aeronáutico hacia el receptáculo cortafuego perimetral albergando íntegramente todo componente interior a la APU en vuelo o pernocte y rampa."
+    ],
+    "respuesta_correcta": "39 metros fraccionados y extendidos lineal de un punto imaginario de la punta a la marca de referencia de la cola de empenaje delimitador vertical contrapeso exterior aéreo en la nave clásica y neo modificada en estabilizador."
+  }
 ]
