@@ -177,7 +177,6 @@
             <option value="https://raw.githubusercontent.com/nfuentes-cloud/Prueba-para-Mi-Prometida/refs/heads/main/AIRBUS%20A320.json" data-id="airbus_a320">AIRBUS A320</option>
             <option value="https://raw.githubusercontent.com/nfuentes-cloud/Prueba-para-Mi-Prometida/main/CRM%20y%20Factores%20Humanos.json?v=1" data-id="crm">CRM y Factores Humanos</option>
             <option value="https://raw.githubusercontent.com/nfuentes-cloud/Prueba-para-Mi-Prometida/refs/heads/main/Primeros%20Auxilios.json" data-id="primeros_auxilios">Primeros Auxilios</option>
-            <option value="aerodinamica">Aerodinámica (Próximamente)</option>
         </select>
 
         <label class="checkbox-container">
@@ -247,6 +246,7 @@
 
     let correctPhrases = [];
     let incorrectPhrases = [];
+    let resultPhrases = {};
 
     async function loadPhrases() {
         try {
@@ -256,6 +256,10 @@
         try {
             const r2 = await fetch('https://raw.githubusercontent.com/nfuentes-cloud/Prueba-para-Mi-Prometida/refs/heads/main/frases-incorrectas.json');
             if (r2.ok) incorrectPhrases = await r2.json();
+        } catch(e) {}
+        try {
+            const r3 = await fetch('https://raw.githubusercontent.com/nfuentes-cloud/Prueba-para-Mi-Prometida/refs/heads/main/frases-resultados.json');
+            if (r3.ok) resultPhrases = await r3.json();
         } catch(e) {}
     }
 
@@ -302,13 +306,6 @@
 
         let subjectUrl = document.getElementById('subject-selector').value;
         subjectUrl = subjectUrl.replace("/refs/heads/", "/");
-        
-        if (!subjectUrl.startsWith("http")) {
-            alert("⚠️ Esta materia aún está en desarrollo.");
-            document.getElementById('loading-msg').classList.add('hidden');
-            buttons.forEach(b => b.disabled = false);
-            return;
-        }
 
         try {
             const response = await fetch(subjectUrl);
@@ -490,9 +487,10 @@
         const mainTitle = document.getElementById('result-main-title');
 
         if (!completed) {
-            mainTitle.innerText = "¡Vuelo Abortado! 🚨";
+            const rp = resultPhrases.abortada || {};
+            mainTitle.innerText = randPhrase(rp.titulos || []);
             titleText.innerText = abortMessage;
-            msgText.innerText = "No te preocupes Mi Vida, los simuladores están para equivocarse y aprender. ¡Inténtalo de nuevo, tú puedes!";
+            msgText.innerText = randPhrase(rp.mensajes || []);
             document.getElementById('score-display').style.borderColor = "var(--error)";
             document.getElementById('score-display').style.color = "var(--error)";
         } else {
@@ -504,16 +502,14 @@
                 localStorage.setItem(`TCP_Record_${subjectId}`, percentage);
             }
 
-            if (percentage === 100) {
-                titleText.innerText = "¡PERFECTO! 🥇";
-                msgText.innerText = "Eres una experta. ¡Me llenas de orgullo Mi Amorcitooo! Ese examen será un paseo por las nubes para ti.";
-            } else if (percentage >= 80) {
-                titleText.innerText = "¡Excelente Trabajo Mi Vida! 🌟";
-                msgText.innerText = "Tienes los conocimientos listos. Confía en lo que sabes, respira profundo y ve por todo.";
-            } else {
-                titleText.innerText = "¡Buen repaso Mi Princesa! ☁️";
-                msgText.innerText = "Lo importante es aprender de los errores ahora. Échale un vistazo al debriefing aquí abajo.";
-            }
+            let categoria;
+            if (percentage === 100) categoria = "perfecto";
+            else if (percentage >= 80) categoria = "excelente";
+            else categoria = "regular";
+
+            const rp = resultPhrases[categoria] || {};
+            titleText.innerText = randPhrase(rp.titulos || []);
+            msgText.innerText = randPhrase(rp.mensajes || []);
         }
 
         if (mistakes.length > 0) {
