@@ -1,0 +1,1082 @@
+[
+    {
+        "q": "Durante el prevuelo, el Capitán te pide que omitas la revisión de un equipo de emergencia porque el vuelo está muy atrasado y te asegura que él 'asume la responsabilidad'. ¿Cuál es tu accionar?",
+        "options": [
+            "Obedecer al Capitán, ya que es la máxima autoridad a bordo y su decisión respalda a la tripulación.",
+            "Realizar la revisión a medias o rápidamente sin decirle nada para no generar conflicto y ahorrar tiempo.",
+            "Informarle de manera asertiva y respetuosa que por regulaciones inquebrantables de seguridad debes realizar el chequeo completo.",
+            "Llamar inmediatamente a operaciones terrestres para presentar una queja formal antes de hablar con el Capitán."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Una compañera de cabina te critica duramente frente a los pasajeros por un error menor que cometiste al entregar un servicio. ¿Cuál es la reacción más adecuada según el perfil psicológico esperado?",
+        "options": [
+            "Defender tu postura inmediatamente frente a los pasajeros para no perder autoridad en la cabina.",
+            "Ignorar el comentario en el momento, continuar con el servicio con actitud profesional y abordar el problema en privado con ella al terminar.",
+            "Abandonar el carro de servicio e irte al galley frontal para evitar llorar o iniciar una confrontación pública.",
+            "Acusarla de inmediato con el Jefe de Cabina (JCP) interrumpiendo las labores de ambos."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Durante el abordaje, notas un olor inusual parecido a cable quemado en el galley. Al mismo tiempo, un pasajero frecuente (Elite) te exige atención inmediata y en tono agresivo por un problema con su asiento. ¿Qué priorizas?",
+        "options": [
+            "Atender rápidamente al pasajero Elite para calmar la situación y luego investigar el olor con tranquilidad.",
+            "Le pides a otro TCP que investigue el olor mientras tú aplicas contención verbal al pasajero molesto.",
+            "Le pides al pasajero firmemente que espere un momento e investigas/reportas el olor inusual de manera inmediata al Cockpit.",
+            "Ignoras al pasajero y procedes a prepararte para una evacuación inminente sin confirmación."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Una madre que viaja sola con un bebé de brazos muy inquieto te pide, casi llorando, sentarse en la salida de emergencia (que está libre) porque necesita más espacio para calmarlo. ¿Cómo manejas la situación?",
+        "options": [
+            "Le explicas con empatía pero con firmeza que, por regulaciones aeronáuticas estrictas, los pasajeros con infantes no pueden ocupar la salida de emergencia bajo ninguna circunstancia.",
+            "Cedes ante la presión emocional y le permites el cambio temporalmente solo hasta que el bebé se quede dormido.",
+            "Le dices secamente que no se puede y la ignoras por el resto del vuelo para evitar que siga insistiendo.",
+            "Le ofreces llevarte al bebé al galley mientras ella duerme un rato en su asiento original."
+        ],
+        "answer": 0
+    },
+    {
+        "q": "Terminas un vuelo con turbulencia severa que generó mucho estrés. Al hacer tu auto-evaluación te das cuenta de que olvidaste asegurar correctamente un compartimento, aunque afortunadamente no se abrió. ¿Qué debes hacer?",
+        "options": [
+            "Guardar silencio total. El vuelo ya terminó, no hubo accidentes y mencionarlo solo te traería sanciones administrativas.",
+            "Comentarlo únicamente con tu compañera de mayor confianza para desahogar la culpa sin dejar registro oficial.",
+            "Anotarlo mentalmente para ti misma como una lección aprendida y no volver a cometer el error.",
+            "Reportarlo voluntariamente al Jefe de Cabina para incluirlo en el reporte de vuelo, fomentando la cultura de seguridad (Just Culture) y el aprendizaje del equipo."
+        ],
+        "answer": 3
+    },
+    {
+        "q": "Te asignan volar con un Jefe de Cabina (JCP) conocido por ser extremadamente autoritario y poco receptivo. Durante una emergencia médica, notas que él está aplicando un procedimiento de primeros auxilios obsoleto y riesgoso. ¿Qué haces?",
+        "options": [
+            "Intervienes de forma directa, detienes su acción explicando la actualización del manual de primeros auxilios y asumes el control si es necesario.",
+            "No dices nada. Él es el JCP y tiene más antigüedad, por lo que asumes que sabe lo que hace y respetas la jerarquía.",
+            "Le susurras al oído que crees que está equivocado, pero si te ignora, te retiras de la escena.",
+            "Esperas a que el pasajero sea estabilizado para reclamarle en privado sobre su falta de actualización."
+        ],
+        "answer": 0
+    },
+    {
+        "q": "Estás pasando por un problema personal muy grave que no te dejó dormir y te mantiene con alta ansiedad. Tienes un vuelo programado en dos horas y sabes que la aerolínea está corta de personal de reserva. ¿Cuál es la decisión correcta?",
+        "options": [
+            "Tomas una pastilla relajante natural, tomas mucho café y te presentas al vuelo para no perjudicar la operación de la aerolínea.",
+            "Te presentas a volar pero le adviertes a tus compañeros que estás mal para que ellos asuman tus tareas críticas de seguridad.",
+            "Te reportas como 'No Apta para el Vuelo' (Unfit to fly) con programación, asumiendo la responsabilidad de tu estado emocional, ya que tu fatiga mental es un riesgo para la seguridad.",
+            "Vas al aeropuerto y le pides al Capitán que evalúe si te ve en condiciones de volar."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Durante un vuelo largo, sorprendes a un compañero TCP consumiendo una bebida alcohólica (miniatura del servicio) a escondidas en el galley. Él te ruega que no digas nada y argumenta que es solo para 'calmar los nervios'. ¿Cuál es el procedimiento adecuado?",
+        "options": [
+            "Le quitas la botella, le ofreces café y le prometes no decir nada si jura no volver a hacerlo, aplicando compañerismo.",
+            "Notificas inmediatamente al Jefe de Cabina o al Comandante, ya que es una violación gravísima que compromete la seguridad de todo el vuelo.",
+            "Esperas a llegar al hotel en el destino para confrontarlo y exigirle que renuncie.",
+            "Lo amenazas con contarlo a toda la tripulación si no hace el resto de tus tareas de servicio."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Un pasajero de primera clase te solicita que le sirvas alcohol antes del despegue, pero las políticas de la aerolínea lo prohíben estrictamente mientras las puertas estén abiertas. El pasajero te amenaza con presentar un reclamo formal que afectará tu evaluación. ¿Qué haces?",
+        "options": [
+            "Le sirves solo un poco para evitar el reclamo, ya que el servicio al cliente es fundamental para los pasajeros Elite.",
+            "Mantienes la calma, le explicas amablemente que por regulaciones de seguridad no puedes servir alcohol con puertas abiertas, y le ofreces una bebida sin alcohol como alternativa temporal.",
+            "Le informas secamente que si sigue insistiendo llamarás a seguridad para que lo bajen del avión.",
+            "Llamas al Jefe de Cabina para que él rompa la regla, quitándote la responsabilidad."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Estás a punto de cerrar puertas y notas que la rampa de tobogán de tu puerta no tiene la presión indicada en el manómetro. El personal de mantenimiento te dice que 'está bien así, aguantará'. ¿Cuál es tu decisión?",
+        "options": [
+            "Confiar en el mecánico, ya que es el experto en mantenimiento y no quieres retrasar el vuelo.",
+            "Anotarlo en tu bitácora personal pero cerrar la puerta de todos modos.",
+            "Negarte a armar la puerta y notificar inmediatamente al Jefe de Cabina y al Comandante de la discrepancia para que exijan una revisión formal.",
+            "Intentar inflar el tobogán tú misma usando el sistema de respaldo manual."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Durante un vuelo nocturno, encuentras a un pasajero fumando en el baño. Al confrontarlo, se muestra muy arrepentido, apaga el cigarrillo y te ruega que no lo reportes porque viaja por una emergencia familiar grave. ¿Cómo procedes?",
+        "options": [
+            "Sientes empatía por su situación familiar y solo le das una advertencia verbal severa.",
+            "Confiscas los cigarrillos y no lo reportas, considerándolo un castigo suficiente.",
+            "Le explicas que fumar es un delito federal, revisas el basurero para asegurar que no hay fuego, y notificas inmediatamente al Capitán y al Jefe de Cabina para aplicar el protocolo.",
+            "Le cobras una multa en efectivo en el lugar para evitar el papeleo burocrático."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Acabas de pasar por una separación amorosa difícil y te sientes profundamente triste y distraída. Hoy tienes evaluación de línea (un inspector evalúa tu desempeño en vuelo). ¿Qué decides hacer?",
+        "options": [
+            "Haces un esfuerzo sobrehumano para fingir que estás bien, ya que reprobar la evaluación afectaría tu carrera.",
+            "Te reportas 'No Apta para Volar' (Unfit to fly), consciente de que tu falta de concentración es un riesgo de seguridad, aunque debas reprogramar la evaluación.",
+            "Vas al vuelo y le explicas llorando al inspector tu situación para que sea más comprensivo y menos estricto.",
+            "Tomas medicamentos antidepresivos de un familiar para subirte el ánimo antes de firmar."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "En el briefing pre-vuelo, el Comandante tiene un tono condescendiente y menosprecia el rol de los TCP. Durante el vuelo, observas una fina capa de hielo en el ala que no se ha derretido. ¿Qué actitud tomas?",
+        "options": [
+            "Decides no decirle nada al Comandante porque te intimidó en el briefing y asumes que él ya vio el hielo.",
+            "Le dices a tu compañero TCP para que él vaya a avisar al Cockpit, evitando así interactuar con el Comandante.",
+            "Llamas al Cockpit de inmediato y reportas objetivamente la presencia de hielo, independientemente de la actitud del Comandante.",
+            "Anuncias por el altavoz que hay hielo en las alas para que los pasajeros estén preparados."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Un pasajero está sufriendo un posible paro cardíaco. Mientras sigues el protocolo de RCP, un médico voluntario se acerca y te ordena de forma agresiva que te detengas y le administres un medicamento del botiquín sin que él haya mostrado sus credenciales. ¿Qué haces?",
+        "options": [
+            "Le haces caso de inmediato porque es un profesional de la salud y sabe más que tú.",
+            "Le pides sus credenciales médicas de forma firme; si no las tiene, continúas con tu protocolo de RCP y solicitas enlace con el servicio médico terrestre.",
+            "Le entregas el botiquín completo para no discutir y te retiras a atender a otros pasajeros.",
+            "Le gritas que se aleje y pides a otros pasajeros que lo inmovilicen."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Durante un embarque caótico, un pasajero te insulta directamente por no haber espacio en los compartimentos superiores para su maleta gigante. ¿Cuál es la respuesta que demuestra mayor madurez emocional?",
+        "options": [
+            "Le respondes con el mismo tono para demostrar que en el avión tú eres la autoridad.",
+            "Ignoras su presencia por completo y pasas de largo sin solucionarle el problema.",
+            "Mantienes una postura recta, contacto visual, y con voz neutra y asertiva le indicas que no tolerarás faltas de respeto, al mismo tiempo que ofreces enviar su maleta a la bodega.",
+            "Te pones a llorar frente a los pasajeros para que él sienta culpa por su mala actitud."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Te percatas de que tu uniforme está ligeramente manchado antes de presentarte a firmar en el aeropuerto. Nadie más lo ha notado. ¿Qué es lo correcto según la disciplina aeronáutica?",
+        "options": [
+            "No decir nada, ya que la mancha es pequeña y lo importante es llegar a tiempo.",
+            "Notificar a tu supervisor inmediatamente, explicar la situación e intentar conseguir un reemplazo o limpiarlo antes de presentarte ante los pasajeros.",
+            "Ocultar la mancha con una bufanda o chaqueta, aunque no sea parte de la uniformidad permitida para esa temporada.",
+            "Culpar a un compañero en caso de que alguien te pregunte por la mancha."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Vuelo de 12 horas. El Capitán te ordena que no molestes en el Cockpit durante las próximas 4 horas porque van a dormir, suspendiendo los controles de seguridad rutinarios. ¿Cuál es tu deber?",
+        "options": [
+            "Acatar la orden sin cuestionar, el descanso del piloto es fundamental para el aterrizaje.",
+            "Entrar al Cockpit de todos modos cada 20 minutos haciendo mucho ruido para demostrar que tú mandas en la cabina.",
+            "Recordarle al Capitán asertivamente que los chequeos de rutina cada 20/30 minutos son obligatorios por regulaciones internacionales para prevenir incapacitaciones, y llegar a un acuerdo seguro.",
+            "Reportar al Capitán en secreto a través de una nota bajo la puerta."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Un compañero te confiesa en el hotel de pernocta que ha estado robando artículos del duty-free del avión para venderlos. Te ofrece parte de las ganancias para que guardes el secreto. ¿Cuál es tu obligación profesional?",
+        "options": [
+            "Aceptar el dinero, pues los salarios son bajos y la aerolínea no notará la pérdida.",
+            "Rechazar el dinero pero guardar el secreto para mantener la 'lealtad' entre la tripulación.",
+            "Rechazar la oferta y reportar la situación de inmediato a la jefatura por los canales oficiales, protegiendo tu integridad y la de la empresa.",
+            "Confrontarlo físicamente y obligarlo a devolver los artículos."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Durante la evacuación en un aterrizaje de emergencia, un pasajero se paraliza por el miedo bloqueando la salida de emergencia principal. Las llamas son visibles afuera. ¿Qué acción tomas?",
+        "options": [
+            "Le hablas con voz muy suave y amorosa hasta que recupere el conocimiento, sin importar el tiempo.",
+            "Usas comandos de voz fuertes, secos e imperativos ('¡SALGA AHORA!', '¡MUEVASE!') y, de ser estrictamente necesario, aplicas fuerza física proporcionada para apartarlo o empujarlo hacia el tobogán.",
+            "Esperas pacientemente a que se mueva, ya que no puedes tocar a un pasajero sin su consentimiento.",
+            "Rediriges a todos los pasajeros a la puerta trasera, a pesar de que está mucho más lejos."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "El Jefe de Cabina (JCP) te delega una tarea de seguridad de la cual él es el único responsable según el manual, argumentando que está muy cansado. ¿Cómo reaccionas?",
+        "options": [
+            "Asumes la tarea felizmente para demostrar que estás capacitada para ascender de puesto.",
+            "Le haces la tarea pero luego hablas mal de él con el resto de la tripulación.",
+            "Le recuerdas asertivamente que el manual estipula que esa tarea le corresponde exclusivamente a él, y te niegas a asumirla para no incurrir en una falta grave de responsabilidad.",
+            "Haces la tarea a medias para que se dé cuenta de que debe hacerla él."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "El avión está experimentando turbulencia extrema no prevista. Estás a la mitad de la cabina sirviendo café caliente. ¿Qué es lo primero que debes hacer?",
+        "options": [
+            "Terminar de servir el café al pasajero rápidamente para no dejar el servicio a medias.",
+            "Llevar el carro (trolley) corriendo hasta el galley frontal para guardarlo correctamente.",
+            "Asegurar el trolley inmediatamente en el pasillo (poner frenos), sentarte en el asiento libre más cercano o incluso en el suelo aferrándote a un soporte, priorizando tu seguridad.",
+            "Caminar lentamente advirtiendo a los pasajeros que se abrochen los cinturones."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Un pasajero VIP (de alto perfil público) se niega a poner su asiento en posición vertical para el aterrizaje y te exige que no lo molestes. ¿Cuál es el enfoque correcto?",
+        "options": [
+            "Dejarlo así; un pasajero VIP enojado puede causar despido.",
+            "Informarle con cortesía pero absoluta firmeza que por regulaciones aeronáuticas no se puede proceder al aterrizaje hasta que cumpla la instrucción, notificando al Jefe de Cabina si persiste.",
+            "Pedirle disculpas y reubicar a los pasajeros de atrás para que él no los moleste.",
+            "Gritarle frente a todos para que pase vergüenza pública y obedezca."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Encuentras un polvo blanco sospechoso en uno de los baños durante el prevuelo. ¿Cuál es la primera acción?",
+        "options": [
+            "Limpiarlo rápidamente con un papel para que los pasajeros no lo vean.",
+            "Avisar al personal de limpieza para que vuelvan a limpiar el baño.",
+            "Aislar el baño inmediatamente, no tocar la sustancia y notificar al Comandante y al Jefe de Cabina aplicando el protocolo de mercancías peligrosas/sustancias ilícitas.",
+            "Oler la sustancia para intentar identificar si es droga o simplemente polvo facial."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Te encuentras extremadamente fatigada después de realizar 4 vuelos consecutivos, pero te piden hacer uno más por falta de personal, prometiéndote pago doble. Según la cultura de seguridad, ¿qué deberías hacer?",
+        "options": [
+            "Aceptar el vuelo extra; el dinero siempre viene bien y quieres quedar bien con la empresa.",
+            "Rechazar el vuelo acogiéndote a los límites de tiempo de servicio y descanso regulado, priorizando la seguridad operativa sobre la ganancia financiera.",
+            "Aceptar el vuelo pero dormir durante las fases de crucero mientras tus compañeros te cubren.",
+            "Llorar frente a tu jefe para que vea lo cansada que estás, pero aceptar de todos modos."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Durante el servicio, derramas accidentalmente jugo sobre el computador portátil de un pasajero. ¿Cómo manejas la situación psicológicamente?",
+        "options": [
+            "Asumes la responsabilidad total de inmediato, pides disculpas sinceras, ofreces toallas y elaboras el reporte correspondiente para que la aerolínea cubra el daño.",
+            "Le dices al pasajero que fue su culpa por tener el computador abierto durante el servicio de comidas.",
+            "Te disculpas pero le ruegas que no presente una queja porque podrías perder tu trabajo.",
+            "Te escondes en el galley el resto del vuelo y mandas a otro TCP a atender su sección."
+        ],
+        "answer": 0
+    },
+    {
+        "q": "En pleno vuelo, un pasajero hace un comentario machista y despectivo hacia tu persona. ¿Cuál es tu reacción más profesional?",
+        "options": [
+            "Le respondes de forma sarcástica para que quede en ridículo.",
+            "Mantienes la compostura, le exiges respeto de manera asertiva y formal, y si el comportamiento agresivo continúa, escalas la situación al Jefe de Cabina y al Comandante.",
+            "Te ríes incómodamente para evitar tensiones en la cabina.",
+            "Le arrojas un vaso de agua por accidente a propósito."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Antes de despegar, notas que uno de los pasajeros es sordo, pero el Jefe de Cabina decidió no hacerle el briefing de emergencia personalizado 'para ganar tiempo'. ¿Qué decides hacer?",
+        "options": [
+            "Apoyar la decisión del Jefe de Cabina; el vuelo ya está retrasado.",
+            "Tomar la iniciativa, buscar la tarjeta de instrucciones en Braille/pictogramas y acercarte al pasajero para hacerle el briefing de seguridad correspondiente, corrigiendo la omisión.",
+            "Preguntarle a los pasajeros de al lado si pueden encargarse de él en caso de emergencia.",
+            "Gesticular desde lejos para ver si te entiende."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "El Comandante anuncia un aterrizaje de emergencia preparado. Empiezas a sentir un ataque de pánico y que te falta el aire. ¿Cuál es el manejo adecuado de tu propia psicología?",
+        "options": [
+            "Huir al baño para calmarte a solas y evitar que los pasajeros te vean vulnerable.",
+            "Respirar profundamente, recordar tu entrenamiento mecánico (repaso mental silencioso) y enfocar tu atención en dar instrucciones claras a los pasajeros, transformando el miedo en acción automática.",
+            "Abrazar a un pasajero para buscar contención emocional.",
+            "Desmayarte debido a la hiperventilación por no pedir ayuda a tus compañeros."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Un compañero TCP llega al briefing con un evidente olor a alcohol y comportamiento errático. Faltan 30 minutos para embarcar. ¿Qué debes hacer?",
+        "options": [
+            "Sugerirle que tome mucho café y mastique chicle antes de que llegue el Capitán.",
+            "Notificar inmediata y discretamente al Capitán o Jefe de Cabina, impidiendo bajo cualquier circunstancia que esa persona asuma labores de vuelo.",
+            "No decir nada, ya que delatar a un compañero rompe la confianza del equipo.",
+            "Enfrentarlo frente a todo el equipo y humillarlo por su irresponsabilidad."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Un niño pequeño corretea por los pasillos durante la fase de descenso y los padres te ignoran cuando les pides que lo sienten. ¿Cómo procedes?",
+        "options": [
+            "Lo dejas jugar, un niño pequeño no pesa suficiente para causar daño en caso de frenado.",
+            "Agarras al niño de la mano fuertemente y lo sientas a la fuerza.",
+            "Usas voz de mando firme ('¡Señores, sienten al niño y abrochen su cinturón INMEDIATAMENTE!') advirtiendo del peligro real de lesiones y notificas al Cockpit si no acatan.",
+            "Decides sentarte tú misma en tu transportín y si el niño se cae, es problema de los padres."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Te das cuenta de que el extintor de tu estación tiene el precinto roto, pero el indicador de presión está en verde. Faltan 5 minutos para que suban los pasajeros. ¿Qué haces?",
+        "options": [
+            "Como está en verde, asumes que funciona y no dices nada.",
+            "Pones un pedazo de cinta adhesiva para disimular la rotura del precinto.",
+            "Reportas el hallazgo al JCP y al Comandante de inmediato, ya que un equipo de emergencia con precinto roto se considera 'inoperativo' (No Go) hasta ser inspeccionado por mantenimiento.",
+            "Lo cambias por un extintor de otra estación para que el problema sea de otro compañero."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Te encuentras muy estresada por problemas económicos personales graves y notas que en el avión dejaron olvidada una billetera con mucho dinero en efectivo. ¿Qué te dice la ética profesional?",
+        "options": [
+            "Tomar un poco de dinero, nadie se dará cuenta y resolverá tus problemas.",
+            "Entregar la billetera intacta a los agentes de rampa/seguridad siguiendo estrictamente el protocolo de objetos perdidos de la aerolínea.",
+            "Guardarla en tu maleta personal y esperar a ver si alguien la reclama en la semana.",
+            "Repartir el dinero entre toda la tripulación."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Durante el servicio, un pasajero con aparentes problemas psiquiátricos empieza a gritar incoherencias y a golpear su propio asiento. ¿Cómo debes actuar?",
+        "options": [
+            "Acercarte sola e intentar inmovilizarlo físicamente de inmediato.",
+            "Mantener la calma, asegurar que el área a su alrededor esté libre de objetos peligrosos, comunicarse con el Cockpit para avisar la situación y buscar, si es posible, si viaja con un acompañante o médico.",
+            "Ignorarlo completamente esperando a que se canse de gritar.",
+            "Gritarle que se calle porque está asustando a los demás pasajeros."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Un pasajero te toca de forma inapropiada (acoso sexual) al pasar por el pasillo. ¿Cómo reaccionas?",
+        "options": [
+            "Te quedas callada por miedo y evitas pasar por esa sección el resto del vuelo.",
+            "Le propinas una bofetada frente a todos los pasajeros como defensa personal.",
+            "Te alejas inmediatamente, le dices de forma fuerte y clara 'No me toque', notificas al Jefe de Cabina e invocas el protocolo contra pasajeros disruptivos, documentando todo.",
+            "Le sonríes nerviosamente y sigues de largo."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "El vuelo ha estado retrasado 3 horas y los pasajeros están muy frustrados. Al entregar los snacks, uno te lo arroja al pecho diciendo '¡Esto es una porquería!'. ¿Cuál es la actitud correcta?",
+        "options": [
+            "No te tomas la agresión como algo personal, das un paso atrás para mantener distancia segura, aplicas contención verbal y le informas que ese comportamiento no es aceptable.",
+            "Le arrojas el snack de vuelta indicándole que es un maleducado.",
+            "Te pones a discutir explicándole que tú no tienes la culpa del retraso.",
+            "Llamas a seguridad inmediatamente sin mediar palabra para que lo arresten."
+        ],
+        "answer": 0
+    },
+    {
+        "q": "Al hacer el chequeo del baño de discapacitados, notas que la alarma de humo fue tapada deliberadamente con cinta adhesiva. ¿Cuál es el nivel de gravedad y cómo actúas?",
+        "options": [
+            "Es una falta leve; quitas la cinta y sigues con tus tareas rutinarias.",
+            "Es una manipulación grave; retiras la cinta, revisas el baño en busca de materiales ilícitos, alertas a toda la tripulación y al Capitán de forma inmediata.",
+            "Lo dejas así porque asumes que mantenimiento lo hizo por alguna reparación temporal.",
+            "Le preguntas por altavoz a los pasajeros quién puso la cinta."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Una compañera te hace bullying constante (comentarios hirientes) sobre tu apariencia y tu forma de trabajar durante el vuelo. ¿Cuál es el manejo adecuado del CRM (Crew Resource Management)?",
+        "options": [
+            "Responderle con peores insultos para que te respete.",
+            "Mantener el profesionalismo durante el vuelo para no afectar la seguridad, pero confrontarla de forma asertiva en privado y escalar el problema a recursos humanos/Jefatura si no cesa.",
+            "Llorar en el baño y pedir no volar nunca más con ella sin dar explicaciones.",
+            "Hablar a sus espaldas con otros tripulantes para que la aíslen."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Tienes dolor de muelas intenso y tomas un fuerte analgésico que causa somnolencia (con triángulo rojo) justo antes del vuelo. ¿Qué principio estás violando?",
+        "options": [
+            "Ninguno, porque el dolor de muelas incapacita más que el medicamento.",
+            "El principio de imagen corporativa.",
+            "La normativa sobre automedicación y sustancias psicoactivas que alteran el estado de alerta; deberías haberte reportado inhabilitada.",
+            "El principio de economía de la empresa."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Durante un despegue abortado (RTO) a alta velocidad, el avión frena bruscamente. Hay silencio absoluto del Cockpit. Según los manuales operativos, ¿qué debes hacer?",
+        "options": [
+            "Iniciar la evacuación inmediatamente por tu cuenta, abriendo puertas y lanzando toboganes.",
+            "Gritar 'Evacuar' para que los pasajeros salgan lo antes posible.",
+            "Mantenerte en tu posición, gritar '¡Posición de impacto!' (brace) si es necesario, evaluar condiciones exteriores e interiores y esperar instrucciones del Comandante.",
+            "Desabrocharte y correr al Cockpit a preguntar qué pasó."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Observas a un pasajero tomando fotografías detalladas de las puertas de emergencia, las cámaras de seguridad y las credenciales de la tripulación. ¿Qué actitud psicológica te define en esta situación?",
+        "options": [
+            "Complacencia: pensar que debe ser un fanático de la aviación.",
+            "Suspicacia y conciencia situacional: acercarte a preguntarle amablemente sobre sus fotos, evaluar su lenguaje corporal y reportar el comportamiento al Cockpit bajo sospecha de amenaza a la seguridad (Security).",
+            "Agresividad: quitarle el teléfono a la fuerza y borrar las fotos.",
+            "Temor: esconderte en el galley y no decir nada."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Un pasajero diabético no solicitó menú especial y te exige comida adecuada. No hay nada más que pasta (carbohidratos). ¿Cómo manejas la situación demostrando orientación a la solución sin romper las normas?",
+        "options": [
+            "Le dices secamente que es su problema por no avisar con antelación.",
+            "Le ofreces tu propia vianda de comida personal.",
+            "Revisas otros menús, ofreces los acompañamientos de ensaladas de la clase ejecutiva si el protocolo lo permite, y le explicas amablemente cómo solicitar el menú especial para futuros vuelos.",
+            "Le das galletas dulces argumentando que no hay más nada."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Descubres que olvidaste poner el pin de seguridad en una puerta después del vuelo (durante el desarmado). Tu compañera te dice que no lo anotes porque te van a sancionar y ella ya lo puso por ti. ¿Qué decides?",
+        "options": [
+            "Le agradeces a tu compañera y decides no reportar tu error para mantener un buen expediente.",
+            "Asumes tu error frente a ella, lo reportas voluntariamente a tu supervisor aplicando 'Just Culture' (Cultura Justa), lo que fomenta el aprendizaje y mejora la seguridad futura.",
+            "Culpa a otra persona que estaba cerca de la puerta.",
+            "Renuncias a tu trabajo por sentirte incapaz."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Estás dando el briefing a pasajeros de salida de emergencia. Un pasajero joven se pone audífonos y cierra los ojos ignorándote por completo. ¿Qué acción asegura el apego estricto a las normas?",
+        "options": [
+            "Dejarlo dormir, ya que la mayoría de los jóvenes saben cómo abrir una puerta.",
+            "Tocarle amablemente el hombro, pedirle que se quite los audífonos y si se niega repetidamente, reubicarlo a otro asiento ya que no está colaborando con las normas de seguridad.",
+            "Gritarle al oído para asustarlo.",
+            "Hacer el briefing solo para el pasajero de al lado y pedirle que le explique al joven después."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Hay mucha neblina y el avión lleva 2 horas en plataforma con los pasajeros a bordo (Tarmac delay). Empiezan a reclamar falta de aire y comida. ¿Cómo gestionas la presión ambiental?",
+        "options": [
+            "Te encierras en el galley, ignorando los timbres de llamada porque no es tu culpa.",
+            "Te pones de lado de los pasajeros y hablas mal de la aerolínea frente a ellos.",
+            "Mantienes presencia constante en pasillo, ofreces agua, actualizas la información frecuentemente con calma y empatía, gestionando las expectativas según la información del Capitán.",
+            "Abres las puertas del avión por iniciativa propia para que entre aire fresco."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Eres la única TCP que habla inglés en el vuelo. El Capitán te llama constantemente al Cockpit para traducir información de la torre de control, desatendiendo la cabina de pasajeros. ¿Cómo equilibras esto?",
+        "options": [
+            "Permaneces en el Cockpit todo el vuelo porque el Capitán manda.",
+            "Te niegas a entrar al Cockpit argumentando que no es tu trabajo traducirle al Capitán.",
+            "Le comunicas al Comandante de forma asertiva tu preocupación sobre descuidar la cabina de pasajeros, estableciendo un sistema rápido para subir a traducir solo cuando sea estrictamente necesario.",
+            "Delegas las emergencias médicas y fuegos a los pasajeros para poder estar en el Cockpit."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Una famosa influencer aborda el avión y te graba con su celular sin tu consentimiento, quejándose de tu apariencia física ante sus miles de seguidores en vivo. ¿Cómo manejas tu estabilidad emocional?",
+        "options": [
+            "Te tapas la cara, sales corriendo y lloras.",
+            "Le rompes el teléfono de un golpe.",
+            "Respiras hondo, controlas tu respuesta emocional y te acercas indicando educadamente pero firme que las regulaciones prohíben filmar a la tripulación sin autorización, solicitando que detenga la grabación, e informando al JCP.",
+            "Te pones a posar y saludas a la cámara."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Durante el descanso de crucero, un pasajero anciano y confundido intenta abrir la puerta de emergencia creyendo que es el baño. ¿Cómo evitas una escalada de pánico?",
+        "options": [
+            "Gritas por el pasillo '¡TERRORISTA INTENTA ABRIR LA PUERTA!'",
+            "Lo tacleas (te lanzas sobre él) violentamente hacia el piso.",
+            "Te acercas rápidamente pero sin correr con pánico, tomas su mano para alejarlo de la manija de forma suave pero firme, y le indicas con calma: 'Señor, el baño está por aquí, acompáñeme'.",
+            "Lo encierras en el baño como castigo por su error."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Estás resfriada y tienes los oídos bloqueados. Aunque no tienes fiebre, sientes dolor al tragar. El médico te dio luz verde, pero tú no te sientes al 100%. ¿Qué es lo correcto en aviación?",
+        "options": [
+            "Volar, ya que si el médico lo dice, la responsabilidad recae sobre él.",
+            "Usar gotas descongestionantes fuertes antes del descenso y volar.",
+            "Confiar en tu auto-evaluación (FITNESS TO FLY); si tus oídos están bloqueados puedes sufrir un barotrauma grave, por lo tanto, te reportas como no apta.",
+            "Volar pero pedir estar sentada todo el tiempo."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "A bordo hay un pasajero deportado escoltado por policías. El deportado te escupe cuando pasas por su lado. ¿Cuál es tu reacción operativa?",
+        "options": [
+            "Le devuelves el escupitajo, manteniendo el honor.",
+            "Te limpias de inmediato, evitas contacto visual y cualquier provocación, informas al Jefe de Cabina y permites que los escoltas policiales manejen la disciplina del individuo.",
+            "Le exiges a los policías que lo bajen del avión en ese instante.",
+            "Te niegas a darle servicio de comida por el resto del vuelo a los policías y al deportado."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Se activa la alarma de humo en el baño y al abrir la puerta encuentras un fuego pequeño en la papelera pero llamas altas. Aplicas el extintor de halón. ¿Cuál es tu estado mental y físico inmediatamente después de extinguirlo?",
+        "options": [
+            "Celebrar que apagaste el fuego y volver a sentarte relajada.",
+            "Cerrar la puerta y no volver a abrirla para que el humo no salga.",
+            "Mantener alerta máxima (adrenalina controlada), notificar al Cockpit 'Fuego extinguido', mojar mantas, desarmar paneles si es necesario para verificar puntos calientes (Overhaul) y mantener guardia.",
+            "Asustarte por lo sucedido e irte a descansar."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "En el hotel de pernocta, tus compañeros de tripulación te insisten en salir a beber hasta altas horas de la madrugada, sabiendo que la recogida (pick-up) es en 8 horas. Eres la más joven del grupo. ¿Cómo manejas la presión grupal?",
+        "options": [
+            "Aceptas ir pero prometes beber solo un par de cervezas.",
+            "Vas para no ser tildada de 'aburrida' pero te quedas en un rincón bebiendo agua.",
+            "Mantienes firmeza en tus principios, agradeces la invitación pero rechazas asertivamente salir, priorizando tu descanso y la regla estricta de abstinencia previa al vuelo.",
+            "Llamas al jefe de base para acusarlos antes de que salgan."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Un pasajero musulmán está rezando en el galley trasero (área de cocina), obstaculizando el movimiento del carro de comidas. ¿Cuál es la intervención más culturalmente sensible y operativa?",
+        "options": [
+            "Pasarle por encima con el carro demostrando que tú tienes prioridad.",
+            "Gritarle que esa es área de trabajo y debe sentarse inmediatamente.",
+            "Esperar pacientemente a que termine su ciclo de rezo y luego, con mucho respeto, sugerirle un espacio alternativo más seguro para futuros rezos durante el vuelo.",
+            "Obligarlo a comer cerdo como reprimenda."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Por un error de catering, subieron 20 bandejas de comida menos en un vuelo transatlántico. ¿Cómo informas esto a los pasajeros sin mentir ni generar un motín?",
+        "options": [
+            "Le echas la culpa a la empresa de catering frente a los pasajeros.",
+            "Te escondes para que otros compañeros den las malas noticias.",
+            "Afrontas el problema de inmediato, ofreces sinceras disculpas en nombre de la aerolínea, y compensas entregando más snacks o extras de primera clase a los afectados, gestionando la escasez con empatía.",
+            "Mientes diciendo que hubo una emergencia médica que echó a perder la comida."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Te acaban de cambiar de base inesperadamente, afectando seriamente tus planes de boda y vida familiar. Llegas a tu primer vuelo en la nueva base. ¿Cuál es tu actitud esperada por la empresa?",
+        "options": [
+            "Trabajar de mala gana y quejarte con los pasajeros de la aerolínea.",
+            "Mostrarse apática con tus nuevos compañeros para que no se acerquen.",
+            "Demostrar resiliencia: aislar los problemas personales temporalmente, mantener actitud colaborativa con el nuevo equipo y resolver tu situación con recursos humanos fuera del horario de vuelo.",
+            "Exigirle al Capitán que hable con gerencia para que te devuelvan a tu ciudad."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Encuentras un chaleco salvavidas de tu asiento desinflado pero dañado (con cortes) durante el pre-vuelo. ¿Qué implica psicológicamente tu decisión de reportarlo?",
+        "options": [
+            "Miedo extremo irracional.",
+            "Locus de control externo: esperar a que alguien más lo vea.",
+            "Responsabilidad incondicional: asumes que la seguridad no es negociable e invocas a mantenimiento para su reemplazo inmediato, sin importar el retraso.",
+            "Indiferencia: asumir que volar sobre tierra no requiere chalecos."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Un pasajero está sufriendo un ataque de epilepsia en el pasillo. Su esposa, muy angustiada, intenta meterle las manos a la boca para que no se trague la lengua. ¿Qué haces?",
+        "options": [
+            "Ayudas a la esposa a abrirle la boca a la fuerza.",
+            "Entras en pánico e inmovilizas por completo al paciente usando vendas.",
+            "Con voz firme y calmada instruyes a la esposa para que saque las manos de la boca (riesgo de amputación de dedos), proteges la cabeza del pasajero con mantas y cuentas el tiempo de la convulsión.",
+            "Salgas corriendo a buscar el botiquín y los dejas solos."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Durante una pernocta, te quedas encerrada fuera de tu habitación de hotel a las 3:00 AM, sin teléfono. Tienes vuelo a las 8:00 AM. ¿Cómo reaccionas ante este estresor imprevisto?",
+        "options": [
+            "Llorar desconsoladamente en el pasillo.",
+            "Dormir en la alfombra del pasillo del hotel.",
+            "Bajar a recepción calmadamente, explicar la situación identificándote como tripulación y pedir una llave de reemplazo o que llamen a la jefatura de tu aerolínea si requieren identificación.",
+            "Romper la puerta de la habitación a patadas."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Un niño viaja como menor no acompañado (UMNR) y no deja de llorar de miedo. El avión enfrenta turbulencia moderada. ¿Qué demuestra tu inteligencia emocional en este caso?",
+        "options": [
+            "Dejarlo llorar, los niños son así y tienes mucho trabajo.",
+            "Regalarle audífonos para aislar su llanto.",
+            "Acercarte, ponerte a su altura visual, hablarle con voz cálida, asegurarte de que su cinturón esté abrochado, explicarle que los saltos son 'baches en las nubes' y darle algo para colorear.",
+            "Llamar por megáfono preguntando si alguien sabe cómo cuidar niños."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Durante el abordaje, notas que un pasajero intenta guardar en el compartimento superior un paquete con una etiqueta de rombo que indica 'Mercancías Peligrosas' (Clase 9). El pasajero asegura que es solo un repuesto inofensivo. ¿Cuál es tu accionar demostrando rigor normativo?",
+        "options": [
+            "Confías en el pasajero pero lo guardas tú misma con cuidado para evitar que se golpee.",
+            "Le permites llevarlo bajo el asiento delantero donde puedas vigilarlo constantemente.",
+            "Aíslas el paquete inmediatamente, detienes el embarque en esa zona e informas al Comandante y JCP para verificar en el manual si el artículo está permitido en cabina.",
+            "Le dices al pasajero que rompa la etiqueta para que nadie más se asuste."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "El Comandante instruye una evacuación, pero al mirar por la ventanilla de tu puerta de emergencia, ves humo espeso y llamas directas. El JCP te grita desde el otro pasillo '¡Abre esa puerta ya!'. ¿Qué decides bajo presión?",
+        "options": [
+            "Abres la puerta de inmediato porque el JCP tiene mayor jerarquía y no puedes desobedecer una orden directa en emergencia.",
+            "Bloqueas la puerta, te cruzas de brazos y esperas en silencio a que los pasajeros busquen otra salida.",
+            "Ejerces tu autonomía situacional: no abres la puerta, bloqueas la salida con tu cuerpo, cruzas los brazos y rediriges a los pasajeros con voz de mando hacia una salida segura ('¡Fuego afuera, vayan hacia atrás!').",
+            "Abres la puerta ligeramente para comprobar si el fuego está tan cerca como parece."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Durante la fase de cabina estéril (por debajo de 10,000 pies), escuchas un golpe metálico fuerte en la parte trasera y un pasajero grita. ¿Rompes la regla de cabina estéril para avisar al Cockpit?",
+        "options": [
+            "No. La cabina estéril es absoluta y llamar al Cockpit podría distraer a los pilotos en una fase crítica, causando un accidente mayor.",
+            "Sí, llamas inmediatamente. La cabina estéril se suspende ante situaciones que comprometan gravemente la seguridad del vuelo o la integridad de los pasajeros.",
+            "Envías a un compañero corriendo al Cockpit para golpear la puerta en lugar de usar el interfono.",
+            "Esperas a que el avión aterrice y luego haces el reporte de seguridad."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Sufres una despresurización rápida. Caen las mascarillas. Una madre al lado tuyo intenta desesperadamente ponerle la mascarilla a su hijo pequeño primero, pero empieza a desvanecerse por la hipoxia. ¿Qué haces tú primero?",
+        "options": [
+            "Le pones la mascarilla al niño rápidamente para que la madre vea que está a salvo.",
+            "Te pones tu propia mascarilla primero, aseguras tu flujo de oxígeno y luego asistes a la madre y al niño.",
+            "Gritas a otros pasajeros que ayuden a la madre mientras tú vas a revisar el resto de la cabina.",
+            "Te quitas tu propia mascarilla para ponérsela a la madre."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Encuentras a un compañero TCP llorando incontrolablemente en el galley frontal. Te confiesa que acaba de recibir un mensaje de que un familiar muy cercano falleció, y el vuelo dura 10 horas. ¿Cómo manejas su incapacitación emocional?",
+        "options": [
+            "Le dices que sea fuerte, se lave la cara y vuelva a trabajar porque el servicio está por comenzar.",
+            "Le das un sedante del botiquín para que duerma el resto del vuelo.",
+            "Informas discretamente al JCP para relevarlo de sus funciones críticas de seguridad, reasignas sus puertas y le permites permanecer en el galley o en un asiento libre bajo cuidado.",
+            "Lo obligas a hacer el servicio para que se distraiga de su dolor."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Una pasajera sufre un síncope. Mientras la asistes, un pasajero que dice ser médico se acerca, no muestra credenciales y te exige que le administres un fármaco intravenoso del botiquín de emergencia. Tienes dudas de su estado mental. ¿Cuál es tu postura profesional?",
+        "options": [
+            "Le entregas el botiquín bajo su responsabilidad, ya que él es médico y tú no.",
+            "Te niegas firmemente. Exiges identificación médica (credencial vigente) y te comunicas vía interfono con tierra (MedLink o similar) para validar cualquier administración de medicamentos fuertes.",
+            "Le administras el medicamento tú misma para que no lo haga un extraño.",
+            "Ignoras al médico y le das agua con azúcar a la pasajera."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Se produce un incendio de una batería de litio (Powerbank) en pleno vuelo, generando fuego y humo tóxico intenso. Tienes el extintor de Halón. ¿Cuál es el protocolo psicológico y táctico que debes seguir?",
+        "options": [
+            "Apagarlo con el extintor y luego esconder el dispositivo en la basura para que no alarme a los demás.",
+            "Lanzar agua inmediatamente antes de usar el extintor para enfriar.",
+            "Ponerte la máscara PBE (capucha antihumo) para proteger tu capacidad de respuesta, extinguir las llamas con Halón y luego saturar el dispositivo con líquidos no inflamables para frenar el embalamiento térmico, informando al Cockpit.",
+            "Correr al lado opuesto del avión y gritar '¡Fuego!' repetidas veces."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Una compañera TCP veterana omite sistemáticamente los chequeos de seguridad de sus puertas alegando que 'nunca pasa nada' y te amenaza con hacerte la vida imposible si la delatas. ¿Cómo actúas bajo la Cultura Justa (Just Culture)?",
+        "options": [
+            "Guardas silencio. La antigüedad merece respeto y no quieres un ambiente laboral hostil.",
+            "Chequeas sus puertas por ella a escondidas para asegurar el vuelo.",
+            "Le informas asertivamente que su negligencia pone en riesgo a todos y presentas un reporte de seguridad (ASR) objetivo, priorizando la integridad operativa sobre la comodidad social.",
+            "Le gritas frente a los pasajeros que es una irresponsable."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Estás a cargo de la puerta trasera. El avión hace un acuatizaje (Ditching). Notas que un pasajero infla su chaleco salvavidas dentro de la cabina mientras el agua empieza a entrar. ¿Por qué esto es una emergencia y qué haces?",
+        "options": [
+            "No es una emergencia, es mejor que esté inflado antes. Lo dejas salir.",
+            "Es una emergencia porque el pasajero flotará hacia el techo y bloqueará la salida o quedará atrapado. Le exiges que lo desinfle inmediatamente tirando de las válvulas manuales y usas voz de mando fuerte.",
+            "Le pinchas el chaleco con un bolígrafo para reventarlo.",
+            "Lo empujas al agua lo antes posible para que no estorbe."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Un pasajero de Primera Clase presenta signos de embriaguez severa antes del despegue, pero es un accionista importante de la aerolínea. El personal de tierra te pide que 'hagas la vista gorda'. ¿Qué decisión refleja tu integridad profesional?",
+        "options": [
+            "Lo dejas viajar, pero le prohíbes servirle más alcohol durante el vuelo.",
+            "Lo aíslas en la última fila del avión para que no moleste.",
+            "Te niegas a aceptarlo a bordo, informas al Comandante de que el pasajero representa un riesgo para la seguridad y la evacuación, solicitando su desembarque bajo la regulación aeronáutica.",
+            "Le ofreces un café fuerte y esperas que se duerma en el despegue."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Vuelo turbulento. Un compañero TCP se paraliza por el miedo, se sienta en el suelo del galley en posición fetal y se niega a asegurar los carros de comida que se están moviendo solos. ¿Qué haces?",
+        "options": [
+            "Te sientas a su lado a abrazarlo hasta que pase la turbulencia.",
+            "Aseguras los carros tú misma rápidamente priorizando la seguridad física de la cabina, y luego le ordenas con firmeza y claridad que se siente en su transportín y se abroche el arnés.",
+            "Empiezas a grabar su reacción para mostrarle a Recursos Humanos que no es apto para el puesto.",
+            "Lo empujas hacia su asiento con violencia."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Durante un descenso de emergencia por fuego oculto, el estrés en la cabina es altísimo. El Capitán da una instrucción por PA (altavoz) que se corta y es incomprensible. ¿Qué haces?",
+        "options": [
+            "Asumes que dijo 'Evacuar' y abres tu puerta en cuanto el avión toca tierra.",
+            "Entras en pánico porque no sabes qué hacer.",
+            "Mantienes el control de la cabina gritando '¡Permanezcan sentados!' e intentas establecer comunicación con el Cockpit o el JCP vía interfono para confirmar la instrucción exacta.",
+            "Adivinas la instrucción observando lo que hacen los demás TCPs."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Un pasajero agresivo te agarra del brazo con fuerza reclamando por la comida. Sientes dolor real. ¿Cómo aplicas la desescalada sin mostrar sumisión ni agresión?",
+        "options": [
+            "Le devuelves el agarre más fuerte para demostrar que no le tienes miedo.",
+            "Sueltas un grito agudo para que todos los pasajeros lo miren y se avergüence.",
+            "Te sueltas con un movimiento firme pero defensivo, das un paso atrás, levantas la mano en señal de 'alto' y con voz grave y calmada dices: 'Señor, no me toque. Mantenga la distancia y siéntese inmediatamente'.",
+            "Te pones a llorar para que él sienta remordimiento."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "A 35,000 pies, encuentras un polvo blanco sospechoso esparcido sobre el lavamanos de un baño. Tienes sospechas de que puede ser un explosivo químico o material biológico. ¿Qué NO debes hacer bajo ningún concepto?",
+        "options": [
+            "Aislar la zona y cerrar el baño con llave.",
+            "Avisar inmediatamente al Capitán sobre el hallazgo.",
+            "Tocarlo, olerlo o intentar limpiarlo con agua o papel para ver qué es.",
+            "Impedir que otros pasajeros se acerquen al área."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Tu avión ha sufrido un incidente y está varado en la pista. Los pasajeros llevan 4 horas sin poder salir, el ambiente es hostil y hay niños llorando. Te sientes al borde del agotamiento mental. ¿Cuál es tu herramienta psicológica principal?",
+        "options": [
+            "La disociación: desconectarte de la realidad y mirar por la ventana hasta que den una solución.",
+            "La confrontación: gritarles a los pasajeros que tú estás igual de harta que ellos.",
+            "La resiliencia operativa: compartimentar tu agotamiento, mantener patrullajes constantes en cabina, ofrecer actualizaciones honestas (aunque sean mínimas) y mostrar empatía activa.",
+            "El abandono de puesto: encerrarte en el baño para descansar."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "El JCP es abiertamente machista y te asigna todas las labores de limpieza pesada mientras él y otros compañeros varones descansan. Si te niegas, te amenaza con un mal reporte. ¿Qué decisión denota inteligencia emocional e integridad?",
+        "options": [
+            "Haces el trabajo en silencio para evitar el conflicto y el mal reporte.",
+            "Le devuelves los insultos y te niegas a trabajar el resto del vuelo.",
+            "Cumples tus funciones estrictas según manual, documentas sus acciones con horas y fechas, y presentas una queja formal por acoso laboral y discriminación al aterrizar.",
+            "Le dices a los pasajeros que el JCP no quiere trabajar."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Durante un vuelo de repatriación, tienes un pasajero esposado y escoltado por dos policías. El pasajero comienza a hiperventilar y parece sufrir un infarto. Los policías se niegan a quitarle las esposas para que puedas hacer RCP. ¿Qué priorizas?",
+        "options": [
+            "Obedeces a la policía, ya que ellos tienen jurisdicción legal sobre el prisionero.",
+            "Exiges asertivamente, citando la autoridad del Comandante, que se liberen las vías aéreas y el pecho del paciente para realizar RCP, ya que a bordo la máxima autoridad médica operativa es la tripulación respaldada por el piloto.",
+            "Haces RCP con las esposas puestas aunque sea ineficaz.",
+            "Dejas que el pasajero muera para evitar un problema legal."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Se declara una emergencia médica grave y la única forma de salvar al pasajero es desviando el vuelo (Diversion). El Capitán te informa por interfono que la compañía le prohibió desviarse por costos y que seguirán a destino (3 horas más). ¿Qué haces?",
+        "options": [
+            "Aceptas la decisión económica de la empresa sin objetar.",
+            "Le arrebatas el interfono al médico a bordo para que pelee con el Capitán.",
+            "Cuestionas la decisión de forma profesional, solicitas que MedLink (tierra) quede grabado confirmando la necesidad médica absoluta del desvío, ejerciendo presión técnica sobre el Cockpit para priorizar la vida.",
+            "Informas a los familiares del pasajero para que ellos amenacen con demandar."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Estás pernoctando en una ciudad extranjera. Sales a cenar con tu tripulación y eres testigo de cómo el Capitán consume abundante alcohol solo 6 horas antes de la presentación para el vuelo de regreso. ¿Cuál es tu deber ineludible?",
+        "options": [
+            "Nada, el Capitán es adulto y sabe cómo procesar el alcohol.",
+            "Ofrecerle café por la mañana y esperar que el Copiloto haga todo el trabajo.",
+            "Impedir activamente que opere el vuelo. Si se presenta, notificar a operaciones de la compañía que el piloto está bajo influencia de sustancias ('Unfit to fly'), asumiendo las represalias sociales.",
+            "Grabar un video en secreto para chantajearlo después."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Una pasajera te confiesa en susurros que el hombre que viaja a su lado no es su esposo y que la está obligando a viajar en contra de su voluntad (posible trata de personas). ¿Cómo manejas esta crisis invisible?",
+        "options": [
+            "Confrontas al hombre inmediatamente exigiéndole sus documentos.",
+            "La separas a la fuerza argumentando un falso problema de seguridad.",
+            "Actúas con normalidad, utilizas una excusa técnica o de servicio ('Necesito que me acompañe al galley por un problema con su menú especial') para separarla discretamente, confirmas la situación e informas al Capitán para que pida intervención policial al aterrizar.",
+            "Le dices que cuando aterrice corra lo más rápido que pueda."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "El avión frena violentamente en la pista y se desvía hacia el pasto. Las luces se apagan. Hay pánico y los pasajeros se levantan en la oscuridad. Desde el Cockpit no hay ninguna instrucción. Ha pasado 1 minuto. ¿Cuál es tu nivel de iniciativa?",
+        "options": [
+            "Esperas pacientemente, los manuales dicen que solo el Capitán inicia la evacuación.",
+            "Gritas para intentar calmar a la gente hasta que los pilotos hablen.",
+            "Si no hay respuesta tras repetidos intentos de comunicación, o si el peligro es inminente e indiscutible (ej. fuego, humo, agua), tomas el mando de tu área y ordenas la evacuación por tu cuenta.",
+            "Abres la puerta y saltas tú primero para probar que es seguro."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Estás a punto de cerrar puertas y notas que no subió el equipo de resucitación (Desfibrilador - DEA). El agente de rampa te dice: 'No importa, en 10 años nunca lo hemos usado, cerremos para salir en hora'. ¿Qué decides psicológicamente?",
+        "options": [
+            "Cerrar. Es cierto estadísticamente y la puntualidad es importante.",
+            "Dudar, pero ceder ante la presión de salir a tiempo.",
+            "Aplicar el 'No-Go': Mantienes la puerta abierta y te niegas rotundamente a permitir el cierre hasta que el DEA esté a bordo, soportando la presión del agente y del retraso, ya que es un equipo de vida o muerte por normativa.",
+            "Anotas en el libro de cabina que falta el DEA pero dejas salir el vuelo."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Durante un vuelo largo, sufres un dolor abdominal punzante tan severo que casi no puedes mantenerte en pie. Tu aerolínea te ha advertido sobre el exceso de ausentismo. ¿Cuál es la evaluación psicológica correcta de tu aptitud?",
+        "options": [
+            "Soportar el dolor en silencio; no puedes arriesgar tu trabajo.",
+            "Tomar un analgésico y pedir que te dejen sentada el resto del vuelo.",
+            "Reconocer tu incapacitación repentina. Una TCP que no puede moverse no puede evacuar un avión. Notificas al JCP que estás inoperativa por emergencia médica y te conviertes en pasajera enferma.",
+            "Llorar en el galley y pedirle a los pasajeros que tengan paciencia contigo."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Un pasajero ciego que viaja con su perro guía se sienta en una salida de emergencia asignada por error por el sistema. El pasajero se ofende muchísimo cuando le pides que se mueva y te acusa de discriminación a gritos. ¿Qué haces?",
+        "options": [
+            "Te intimidas por los gritos y lo dejas allí para evitar un escándalo viral.",
+            "Pides disculpas y le ofreces dinero de tu bolsillo para compensar.",
+            "Mantienes firmeza, explicas claramente que la regulación de la autoridad aeronáutica prohíbe animales y personas con discapacidad en la fila de emergencia por razones de evacuación, y ofreces un asiento de igual o mejor categoría (ej. Primera Fila).",
+            "Lo amenazas con bajarlo del avión si no se calla."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Al hacer el chequeo del baño, ves que el detector de humo tiene papel mojado tapando los sensores. Es un claro intento de sabotaje. No hay nadie en el baño. ¿Cuál es el procedimiento y el perfil psicológico que aplicas?",
+        "options": [
+            "Retiras el papel, te alegras de haberlo encontrado y sigues con el servicio.",
+            "Buscas por todo el avión quién huele a humo de cigarro para reprenderlo.",
+            "Mentalidad de Seguridad Avanzada: Retiras el papel, revisas exhaustivamente la basura buscando colillas encendidas o drogas, avisas al JCP y al Capitán del hallazgo de manipulación, y monitoreas el área.",
+            "Dejas el papel ahí para sorprender a quien lo puso en flagrancia."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Tienes fobia severa a las arañas. Un pasajero abrió clandestinamente una caja y una tarántula grande se escapa y camina por el techo del pasillo. Los pasajeros entran en pánico. ¿Cómo manejas tu propia fobia y la situación?",
+        "options": [
+            "Gritas igual que los pasajeros y te encierras en el Cockpit.",
+            "Bloqueas tu respuesta fóbica temporalmente (adrenalina operativa), utilizas un objeto (caja, manta o guantes resistentes) para contener al animal con ayuda de un voluntario valiente, aislando la amenaza de forma profesional.",
+            "Te niegas a pasar por el pasillo el resto del vuelo y dejas a tus compañeros a cargo.",
+            "Pides permiso al Capitán para usar el extintor contra la araña."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Durante un embarque lento, una compañera TCP comienza a criticar en voz alta, frente a los pasajeros, la política de la empresa y los bajos salarios. ¿Qué haces para proteger el entorno y la imagen corporativa?",
+        "options": [
+            "Te unes a la queja porque tiene razón y quieres apoyarla.",
+            "La ignoras y sigues saludando a los pasajeros con una sonrisa falsa.",
+            "Te acercas de inmediato, la interrumpes de forma diplomática pero firme, y le indicas que ese no es el lugar ni el momento para esa conversación, dirigiéndola al galley para advertirle sobre la percepción de los pasajeros.",
+            "Tomas el micrófono y anuncias que las opiniones de ella no representan a la aerolínea."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Un pasajero sufre una convulsión y se golpea fuertemente la cabeza, comenzando a sangrar. No hay médicos a bordo. ¿Cómo gestionas el triage psicológico de la situación?",
+        "options": [
+            "Entras en shock al ver la sangre y te quedas inmóvil.",
+            "Tratas de inmovilizarle la cabeza a la fuerza para que no sangre más.",
+            "Mantienes control situacional: priorizas que el pasajero no se siga golpeando protegiendo su entorno (no lo inmovilizas a la fuerza), controlas la hemorragia solo cuando la convulsión ceda, y comunicas los síntomas exactos a MedLink.",
+            "Le echas agua fría en la cara para que despierte."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Vuelo turbulento y servicio suspendido. Un pasajero VIP exige su comida caliente argumentando que pagó 5000 dólares por el asiento y no le importa la turbulencia. ¿Cómo equilibras el servicio al cliente y la seguridad?",
+        "options": [
+            "Le llevas la comida arrastrándote por el piso para cumplir el servicio.",
+            "Te disculpas y le explicas que la seguridad de la cabina y la tuya están por encima de cualquier servicio, negándote asertivamente a levantarte y manipular líquidos calientes hasta que el Capitán lo autorice.",
+            "Le dices que es un irresponsable y un maleducado.",
+            "Le envías la comida con otro pasajero que esté más cerca."
+        ],
+        "answer": 1
+    },
+    {
+        "q": "Despegue. El avión sufre un 'Tail strike' (golpe de la cola en la pista) tan severo que escuchas crujir el metal y una sobrecargo trasera cae al piso lesionada. El avión sigue ascendiendo. ¿Cuál es tu primera acción hacia el Cockpit?",
+        "options": [
+            "No decir nada, los pilotos siempre sienten el Tail strike y ya lo saben.",
+            "Esperar a los 10,000 pies para llamar y preguntar si escucharon el ruido.",
+            "Inmediatamente tomar el interfono (llamada de emergencia) e informar 'Golpe estructural severo en cola, TCP lesionada', ya que los pilotos podrían no tener conciencia plena de la magnitud del daño trasero.",
+            "Empezar a preparar a los pasajeros para un acuatizaje."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Un compañero de tripulación te ofrece píldoras anfetamínicas de venta libre para 'aguantar el vuelo transoceánico' porque te nota muy cansada, argumentando que 'todos lo hacen'. ¿Qué evalúa esta pregunta en tu perfil?",
+        "options": [
+            "Tu capacidad para mantenerte despierta a toda costa.",
+            "Tu lealtad hacia tus compañeros encubriendo prácticas comunes.",
+            "Tu apego a las normas psicoactivas y de automedicación; debes rechazar la píldora absolutamente, ya que tomar sustancias alteradoras de la fatiga genera un falso estado de alerta peligroso.",
+            "Tu habilidad para disimular la fatiga frente a los pasajeros."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Un niño pequeño se atraganta con un dulce y deja de toser (obstrucción total). Los padres están histéricos gritando y sacudiendo al niño. ¿Cómo lideras esta crisis crítica?",
+        "options": [
+            "Llamas al médico por el PA y esperas a que alguien más actúe.",
+            "Intentas sacar el dulce con tus dedos metiendo la mano en la boca del niño.",
+            "Impones orden con voz de mando a los padres ('¡Déjenme ayudarlo, suéltenlo!'), evalúas si es un infante o un niño mayor y aplicas inmediatamente las maniobras de desobstrucción (golpes interescapulares/Heimlich adaptado) sin vacilar.",
+            "Le dices a los padres que lo pongan boca abajo y esperen."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Durante el prevuelo, notas que en la cabina de mando (Cockpit) falta el hacha de emergencia o está defectuosa. El Comandante te dice que no la reportes porque el vuelo será cancelado y él quiere volver a casa. ¿Qué haces?",
+        "options": [
+            "Accedes por empatía hacia el Comandante y su familia.",
+            "Le dices que está bien pero anotas su nombre en tu cuaderno por si acaso.",
+            "Ejerces integridad absoluta y asertividad frente a la autoridad: le informas que por tu código de responsabilidad operativa, el equipo de emergencia defectuoso debe figurar en el reporte oficial, e informas a mantenimiento.",
+            "Robas un hacha de otro avión para solucionar el problema."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Tras una evacuación exitosa, estás en tierra firme y notas que algunos pasajeros quieren volver a entrar al avión en llamas para recuperar sus laptops y bolsos. ¿Cómo mantienes el control de la multitud?",
+        "options": [
+            "Les dices que pueden ir bajo su propio riesgo.",
+            "Te paras pasivamente y miras cómo lo intentan.",
+            "Utilizas lenguaje corporal agresivo defensivo, te interpones en el camino de forma segura y usas comandos extremadamente autoritarios y repetitivos ('¡DETÉNGANSE! ¡MANTÉNGANSE ALEJADOS DEL AVIÓN! ¡PELIGRO DE EXPLOSIÓN!') para evitar que regresen.",
+            "Entras tú misma a sacarles las cosas para que no se arriesguen ellos."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Un vuelo con escala. Durante el tránsito, el equipo de limpieza encuentra una nota escrita a mano en una bandeja que dice 'Hay una bomba en este avión'. ¿Cuál es la reacción basada en la psicología de la seguridad?",
+        "options": [
+            "Considerarlo una broma de mal gusto de un pasajero molesto y botar el papel.",
+            "Mostrarle el papel a los pasajeros que van a embarcar para advertirles.",
+            "Tratarlo como una Amenaza de Bomba Específica, no tocar más la nota (para preservar huellas), suspender inmediatamente cualquier embarque y notificar al Comandante y a seguridad aeroportuaria para activar el protocolo de búsqueda.",
+            "Buscar por tu cuenta si hay alguna caja extraña debajo de los asientos."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Un pasajero tiene un ataque de pánico severo antes del despegue y exige que abran la puerta para bajarse (claustrofobia aguda). El avión ya está rodando. ¿Qué haces?",
+        "options": [
+            "Pides al piloto que frene y vuelva a la puerta inmediatamente.",
+            "Lo sujetas a la fuerza en su asiento usando cinturones extras.",
+            "Lo llevas a un área más amplia (galley si es seguro) o te sientas a su lado, aplicas técnicas de respiración anclada (4-7-8) y contención verbal persuasiva para calmarlo, informando al Capitán sobre el pasajero disruptivo médico.",
+            "Le dices que si no se calla llamarán a la policía."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "En el hotel, escuchas gritos violentos y golpes provenientes de la habitación del Jefe de Cabina. Parece que está agrediendo a alguien. ¿Cuál es tu deber cívico y profesional?",
+        "options": [
+            "Ignorarlo porque lo que haga fuera del avión no es tu asunto.",
+            "Grabar el sonido a través de la puerta para tener pruebas en el futuro.",
+            "Llamar inmediatamente a la seguridad del hotel o a la policía para intervenir en el incidente de violencia, y posteriormente reportar la situación de inaptitud a la jefatura de la aerolínea.",
+            "Entrar pateando la puerta para detenerlo a golpes."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Descubres que has perdido tu manual de vuelo y tu credencial del aeropuerto 1 hora antes de presentarte a trabajar. ¿Qué debes hacer según los procedimientos estrictos?",
+        "options": [
+            "Prestarte una credencial de una compañera que tenga el día libre.",
+            "Presentarte igual y decirle a seguridad que los olvidaste en el coche.",
+            "Notificar inmediatamente a la aerolínea y a la seguridad aeroportuaria sobre la pérdida de la credencial (riesgo de seguridad) y declararte incapacitada para volar hasta recuperar u obtener un reemplazo de los documentos obligatorios.",
+            "Imprimir una credencial falsa rápidamente en casa."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Se desata una pelea física violenta entre dos pasajeros en el pasillo por el reclinamiento de un asiento. ¿Cómo intervienes minimizando tu riesgo pero deteniendo la situación?",
+        "options": [
+            "Te lanzas al medio de los golpes para separarlos usando tu cuerpo.",
+            "Ignoras la pelea hasta que se cansen de golpearse.",
+            "Reclutas a pasajeros fuertes (ABPs) cercanos con voz de mando clara ('¡Ustedes dos, ayúdenme a separarlos!'), pides contención, alejas a otros pasajeros vulnerables y notificas al Cockpit sobre una situación de nivel de amenaza 2.",
+            "Les tiras café caliente encima para que dejen de pelear."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Durante un vuelo de madrugada, notas que los pilotos no han respondido a tu llamada de rutina a los 20 minutos, ni a la de los 30 minutos. Tienes el código de emergencia de la puerta del Cockpit. ¿Qué haces?",
+        "options": [
+            "Sigues esperando. Probablemente están muy concentrados en el vuelo.",
+            "Golpeas la puerta suavemente pero no usas el código por miedo a ser despedida.",
+            "Asumes incapacitación de la tripulación de mando. Utilizas el código de acceso de emergencia para entrar, preparada para administrar primeros auxilios a los pilotos si han sufrido hipoxia o problemas médicos.",
+            "Llamas a la azafata de otra sección para que sea ella quien ponga el código."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Te piden volar con un Capitán que previamente hizo insinuaciones inapropiadas hacia ti. Sientes ansiedad extrema de solo pensarlo. ¿Cómo gestionas esta situación laboral?",
+        "options": [
+            "Te reportas enferma con una excusa falsa para evitarlo.",
+            "Vas al vuelo pero te encierras en el baño la mayor parte del tiempo.",
+            "Invocas las políticas de protección contra el acoso de tu aerolínea y solicitas a programación (Crew Scheduling) que te retiren del vuelo explicando el motivo, para no operar bajo estrés extremo y riesgos de CRM.",
+            "Lo enfrentas en el avión delante de los pasajeros y la tripulación."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Durante el prevuelo, estás realizando el control de seguridad de los baños y te cortas profundamente la mano con un objeto punzante escondido. Hay sangrado considerable. ¿Cuál es el protocolo operativo?",
+        "options": [
+            "Te envuelves la mano con papel higiénico y haces el vuelo disimulando.",
+            "Le pides a un compañero que haga tus tareas críticas.",
+            "Te reportas inoperativa por accidente laboral, solicitas atención médica, detienes el abordaje si se sospecha de un acto de sabotaje (objeto escondido), y se levanta un reporte de seguridad (ASR/MOR).",
+            "Lloras y dejas el baño sucio con tu sangre."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Al realizar la demostración de seguridad, un grupo de adolescentes se burla de tus movimientos y te graba para redes sociales. ¿Cuál es la actitud psicológica correcta?",
+        "options": [
+            "Detener la demostración, acercarte y quitarles el teléfono bruscamente.",
+            "Sentirte humillada y hacer la demostración a medias o llorando.",
+            "Mantener total concentración y profesionalismo inquebrantable, finalizar la demostración garantizando que la información de seguridad llegue al resto, y luego abordar el tema de las grabaciones no autorizadas con asertividad y apoyo del JCP.",
+            "Burlarte de ellos por el micrófono."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "En un aterrizaje en condiciones de tormenta severa, el avión rebota varias veces y frena con una fuerza brutal. Los pasajeros entran en histeria colectiva. ¿Cuál es tu posición y tu labor?",
+        "options": [
+            "Soltarte el arnés y correr por el pasillo diciendo '¡Todo está bien!'.",
+            "Quedarte en silencio esperando a ver si alguien resulta herido.",
+            "Permanecer asegurada en tu transportín, evaluar continuamente el entorno exterior (fuego/daño estructural), y usar voz de mando constante: '¡Permanezcan sentados! ¡Cinturones abrochados! ¡Agachen la cabeza!' asumiendo el control de la crisis.",
+            "Rezar en voz alta para calmarte a ti misma."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Un pasajero te entrega en secreto una pastilla que encontró en el suelo del galley, parece un estupefaciente fuerte (ej. Fentanilo) y sospechas de uno de tus compañeros que se ha comportado erráticamente. ¿Qué haces?",
+        "options": [
+            "La devuelves al suelo haciendo como que no viste nada.",
+            "La guardas en tu bolsillo y confrontas a tu compañero en privado.",
+            "La envuelves en un papel o guante sin tocarla directamente, aislando la prueba, e informas de inmediato al Comandante bajo estricta confidencialidad para iniciar una investigación en vuelo sin alertar al sospechoso.",
+            "La tiras por el inodoro para evitar problemas."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "El JCP decide unilateralmente saltarse el Briefing de Emergencia con la tripulación antes del vuelo para ir a tomar un café, argumentando que 'ya son todos experimentados'. ¿Cuál es la reacción basada en normas de CRM?",
+        "options": [
+            "Aprovechar el tiempo e irte a tomar café con él.",
+            "Quejarte con tus compañeros pero no hacer nada.",
+            "Insistir asertivamente en que el briefing es un requisito legal (Regulación de Aviación Civil) ineludible y negarte a firmar el reporte de vuelo si no se establece una planificación de seguridad coordinada y roles definidos.",
+            "Denunciarlo anónimamente meses después."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Se desata una pandemia imprevista a nivel mundial. Un pasajero en pleno vuelo a mitad del océano comienza a toser sangre y colapsa con fiebre altísima. ¿Cómo aplicas el protocolo de bioseguridad bajo estrés?",
+        "options": [
+            "Sales corriendo a la cabina delantera y te niegas a volver a esa sección.",
+            "Lo atiendes sin usar equipo de protección para no causar pánico de pandemia.",
+            "Utilizas el Kit de Precaución Universal (Universal Precaution Kit/UPK), aislas al pasajero si es posible en las últimas filas, limitas el contacto a un solo TCP, exiges el uso de mascarillas en el área y notificas a Sanidad Portuaria vía Cockpit.",
+            "Le rocías extintor o ambientador para matar las bacterias."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Una sobrecargo jefa se molesta contigo porque aplicaste una norma del manual que ella había ordenado ignorar, y te excluye deliberadamente de las pausas de descanso (crew rest). ¿Cómo manejas esta hostilidad y el riesgo de fatiga?",
+        "options": [
+            "Aceptas el castigo porque ella es tu superior y tiene el control.",
+            "Te vas a dormir por tu cuenta en cualquier asiento vacío rebelándote.",
+            "Le notificas formalmente que la exclusión del descanso reglamentario viola los Límites de Tiempo de Vuelo y Descanso, poniéndote en fatiga operativa, y amenazas con un reporte 'Unfit to fly' por fatiga inducida si no lo revierte.",
+            "Lloras frente a todos para que ella se sienta culpable."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Durante un despegue abortado (RTO), tu compañero de la puerta opuesta se golpea la cabeza y queda inconsciente. Hay humo en cabina y la evacuación es inminente. ¿Qué responsabilidad asumes?",
+        "options": [
+            "Lo sacudes y tratas de despertarlo mientras los pasajeros evacúan por sí solos.",
+            "Evacúas tú y lo dejas atrás; en emergencias cada uno se salva solo.",
+            "Asumes el control de AMBAS puertas si es físicamente posible. Una vez que inicie la orden de evacuación, diriges el flujo, y te aseguras de que tu compañero incapacitado sea evacuado con ayuda de los pasajeros (ABPs).",
+            "Te sientas a llorar porque la presión es demasiada."
+        ],
+        "answer": 2
+    },
+    {
+        "q": "Llegas a la inspección médica anual y el psicólogo te hace una pregunta trampa: 'Si tuviéramos que elegir entre tu vida, la del piloto o la de un pasajero, ¿a quién salvas tú primero en una emergencia?'. ¿Cuál es la respuesta que busca el perfil aeronáutico?",
+        "options": [
+            "Al pasajero, porque somos servidores públicos y su vida es lo más importante.",
+            "Al piloto, porque él debe volar el avión.",
+            "A mí misma primero (autoprotección/oxígeno primero). Solo si estoy consciente, íntegra y capacitada puedo ayudar a salvar a los pasajeros y asistir al resto de la tripulación en una evacuación efectiva.",
+            "A nadie en particular, depende del destino."
+        ],
+        "answer": 2
+    }
+]
